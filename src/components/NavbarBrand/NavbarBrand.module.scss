@@ -1,0 +1,21 @@
+@import 'invoker-tokens/index.scss';
+
+.root {
+  min-width: 72px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: $space-m $space-ml;
+}
+
+.brandContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+}
+
+.brand {
+  height: 28px;
+  color: $dark-alpha-70;
+}

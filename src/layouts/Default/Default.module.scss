@@ -1,0 +1,55 @@
+@import 'src/tokens';
+@import 'src/base';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  // Enable for debugging
+  // outline: 1px solid red;
+}
+
+body {
+  position: relative;
+  color: $dark-alpha-70;
+}
+
+:global {
+  .Hide {
+    display: none;
+  }
+
+  .topLayer {
+    z-index: 99999999;
+  }
+}
+
+@media (max-width: 599px) {
+  .portfolio_info_wrapper {
+    min-height: 216px;
+  }
+}
+@media (min-width: 600px) {
+  .portfolio_info_wrapper {
+    min-height: 216px;
+  }
+}
+@media (min-width: 900px) {
+  .portfolio_info_wrapper {
+    min-height: 216px;
+  }
+}
+@media (min-width: 1224px) {
+  .portfolio_info_wrapper {
+    min-height: 216px;
+  }
+}
+@media (min-width: 1800px) {
+  .portfolio_info_wrapper {
+    min-height: 216px;
+  }
+}

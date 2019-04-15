@@ -1,0 +1,24 @@
+@import 'src/tokens';
+
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-self: flex-end;
+}
+
+@include screen(phone) {
+  padding: $space-inline-ml;
+}
+@include screen(tabPortrait) {
+  padding: $space-inline-ml;
+}
+@include screen(tabLandscape) {
+  padding: $space-inline-ml;
+}
+@include screen(desktop) {
+  padding: 0;
+}
+@include screen(desktopWide) {
+  padding: 0;
+}

@@ -1,0 +1,37 @@
+@import 'src/tokens';
+
+.root {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  // box-shadow: inset 0px -1px 0px 0px $dark-alpha-20;
+  background: $light-alpha-100;
+}
+
+.container {
+  padding-top: $space-ml;
+  padding-bottom: $space-ml;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primaryMenu,
+.secondaryMenu {
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: initial;
+  }
+  @include screen(desktop) {
+    display: initial;
+  }
+  @include screen(desktopWide) {
+    display: initial;
+  }
+}

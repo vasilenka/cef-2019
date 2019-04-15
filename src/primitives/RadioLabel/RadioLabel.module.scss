@@ -1,0 +1,9 @@
+@import '~invoker-tokens/index.scss';
+
+.root {
+  cursor: pointer;
+}
+
+.disabled {
+  color: $dark-alpha-50;
+}

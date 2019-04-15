@@ -1,0 +1,17 @@
+@import 'invoker-tokens/index.scss';
+
+.root {
+  padding-top: $space-l;
+}
+
+.narrow {
+  composes: container-narrow from global;
+}
+
+.full {
+  composes: container from global;
+}
+
+.bleed {
+  composes: container-bleed from global;
+}
