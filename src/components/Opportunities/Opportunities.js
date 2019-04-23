@@ -38,7 +38,7 @@ const Opportunities = ({
               </div>
             </div>
             <Text medium component="p" style={{ marginBottom: 0 }}>
-              Learn and experience first-hand civic engagement undertakings in the locality of Solo by visiting the sites and directly engaging with the communities.
+              Participate in workshops to experience and gain knowledge of transformative learning and enhance needed skills through innovative methods and techniques in mutually stimulating and supportive environment.
             </Text>
           </div>
           <div className={styles.opportunity}>
@@ -48,7 +48,7 @@ const Opportunities = ({
               </div>
             </div>
             <Text medium component="p" style={{ marginBottom: 0 }}>
-              Learn and experience first-hand civic engagement undertakings in the locality of Solo by visiting the sites and directly engaging with the communities.
+              Learn various modalities of civic engagements in different parts of the region via exchange forums.
             </Text>
           </div>
           <div className={styles.opportunity}>
@@ -58,7 +58,7 @@ const Opportunities = ({
               </div>
             </div>
             <Text medium component="p" style={{ marginBottom: 0 }}>
-              Learn and experience first-hand civic engagement undertakings in the locality of Solo by visiting the sites and directly engaging with the communities.
+              Experience and enjoy the rich history, art and cuisine, the lively and friendly atmosphere, as well as the surrounding embracing nature of the city of Solo.
             </Text>
           </div>
           <div className={styles.opportunity}>
@@ -68,7 +68,7 @@ const Opportunities = ({
               </div>
             </div>
             <Text medium component="p" style={{ marginBottom: 0 }}>
-              Learn and experience first-hand civic engagement undertakings in the locality of Solo by visiting the sites and directly engaging with the communities.
+              Dialogue and network with outstanding practitioners and strategic partners through learning the connectivity of highlighted issues, so that further collaborations can be concretized.
             </Text>
           </div>
         </div>

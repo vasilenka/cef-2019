@@ -2,25 +2,71 @@
 
 .root {
   background-color: $bg-banana-200;
-  border-bottom: 1px solid $dark-alpha-10;
 }
 
 .container {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  @include screen(phone) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @include screen(tabPortrait) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @include screen(tabLandscape) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  @include screen(desktop) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  @include screen(desktopWide) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.title {
+  composes: col-sm-12 col-md-2 from global;
+  padding-bottom: 0;
+  margin-bottom: 32px;
+}
+
+.organizerContainer {
+  @include screen(phone) {
+    flex-direction: column;
+  }
+  @include screen(tabPortrait) {
+    flex-direction: column;
+  }
+  @include screen(tabLandscape) {
+    flex-direction: row;
+  }
+  @include screen(desktop) {
+    flex-direction: row;
+  }
+  @include screen(desktopWide) {
+    flex-direction: row;
+  }
+}
+
+.columnRow {
+  composes: row from global;
+  flex: 4;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
 .logoContainer {
-  width: 20%;
-  max-height: 92px;
-  height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  composes: col-6 col-sm-6 col-md-3 from global;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .logo {
-  width: 184px;
+  min-height: 48px;
+  min-width: 120px;
 }
 
 .logoUniv {

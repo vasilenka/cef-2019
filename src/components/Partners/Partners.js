@@ -5,6 +5,7 @@ import cx from 'classnames';
 import Box from '../Box/Box';
 import Container from '../../layouts/Container/Container';
 import Text from '../../primitives/Text/Text';
+import Image from './../images/organizers/kk';
 
 const Partners = ({
   className,
@@ -12,50 +13,77 @@ const Partners = ({
   }) => {
   return (
     <Box className={cx(styles.root)}>
-      <Container className={styles.container}>
+      <Container narrow className={styles.container}>
         <Text heading1 component="h2" className={styles.title}>
           Partners
         </Text>
-        <Box column>
-          <div className={styles.partners}>
-            <Box justifyCenter alignCenter className={styles.partnerRow}>
-              <div className={styles.partnerContainer}>
-                <div className={cx(styles.partner, styles.one)}></div>
+        <Box column style={{marginBottom: '48px'}}>
+          <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.one)}>
+                <Image />
               </div>
-              <div className={styles.partnerContainer}>
-                <div className={cx(styles.partner, styles.two)}></div>
+            </div>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.two)}>
+                <Image />
               </div>
-              <div className={styles.partnerContainer}>
-                <div className={cx(styles.partner, styles.three)}></div>
+            </div>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.three)}>
+                <Image />
               </div>
-              <div className={styles.partnerContainer}>
-                <div className={cx(styles.partner, styles.four)}></div>
+            </div>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.four)}>
+                <Image />
               </div>
-              <div className={styles.partnerContainer}>
-                <div className={cx(styles.partner, styles.five)}></div>
+            </div>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.five)}>
+                <Image />
               </div>
-              <div className={styles.partnerContainer}>
-                <div className={cx(styles.partner, styles.six)}></div>
+            </div>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.six)}>
+                <Image />
               </div>
-              <div className={styles.partnerContainer}>
-                <div className={cx(styles.partner, styles.seven)}></div>
+            </div>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.seven)}>
+                <Image />
               </div>
-              <div className={styles.partnerContainer}>
-                <div className={cx(styles.partner, styles.eight)}></div>
+            </div>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.eight)}>
+                <Image />
               </div>
-              <div className={styles.partnerContainer}>
-                <div className={cx(styles.partner, styles.nine)}></div>
+            </div>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.nine)}>
+                <Image />
               </div>
-            </Box>
-          </div>
+            </div>
+          </Box>
         </Box>
         <Box column>
-          <Text heading3 component="h2" className={styles.title}>
+          <Text heading3 component="h2" className={styles.subheading}>
             Collaborating Organizations
           </Text>
-          <div className={styles.partners}>
-
-          </div>
+          <Box column>
+          <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.one)}>
+                <Image />
+              </div>
+            </div>
+            <div className={styles.partnerContainer}>
+              <div className={cx(styles.partner, styles.two)}>
+                <Image />
+              </div>
+            </div>
+          </Box>
+        </Box>
         </Box>
       </Container>
     </Box>

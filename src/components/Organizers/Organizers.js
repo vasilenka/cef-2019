@@ -15,28 +15,30 @@ const Organizers = ({
   return (
     <Box className={cx(styles.root)}>
       <Container narrow className={cx(styles.container)}>
-        <Box alignCenter justifyBetween style={{ height: '100%' }}>
-          <Text heading5Alt>Co-organized by: </Text>
-          <div className={styles.logoContainer}>
-            <div className={styles.logo}>
-              <KotaKita />
+        <Box alignCenter className={styles.organizerContainer}>
+          <Text heading5Alt component="h2" className={styles.title}>Co-organized by: </Text>
+          <Box className={cx(styles.columnRow)}>
+            <div className={styles.logoContainer}>
+              <div className={styles.logo}>
+                <KotaKita />
+              </div>
             </div>
-          </div>
-          <div className={styles.logoContainer}>
-            <div className={cx(styles.logo, styles.logoUniv)}>
-              <Univ />
+            <div className={styles.logoContainer}>
+              <div className={cx(styles.logo, styles.logoUniv)}>
+                <Univ />
+              </div>
             </div>
-          </div>
-          <div className={styles.logoContainer}>
-            <div className={styles.logo}>
-              <KotaKita />
+            <div className={styles.logoContainer}>
+              <div className={styles.logo}>
+                <KotaKita />
+              </div>
             </div>
-          </div>
-          <div className={styles.logoContainer}>
-            <div className={cx(styles.logo, styles.logoUniv)}>
-              <Univ />
+            <div className={styles.logoContainer}>
+              <div className={cx(styles.logo, styles.logoUniv)}>
+                <Univ />
+              </div>
             </div>
-          </div>
+          </Box>
         </Box>
       </Container>
     </Box>
