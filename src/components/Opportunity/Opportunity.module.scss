@@ -1,0 +1,13 @@
+@import 'src/tokens';
+
+.root {
+
+}
+
+.opportunities {
+  composes: row from global;
+}
+
+.opportunity {
+  composes: col-sm-2 from global;
+}

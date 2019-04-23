@@ -1,0 +1,28 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+  border-bottom: 1px solid $dark-alpha-10;
+}
+
+.container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.logoContainer {
+  width: 20%;
+  max-height: 92px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  width: 184px;
+}
+
+.logoUniv {
+  margin-top: -18px;
+}

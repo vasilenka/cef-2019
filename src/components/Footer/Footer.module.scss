@@ -1,0 +1,10 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $dark-hex-80;
+}
+
+.container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}

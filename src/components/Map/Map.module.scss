@@ -1,0 +1,46 @@
+@import 'src/tokens';
+
+.containerElement {
+  composes: container from global;
+  @include screen(phone) {
+    height: 50vh;
+  }
+  @include screen(tabPortrait) {
+    height: 50vh;
+  }
+  @include screen(tabLandscape) {
+    height: 80vh;
+  }
+  @include screen(desktop) {
+    height: 80vh;
+  }
+  @include screen(desktopWide) {
+    height: 80vh;
+  }
+}
+
+.mapElement {
+  box-shadow: 0px 20px 20px -24px rgba(0,0,0,.33);
+  transition: all .28s;
+
+  @include screen(phone) {
+    border-radius: 12px;
+  }
+  @include screen(tabPortrait) {
+    border-radius: 12px;
+  }
+  @include screen(tabLandscape) {
+    border-radius: 24px;
+  }
+  @include screen(desktop) {
+    border-radius: 24px;
+  }
+  @include screen(desktopWide) {
+    border-radius: 24px;
+  }
+
+  &:hover {
+    box-shadow: 0px 32px 40px -32px rgba(0,0,0,.33);
+    transition: all .28s;
+  }
+}

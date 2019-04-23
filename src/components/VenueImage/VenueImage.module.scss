@@ -1,0 +1,9 @@
+@import 'src/tokens';
+
+.root {
+  background-image: url('./../../images/venue.jpg');
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}

@@ -8,6 +8,7 @@ import NavbarPrimary from '../NavbarPrimary/NavbarPrimary';
 import NavbarMenu from '../NavbarMenu/NavbarMenu';
 import Button from '../../primitives/Button/Button';
 import Container from '../../layouts/Container/Container';
+import Text from '../../primitives/Text/Text';
 
 const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
   return (
@@ -25,10 +26,15 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
         })}
         >
         <NavbarPrimary>
-          <NavbarBrand />
+          <NavbarBrand>
+            <Text heading3>CEF 4.0</Text>
+          </NavbarBrand>
+          <NavbarMenu containerClassName={styles.primaryMenu} to="/">Home</NavbarMenu>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/about">About</NavbarMenu>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/schedule">Schedule</NavbarMenu>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/speakers">Speakers</NavbarMenu>
+          <NavbarMenu containerClassName={styles.primaryMenu} to="/organizers">Organizers</NavbarMenu>
+          <NavbarMenu containerClassName={styles.primaryMenu} to="/venue">Venue & F.A.Q.</NavbarMenu>
         </NavbarPrimary>
         <NavbarSecondary
           className={cx({
@@ -36,10 +42,10 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
           })}
           style={{paddingRight: '24px'}}>
           <Button secondaryAlt style={{ marginRight: '12px' }}>
-            Join as volunteer
+            Join as Volunteer
           </Button>
-          <Button primary>
-            Join as participant
+          <Button primary onClick={() => console.log('clicked')}>
+            Join as Participant
           </Button>
         </NavbarSecondary>
       </Container>

@@ -3,8 +3,9 @@
   "private": true,
   "description": "Official website for Civic Engagement Forum 4.0 event",
   "version": "0.1.0",
-  "author": "Ongki 'vasilenka' Herlambang <meepomodeon@gmail.com>",
+  "author": "Ongki 'vasilenka' Herlambang <ongki@herlambang.id>",
   "dependencies": {
+    "add": "^2.0.6",
     "classnames": "^2.2.6",
     "gatsby": "^2.3.16",
     "gatsby-image": "^2.0.37",
@@ -23,7 +24,10 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
+    "react-google-maps": "^9.4.5",
+    "react-helmet": "^5.2.0",
+    "recompose": "^0.30.0",
+    "yarn": "^1.15.2"
   },
   "devDependencies": {
     "prettier": "^1.16.4"

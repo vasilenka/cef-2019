@@ -2,7 +2,7 @@
 
 .root {
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 0px;
   outline: none;
   border-style: solid;
   letter-spacing: normal;
@@ -79,15 +79,17 @@
 
 .primary {
   composes: root;
-  border-color: $brand-primary-200;
+  font-weight: $bold;
+  border-color: $dark-hex-80;
   color: $light-alpha-100;
-  background-color: $brand-primary-200;
+  background-color: $dark-hex-80;
   transition: all 0.4s ease;
+  position: relative;
 
   &:hover {
-    border-color: $brand-primary-300;
+    border-color: $dark-hex-90;
     transition: all 0.24s ease;
-    background-color: $brand-primary-300;
+    background-color: $dark-hex-90;
   }
 
   &.disabled {
@@ -214,8 +216,9 @@
   border-width: 2px;
   border-color: $dark-alpha-60;
   background: transparent;
-  color: $dark-alpha-70;
+  color: $dark-alpha-80;
   transition: all 0.4s ease;
+  position: relative;
 
   &:hover {
     background: $dark-alpha-10;

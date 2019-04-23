@@ -93,41 +93,101 @@ $brand-sky-70            : rgba(38, 122, 188, .7);
 $brand-sky-80            : rgba(38, 122, 188, .8);
 $brand-sky-90            : rgba(38, 122, 188, .9);
 
+// Brand--banana Colors
+$brand-banana-100            : rgba(232,194,61, 1);
+$brand-banana-200            : #E8C23D;
+$brand-banana-300            : #184C75;
+// Lighter colors -- these colors have bad a11y, use only for background-colors.
+$brand-banana-10            : rgba(232,194,61, .1);
+$brand-banana-20            : rgba(232,194,61, .2);
+$brand-banana-30            : rgba(232,194,61, .3);
+$brand-banana-40            : rgba(232,194,61, .4);
+$brand-banana-50            : rgba(232,194,61, .5);
+$brand-banana-60            : rgba(232,194,61, .6);
+$brand-banana-70            : rgba(232,194,61, .7);
+$brand-banana-80            : rgba(232,194,61, .8);
+$brand-banana-90            : rgba(232,194,61, .9);
+
+// Brand--papaya Colors
+$brand-papaya-100            : rgba(212, 76, 107, 1);
+$brand-papaya-200            : #D44C6B;
+$brand-papaya-300            : #D44C6B;
+// Lighter colors -- these colors have bad a11y, use only for background-colors.
+$brand-papaya-10            : rgba(212, 76, 107, .1);
+$brand-papaya-20            : rgba(212, 76, 107, .2);
+$brand-papaya-30            : rgba(212, 76, 107, .3);
+$brand-papaya-40            : rgba(212, 76, 107, .4);
+$brand-papaya-50            : rgba(212, 76, 107, .5);
+$brand-papaya-60            : rgba(212, 76, 107, .6);
+$brand-papaya-70            : rgba(212, 76, 107, .7);
+$brand-papaya-80            : rgba(212, 76, 107, .8);
+$brand-papaya-90            : rgba(212, 76, 107, .9);
+
+// Brand--Guava Colors
+$brand-guava-100            : rgba(135, 159,85, 1);
+$brand-guava-200            : #879F55;
+$brand-guava-300            : #D44C6B;
+// Lighter colors -- these colors have bad a11y, use only for background-colors.
+$brand-guava-10            : rgba(135, 159,85, .1);
+$brand-guava-20            : rgba(135, 159,85, .2);
+$brand-guava-30            : rgba(135, 159,85, .3);
+$brand-guava-40            : rgba(135, 159,85, .4);
+$brand-guava-50            : rgba(135, 159,85, .5);
+$brand-guava-60            : rgba(135, 159,85, .6);
+$brand-guava-70            : rgba(135, 159,85, .7);
+$brand-guava-80            : rgba(135, 159,85, .8);
+$brand-guava-90            : rgba(135, 159,85, .9);
+
 
 // Brand--Primary Colors
-$brand-primary-100          : #D44C6B;
-$brand-primary-200          : #D44C6B;
-$brand-primary-300          : #D44C6B;
+$brand-primary-100          : $brand-papaya-100;
+$brand-primary-200          : $brand-papaya-200;
+$brand-primary-300          : $brand-papaya-300;
 
-$brand-primary-10           : $brand-sea-10;
-$brand-primary-20           : $brand-sea-20;
-$brand-primary-30           : $brand-sea-30;
-$brand-primary-40           : $brand-sea-40;
-$brand-primary-50           : $brand-sea-50;
-$brand-primary-60           : $brand-sea-60;
-$brand-primary-70           : $brand-sea-70;
-$brand-primary-80           : $brand-sea-80;
-$brand-primary-90           : $brand-sea-90;
+$brand-primary-10           : $brand-papaya-10;
+$brand-primary-20           : $brand-papaya-20;
+$brand-primary-30           : $brand-papaya-30;
+$brand-primary-40           : $brand-papaya-40;
+$brand-primary-50           : $brand-papaya-50;
+$brand-primary-60           : $brand-papaya-60;
+$brand-primary-70           : $brand-papaya-70;
+$brand-primary-80           : $brand-papaya-80;
+$brand-primary-90           : $brand-papaya-90;
 
 // Brand--Secondary colors
-$brand-secondary-100         : $brand-scarlet-100;
-$brand-secondary-200         : $brand-scarlet-200;
-$brand-secondary-300         : $brand-scarlet-300;
+$brand-secondary-100         : $brand-banana-100;
+$brand-secondary-200         : $brand-banana-200;
+$brand-secondary-300         : $brand-banana-300;
 
-$brand-secondary-10          : $brand-scarlet-10;
-$brand-secondary-20          : $brand-scarlet-20;
-$brand-secondary-30          : $brand-scarlet-30;
-$brand-secondary-40          : $brand-scarlet-40;
-$brand-secondary-50          : $brand-scarlet-50;
-$brand-secondary-60          : $brand-scarlet-60;
-$brand-secondary-70          : $brand-scarlet-70;
-$brand-secondary-80          : $brand-scarlet-80;
-$brand-secondary-90          : $brand-scarlet-90;
+$brand-secondary-10          : $brand-banana-10;
+$brand-secondary-20          : $brand-banana-20;
+$brand-secondary-30          : $brand-banana-30;
+$brand-secondary-40          : $brand-banana-40;
+$brand-secondary-50          : $brand-banana-50;
+$brand-secondary-60          : $brand-banana-60;
+$brand-secondary-70          : $brand-banana-70;
+$brand-secondary-80          : $brand-banana-80;
+$brand-secondary-90          : $brand-banana-90;
+
+// Brand--Tertiary colors
+$brand-tertiary-100         : $brand-guava-100;
+$brand-tertiary-200         : $brand-guava-200;
+$brand-tertiary-300         : $brand-guava-300;
+
+$brand-tertiary-10          : $brand-guava-10;
+$brand-tertiary-20          : $brand-guava-20;
+$brand-tertiary-30          : $brand-guava-30;
+$brand-tertiary-40          : $brand-guava-40;
+$brand-tertiary-50          : $brand-guava-50;
+$brand-tertiary-60          : $brand-guava-60;
+$brand-tertiary-70          : $brand-guava-70;
+$brand-tertiary-80          : $brand-guava-80;
+$brand-tertiary-90          : $brand-guava-90;
 
 // Dark
 // HEX
 $dark-hex-90                : #0F0F0F; // Heading
-$dark-hex-80                : #292929; // Heading and Body text in text-heavy page such as blog post
+$dark-hex-80                : #333333; // Heading and Body text in text-heavy page such as blog post
 $dark-hex-70                : #484848; // Body text
 $dark-hex-60                : #767676; // Caption and subtitle
 $dark-hex-50                : #8F8F8F;
@@ -219,7 +279,11 @@ $bg-dust-300                : #B7B7AD;
 $bg-verdant-100             : #E4FDEB;
 $bg-verdant-200             : #D9FCE3;
 $bg-verdant-300             : #A9EEBC;
+
 // BANANA
 $bg-banana-100              : #FFFDDD;
-$bg-banana-200              : #FFFBBB;
+$bg-banana-200              : #fff2c6;
 $bg-banana-300              : #FFFE95;
+// $bg-banana-100              : #FFFDDD;
+// $bg-banana-200              : #FFFBBB;
+// $bg-banana-300              : #FFFE95;

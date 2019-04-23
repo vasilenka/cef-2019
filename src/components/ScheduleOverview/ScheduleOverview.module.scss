@@ -1,0 +1,49 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+  background-image: url('./../../images/patterns/dots.png');
+  background-position: center -96px;
+  background-repeat: no-repeat;
+  background-size: 318px 136px;
+}
+
+.container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.schedules {
+  width: 720px;
+  margin: $space-stack-ll;
+}
+
+.schedule {
+  &:not(:last-child) {
+    margin: $space-stack-m;
+  }
+}
+
+.overview {
+  flex: 1;
+  padding-right: 24px;
+}
+
+.details {
+  flex: 2.16;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding-bottom: $space-m;
+  border-bottom: 1px solid $dark-alpha-20;
+  &:not(:first-child) {
+    padding-top: $space-m;
+  }
+}

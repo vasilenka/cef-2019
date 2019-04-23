@@ -1,0 +1,37 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $brand-secondary-200;
+}
+
+.container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.speakerContainer {
+  composes: row from global;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-bottom: 24px;
+}
+
+.speaker {
+  composes: col-md-4 col-sm-6 from global;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 24px;
+}
+
+.speakerCard {
+  background-color: $brand-primary-200;
+  padding: $space-horizontal-ml;
+}
+
+.photo {
+  height: 196px;
+}
+
+.identity {
+  padding: $space-vertical-m;
+}

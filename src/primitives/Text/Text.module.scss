@@ -1,23 +1,30 @@
-@import 'invoker-tokens/index.scss';
+@import 'src/tokens';
 
 .root {
   font-family: $font-primary;
 }
 
+.alt {
+  font-family: $font-secondary;
+}
+
 // Display Text
 .display1 {
+  composes: alt;
   font-size: $display-1;
   line-height: $line-reset;
   letter-spacing: -1.44px;
   font-weight: 800;
 }
 .display2 {
+  composes: alt;
   font-size: $display-2;
   line-height: $line-reset;
   letter-spacing: -1.628px;
   font-weight: 800;
 }
 .display3 {
+  composes: alt;
   font-size: $display-3;
   line-height: $line-reset;
   font-weight: $bold;
@@ -27,39 +34,39 @@
 
 // Heading Text
 .heading1 {
-  composes: root;
+  composes: alt;
   font-size: $heading-1;
   line-height: 52px;
-  letter-spacing: -1.44px;
+  letter-spacing: -0.96px;
   font-weight: $bold;
 }
 .heading2 {
-  composes: root;
+  composes: alt;
   font-size: $heading-2;
   line-height: 36px;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.24px;
   font-weight: $bold;
 }
 .heading3 {
-  composes: root;
+  composes: alt;
   font-size: $heading-3;
   line-height: 30px;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.12px;
   font-weight: $bold;
 }
 .heading4 {
   composes: root;
   font-size: $heading-4;
   line-height: 26px;
-  letter-spacing: -0.8px;
-  font-weight: $bold;
+  letter-spacing: -0.12px;
+  font-weight: $semibold;
 }
 .heading4Alt {
-  composes: root;
+  composes: alt;
   font-size: $heading-4;
   line-height: 26px;
-  letter-spacing: -0.8px;
-  font-weight: $medium;
+  letter-spacing: -0.12px;
+  font-weight: $bold;
 }
 .heading5 {
   composes: root;

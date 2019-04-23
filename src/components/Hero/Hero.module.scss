@@ -1,0 +1,29 @@
+@import 'src/tokens';
+
+.root {
+  height: 64vh;
+  min-height: 600px;
+  background-color: $brand-secondary-200;
+}
+
+.container {
+  height: 100%;
+}
+
+.title {
+  margin: $space-stack-m;
+}
+
+.tagline {
+  display: block;
+  margin: $space-stack-l;
+}
+
+.overview {
+  max-width: 480px;
+  margin: $space-stack-ll;
+}
+
+.overline {
+  margin: $space-stack-s;
+}

@@ -1,0 +1,11 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $brand-secondary-200;
+}
+
+.container {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  display: inline-flex;
+}

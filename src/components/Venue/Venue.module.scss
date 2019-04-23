@@ -1,0 +1,23 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+}
+
+.container {
+  padding-top: 96px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.overview {
+  text-align: center;
+  margin: $space-stack-l;
+}

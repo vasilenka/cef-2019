@@ -1,0 +1,32 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+}
+
+.container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.opportunities {
+  composes: row from global;
+  padding-top: 64px;
+}
+
+.opportunity {
+  composes: col-sm-6 from global;
+  padding-right: 48px;
+  margin: $space-stack-ml;
+}
+
+.icon {
+  width: 48px;
+}
+
+.iconContainer {
+  margin: $space-stack-sm;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}

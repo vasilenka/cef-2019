@@ -9,15 +9,19 @@
   display: block;
   line-height: 16px;
   transition: all 0.36s cubic-bezier(0.8, 0, 0.2, 1);
+  color: unset;
 
   &:hover {
-    box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
+    color: $brand-primary-200;
+    // box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
     transition: all 0.28s cubic-bezier(0.8, 0, 0.2, 1);
   }
 }
 
 .active {
-  box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
+  // color: $brand-primary-200;
+  color: #ca274c;
+  // box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
 }
 
 .item {

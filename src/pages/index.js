@@ -1,20 +1,33 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Default from "./../layouts/Default/Default"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Hero from "../components/Hero/Hero"
+import Organizers from "../components/Organizers/Organizers"
+import Opportunities from "../components/Opportunities/Opportunities"
+import VenueImage from "../components/VenueImage/VenueImage"
+import Speakers from "../components/Speakers/Speakers"
+import ScheduleOverview from "../components/ScheduleOverview/ScheduleOverview"
+import Join from "../components/Join/Join"
+import Footer from "../components/Footer/Footer"
+import Partners from "../components/Partners/Partners"
+import Venue from "../components/Venue/Venue"
+import MapContainer from "../components/MapContainer/MapContainer"
 
 const IndexPage = () => (
   <Default>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Hero />
+    <Organizers />
+    <Opportunities/>
+    <VenueImage />
+    <Speakers />
+    <Venue />
+    <MapContainer />
+    <ScheduleOverview />
+    <Join />
+    <Partners />
+    <Footer />
   </Default>
 )
 

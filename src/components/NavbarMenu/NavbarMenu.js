@@ -32,7 +32,7 @@ const NavbarMenu = ({
         })}
         {...restProps}
       >
-        <Text heading6 className={styles.item}>
+        <Text heading5Alt className={styles.item} style={{fontWeight: '700'}}>
           {children}
         </Text>
       </Link>

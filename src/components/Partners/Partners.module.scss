@@ -1,0 +1,33 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $light-alpha-100;
+}
+
+.container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.partnerContainer {
+
+}
+
+.partnerRow {
+  composes: row from global;
+}
+
+.partnerContainer {
+  composes: col-sm-2 from global;
+}
+
+.partner {
+  height: 96px;
+  background-color: $bg-banana-200;
+}
