@@ -5,6 +5,7 @@ import Text from '../../primitives/Text/Text';
 import Container from '../../layouts/Container/Container';
 import Box from '../Box/Box';
 import {Link} from 'gatsby';
+import Speaker from '../Speaker/Speaker';
 
 const Speakers = ({
   className,
@@ -17,60 +18,12 @@ const Speakers = ({
           Speakers Highlights
         </Text>
         <div className={styles.speakerContainer}>
-          <div className={styles.speaker}>
-            <div className={styles.speakerCard}>
-              <div className={styles.photo}></div>
-              <div className={styles.identity}>
-                <Text component="h3" heading4 style={{ color: "#121212", fontWeight: 700, textTransform: 'uppercase'}}>Ongki Herlambang</Text>
-                <Text heading5 style={{color: "#121212"}}>Head of Design at Meridian.id</Text>
-              </div>
-            </div>
-          </div>
-          <div className={styles.speaker}>
-            <div className={styles.speakerCard}>
-              <div className={styles.photo}></div>
-              <div className={styles.identity}>
-                <Text component="h3" heading4 style={{ color: "#121212", fontWeight: 700, textTransform: 'uppercase'}}>Ongki Herlambang</Text>
-                <Text heading5 style={{color: "#121212"}}>Head of Design at Meridian.id</Text>
-              </div>
-            </div>
-          </div>
-          <div className={styles.speaker}>
-            <div className={styles.speakerCard}>
-              <div className={styles.photo}></div>
-              <div className={styles.identity}>
-                <Text component="h3" heading4 style={{ color: "#121212", fontWeight: 700, textTransform: 'uppercase'}}>Ongki Herlambang</Text>
-                <Text heading5 style={{color: "#121212"}}>Head of Design at Meridian.id</Text>
-              </div>
-            </div>
-          </div>
-          <div className={styles.speaker}>
-            <div className={styles.speakerCard}>
-              <div className={styles.photo}></div>
-              <div className={styles.identity}>
-                <Text component="h3" heading4 style={{ color: "#121212", fontWeight: 700, textTransform: 'uppercase'}}>Ongki Herlambang</Text>
-                <Text heading5 style={{color: "#121212"}}>Head of Design at Meridian.id</Text>
-              </div>
-            </div>
-          </div>
-          <div className={styles.speaker}>
-            <div className={styles.speakerCard}>
-              <div className={styles.photo}></div>
-              <div className={styles.identity}>
-                <Text component="h3" heading4 style={{ color: "#121212", fontWeight: 700, textTransform: 'uppercase'}}>Ongki Herlambang</Text>
-                <Text heading5 style={{color: "#121212"}}>Head of Design at Meridian.id</Text>
-              </div>
-            </div>
-          </div>
-          <div className={styles.speaker}>
-            <div className={styles.speakerCard}>
-              <div className={styles.photo}></div>
-              <div className={styles.identity}>
-                <Text component="h3" heading4 style={{ color: "#121212", fontWeight: 700, textTransform: 'uppercase'}}>Ongki Herlambang</Text>
-                <Text heading5 style={{color: "#121212"}}>Head of Design at Meridian.id</Text>
-              </div>
-            </div>
-          </div>
+          <Speaker name="Ongki Herlambang" job="Head of Design Meridian.id" />
+          <Speaker name="M. Sena Luphdika" job="CEO Meridian.id" />
+          <Speaker name="Kurniawan Adhi Ramdhani" job="CCO Meridian.id" />
+          <Speaker name="Khairani Ummah" job="COO Meridian.id" />
+          <Speaker name="Nurul Reza Muhsinin" job="CTO Meridian.id" />
+          <Speaker name="Renita Dewi" job="Head of Ops Meridian.id" />
         </div>
         <div style={{width: '100%', textAlign: 'center'}}>
           <Link

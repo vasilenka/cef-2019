@@ -2,6 +2,9 @@ import React from "react"
 
 import Default from "./../layouts/Default/Default"
 import SEO from "../components/seo"
+import Container from "../layouts/Container/Container";
+import Text from "../primitives/Text/Text";
+import Footer from "../components/Footer/Footer";
 
 const NotFoundPage = () => (
   <Default>

@@ -5,18 +5,21 @@ import { Link } from 'gatsby'
 
 import Text from '../../primitives/Text/Text'
 
-const ActionMenu = ({ icon, to, children, className, active, ...restProps }) => {
+const ActionMenu = ({ icon, to, children, className, activeClassName, ...restProps }) => {
   return (
     <Link
       to={to}
       className={cx({
         [styles.root]: true,
-        [styles.active]: active,
         [className]: className
+      })}
+      activeClassName={cx({
+        [styles.active]: true,
+        [activeClassName]: activeClassName
       })}
       {...restProps}>
       {icon && <div style={{ marginBottom: '4px' }}>{icon}</div>}
-      {children && <Text small>{children}</Text>}
+      {children && <Text heading6 className={styles.menu}>{children}</Text>}
     </Link>
   )
 }

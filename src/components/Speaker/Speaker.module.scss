@@ -1,0 +1,69 @@
+@import 'src/tokens';
+
+.root {
+  composes: col-sm-4 col-6 from global;
+  @include screen(phone) {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 24px;
+  }
+  @include screen(tabPortrait) {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 32px;
+  }
+  @include screen(tabLandscape) {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 32px;
+  }
+  @include screen(desktop) {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 32px;
+  }
+  @include screen(desktopWide) {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+.photo {
+  background-color: $brand-primary-200;
+  @include screen(phone) {
+    height: 96px;
+    min-height: 96px;
+  }
+  @include screen(tabPortrait) {
+    height: 96px;
+    min-height: 96px;
+  }
+  @include screen(tabLandscape) {
+    height: 216px;
+    min-height: 216px;
+  }
+  @include screen(desktop) {
+    height: 216px;
+    min-height: 216px;
+  }
+  @include screen(desktopWide) {
+    height: 216px;
+    min-height: 216px;
+  }
+}
+
+.identity {
+  background-color: $brand-primary-200;
+  padding: $space-inset-m;
+}
+
+.name {
+  color: $dark-hex-90;
+  font-weight: 700;
+  text-transform: 'uppercase';
+}
+
+.title {
+  color: $dark-hex-90;
+}

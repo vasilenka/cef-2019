@@ -11,21 +11,27 @@
 
 .speakerContainer {
   composes: row from global;
-  margin-left: -24px;
-  margin-right: -24px;
   margin-bottom: 24px;
-}
-
-.speaker {
-  composes: col-sm-4 col-6 from global;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-bottom: 24px;
-}
-
-.speakerCard {
-  background-color: $brand-primary-200;
-  padding: $space-horizontal-ml;
+  @include screen(phone) {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  @include screen(tabPortrait) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include screen(tabLandscape) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include screen(desktop) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include screen(desktopWide) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
 }
 
 .photo {

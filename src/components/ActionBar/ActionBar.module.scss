@@ -1,33 +1,37 @@
-@import '~invoker-tokens/index.scss';
+@import 'src/tokens';
 
 .root {
-  transform: translateY(0%);
+  position: fixed;
+  will-change: transform;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 9999;
   width: 100%;
-  will-change: transform;
-  background: $light-alpha-100;
+  background: $dark-hex-80;
   border-top: 1px solid $dark-alpha-10;
   box-shadow: 0px -1px 2px $dark-alpha-10;
-  position: fixed;
   transition: all 0.36s;
 
   @include screen(phone) {
     display: block;
+    transform: translateY(0);
   }
   @include screen(tabPortrait) {
     display: block;
+    transform: translateY(0);
   }
   @include screen(tabLandscape) {
     display: block;
+    transform: translateY(0);
   }
   @include screen(desktop) {
     display: none;
+    transform: translateY(0);
   }
   @include screen(desktopWide) {
     display: none;
+    transform: translateY(0);
   }
 }
 
@@ -45,7 +49,21 @@
 .horizontal {
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  @include screen(phone) {
+    justify-content: space-between;
+  }
+  @include screen(tabPortrait) {
+    justify-content: space-around;
+  }
+  @include screen(tabLandscape) {
+    justify-content: space-around;
+  }
+  @include screen(desktop) {
+    justify-content: space-around;
+  }
+  @include screen(desktopWide) {
+    justify-content: space-around;
+  }
 }
 
 .vertical {

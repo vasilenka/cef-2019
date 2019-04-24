@@ -58,9 +58,27 @@
 
 .large {
   border-width: 1px;
-  padding: 11px 23px;
-  font-size: $heading-5;
   line-height: 24px;
+  @include screen(phone) {
+    padding: 2px 6px;
+    font-size: $heading-6;
+  }
+  @include screen(tabPortrait) {
+    padding: 11px 23px;
+    font-size: $heading-5;
+  }
+  @include screen(tabLandscape) {
+    padding: 11px 23px;
+    font-size: $heading-5;
+  }
+  @include screen(desktop) {
+    padding: 11px 23px;
+    font-size: $heading-5;
+  }
+  @include screen(desktopWide) {
+    padding: 11px 23px;
+    font-size: $heading-5;
+  }
 }
 
 .smallAlt {
@@ -81,7 +99,7 @@
   composes: root;
   font-weight: $bold;
   border-color: $dark-hex-80;
-  color: $light-alpha-100;
+  color: $bg-banana-200;
   background-color: $dark-hex-80;
   transition: all 0.4s ease;
   position: relative;

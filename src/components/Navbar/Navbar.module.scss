@@ -9,11 +9,33 @@
 }
 
 .container {
-  padding-top: $space-m;
-  padding-bottom: $space-m;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  @include screen(phone) {
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @include screen(tabPortrait) {
+    justify-content: space-between;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
+  }
+  @include screen(tabLandscape) {
+    justify-content: space-between;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
+  }
+  @include screen(desktop) {
+    justify-content: space-between;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
+  }
+  @include screen(desktopWide) {
+    justify-content: space-between;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
+  }
 }
 
 .primaryMenu,

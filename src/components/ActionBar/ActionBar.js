@@ -1,48 +1,35 @@
-import styles from './ActionBar.module.scss';
-import React from 'react';
-import cx from 'classnames';
+import styles from './ActionBar.module.scss'
+import React from 'react'
+import cx from 'classnames'
 
 const ActionBar = ({ children, vertical, className, ...restProps }) => {
-  let lastScrollTop = 0;
-  let [scrolling, setScrolling] = React.useState(false);
+  let lastScrollTop = 0
+  let [scrolling, setScrolling] = React.useState(false)
 
   const scrollingThePage = () => {
-    var st = window.pageYOffset || document.documentElement.scrollTop;
-    if (st > lastScrollTop) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
+    if(typeof window !== 'undefined') {
+    var st = window.pageYOffset || document.documentElement.scrollTop
+      if (st > lastScrollTop) {
+        setScrolling(true)
+      } else {
+        setScrolling(false)
+      }
+      lastScrollTop = st <= 0 ? 0 : st
     }
-    lastScrollTop = st <= 0 ? 0 : st;
-  };
-
-  // const handlingTap = () => {
-  //   if (!scrolling) {
-  //     setScrolling(true);
-  //   }
-  // };
+  }
 
   React.useEffect(() => {
     if(typeof window !== 'undefined') {
-      window.addEventListener('scroll', scrollingThePage, false);
+      window.addEventListener('scroll', scrollingThePage, false)
     }
+    // document.body.addEventListener('scroll', scrollingThePage, false)
     return () => {
       if(typeof window !== 'undefined') {
-        window.removeEventListener('scroll', scrollingThePage, false);
+        window.removeEventListener('scroll', scrollingThePage, false)
       }
-    };
-  }, []);
-
-  // React.useEffect(() => {
-  //   if(typeof window !== 'undefined') {
-  //     window.addEventListener('click', handlingTap, false);
-  //   }
-  //   return () => {
-  //     if(typeof window !== 'undefined') {
-  //       window.removeEventListener('click', handlingTap, false);
-  //     }
-  //   };
-  // }, []);
+      // document.body.removeEventListener('scroll', scrollingThePage, false)
+    }
+  }, [])
 
   return (
     <div
@@ -63,7 +50,7 @@ const ActionBar = ({ children, vertical, className, ...restProps }) => {
         {children}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ActionBar;
+export default ActionBar

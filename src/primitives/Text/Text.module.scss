@@ -25,11 +25,25 @@
 }
 .display3 {
   composes: alt;
-  font-size: $display-3;
   line-height: $line-reset;
   font-weight: $bold;
   letter-spacing: -1.44px;
   font-weight: 800;
+  @include screen(phone) {
+    font-size: $heading-1;
+  }
+  @include screen(tabPortrait) {
+    font-size: $display-3;
+  }
+  @include screen(tabLandscape) {
+    font-size: $display-3;
+  }
+  @include screen(desktop) {
+    font-size: $display-3;
+  }
+  @include screen(desktopWide) {
+    font-size: $display-3;
+  }
 }
 
 // Heading Text
@@ -49,17 +63,53 @@
 }
 .heading3 {
   composes: alt;
-  font-size: $heading-3;
-  line-height: 30px;
   letter-spacing: -0.12px;
   font-weight: $bold;
+  @include screen(phone) {
+    font-size: $heading-4;
+    line-height: 1;
+  }
+  @include screen(tabPortrait) {
+    font-size: $heading-3;
+    line-height: 30px;
+  }
+  @include screen(tabLandscape) {
+    font-size: $heading-3;
+    line-height: 30px;
+  }
+  @include screen(desktop) {
+    font-size: $heading-3;
+    line-height: 30px;
+  }
+  @include screen(desktopWide) {
+    font-size: $heading-3;
+    line-height: 30px;
+  }
 }
 .heading4 {
   composes: root;
-  font-size: $heading-4;
-  line-height: 26px;
   letter-spacing: -0.12px;
   font-weight: $semibold;
+  @include screen(phone) {
+    font-size: $heading-6;
+    line-height: 24px;
+  }
+  @include screen(tabPortrait) {
+    font-size: $heading-5;
+    line-height: 24px;
+  }
+  @include screen(tabLandscape) {
+    font-size: $heading-4;
+    line-height: 26px;
+  }
+  @include screen(desktop) {
+    font-size: $heading-4;
+    line-height: 26px;
+  }
+  @include screen(desktopWide) {
+    font-size: $heading-4;
+    line-height: 26px;
+  }
 }
 .heading4Alt {
   composes: alt;

@@ -9,7 +9,6 @@ import "./../../assets/fonts/fonts"
 
 import Navbar from "./../../components/Navbar/Navbar"
 import ActionBar from "../../components/ActionBar/ActionBar";
-import NavbarMenu from "../../components/NavbarMenu/NavbarMenu";
 import ActionMenu from '../../components/ActionMenu/ActionMenu';
 
 const Layout = ({ children }) => (
@@ -29,11 +28,10 @@ const Layout = ({ children }) => (
         {children}
         <ActionBar>
           <ActionMenu to='/'>Home</ActionMenu>
-          <ActionMenu to='/about/'>About</ActionMenu>
-          <ActionMenu to='/venue/'>Schedules</ActionMenu>
-          {/* <ActionMenu to='/organizers/'>Organizers</ActionMenu> */}
-          <ActionMenu to='/speakers/'>Speakers</ActionMenu>
-          <ActionMenu to='/venue/'>Venue</ActionMenu>
+          <ActionMenu to='/about'>About</ActionMenu>
+          <ActionMenu to='/schedule'>Schedule</ActionMenu>
+          <ActionMenu to='/speakers'>Speakers</ActionMenu>
+          <ActionMenu to='/venue'>Venue</ActionMenu>
         </ActionBar>
       </>
     )}

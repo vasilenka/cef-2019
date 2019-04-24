@@ -1,9 +1,9 @@
-@import '~invoker-tokens/index.scss';
+@import 'src/tokens';
 
 .root {
   cursor: pointer;
   filter: saturate(0);
-  color: $brand-primary-200;
+  color: $bg-banana-200;
   min-width: 48px;
   min-height: 48px;
   display: inline-flex;
@@ -11,15 +11,24 @@
   align-items: center;
   transition: all 0.36s;
   text-decoration: none;
+  opacity: .70;
+  transition: all .36s;
 
   &:hover,
   &:active,
   &:focus {
+    opacity: 1;
     filter: saturate(1);
     transition: all 0.28s;
   }
 }
 
 .active {
+  opacity: 1;
   filter: saturate(1);
+  transition: all .28s;
+}
+
+.menu {
+  font-weight: 600;
 }

@@ -3,6 +3,24 @@
 .root {
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
-  justify-self: flex-start;
+  @include screen(phone) {
+    justify-content: center;
+    justify-self: center;
+  }
+  @include screen(tabPortrait) {
+    justify-content: flex-start;
+    justify-self: flex-start;
+  }
+  @include screen(tabLandscape) {
+    justify-content: flex-start;
+    justify-self: flex-start;
+  }
+  @include screen(desktop) {
+    justify-content: flex-start;
+    justify-self: flex-start;
+  }
+  @include screen(desktopWide) {
+    justify-content: flex-start;
+    justify-self: flex-start;
+  }
 }

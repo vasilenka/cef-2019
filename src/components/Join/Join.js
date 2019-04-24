@@ -22,7 +22,7 @@ const Join = ({
           </Text>
           <Button primary>Register as Participant</Button>
         </Box>
-        <Box column alignStart style={{flex: 1, paddingRight: '32px'}}>
+        <Box column alignStart style={{flex: 1, paddingRight: '0'}}>
           <Text heading2 component="h2" style={{marginBottom: '12px'}}>
             Join the Event as Volunteer
           </Text>
