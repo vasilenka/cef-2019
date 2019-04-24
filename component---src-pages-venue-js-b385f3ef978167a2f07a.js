@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{149:function(e,n,t){"use strict";t.r(n);var a=t(0),o=t.n(a),l=t(175),c=t(170),r=t(153);n.default=function(){return o.a.createElement(l.a,null,o.a.createElement(c.a,{title:"404: Not found"}),o.a.createElement(r.a,{display3:!0,component:"h1"},"Venue"),o.a.createElement(Footer,null))}}}]);
+//# sourceMappingURL=component---src-pages-venue-js-b385f3ef978167a2f07a.js.map
