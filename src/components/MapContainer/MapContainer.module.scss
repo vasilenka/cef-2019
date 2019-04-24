@@ -3,3 +3,42 @@
 .root {
   background-color: $bg-banana-200;
 }
+
+.container {
+  box-shadow: 0px 20px 20px -24px rgba(0,0,0,.33);
+  position: relative;
+  @include screen(phone) {
+    border-radius: 12px;
+  }
+  @include screen(tabPortrait) {
+    border-radius: 12px;
+  }
+  @include screen(tabLandscape) {
+    border-radius: 24px;
+  }
+  @include screen(desktop) {
+    border-radius: 24px;
+  }
+  @include screen(desktopWide) {
+    border-radius: 24px;
+  }
+}
+
+.fallbackContainer {
+  composes: container from global;
+  @include screen(phone) {
+    height: 50vh;
+  }
+  @include screen(tabPortrait) {
+    height: 50vh;
+  }
+  @include screen(tabLandscape) {
+    height: 80vh;
+  }
+  @include screen(desktop) {
+    height: 80vh;
+  }
+  @include screen(desktopWide) {
+    height: 80vh;
+  }
+}

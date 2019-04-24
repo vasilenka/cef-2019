@@ -6,7 +6,7 @@ import { compose, withProps } from "recompose"
 
 const Map = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBYlKPoFn7XLbbh_VrMZiek7QL-tYC_8wA&v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBYlKPoFn7XLbbh_VrMZiek7QL-tYC_8wA",
     loadingElement: <div className={cx(styles.loadingElement)} style={{ height: `100%` }} />,
     containerElement: <div className={cx(styles.containerElement)}/>,
     mapElement: <div className={cx(styles.mapElement)} style={{ height: `100%` }} />,
@@ -15,14 +15,13 @@ const Map = compose(
   withGoogleMap
 )(({
   className,
-  isMarkerShown,
   lat,
   lng,
   ...restProps
   }) =>
   <GoogleMap
     defaultZoom={16}
-    defaultCenter={{ lat, lng }}
+    defaultCenter={{ lat: -7.5680261, lng: 110.8172257 }}
     defaultOptions={{
       // zoomControl: boolean,
       mapTypeControl: false,
@@ -32,7 +31,7 @@ const Map = compose(
       // fullscreenControl: boolean
     }}
   >
-    {isMarkerShown && <Marker position={{ lat, lng }} />}
+    <Marker position={{ lat: -7.5680261, lng: 110.8172257 }} />
   </GoogleMap>)
 
 export default Map

@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Muller';
   src: url('Muller-Thin.otf') format('opentype');
-  font-display: auto;
+  font-display: swap;
   font-weight: 200;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Muller';
   src: url('Muller-ExtraBold.otf') format('opentype');
-  font-display: auto;
+  font-display: swap;
   font-weight: 800;
   font-style: normal;
 }

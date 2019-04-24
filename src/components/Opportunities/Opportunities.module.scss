@@ -5,8 +5,26 @@
 }
 
 .container {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  @include screen(phone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabLandscape) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
 }
 
 .opportunities {
@@ -16,8 +34,29 @@
 
 .opportunity {
   composes: col-sm-6 from global;
-  padding-right: 48px;
-  margin: $space-stack-ml;
+  padding-bottom: 0;
+  @include screen(phone) {
+    margin: $space-stack-l;
+  }
+  @include screen(tabPortrait) {
+    padding-right: $space-ll;
+    margin: $space-stack-l;
+  }
+  @include screen(tabLandscape) {
+    padding-right: $space-ll;
+    margin: $space-stack-l;
+  }
+  @include screen(desktop) {
+    padding-right: $space-ll;
+    margin: $space-stack-l;
+  }
+  @include screen(desktopWide) {
+    padding-right: $space-ll;
+    margin: $space-stack-l;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .icon {

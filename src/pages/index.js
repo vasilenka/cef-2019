@@ -7,12 +7,12 @@ import Organizers from "../components/Organizers/Organizers"
 import Opportunities from "../components/Opportunities/Opportunities"
 import VenueImage from "../components/VenueImage/VenueImage"
 import Speakers from "../components/Speakers/Speakers"
+import Venue from "../components/Venue/Venue"
+import MapContainer from "../components/MapContainer/MapContainer"
 import ScheduleOverview from "../components/ScheduleOverview/ScheduleOverview"
 import Join from "../components/Join/Join"
 import Footer from "../components/Footer/Footer"
 import Partners from "../components/Partners/Partners"
-import Venue from "../components/Venue/Venue"
-import MapContainer from "../components/MapContainer/MapContainer"
 
 const IndexPage = () => (
   <Default>

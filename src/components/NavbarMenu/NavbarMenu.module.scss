@@ -12,14 +12,13 @@
   color: unset;
 
   &:hover {
-    color: $brand-primary-200;
+    color: #ca274c;
     // box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
     transition: all 0.28s cubic-bezier(0.8, 0, 0.2, 1);
   }
 }
 
 .active {
-  // color: $brand-primary-200;
   color: #ca274c;
   // box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
 }

@@ -6,31 +6,45 @@
 
 .container {
   @include screen(phone) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
   }
   @include screen(tabPortrait) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
   }
   @include screen(tabLandscape) {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
   }
   @include screen(desktop) {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
   }
   @include screen(desktopWide) {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
   }
 }
 
 .title {
   composes: col-sm-12 col-md-2 from global;
   padding-bottom: 0;
-  margin-bottom: 32px;
+  @include screen(phone) {
+    margin-bottom: 32px;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: 32px;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: 0;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+  }
 }
 
 .organizerContainer {
@@ -62,6 +76,22 @@
   composes: col-6 col-sm-6 col-md-3 from global;
   padding-left: 12px;
   padding-right: 12px;
+  padding-bottom: 0;
+  @include screen(phone) {
+    margin-bottom: 24px;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: 24px;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: 0;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+  }
 }
 
 .logo {

@@ -23,20 +23,24 @@ const ActionBar = ({ children, vertical, className, ...restProps }) => {
   // };
 
   React.useEffect(() => {
-    window && window.addEventListener('scroll', scrollingThePage, false);
-    document.body.addEventListener('touchmove', scrollingThePage, false);
+    if(typeof window !== 'undefined') {
+      window.addEventListener('scroll', scrollingThePage, false);
+    }
     return () => {
-      window && window.removeEventListener('scroll', scrollingThePage, false);
-      document.body.remove('touchmove', scrollingThePage, false);
+      if(typeof window !== 'undefined') {
+        window.removeEventListener('scroll', scrollingThePage, false);
+      }
     };
   }, []);
 
   // React.useEffect(() => {
-  //   window && window.addEventListener('click', handlingTap, false);
-  //   document.body.addEventListener('click', handlingTap, false);
+  //   if(typeof window !== 'undefined') {
+  //     window.addEventListener('click', handlingTap, false);
+  //   }
   //   return () => {
-  //     window.removeEventListener('click', handlingTap, false);
-  //     document.body.removeEventListener('click', handlingTap, false);
+  //     if(typeof window !== 'undefined') {
+  //       window.removeEventListener('click', handlingTap, false);
+  //     }
   //   };
   // }, []);
 

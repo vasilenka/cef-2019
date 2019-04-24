@@ -10,6 +10,7 @@ const NotFoundPage = () => (
     <Text display3 component="h1">
       Venue
     </Text>
+    <Footer />
   </Default>
 )
 

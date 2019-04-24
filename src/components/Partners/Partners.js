@@ -17,7 +17,7 @@ const Partners = ({
         <Text heading1 component="h2" className={styles.title}>
           Partners
         </Text>
-        <Box column style={{marginBottom: '48px'}}>
+        <Box column className={styles.mainPartner}>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
             <div className={styles.partnerContainer}>
               <div className={cx(styles.partner, styles.one)}>
@@ -72,12 +72,12 @@ const Partners = ({
           </Text>
           <Box column>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <div className={styles.partnerContainer}>
+            <div className={styles.collaboratingPartnerContainer}>
               <div className={cx(styles.partner, styles.one)}>
                 <Image />
               </div>
             </div>
-            <div className={styles.partnerContainer}>
+            <div className={styles.collaboratingPartnerContainer}>
               <div className={cx(styles.partner, styles.two)}>
                 <Image />
               </div>

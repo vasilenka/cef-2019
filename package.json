@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Ongki 'vasilenka' Herlambang <ongki@herlambang.id>",
   "dependencies": {
+    "@loadable/component": "^5.9.0",
     "add": "^2.0.6",
     "classnames": "^2.2.6",
     "gatsby": "^2.3.16",
@@ -14,9 +15,10 @@
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-react-svg": "^2.1.1",
     "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-source-filesystem": "^2.0.29",
-    "gatsby-transformer-sharp": "^2.1.17",
+    "gatsby-transformer-sharp": "^2.1.18",
+    "intersection-observer": "^0.5.1",
     "invoker-base": "^1.0.6",
     "invoker-layout": "^1.0.1",
     "invoker-tokens": "^1.0.13",
@@ -26,10 +28,14 @@
     "react-dom": "^16.8.6",
     "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.0",
+    "react-intersection-observer": "^8.22.6",
+    "react-progressive-loader": "^0.3.1",
     "recompose": "^0.30.0",
     "yarn": "^1.15.2"
   },
   "devDependencies": {
+    "gatsby-plugin-remove-trailing-slashes": "^2.0.11",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.16.4"
   },
   "keywords": [
@@ -39,9 +45,11 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev": "gatsby develop --host 0.0.0.0",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {

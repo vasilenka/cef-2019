@@ -1,0 +1,20 @@
+@import 'src/tokens';
+
+.primaryMenu,
+.secondaryMenu {
+  @include screen(phone) {
+    // display: none;
+  }
+  @include screen(tabPortrait) {
+    // display: none;
+  }
+  @include screen(tabLandscape) {
+    display: initial;
+  }
+  @include screen(desktop) {
+    display: initial;
+  }
+  @include screen(desktopWide) {
+    display: initial;
+  }
+}

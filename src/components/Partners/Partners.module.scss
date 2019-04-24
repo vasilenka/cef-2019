@@ -5,14 +5,46 @@
 }
 
 .container {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  @include screen(phone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabLandscape) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
 }
 
 .title {
   width: 100%;
   text-align: center;
-  margin-bottom: 64px;
+  @include screen(phone) {
+    margin-bottom: $space-l;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: $space-l;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: $space-xl;
+  }
+  @include screen(desktop) {
+    margin-bottom: $space-xl;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: $space-xl;
+  }
 }
 
 .subheading {
@@ -27,11 +59,62 @@
   margin-right: -16px;
 }
 
+.mainPartner {
+  @include screen(phone) {
+    margin: $space-stack-ml;
+  }
+  @include screen(tabPortrait) {
+    margin: $space-stack-ml;
+  }
+  @include screen(tabLandscape) {
+    margin: $space-stack-ll;
+  }
+  @include screen(desktop) {
+    margin: $space-stack-ll;
+  }
+  @include screen(desktopWide) {
+    margin: $space-stack-ll;
+  }
+}
+
 .partnerContainer {
-  composes: col-sm-2 from global;
+  composes: col-sm-2 col-6 from global;
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: $space-ml;
+  @include screen(phone) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include screen(tabPortrait) {
+    &:last-child {
+      margin-bottom: $space-ml;
+    }
+  }
+  @include screen(tabLandscape) {
+    &:last-child {
+      margin-bottom: $space-ml;
+    }
+  }
+  @include screen(desktop) {
+    &:last-child {
+      margin-bottom: $space-ml;
+    }
+  }
+  @include screen(desktopWide) {
+    &:last-child {
+      margin-bottom: $space-ml;
+    }
+  }
+}
+
+.collaboratingPartnerContainer {
+  composes: col-sm-2 col-6 from global;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .partner {

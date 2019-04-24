@@ -17,7 +17,7 @@
 }
 
 .speaker {
-  composes: col-md-4 col-sm-6 from global;
+  composes: col-sm-4 col-6 from global;
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 24px;
@@ -29,7 +29,21 @@
 }
 
 .photo {
-  height: 196px;
+  @include screen(phone) {
+    height: 96px;
+  }
+  @include screen(tabPortrait) {
+    height: 96px;
+  }
+  @include screen(tabLandscape) {
+    height: 216px;
+  }
+  @include screen(desktop) {
+    height: 216px;
+  }
+  @include screen(desktopWide) {
+    height: 216px;
+  }
 }
 
 .identity {
