@@ -15,15 +15,15 @@
   }
   @include screen(tabLandscape) {
     padding-top: $space-xxl;
-    padding-bottom: $space-xxl;
+    padding-bottom: $space-xl;
   }
   @include screen(desktop) {
     padding-top: $space-xxl;
-    padding-bottom: $space-xxl;
+    padding-bottom: 144px;
   }
   @include screen(desktopWide) {
     padding-top: $space-xxl;
-    padding-bottom: $space-xxl;
+    padding-bottom: 144px;
   }
 }
 

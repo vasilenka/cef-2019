@@ -1,11 +1,11 @@
 import styles from './ScheduleOverview.module.scss'
 import React from 'react'
 import cx from 'classnames'
-import {Link} from 'gatsby'
 
 import Box from '../Box/Box'
 import Container from '../../layouts/Container/Container'
 import Text from '../../primitives/Text/Text'
+import SectionLink from '../SectionLink/SectionLink';
 
 const ScheduleOverview = ({
   className,
@@ -94,14 +94,9 @@ const ScheduleOverview = ({
             </Box>
           </Box>
         </Box>
-        <div style={{width: '100%', textAlign: 'center'}}>
-          <Link
-            to={'/schedule'}>
-            <Text heading5Alt>
-              View full schedules
-            </Text>
-          </Link>
-        </div>
+        <SectionLink to="/schedule">
+          View to Full Schedules
+        </SectionLink>
       </Container>
     </Box>
   )

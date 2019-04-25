@@ -1,11 +1,19 @@
-import styles from './Speakers.module.scss';
-import React from 'react';
-import cx from 'classnames';
-import Text from '../../primitives/Text/Text';
-import Container from '../../layouts/Container/Container';
-import Box from '../Box/Box';
-import {Link} from 'gatsby';
-import Speaker from '../Speaker/Speaker';
+import styles from './Speakers.module.scss'
+import React from 'react'
+import cx from 'classnames'
+
+import Text from '../../primitives/Text/Text'
+import Container from '../../layouts/Container/Container'
+import Box from '../Box/Box'
+import Speaker from '../Speaker/Speaker'
+
+import Ita from './../images/speakers/ita'
+import Nina from './../images/speakers/nina'
+import Bima from './../images/speakers/bima'
+import Febrian from './../images/speakers/febrian'
+import Rian from './../images/speakers/rian'
+import Murni from './../images/speakers/murni'
+import SectionLink from '../SectionLink/SectionLink';
 
 const Speakers = ({
   className,
@@ -18,21 +26,16 @@ const Speakers = ({
           Speakers Highlights
         </Text>
         <div className={styles.speakerContainer}>
-          <Speaker name="Ongki Herlambang" job="Head of Design Meridian.id" />
-          <Speaker name="M. Sena Luphdika" job="CEO Meridian.id" />
-          <Speaker name="Kurniawan Adhi Ramdhani" job="CCO Meridian.id" />
-          <Speaker name="Khairani Ummah" job="COO Meridian.id" />
-          <Speaker name="Nurul Reza Muhsinin" job="CTO Meridian.id" />
-          <Speaker name="Renita Dewi" job="Head of Ops Meridian.id" />
+          <Speaker photo={<Ita />} name="Paulista Surjadi" job="Communications Specialist" />
+          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Designer" />
+          <Speaker photo={<Nina />} name="Nina Asterina" job="Knowledge Management Officer" />
+          <Speaker photo={<Rian />} name="Rian Nugroho" job="Operations Director" />
+          <Speaker photo={<Murni />} name="Murni" job="Finance Manager" />
+          <Speaker photo={<Bima />} name="Bima Pratama Putra" job="Designer &amp; Planner" />
         </div>
-        <div style={{width: '100%', textAlign: 'center'}}>
-          <Link
-            to={'/speakers'}>
-            <Text heading5Alt style={{ textTransf4: 'uppercasefontWeight: 700, ', color: '#ca274c'}}>
-              View all speakers
-            </Text>
-          </Link>
-        </div>
+        <SectionLink to={'/speakers'}>
+          View All Speakers
+        </SectionLink>
       </Container>
     </Box>
   )

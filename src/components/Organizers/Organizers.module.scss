@@ -14,16 +14,16 @@
     padding-bottom: $space-ll;
   }
   @include screen(tabLandscape) {
-    padding-top: $space-xl;
-    padding-bottom: $space-xl;
+    padding-top: $space-xxl;
+    padding-bottom: $space-ll;
   }
   @include screen(desktop) {
-    padding-top: $space-xl;
-    padding-bottom: $space-xl;
+    padding-top: $space-xxl;
+    padding-bottom: $space-ll;
   }
   @include screen(desktopWide) {
-    padding-top: $space-xl;
-    padding-bottom: $space-xl;
+    padding-top: $space-xxl;
+    padding-bottom: $space-ll;
   }
 }
 
@@ -32,18 +32,23 @@
   padding-bottom: 0;
   @include screen(phone) {
     margin-bottom: 32px;
+    min-width: unset;
   }
   @include screen(tabPortrait) {
     margin-bottom: 32px;
+    min-width: 216px;
   }
   @include screen(tabLandscape) {
     margin-bottom: 0;
+    min-width: 216px;
   }
   @include screen(desktop) {
     margin-bottom: 0;
+    min-width: 216px;
   }
   @include screen(desktopWide) {
     margin-bottom: 0;
+    min-width: 216px;
   }
 }
 
@@ -67,15 +72,16 @@
 
 .columnRow {
   composes: row from global;
-  flex: 4;
-  margin-left: -12px;
-  margin-right: -12px;
+  flex: 6;
+  margin-left: -24px;
+  margin-right: -24px;
+  justify-content: center;
 }
 
 .logoContainer {
-  composes: col-6 col-sm-6 col-md-3 from global;
-  padding-left: 12px;
-  padding-right: 12px;
+  composes: col-6 col-sm-6 col-md-4 from global;
+  padding-left: 24px;
+  padding-right: 24px;
   padding-bottom: 0;
   @include screen(phone) {
     margin-bottom: 24px;
@@ -95,10 +101,10 @@
 }
 
 .logo {
-  min-height: 48px;
+  display: block;
   min-width: 120px;
 }
 
 .logoUniv {
-  margin-top: -18px;
+  margin-top: -32px;
 }

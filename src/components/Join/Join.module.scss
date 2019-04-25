@@ -1,11 +1,52 @@
 @import 'src/tokens';
 
 .root {
-  background-color: $brand-secondary-200;
+  background-color: $brand-primary-200;
 }
 
 .container {
-  padding-top: 128px;
-  padding-bottom: 128px;
   display: inline-flex;
+  @include screen(phone) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  @include screen(tabPortrait) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  @include screen(tabLandscape) {
+    padding-top: 144px;
+    padding-bottom: 144px;
+  }
+  @include screen(desktop) {
+    padding-top: 144px;
+    padding-bottom: 144px;
+  }
+  @include screen(desktopWide) {
+    padding-top: 144px;
+    padding-bottom: 144px;
+  }
+}
+
+.title {
+  margin: $space-stack-m;
+}
+
+.description {
+  font-weight: 600;
+  @include screen(phone) {
+    margin: $space-stack-l;
+  }
+  @include screen(tabPortrait) {
+    margin: $space-stack-xl;
+  }
+  @include screen(tabLandscape) {
+    margin: $space-stack-xl;
+  }
+  @include screen(desktop) {
+    margin: $space-stack-xl;
+  }
+  @include screen(desktopWide) {
+    margin: $space-stack-xl;
+  }
 }

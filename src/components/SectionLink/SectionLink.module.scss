@@ -1,0 +1,18 @@
+@import 'src/tokens';
+
+.root {
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-image: linear-gradient(to bottom, transparent 90%, $brand-primary-90 10%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  transition: background-size 0.2s cubic-bezier(.8,0,.2,1);
+  border-bottom: 2px solid $brand-primary-90;
+
+  &:hover {
+    transition: all .24s cubic-bezier(.8,0,.2,1);
+    background-size: 100% 100%;
+  }
+}

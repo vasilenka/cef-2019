@@ -17,10 +17,12 @@ const Speaker = ({
         [className]: className,
       })}
       {...restProps}>
-      <div className={styles.photo}></div>
+      <div className={styles.photo}>
+        {photo}
+      </div>
       <div className={styles.identity}>
         <Text truncate component="h3" heading4 className={styles.name}>{name}</Text>
-        <Text truncate heading5 className={styles.title}>{job}</Text>
+        <Text truncate heading6 className={styles.title}>{job}</Text>
       </div>
     </div>
   )

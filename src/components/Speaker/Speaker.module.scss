@@ -32,23 +32,18 @@
 .photo {
   background-color: $brand-primary-200;
   @include screen(phone) {
-    height: 96px;
     min-height: 96px;
   }
   @include screen(tabPortrait) {
-    height: 96px;
     min-height: 96px;
   }
   @include screen(tabLandscape) {
-    height: 216px;
     min-height: 216px;
   }
   @include screen(desktop) {
-    height: 216px;
     min-height: 216px;
   }
   @include screen(desktopWide) {
-    height: 216px;
     min-height: 216px;
   }
 }
@@ -59,11 +54,15 @@
 }
 
 .name {
-  color: $dark-hex-90;
+  color: $bg-banana-200;
   font-weight: 700;
   text-transform: 'uppercase';
+  margin: $space-stack-xs;
 }
 
 .title {
-  color: $dark-hex-90;
+  color: $bg-banana-200;
+  opacity: .70;
+  letter-spacing: normal;
+  font-weight: 600;
 }

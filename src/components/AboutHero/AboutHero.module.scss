@@ -1,0 +1,112 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $brand-secondary-200;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+  padding-top: $space-xl;
+  padding-bottom: $space-xxl;
+}
+
+.title {
+  margin: $space-stack-xl;
+}
+
+.tagline {
+  display: block;
+  margin: $space-stack-l;
+}
+
+.mainContent {
+  @include screen(phone) {
+    margin-left: 0;
+  }
+  @include screen(tabPortrait) {
+    margin-left: 192px;
+  }
+  @include screen(tabLandscape) {
+    margin-left: 192px;
+  }
+  @include screen(desktop) {
+    margin-left: 192px;
+  }
+  @include screen(desktopWide) {
+    margin-left: 192px;
+  }
+}
+
+.overview {
+  composes: mainContent;
+  max-width: 480px;
+  margin-bottom: $space-ll;
+  color: $dark-hex-80;
+}
+
+.overline {
+  margin: $space-stack-s;
+}
+
+.cloud {
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: initial;
+  }
+  @include screen(desktop) {
+    display: initial;
+  }
+  @include screen(desktopWide) {
+    display: initial;
+  }
+}
+
+.cloud1 {
+  composes: cloud;
+  position: absolute;
+  width: 400px;
+  right: -40px;
+  top: 640px;
+}
+
+.cloud2 {
+  composes: cloud;
+  position: absolute;
+  width: 320px;
+  left: -96px;
+  top: 400px;
+}
+
+.cloud3 {
+  composes: cloud;
+  position: absolute;
+  width: 192px;
+  left: -64px;
+  top: 580px;
+}
+
+.togglePoster {
+  margin-bottom: $space-ml;
+}
+
+.imageContainer {
+  composes: mainContent;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 24px 40px -24px $dark-alpha-50;
+  max-width: 720px;
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+.image {
+  object-fit: contain;
+}

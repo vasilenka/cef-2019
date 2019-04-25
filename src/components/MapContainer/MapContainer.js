@@ -1,7 +1,6 @@
 import styles from './MapContainer.module.scss'
 import React from 'react'
 import cx from 'classnames'
-import { useInView } from 'react-intersection-observer'
 import loadable from '@loadable/component'
 
 import Box from '../Box/Box'
@@ -16,17 +15,13 @@ const MapComponent = loadable(() => import('./../Map/Map'), {
 
 const MapContainer = ({
   className,
+  trigger,
+  inView,
   ...restProps
   }) => {
 
-  const [ref, inView] = useInView({
-    rootMargin: "0px 0px 0px 0px",
-    threshold: 0,
-    triggerOnce: true,
-  })
-
   return (
-    <div ref={ref}>
+    <div>
       <Box className={cx(styles.root)}>
         {inView && <MapComponent />}
       </Box>
