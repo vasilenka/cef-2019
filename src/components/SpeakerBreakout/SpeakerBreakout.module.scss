@@ -1,0 +1,39 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+}
+
+.container {
+  padding-top: $space-xl;
+  padding-bottom: $space-xl;
+}
+
+.title {
+  margin: $space-stack-xl;
+}
+
+.speakerContainer {
+  composes: row from global;
+  margin-bottom: 24px;
+  @include screen(phone) {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  @include screen(tabPortrait) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include screen(tabLandscape) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include screen(desktop) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include screen(desktopWide) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}

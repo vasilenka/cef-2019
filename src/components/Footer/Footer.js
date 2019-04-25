@@ -19,25 +19,24 @@ const Footer = ({
     <Box className={cx(styles.root)}>
       <Container narrow className={styles.container}>
         <Box column alignStart justifyStart style={{marginBottom: '48px'}}>
-          <Text component="h2" heading2 style={{color: "#FFFFFF", marginBottom: '8px'}}>Contact us</Text>
-          <Text medium style={{color: "#f8f8f8"}}>For more informations and inquiries, please send an email or give us a call.</Text>
+          <Text component="h2" heading2 className={styles.title} style={{ marginBottom: '8px'}}>Contact us</Text>
+          <Text medium>For more informations and inquiries, please send an email or give us a call.</Text>
         </Box>
         <Box alignCenter>
           <Box column alignStart style={{flex: 2}}>
-            <a href="tel:+6282377296969" rel="noopener noreferrer" style={{marginBottom: '12px'}}>
-              <Text heading4 style={{color: "#FFFFFF"}}>+62 823 7729 6969</Text>
+            <a href="tel:+6282377296969" rel="noopener noreferrer" style={{marginBottom: '12px' }}>
+              <Text heading4 style={{fontWeight: 500, letterSpacing: '0'}}>+62 823 7729 6969</Text>
             </a>
             <a href="mailto:civicengagementforum.com" rel="noopener noreferrer">
-              <Text heading4 style={{color: "#FFFFFF"}}>hello@civicengagementforum.com</Text>
+              <Text heading4 style={{fontWeight: 500, letterSpacing: '0'}}>hello@civicengagementforum.com</Text>
             </a>
           </Box>
           <Box justifyEnd style={{flex: 1, flexWrap: 'wrap'}}>
-            {/* <Text heading5 style={{color: "#FFFFFF"}}>Socmed icon goes here</Text> */}
-            <Instagram style={{color: "#FFFFFF", height: '24px', marginRight: '24px'}} />
-            <Facebook style={{color: "#FFFFFF", height: '24px', marginRight: '24px'}} />
-            <Twitter style={{color: "#FFFFFF", height: '24px', marginRight: '24px'}} />
-            <Youtube style={{color: "#FFFFFF", height: '24px', marginRight: '24px'}} />
-            <Medium style={{color: "#FFFFFF", height: '24px', }} />
+            <Instagram style={{ height: '24px', marginRight: '24px'}} />
+            <Facebook style={{ height: '24px', marginRight: '24px'}} />
+            <Twitter style={{ height: '24px', marginRight: '24px'}} />
+            <Youtube style={{ height: '24px', marginRight: '24px'}} />
+            <Medium style={{ height: '24px', }} />
           </Box>
         </Box>
       </Container>

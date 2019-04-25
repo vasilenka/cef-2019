@@ -29,6 +29,35 @@
   }
 }
 
+.breakout {
+  composes: col-sm-3 col-6 from global;
+  @include screen(phone) {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 24px;
+  }
+  @include screen(tabPortrait) {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 32px;
+  }
+  @include screen(tabLandscape) {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 32px;
+  }
+  @include screen(desktop) {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 32px;
+  }
+  @include screen(desktopWide) {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 32px;
+  }
+}
+
 .photo {
   background-color: $brand-primary-200;
   @include screen(phone) {

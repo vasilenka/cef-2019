@@ -29,7 +29,7 @@ const IndexPage = () => {
       <Hero />
       <Organizers />
       <Opportunities/>
-      <VenueImage />
+      {/* <VenueImage /> */}
       <span ref={ref}/>
       <Speakers />
       <Venue />

@@ -2,15 +2,15 @@ import React from "react"
 
 import Default from "../layouts/Default"
 import SEO from "../components/seo"
-import Text from "../primitives/Text/Text"
 import Footer from "../components/Footer/Footer";
+import Cover from "../components/Cover/Cover";
 
 const NotFoundPage = () => (
   <Default>
-    <SEO title="404: Not found" />
-    <Text display3 component="h1">
-      Venue
-    </Text>
+    <SEO title="Venue &amp; F.A.Q." />
+    <Cover
+      title="Venue and F.A.Q"
+      />
     <Footer />
   </Default>
 )

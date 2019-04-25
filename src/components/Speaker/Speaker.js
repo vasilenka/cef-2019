@@ -5,6 +5,7 @@ import Text from '../../primitives/Text/Text';
 
 const Speaker = ({
   name,
+  breakout,
   job,
   photo,
   className,
@@ -13,7 +14,8 @@ const Speaker = ({
   return (
     <div
       className={cx({
-        [styles.root]: true,
+        [styles.root]: !breakout,
+        [styles.breakout]: breakout,
         [className]: className,
       })}
       {...restProps}>

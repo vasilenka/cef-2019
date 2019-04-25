@@ -1,0 +1,10 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+}
+
+.container {
+  padding-top: $space-xl;
+  padding-bottom: $space-xl;
+}
