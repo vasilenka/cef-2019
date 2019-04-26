@@ -1,0 +1,13 @@
+@import 'src/tokens';
+
+.root {
+  position: sticky;
+  top: 96px;
+  padding: $space-vertical-ml;
+  border-bottom: 2px solid $dark-alpha-20;
+  background: $bg-banana-200;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

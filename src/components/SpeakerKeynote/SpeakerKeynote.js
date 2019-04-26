@@ -12,6 +12,7 @@ import Febrian from './../images/speakers/febrian'
 import Rian from './../images/speakers/rian'
 import Murni from './../images/speakers/murni'
 import Box from '../Box/Box';
+import Text from '../../primitives/Text/Text';
 
 const SpeakerKeynote = ({
   className,
@@ -20,6 +21,7 @@ const SpeakerKeynote = ({
   return (
     <Box className={cx(styles.root)} {...restProps}>
       <Container narrow className={cx(styles.container)}>
+        <Text component="h2" heading2 className={styles.title}>Plenary Speakers</Text>
         <div className={styles.speakerContainer}>
           <Speaker photo={<Ita />} name="Paulista Surjadi" job="Communications Specialist" />
           <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Designer" />

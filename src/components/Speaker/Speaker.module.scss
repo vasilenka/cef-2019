@@ -1,7 +1,6 @@
 @import 'src/tokens';
 
-.root {
-  composes: col-sm-4 col-6 from global;
+.parent {
   @include screen(phone) {
     padding-left: 12px;
     padding-right: 12px;
@@ -29,33 +28,22 @@
   }
 }
 
+.root {
+  composes: col-md-4 col-sm-6 col-12 from global;
+  composes: parent;
+}
+
 .breakout {
-  composes: col-sm-3 col-6 from global;
-  @include screen(phone) {
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-bottom: 24px;
-  }
-  @include screen(tabPortrait) {
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 32px;
-  }
-  @include screen(tabLandscape) {
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 32px;
-  }
-  @include screen(desktop) {
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 32px;
-  }
-  @include screen(desktopWide) {
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 32px;
-  }
+  composes: col-md-3 col-sm-4 col-10 from global;
+  composes: parent;
+}
+
+.primaryBg {
+  background-color: $brand-primary-200;
+}
+
+.container {
+  height: 100%;
 }
 
 .photo {
@@ -77,21 +65,51 @@
   }
 }
 
+.text {
+  @include screen(phone) {
+    // min-height: 96px;
+  }
+  @include screen(tabPortrait) {
+    min-height: 0;
+  }
+  @include screen(tabLandscape) {
+    min-height: 0;
+  }
+  @include screen(desktop) {
+    min-height: 0;
+  }
+  @include screen(desktopWide) {
+    min-height: 0;
+  }
+}
+
 .identity {
+  composes: text;
   background-color: $brand-primary-200;
   padding: $space-inset-m;
 }
 
-.name {
+.identityBreakout {
+  composes: text;
+  background-color: transparent;
+  padding-top: $space-m;
+}
+
+// .identityBreakout {
+//   color: $bg-banana-200;
+// }
+
+.banana {
   color: $bg-banana-200;
+}
+
+.name {
   font-weight: 700;
   text-transform: 'uppercase';
   margin: $space-stack-xs;
 }
 
 .title {
-  color: $bg-banana-200;
-  opacity: .70;
+  opacity: .90;
   letter-spacing: normal;
-  font-weight: 600;
 }

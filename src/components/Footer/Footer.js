@@ -24,10 +24,10 @@ const Footer = ({
         </Box>
         <Box alignCenter>
           <Box column alignStart style={{flex: 2}}>
-            <a href="tel:+6282377296969" rel="noopener noreferrer" style={{marginBottom: '12px' }}>
+            <a href="tel:+6282377296969" rel="noopener noreferrer" style={{marginBottom: '12px', color: '#FFFFFF' }}>
               <Text heading4 style={{fontWeight: 500, letterSpacing: '0'}}>+62 823 7729 6969</Text>
             </a>
-            <a href="mailto:civicengagementforum.com" rel="noopener noreferrer">
+            <a href="mailto:civicengagementforum.com" rel="noopener noreferrer" style={{color: '#FFFFFF'}}>
               <Text heading4 style={{fontWeight: 500, letterSpacing: '0'}}>hello@civicengagementforum.com</Text>
             </a>
           </Box>

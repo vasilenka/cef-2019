@@ -1,5 +1,27 @@
 @import 'src/tokens';
 
 .root {
+  &:not(:last-child) {
+    padding-top: $space-l;
+    padding-bottom: $space-l;
+    border-bottom: 1px solid $dark-alpha-20;
+  }
+  &:last-child {
+    padding-top: $space-l;
+    padding-bottom: $space-xxl;
+  }
+}
 
+.hour {
+  min-width: 256px;
+  padding-right: 48px;
+  font-family: $font-primary;
+  letter-spacing: -0.12px;
+  font-weight: $bold;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.details {
+  flex: auto;
 }

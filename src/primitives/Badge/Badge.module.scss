@@ -1,7 +1,7 @@
-@import 'invoker-tokens/index.scss';
+@import 'src/tokens';
 
 .root {
-  border-radius: 3px;
+  border-radius: 2px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -10,13 +10,13 @@
 }
 
 .primary {
-  color: $light-alpha-100;
-  background: $brand-primary-200;
-  border-color: $brand-primary-200;
+  color: $dark-hex-80;
+  background: $brand-secondary-200;
+  border-color: $brand-secondary-200;
 }
 
 .secondary {
-  color: $dark-alpha-70;
+  color: $dark-alpha-80;
   background: $dark-alpha-20;
   border-color: transparent;
 }
@@ -26,16 +26,17 @@
 }
 
 .large {
-  padding: 4px 7px;
+  padding: 5px 11px;
   white-space: nowrap;
   border: none;
 }
 
 .text {
   display: inline-flex;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 16px;
+  text-transform: uppercase;
 }
 
 .circle {

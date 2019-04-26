@@ -3,12 +3,13 @@ import React from 'react';
 import cx from 'classnames';
 
 const ScheduleSection = ({
+  children,
   className,
   ...restProps
   }) => {
   return (
-    <div>
-
+    <div className={cx(styles.root)} {...restProps}>
+      {children}
     </div>
   )
 }
