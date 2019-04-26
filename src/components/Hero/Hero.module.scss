@@ -1,13 +1,33 @@
 @import 'src/tokens';
 
 .root {
-  height: 64vh;
-  min-height: 600px;
+  // height: 64vh;
+  min-height: 64vh;
   background-color: $brand-secondary-200;
 }
 
 .container {
   height: 100%;
+  @include screen(phone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(tabLandscape) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
 }
 
 .title {

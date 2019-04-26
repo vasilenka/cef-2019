@@ -5,6 +5,7 @@ import Text from '../../primitives/Text/Text';
 import Box from '../Box/Box';
 import Container from '../../layouts/Container/Container';
 import Info from '../Info/Info';
+import Countdown from '../Countdown/Countdown';
 
 const Hero = ({
   className,
@@ -13,7 +14,7 @@ const Hero = ({
   return (
     <div className={cx(styles.root)}>
       <Container narrow className={cx(styles.container)}>
-        <Box alignCenter justifyStart style={{ height: '100%' }}>
+        <Box alignCenter justifyStart style={{ height: '100%', borderBottom: '1px solid rgba(0,0,0,.12)', paddingBottom: '48px', marginBottom: '48px' }}>
           <Box column alignStart style={{maxWidth: '696px'}}>
             <Text display3 component="h1" className={styles.title}>
               Civic Engagement 4.0
@@ -28,6 +29,7 @@ const Hero = ({
             <Info label="Venue" value="Novotel hotel and public facilities at Solo, Central Java, Indonesia" />
           </Box>
         </Box>
+        <Countdown />
       </Container>
     </div>
   )

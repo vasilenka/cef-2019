@@ -1,0 +1,36 @@
+@import 'src/tokens';
+
+.root {
+  composes: row from global;
+  background-color: $brand-secondary-200;
+  max-width: 700px;
+}
+
+.timer {
+  composes: col-6 col-sm-3 from global;
+}
+
+.text {
+  composes: col-12 col-sm-3 from global;
+  padding-bottom: 0;
+  @include screen(phone) {
+    margin-bottom: 0px;
+    min-width: unset;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: 0px;
+    min-width: 216px;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: 0;
+    min-width: 216px;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+    min-width: 216px;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+    min-width: 216px;
+  }
+}
