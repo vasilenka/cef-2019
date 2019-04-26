@@ -1,6 +1,7 @@
 @import 'src/tokens';
 
 .root {
+  composes: row from global;
   position: sticky;
   top: 96px;
   padding: $space-vertical-ml;
@@ -10,4 +11,10 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.date,
+.day {
+  composes: col-12 from global;
+  padding-bottom: 0;
 }

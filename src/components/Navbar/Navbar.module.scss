@@ -15,8 +15,8 @@
   align-items: center;
   @include screen(phone) {
     justify-content: center;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
   }
   @include screen(tabPortrait) {
     justify-content: space-between;

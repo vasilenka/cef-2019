@@ -11,8 +11,8 @@ const Day = ({
   }) => {
   return (
     <div className={cx(styles.root)}>
-      <Text heading2 component="h2">{date}</Text>
-      <Text heading2>{day}</Text>
+      <Text heading2 component="h2" className={styles.date}>{date}</Text>
+      <Text heading2 className={styles.day}>{day}</Text>
     </div>
   )
 }

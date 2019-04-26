@@ -1,7 +1,7 @@
 import styles from './Venue.module.scss'
 import React from 'react'
 import cx from 'classnames'
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
 
 import Box from '../Box/Box'
 import Container from '../../layouts/Container/Container'

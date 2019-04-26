@@ -5,6 +5,24 @@
 }
 
 .container {
-  padding-top: $space-xl;
-  padding-bottom: $space-xl;
+  @include screen(phone) {
+    padding-top: $space-l;
+    padding-bottom: $space-l;
+  }
+  @include screen(tabPortrait) {
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+  }
+  @include screen(tabLandscape) {
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+  }
 }

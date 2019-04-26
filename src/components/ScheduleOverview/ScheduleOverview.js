@@ -58,7 +58,7 @@ const ScheduleOverview = ({
                 </Box>
               </Box>
             </Box>
-            <Box justifyBetween className={styles.schedule}>
+            <Box className={styles.schedule}>
               <Box className={styles.overview}>
                 <Text heading4Alt component="h4">
                   Augustus 22, 2019

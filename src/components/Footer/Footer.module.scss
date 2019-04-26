@@ -9,3 +9,45 @@
   padding-top: 96px;
   padding-bottom: 96px;
 }
+
+.footer {
+  composes: row from global;
+}
+
+.contact {
+  composes: col-12 col-md-8 from global;
+  @include screen(phone) {
+    margin-bottom: $space-l;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: $space-l;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: 0;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+  }
+}
+
+.socmed {
+  composes: col-12 col-md-4 from global;
+  @include screen(phone) {
+    justify-content: flex-start;
+  }
+  @include screen(tabPortrait) {
+    justify-content: flex-start;
+  }
+  @include screen(tabLandscape) {
+    justify-content: flex-end;
+  }
+  @include screen(desktop) {
+    justify-content: flex-end;
+  }
+  @include screen(desktopWide) {
+    justify-content: flex-end;
+  }
+}

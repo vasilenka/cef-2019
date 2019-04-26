@@ -1,6 +1,7 @@
 @import 'src/tokens';
 
 .root {
+  composes: row from global;
   &:not(:last-child) {
     padding-top: $space-l;
     padding-bottom: $space-l;
@@ -13,6 +14,7 @@
 }
 
 .hour {
+  composes: col-12 from global;
   min-width: 256px;
   padding-right: 48px;
   font-family: $font-primary;
@@ -23,5 +25,6 @@
 }
 
 .details {
+  composes: col-12 from global;
   flex: auto;
 }

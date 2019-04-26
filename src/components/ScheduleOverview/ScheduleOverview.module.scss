@@ -21,23 +21,24 @@
 
 .schedules {
   width: 720px;
-  margin: $space-stack-ll;
+  margin-bottom: $space-ll;
 }
 
 .schedule {
+  composes: row from global;
   &:not(:last-child) {
     margin: $space-stack-m;
   }
 }
 
 .overview {
-  flex: 1;
+  composes: col-12 col-md-4 from global;
   min-width: 216px;
   padding-right: 24px;
 }
 
 .details {
-  flex: 2.16;
+  composes: col-12 col-md-8 from global;
   flex-wrap: wrap;
 }
 

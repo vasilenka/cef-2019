@@ -50,3 +50,26 @@
     margin: $space-stack-xl;
   }
 }
+
+.row {
+  composes: row from global;
+}
+
+.section {
+  composes: col-12 col-md-6 from global;
+  @include screen(phone) {
+    margin-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: $space-ll;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: 0;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+  }
+}

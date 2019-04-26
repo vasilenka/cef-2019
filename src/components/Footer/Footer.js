@@ -22,8 +22,8 @@ const Footer = ({
           <Text component="h2" heading2 className={styles.title} style={{ marginBottom: '8px'}}>Contact us</Text>
           <Text medium>For more informations and inquiries, please send an email or give us a call.</Text>
         </Box>
-        <Box alignCenter>
-          <Box column alignStart style={{flex: 2}}>
+        <Box alignCenter className={styles.footer}>
+          <Box column alignStart className={styles.contact}>
             <a href="tel:+6282377296969" rel="noopener noreferrer" style={{marginBottom: '12px', color: '#FFFFFF' }}>
               <Text heading4 style={{fontWeight: 500, letterSpacing: '0'}}>+62 823 7729 6969</Text>
             </a>
@@ -31,11 +31,11 @@ const Footer = ({
               <Text heading4 style={{fontWeight: 500, letterSpacing: '0'}}>hello@civicengagementforum.com</Text>
             </a>
           </Box>
-          <Box justifyEnd style={{flex: 1, flexWrap: 'wrap'}}>
-            <Instagram style={{ height: '24px', marginRight: '24px'}} />
-            <Facebook style={{ height: '24px', marginRight: '24px'}} />
-            <Twitter style={{ height: '24px', marginRight: '24px'}} />
-            <Youtube style={{ height: '24px', marginRight: '24px'}} />
+          <Box className={styles.socmed}>
+            <Instagram style={{ height: '24px', marginRight: '40px'}} />
+            <Facebook style={{ height: '24px', marginRight: '40px'}} />
+            <Twitter style={{ height: '24px', marginRight: '40px'}} />
+            <Youtube style={{ height: '24px', marginRight: '40px'}} />
             <Medium style={{ height: '24px', }} />
           </Box>
         </Box>
