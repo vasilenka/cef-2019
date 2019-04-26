@@ -15,6 +15,6 @@
 
 .date,
 .day {
-  composes: col-12 from global;
+  composes: col-12 col-sm-6 from global;
   padding-bottom: 0;
 }
