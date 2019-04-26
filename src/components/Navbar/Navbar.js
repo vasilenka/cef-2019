@@ -31,9 +31,10 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
           </NavbarBrand>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/">Home</NavbarMenu>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/about/">About</NavbarMenu>
+          <NavbarMenu containerClassName={styles.primaryMenu} to="/organizers/">Organizers</NavbarMenu>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/schedule/">Schedule</NavbarMenu>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/speakers/">Speakers</NavbarMenu>
-          <NavbarMenu containerClassName={styles.primaryMenu} to="/venue/">Venue &amp; F.A.Q.</NavbarMenu>
+          {/* <NavbarMenu containerClassName={styles.primaryMenu} to="/venue/">Venue &amp; F.A.Q.</NavbarMenu> */}
         </NavbarPrimary>
         <NavbarSecondary
           className={cx({

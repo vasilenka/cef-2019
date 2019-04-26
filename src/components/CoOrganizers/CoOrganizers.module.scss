@@ -1,0 +1,14 @@
+@import 'src/tokens';
+
+.root {
+  padding-bottom: $space-ll;
+  margin: $space-stack-ll;
+  &:not(:last-child) {
+    border-bottom: 2px solid $dark-alpha-20;
+  }
+}
+
+.photo {
+  width: 280px;
+  margin-bottom: $space-ll;
+}

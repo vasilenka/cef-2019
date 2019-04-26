@@ -3,7 +3,6 @@ import React from 'react';
 import cx from 'classnames';
 
 import Box from '../Box/Box';
-import Text from '../../primitives/Text/Text';
 import Badge from '../../primitives/Badge/Badge';
 
 const ScheduleItem = ({

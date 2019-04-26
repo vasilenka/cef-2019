@@ -28,9 +28,10 @@ const Layout = ({ children }) => (
         <ActionBar>
           <ActionMenu to='/'>Home</ActionMenu>
           <ActionMenu to='/about/'>About</ActionMenu>
+          <ActionMenu to='/organizers/'>Organizers</ActionMenu>
           <ActionMenu to='/schedule/'>Schedule</ActionMenu>
           <ActionMenu to='/speakers/'>Speakers</ActionMenu>
-          <ActionMenu to='/venue/'>Venue</ActionMenu>
+          {/* <ActionMenu to='/venue/'>Venue</ActionMenu> */}
         </ActionBar>
       </>
     )}

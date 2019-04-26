@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Hero from "../components/Hero/Hero"
 import Organizers from "../components/Organizers/Organizers"
 import Opportunities from "../components/Opportunities/Opportunities"
-import VenueImage from "../components/VenueImage/VenueImage"
+// import VenueImage from "../components/VenueImage/VenueImage"
 import Speakers from "../components/Speakers/Speakers"
 import Venue from "../components/Venue/Venue"
 import MapContainer from "../components/MapContainer/MapContainer"
@@ -29,7 +29,7 @@ const IndexPage = () => {
       <Hero />
       <Organizers />
       <Opportunities/>
-      <VenueImage />
+      {/* <VenueImage /> */}
       <span ref={ref}/>
       <Speakers />
       <Venue />
