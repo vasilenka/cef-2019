@@ -7,6 +7,18 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Civic Engagement Forum 4.0`,
+        short_name: `CEF 4.0`,
+        start_url: `/`,
+        background_color: `#E8C23D`,
+        theme_color: `#E8C23D`,
+        display: `minimal-ui`,
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
@@ -25,18 +37,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#E8C23D`,
-        theme_color: `#E8C23D`,
-        display: `minimal-ui`,
-        icon: `src/assets/images/cloud/cloud1.png`, // This path is relative to the root of the site.
-      },
-    },
     // `gatsby-plugin-remove-trailing-slashes`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
