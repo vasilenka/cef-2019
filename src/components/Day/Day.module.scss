@@ -18,3 +18,21 @@
   composes: col-12 col-sm-6 from global;
   padding-bottom: 0;
 }
+
+.day {
+  @include screen(phone) {
+    text-align: left;
+  }
+  @include screen(tabPortrait) {
+    text-align: left;
+  }
+  @include screen(tabLandscape) {
+    text-align: right;
+  }
+  @include screen(desktop) {
+    text-align: right;
+  }
+  @include screen(desktopWide) {
+    text-align: right;
+  }
+}

@@ -16,13 +16,13 @@ const ScheduleItem = ({
   ...restProps
   }) => {
   return (
-    <Box alignBaseline className={cx(styles.root)} {...restProps}>
+    <div className={cx(styles.root)} {...restProps}>
       <span className={styles.hour}>{hour}</span>
       <Box column alignStart className={styles.details}>
         {tag && <Badge large style={{marginBottom: '16px'}}>{tag}</Badge>}
         {children}
       </Box>
-    </Box>
+    </div>
   )
 }
 
