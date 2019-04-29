@@ -4,7 +4,8 @@ import cx from 'classnames'
 import loadable from '@loadable/component'
 
 import Box from '../Box/Box'
-import Spinner from '../../primitives/preloader/Spinner/Spinner';
+import Spinner from '../../primitives/preloader/Spinner/Spinner'
+
 const MapComponent = loadable(() => import('./../Map/Map'), {
   fallback: <div className={styles.fallbackContainer}>
     <div className={styles.container}>
