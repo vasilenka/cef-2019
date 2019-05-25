@@ -5,14 +5,14 @@ import SEO from "../components/seo"
 import Footer from "../components/Footer/Footer";
 import Cover from "../components/Cover/Cover";
 
-const NotFoundPage = () => (
+const Faq = () => (
   <Default>
-    <SEO title="Venue &amp; F.A.Q." />
+    <SEO title="F.A.Q." />
     <Cover
-      title="Venue and F.A.Q"
+      title="Frequently Asked Questions"
       />
     <Footer />
   </Default>
 )
 
-export default NotFoundPage
+export default Faq

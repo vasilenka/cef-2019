@@ -1,6 +1,7 @@
 import styles from './Organizers.module.scss'
 import React from 'react'
 import cx from 'classnames'
+import { Link } from 'gatsby'
 
 import Box from '../Box/Box'
 import Container from '../../layouts/Container/Container'
@@ -21,19 +22,25 @@ const Organizers = ({
           <Text heading5Alt component="h2" className={styles.title}>Co-organized by : </Text>
           <Box alignCenter className={cx(styles.columnRow)}>
             <div className={styles.logoContainer}>
-              <a href="https://www.chula.ac.th/en/" target="_blank" rel="noopener noreferrer" className={cx(styles.logo, styles.logoUniv)}>
+              {/* <a href="https://www.chula.ac.th/en/" target="_blank" rel="noopener noreferrer" className={cx(styles.logo, styles.logoUniv)}> */}
+              <Link to="/organizers#chulalongkorn-university" className={cx(styles.logo, styles.logoUniv)}>
                 <UnivWeb />
-              </a>
+              </Link>
+              {/* </a> */}
             </div>
             <div className={styles.logoContainer}>
-              <a href="http://kotakita.org" target="_blank" rel="noopener noreferrer" className={cx(styles.logo)}>
+              {/* <a href="http://kotakita.org" target="_blank" rel="noopener noreferrer" className={cx(styles.logo)}> */}
+              <Link to="/organizers#kotakita" className={cx(styles.logo)}>
                 <KotaKitaWeb />
-              </a>
+              </Link>
+              {/* </a> */}
             </div>
             <div className={styles.logoContainer}>
-              <a href="http://icrs.ugm.ac.id/" target="_blank" rel="noopener noreferrer" className={cx(styles.logo)}>
+              {/* <a href="http://icrs.ugm.ac.id/" target="_blank" rel="noopener noreferrer" className={cx(styles.logo)}> */}
+              <Link to="/organizers#icrs" className={cx(styles.logo)}>
                 <IcrsWeb />
-              </a>
+              </Link>
+              {/* </a> */}
             </div>
           </Box>
         </Box>

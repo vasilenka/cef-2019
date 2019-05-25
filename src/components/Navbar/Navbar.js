@@ -32,20 +32,20 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
           <NavbarMenu containerClassName={styles.primaryMenu} to="/">Home</NavbarMenu>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/about/">About</NavbarMenu>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/organizers/">Organizers</NavbarMenu>
-          <NavbarMenu containerClassName={styles.primaryMenu} to="/schedule/">Schedule</NavbarMenu>
+          <NavbarMenu containerClassName={styles.primaryMenu} to="/programs/">Programs</NavbarMenu>
           <NavbarMenu containerClassName={styles.primaryMenu} to="/speakers/">Speakers</NavbarMenu>
-          {/* <NavbarMenu containerClassName={styles.primaryMenu} to="/venue/">Venue &amp; F.A.Q.</NavbarMenu> */}
+          <NavbarMenu containerClassName={styles.primaryMenu} to="/faq/">FAQ</NavbarMenu>
         </NavbarPrimary>
         <NavbarSecondary
           className={cx({
             [styles.secondaryMenu]: true,
           })}
           style={{paddingRight: '24px'}}>
-          <Button secondaryAlt style={{ marginRight: '12px' }}>
-            Join as Volunteer
+          <Button primary style={{ marginRight: '12px' }}>
+            JOIN AS PARTICIPANT
           </Button>
-          <Button primary onClick={() => console.log('clicked')}>
-            Join as Participant
+          <Button secondaryAlt>
+            JOIN AS VOLUNTEER
           </Button>
         </NavbarSecondary>
       </Container>

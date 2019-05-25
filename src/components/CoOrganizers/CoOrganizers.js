@@ -5,12 +5,14 @@ import Box from '../Box/Box';
 
 const CoOrganizers = ({
   children,
+  id,
   photo,
   className,
   ...restProps
   }) => {
   return (
     <Box column alignStart className={cx(styles.root)} {...restProps}>
+      <div id={id} className={styles.hack}></div>
       <div className={styles.photo}>
         {photo}
       </div>
