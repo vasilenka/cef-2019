@@ -1,9 +1,20 @@
 @import 'src/tokens';
 
 .root {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
   &:not(:last-child) {
     margin: $space-stack-m;
   }
+}
+
+.iconContainer {
+  width: 32px;
+  height: 32px;
+  color: $dark-hex-80;
+  margin: $space-inline-sm;
 }
 
 .label {

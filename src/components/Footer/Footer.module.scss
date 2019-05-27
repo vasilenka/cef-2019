@@ -6,8 +6,26 @@
 }
 
 .container {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  @include screen(phone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(tabLandscape) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
 }
 
 .footer {

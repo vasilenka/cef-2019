@@ -21,7 +21,7 @@ const Join = ({
             <Text heading5 className={styles.description}>
               Experience the amazing event and lorem ipsum dolor  sit amet conseqteteur
             </Text>
-            <Button primary>Register as Participant</Button>
+            <Button primary>Join as Participant</Button>
           </Box>
           <Box column alignStart className={styles.section}>
             <Text heading2 component="h2" className={styles.title}>
@@ -30,7 +30,7 @@ const Join = ({
             <Text heading5 className={styles.description}>
               Team up with amazing people around the world and together let’s prepare the best
             </Text>
-            <Button primary>Register as Volunteer</Button>
+            <Button primary>Join as Volunteer</Button>
           </Box>
         </div>
       </Container>

@@ -20,7 +20,7 @@ const Venue = ({
           Venue
         </Text>
         <Text heading4 className={styles.overview} component="h2">
-          Novotel hotel<br />
+          Sunan Hotel &amp; Universitas Sebelas Maret<br />
           Solo, Central Java, Indonesia
         </Text>
         <Box>

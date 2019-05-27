@@ -20,8 +20,8 @@ const Map = compose(
   ...restProps
   }) =>
   <GoogleMap
-    defaultZoom={15}
-    defaultCenter={{ lat: -7.5680261, lng: 110.8172257 }}
+    defaultZoom={14}
+    defaultCenter={{ lat: -7.5568463, lng: 110.8216694 }}
     defaultOptions={{
       // zoomControl: boolean,
       mapTypeControl: false,
@@ -31,7 +31,8 @@ const Map = compose(
       // fullscreenControl: boolean
     }}
   >
-    <Marker position={{ lat: -7.5680261, lng: 110.8172257 }} />
+    <Marker position={{ lat: -7.557286, lng: 110.7943181 }} />
+    <Marker position={{ lat: -7.5596031, lng: 110.8543508 }} />
   </GoogleMap>)
 
 export default Map

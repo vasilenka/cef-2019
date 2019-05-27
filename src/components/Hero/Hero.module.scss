@@ -37,11 +37,16 @@
 .tagline {
   display: block;
   margin: $space-stack-l;
+  font-style: italic;
+}
+
+.overview__container {
+  margin: $space-stack-ll;
+  max-width: 480px;
 }
 
 .overview {
-  max-width: 480px;
-  margin: $space-stack-ll;
+  margin: $space-stack-sm;
 }
 
 .overline {

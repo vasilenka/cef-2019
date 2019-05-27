@@ -1,6 +1,8 @@
 import styles from './Footer.module.scss'
 import React from 'react'
 import cx from 'classnames'
+import {Link} from 'gatsby'
+
 import Box from '../Box/Box'
 import Container from '../../layouts/Container/Container'
 import Text from '../../primitives/Text/Text'
@@ -19,16 +21,14 @@ const Footer = ({
     <Box className={cx(styles.root)}>
       <Container narrow className={styles.container}>
         <Box column alignStart justifyStart style={{marginBottom: '48px'}}>
-          <Text component="h2" heading2 className={styles.title} style={{ marginBottom: '8px'}}>Contact us</Text>
-          <Text medium>For more informations and inquiries, please send an email or give us a call.</Text>
+          <Text component="h2" heading2 className={styles.title} style={{ marginBottom: '24px'}}>Contact us</Text>
+          <Text medium>For general questions, please refer to <Link to="/faq">FAQs</Link> page.</Text>
+          <Text medium>If your inquiry/question is not yet addressed by the FAQs, please contact us at</Text>
         </Box>
         <Box alignCenter className={styles.footer}>
           <Box column alignStart className={styles.contact}>
-            <a href="tel:+6282377296969" rel="noopener noreferrer" style={{marginBottom: '12px', color: '#FFFFFF' }}>
-              <Text heading4 style={{fontWeight: 500, letterSpacing: '0'}}>+62 823 7729 6969</Text>
-            </a>
-            <a href="mailto:civicengagementforum.com" rel="noopener noreferrer" style={{color: '#FFFFFF'}}>
-              <Text heading4 style={{fontWeight: 500, letterSpacing: '0'}}>hello@civicengagementforum.com</Text>
+            <a href="mailto:civicengagementforum.com" rel="noopener noreferrer">
+              <Text heading3Alt style={{fontWeight: 500, letterSpacing: '0'}}>info@civicengagementforum.net</Text>
             </a>
           </Box>
           <Box className={styles.socmed}>

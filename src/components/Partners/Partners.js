@@ -15,7 +15,7 @@ const Partners = ({
     <Box className={cx(styles.root)}>
       <Container narrow className={styles.container}>
         <Text heading1 component="h2" className={styles.title}>
-          Partners
+          Collaborators
         </Text>
         <Box column className={styles.mainPartner}>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
@@ -68,7 +68,7 @@ const Partners = ({
         </Box>
         <Box column>
           <Text heading3 component="h2" className={styles.subheading}>
-            Collaborating Organizations
+            Funding Partners
           </Text>
           <Box column>
           <Box justifyCenter alignCenter className={styles.partnerRow}>

@@ -26,12 +26,17 @@ const Speakers = ({
           Speakers Highlights
         </Text>
         <div className={styles.speakerContainer}>
-          <Speaker photo={<Ita />} name="Paulista Surjadi" job="Communications Specialist" />
-          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Designer" />
-          <Speaker photo={<Nina />} name="Nina Asterina" job="Knowledge Management Officer" />
-          <Speaker photo={<Rian />} name="Rian Nugroho" job="Operations Director" />
-          <Speaker photo={<Murni />} name="Murni" job="Finance Manager" />
-          <Speaker photo={<Bima />} name="Bima Pratama Putra" job="Designer &amp; Planner" />
+          <Speaker photo={<Ita />} name="Paulista Surjadi" job="Mayor of Surakarta, Indonesia" />
+          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Mayor of Surabaya, Indonesia" />
+          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Mayor of Surabaya, Indonesia" />
+          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Mayor of Sleman/Yogyakarta, Indonesia" />
+          <Speaker photo={<Nina />} name="Nina Asterina" job="Mayor of Jember, Indonesia" />
+          <Speaker photo={<Nina />} name="Nina Asterina" job="Mayor of Wonosobo, Indonesia" />
+          <Speaker photo={<Nina />} name="Nina Asterina" job="Mayor of Nan Province, Thailand" />
+          <Speaker photo={<Nina />} name="Nina Asterina" job="Mayor of Yala Province, Thailand" />
+          <Speaker photo={<Rian />} name="Rian Nugroho" job="Mayor from Malaysia" />
+          <Speaker photo={<Murni />} name="Murni" job="Mayor from Japan" />
+          <Speaker photo={<Bima />} name="Bima Pratama Putra" job="Mayor from the Philippines" />
         </div>
         <SectionLink to={'/speakers'}>
           View All Speakers

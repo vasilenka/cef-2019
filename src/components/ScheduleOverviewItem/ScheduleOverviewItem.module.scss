@@ -1,0 +1,19 @@
+@import 'src/tokens';
+
+.root {
+  composes: row from global;
+  &:not(:last-child) {
+    margin: $space-stack-m;
+  }
+}
+
+.overview {
+  composes: col-12 col-md-4 from global;
+  min-width: 216px;
+  padding-right: 24px;
+}
+
+.details {
+  composes: col-12 col-md-8 from global;
+  flex-wrap: wrap;
+}

@@ -1,11 +1,17 @@
-import styles from './Hero.module.scss';
-import React from 'react';
-import cx from 'classnames';
-import Text from '../../primitives/Text/Text';
-import Box from '../Box/Box';
-import Container from '../../layouts/Container/Container';
-import Info from '../Info/Info';
-import Countdown from '../Countdown/Countdown';
+import styles from './Hero.module.scss'
+import React from 'react'
+import cx from 'classnames'
+import { Link } from 'gatsby'
+
+import Text from '../../primitives/Text/Text'
+import Box from '../Box/Box'
+import Container from '../../layouts/Container/Container'
+import Info from '../Info/Info'
+import Countdown from '../Countdown/Countdown'
+import Button from '../../primitives/Button/Button'
+
+import Calendar from './icons/calendar.inline.svg'
+import Place from './icons/place.inline.svg'
 
 const Hero = ({
   className,
@@ -22,11 +28,21 @@ const Hero = ({
             <Text heading4 className={styles.tagline}>
               Justice ~ Dignity ~ Sustainability
             </Text>
-            <Text medium className={styles.overview} component="p">
-              A regional platform for mutual learning, action and advocacy, working toward achieving dignity, justice and sustainability in Southeast Asian (SEA) society.
-            </Text>
-            <Info label="Date" value="August 20 - 23, 2019" />
-            <Info label="Venue" value="Novotel hotel and public facilities at Solo, Central Java, Indonesia" />
+            <div className={styles.overview__container}>
+              <Text medium className={styles.overview} component="p">
+                A regional platform for mutual learning, action and advocacy, working toward achieving dignity, justice and sustainability in Southeast Asian (SEA) society.
+              </Text>
+              <Link to="/about">
+                <Button secondaryAlt small>Read more...</Button>
+              </Link>
+            </div>
+            <footer style={{padding: "12px 0px",}}>
+              <Text heading3 component="h2" style={{ marginBottom: '16px', }}>
+                2019 International Forum in Solo
+              </Text>
+              <Info icon={<Calendar />} label="Date" value="August 20 - 23, 2019" />
+              <Info icon={<Place/>} label="Venue" value="Novotel hotel and public facilities at Solo, Central Java, Indonesia" />
+            </footer>
           </Box>
         </Box>
         <Countdown />
