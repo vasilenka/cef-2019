@@ -1,0 +1,12 @@
+@import 'src/tokens';
+
+.root {
+  padding: $space-vertical-m;
+}
+
+.iconContainer {
+  width: 24px;
+  height: 24px;
+  color: $dark-hex-60;
+  margin: $space-inline-xs;
+}

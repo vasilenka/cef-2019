@@ -26,3 +26,15 @@
     padding-bottom: $space-xl;
   }
 }
+
+.subheader {
+  width: fit-content;
+  display: block;
+  color: $dark-alpha-60;
+  margin-bottom: $space-s;
+}
+
+.noted {
+  color: $brand-tertiary-200;
+  font-weight: $semibold;
+}

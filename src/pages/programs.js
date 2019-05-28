@@ -8,9 +8,9 @@ import SchedulesFull from "../components/SchedulesFull/SchedulesFull";
 
 const NotFoundPage = () => (
   <Default>
-    <SEO title="Schedule" />
+    <SEO title="Programs | Civic Engagement 4.0 Solo" />
     <Cover
-      title="Schedules"
+      title="Programs"
       description="The event will be divided into three parts, which are Thematic Site Visits in day one, Civil Society Open Forum in day two, and Mayor’s Symposium in day three. Alongside with that, there will also be a competition designed by ICRS, titled “Co-Designing Sustainable, Just and Smart Urban Living through ICRS Education, Civic Engagement and Policy Advocacy”."
       />
     <SchedulesFull />

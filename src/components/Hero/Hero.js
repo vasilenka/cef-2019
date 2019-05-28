@@ -20,7 +20,7 @@ const Hero = ({
   return (
     <div className={cx(styles.root)}>
       <Container narrow className={cx(styles.container)}>
-        <Box alignCenter justifyStart style={{ height: '100%', borderBottom: '1px solid rgba(0,0,0,.12)', paddingBottom: '48px', marginBottom: '48px' }}>
+        <Box style={{ height: '100%', borderBottom: '1px solid rgba(0,0,0,.12)', paddingBottom: '48px', marginBottom: '48px' }} alignCenter justifyStart>
           <Box column alignStart style={{maxWidth: '696px'}}>
             <Text display3 component="h1" className={styles.title}>
               Civic Engagement 4.0
@@ -36,12 +36,12 @@ const Hero = ({
                 <Button secondaryAlt small>Read more...</Button>
               </Link>
             </div>
-            <footer style={{padding: "12px 0px",}}>
+            <footer style={{padding: "12px 0px"}}>
               <Text heading3 component="h2" style={{ marginBottom: '16px', }}>
                 2019 International Forum in Solo
               </Text>
               <Info icon={<Calendar />} label="Date" value="August 20 - 23, 2019" />
-              <Info icon={<Place/>} label="Venue" value="Novotel hotel and public facilities at Solo, Central Java, Indonesia" />
+              <Info icon={<Place/>} label="Venue" value="Sunan Hotel & Universitas Sebelas Maret" />
             </footer>
           </Box>
         </Box>

@@ -9,6 +9,9 @@ import ScheduleItem from '../ScheduleItem/ScheduleItem';
 import Day from '../Day/Day';
 import ScheduleSection from '../ScheduleSection/ScheduleSection';
 import Talk from '../Talk/Talk';
+import ScheduleVenue from '../ScheduleVenue/ScheduleVenue';
+import TalkSpeaker from '../TalkSpeaker/TalkSpeaker';
+import SubTalk from '../SubTalk/SubTalk';
 
 const SchedulesFull = ({
   className,
@@ -17,147 +20,247 @@ const SchedulesFull = ({
   return (
     <Box className={cx(styles.root)} {...restProps}>
       <Container narrow className={cx(styles.container)}>
+
+      <ScheduleSection>
+        <Day date="Day 0" day="Monday, August 19"/>
+        <ScheduleItem hour="All day" tag="">
+          <SubTalk title="Arrival of Participants">
+            <Text component="p" medium>Accomodation at <a href="https://thesunanhotelsolo.com/" target="_blank" rel="noopener noreferrer">The Sunan Hotel</a></Text>
+          </SubTalk>
+        </ScheduleItem>
+        <ScheduleItem hour="3:00pm" tag="">
+          <SubTalk title="Art Exhibition Opening">
+            <Talk title="Urban Landscape, Our Communities"></Talk>
+          </SubTalk>
+          <ScheduleVenue>Sunan Hotel</ScheduleVenue>
+        </ScheduleItem>
+      </ScheduleSection>
+
         <ScheduleSection>
           <Day date="Day 1" day="Tuesday, August 20"/>
-          <ScheduleItem hour="8:30am - 3:00pm" tag="Field Experience">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Thematic site visits</Text>
-            <Text component="h3" heading4 style={{marginBottom: '24px'}}>Sensing Sustainability in Solo Communities</Text>
-            <Text component="p" medium>Facilitation by Kota Kita Foundation, Indonesia Consortium for Religious Studies (ICRS) and local communities (Details to be announced)</Text>
+          <ScheduleItem hour="8:00am - 3:00pm" tag="Field Experience">
+            <Talk title="Thematic site visits">
+              <SubTalk title="Sensing Sustainability in Solo Communities" />
+            </Talk>
+            <ScheduleVenue>Solo Vicinity</ScheduleVenue>
           </ScheduleItem>
-          <ScheduleItem hour="6:30pm" tag="Opening Program">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Opening plenary</Text>
-            <Text component="h3" heading4 style={{marginBottom: '24px'}}>Civic Engagement 4.0: Creating an Innovative Platform</Text>
-            {/* <Text component="p" medium>Facilitation by Kota Kita Foundation, Indonesia Consortium for Religious Studies (ICRS) and local communities (Details to be announced)</Text> */}
-            <Talk title="WELCOME ADDRESS">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Kota Kita Foundation</Text>
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Prof. Dr. Pirongrong Ramasoota, Vice President for Social Outreach and Global Engagement, Chulalongkorn University</Text>
+          <ScheduleItem hour="7:00pm - 8:30pm">
+            <Talk title="Opening Ceremony">
+              <SubTalk title="Welcome Address">
+                <TalkSpeaker
+                  name="Mr. F.X. Hadi Rudyatmo"
+                  job="Mayor of Surakarta (Solo)" />
+                <TalkSpeaker
+                  name="Mr. Ahmad Rifai"
+                  job="Executive Director, Kota Kita Foundation" />
+                <TalkSpeaker
+                  name="Prof. Dr. Pirongrong Ramasoota"
+                  job="Vice President for Social Outreach and Global Engagement, Chulalongkorn University" />
+              </SubTalk>
+              <SubTalk title="Reception and Cultural Performance">
+                <Text medium component="li" style={{paddingLeft: 0, listStyle: 'none'}}>
+                  Hosted by City of Surakarta
+                </Text>
+              </SubTalk>
             </Talk>
-            <Talk title="KEYNOTE SPEECH">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>
-                “Youth Leadership toward People-Centered Society”
-                Speaker from Indonesia (TBC)
-              </Text>
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>
-                “Cross-Border Challenges of Our Time: Making a Difference via Civic Engagement”
-                Mdme Lahpai Seng Raw, Founder, Metta Foundation, Myanmar (TBC)
-              </Text>
-            </Talk>
-            <Talk title="GROUP PHOTO">
-            </Talk>
-          </ScheduleItem>
-          <ScheduleItem hour="7:30pm" tag="Welcome Reception">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Dinner reception with cultural performance</Text>
-            <Text component="h3" heading4>Toast by Mayor of Surakarta (Solo)</Text>
           </ScheduleItem>
         </ScheduleSection>
 
         <ScheduleSection>
-          <Day date="Day 2" day="Wednesday, August 21"/>
+          <Day date="Day 2" day="Wednesday, August 21" theme="Public Forum"/>
           <ScheduleItem hour="8:30am" tag="Plenary Session">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Welcome and Overview</Text>
-            <Text component="h3" heading4 style={{marginBottom: '24px'}}>Building on: From Yogya and Bangkok to Solo</Text>
-            <Text component="p" medium>Facilitation by Kota Kita Foundation, Indonesia Consortium for Religious Studies (ICRS) and local communities (Details to be announced)</Text>
+            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Opening</Text>
+            <Talk title="Civic Engagement 4.0: Creating an Innovative Platform">
+              <SubTalk title="Welcome Address">
+                <TalkSpeaker
+                  name="President"
+                  job="Sebelas Maret University" />
+                <TalkSpeaker
+                  name="Dr. Nualnoi Treerat"
+                  job="Director, Institute of Asian Studies, Chulalongkorn University" />
+              </SubTalk>
+              <SubTalk title="Keynote Speech: Youth Leadership toward People-Centered Society">
+                <TalkSpeaker
+                  name="H.E. Mr. Gita Wirjawan"
+                  job="Founder, Ancora Foundation; Former Minister of Trade, Indonesia" />
+              </SubTalk>
+            </Talk>
           </ScheduleItem>
-          <ScheduleItem hour="9:00am" tag="Parallel Session">
+          <ScheduleItem hour="9:30am">
+            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Group Photo and Coffee Break</Text>
+          </ScheduleItem>
+          <ScheduleItem hour="8:30am" tag="Plenary Session" venue="Sebelas Maret University, Solo">
+            <Text component="h3" heading5Alt style={{ marginBottom: '4px', textTransform: 'capitalize' }}>Civic Engagement 4.0: Overview</Text>
+            <Talk title="Building on: From Yogya and Bangkok to Solo" facilitators>
+              <TalkSpeaker
+                name="Dr. Toshiyuki Doi"
+                job="Senior Advisor, Mekong Watch, Japan; Academic Advisor, Institute of Asian Studies, Chulalongkorn University" />
+              <TalkSpeaker
+                name="Mr. Ted Mayer"
+                job="Academic Director, Institute of Transformative Learning, International Network for Engaged Buddhists (INEB), Thailand" />
+              <TalkSpeaker
+                name="Dr. Yeoh Seng Guan"
+                job="Associate Professor, Monash University, Malaysia" />
+            </Talk>
+          </ScheduleItem>
+          <ScheduleItem hour="10:10am" tag="Parallel Session I">
             <Talk title="Memory as Resilience: Inter- spatial and generational Transmission of Disaster Experience to Build a Sustainable Society">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Dr.Toshiyuki Doi</Text>
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+            </Talk>
+            <Talk title="Showcasing Innovative Products for Urban Living">
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
             <Talk title="Education 4.0: Knowledge, Innovation and Civic Engagement toward Global Leadership">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Dr. Sachi Ando, Kyoto University</Text>
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
-            <Talk title="Mobility in Changing Landscapes of Southeast Asia">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>WIEGO</Text>
+            <Talk workshop title="Urban Farming: Steps toward Food Safety, Security and Sovereignty">
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+            </Talk>
+            <Talk workshop title="Listening Partnerships Living Fully and Leading with Integrity in a Time of Crisis">
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="11:00am">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Lunch Break</Text>
+            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Lunch Break</Text>
           </ScheduleItem>
-          <ScheduleItem hour="12:30pm" tag="Parallel Session II (Workshops)">
-            <Talk title="Listening Partnerships: Living Fully and Leading with Integrity in a Time of Crisis">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Mr. Theodore Mayer, Institute of Transformative Learning, Int’l Network for Engaged Buddhists (INEB)</Text>
+          <ScheduleItem hour="14:00pm" tag="Parallel Session II">
+            <Talk title="Mobility in Changing Landscape of Southeast Asia">
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
-            <Talk title="Urban Farming: Steps toward Food Safety, Security and Sovereignty">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Sustainable Agriculture Foundation in collaboration with Pemerti Kali Code and Ashoka Fellow from Singapore</Text>
+            <Talk title="Climate Change Adaptation, Disaster Mitigation">
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
-            <Talk title="Workshop : Civic Engagement on Strategic Lens">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Dialogue and Civic Engagement Program, Simon Fraser University (TBC)</Text>
+            <Talk workshop title="Civic Engagement, a Strategic Lens">
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
-          </ScheduleItem>
-          <ScheduleItem hour="2:30pm">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Coffee Break</Text>
-          </ScheduleItem>
-          <ScheduleItem hour="2:45pm" tag="Parallel Session III">
-            <Talk title="Showcasing Innovative Products for Urban Living (Presentations by Awardees)">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Dr. Leonard Chrysostomos, ICRS</Text>
-            </Talk>
-            <Talk title="Youth Leadership in Digital Age">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Kota Kita Foundation, Dr. Cheang Vannarith</Text>
+            <Talk title="Pushing the Boundaries: Asian Youth in Trans-Culture 4.0">
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
             <Talk title="Beyond Waste Management">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Dr. Kohei Watanabe, Teikyo University</Text>
-            </Talk>
-          </ScheduleItem>
-          <ScheduleItem hour="4:45pm" tag="Plenary Session">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Synthesis (in poster style)</Text>
-            <Text component="h3" heading4 style={{marginBottom: '24px'}}>For a Dialogue with the Mayors</Text>
-            <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Dr. Toshiyuki Doi</Text>
-            <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Mr. Theodore Mayer</Text>
-          </ScheduleItem>
-          <ScheduleItem hour="-" tag="Optional Event">
-            <Text component="h3" heading4 style={{marginBottom: '24px'}}>Evening of Alternative Films and Talks</Text>
-            <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Facilitation by Dr. Yeoh Seng Guan, Monash University Malaysia</Text>
-          </ScheduleItem>
-        </ScheduleSection>
-
-        <ScheduleSection>
-          <Day date="Day 3" day="Thursday, August 22"/>
-          <ScheduleItem hour="8:30am" tag="Opening Session">
-            <Talk title="Welcome Address">
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Dr. Siti Syamsiyatun, Director, ICRS</Text>
-            </Talk>
-            <Talk title="Award giving ceremony “Sustainable, Just and Smart Urban Living Innovation Award" />
-            <Talk title="Talk by awardees from Lombok and Yogyakarta" />
-            <Talk title="Mayors’ innovation pitch à la Davos Style conference" />
-          </ScheduleItem>
-          <ScheduleItem hour="10:15am">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Coffee Break</Text>
-          </ScheduleItem>
-          <ScheduleItem hour="10:45am">
-            <Talk title="Interface with the civil society (Part I)">
-              <Text component="p" medium>Inviting civil societies and diffable leaders as panelists</Text>
-              <Text heading5 component="li" style={{paddingLeft: 0, listStyle: 'none'}}>Facilitation by Dr. Hezri Adnan, Langkawi Development Agency (LADA) Malaysia</Text>
-            </Talk>
-          </ScheduleItem>
-          <ScheduleItem hour="12:35pm">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Lunch Break</Text>
-          </ScheduleItem>
-          <ScheduleItem hour="2:00pm">
-            <Talk title="Interface with the civil society - Faith and Human Dignity in the city">
-              <Text heading5 component="li" style={{paddingLeft: 0, marginBottom: '12px', listStyle: 'none'}}>Inviting Elise Edwards (Baylor University) and Brett Scharffs (Brigham Young University) USA. Yeoh Seng Guan (Monash University, Malaysia), Jeanny Dewayani (ICRS, Yogyakarta)</Text>
-              <Text component="p" medium style={{marginBottom: 0}}>Moderator: Dicky Sofjan</Text>
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="4:00pm">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Coffee Break</Text>
+            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Coffee Break</Text>
           </ScheduleItem>
-          <ScheduleItem hour="4:15pm" tag="Plenary Session">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Closing session</Text>
-            <Text component="h3" heading4 style={{marginBottom: '24px'}}>Civic Engagement 4.0: A Sustainable Platform toward a Sustainable Society</Text>
-            <Talk title="Concluding remarks (TBC)" />
-            <Talk title="Meeting in 2020 (TBC)" />
-            <Talk title="Closing address (TBC)" />
-          </ScheduleItem>
-          <ScheduleItem hour="5.00pm">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Free Evening</Text>
+          <ScheduleItem hour="4:15pm - 5.15pm" tag="Plenary Session">
+            <Talk title="Synthesis Building Linkages with Strategic Partners">
+              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+            </Talk>
           </ScheduleItem>
         </ScheduleSection>
 
         <ScheduleSection>
-          <Day date="Day 4" day="Friday, August 23"/>
-          <ScheduleItem hour="-">
-            <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Free Public Event (with Prior Registration)</Text>
-            <Text component="h3" heading4 style={{marginBottom: '24px'}}>Eco Cycling Tour: For Sustainable Memories of Solo</Text>
-            <Text component="p" medium>Facilitation by Kota Kita Foundation (Details to be announced)</Text>
+          <Day date="Day 3" day="Thursday, August 22" theme="Mayors' Symposium"/>
+          <ScheduleItem hour="8:30am" tag="Plenary Session">
+            <Talk title="Opening: Co-Designing Sustainable, Just and Smart Urban Living”">
+              <SubTalk title="Welcome Address">
+                <TalkSpeaker
+                  name="Dr. Siti Syamsiyatun"
+                  job="Director, ICRS" />
+              </SubTalk>
+              <SubTalk title="Award giving ceremony “Sustainable, Just and Smart Urban Living Innovation Award"></SubTalk>
+              <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+            </Talk>
+            <Talk title="Roundtable: Mayors’ Innovation Pitch">
+              <TalkSpeaker
+                  name="6 Mayors from Indonesia" />
+              <TalkSpeaker
+                name="Mr. Pongsak Yingchoncharoen"
+                job="Mayor of Yala City Municipality, Thailand" />
+              <TalkSpeaker
+                name="(TBC) Dr. Tatsuo Igarashi"
+                job="Mayor of Tsukuba City, Japan" />
+              <TalkSpeaker
+                name="(TBC)"
+                job="Mayor of Ipoh City Council, Malaysia" />
+              <TalkSpeaker
+                name="(TBC) Mr. James Pooten, Jr."
+                job="Mayor of Municipality of Sagada, Philippines (TBC)" style={{marginBottom: '12px'}}/>
+              <Text className={styles.subheader} medium>
+                Facilitated by
+              </Text>
+              <TalkSpeaker
+                name="Dr. Dicky Sofjan"
+                job="ICRS" />
+              <TalkSpeaker
+                name="Mr. Ahmad Rifai"
+                job="Kota Kita Foundation" />
+              <TalkSpeaker
+                name="Dr. Fatimah Hussein"
+                job="Islamic University, Yogyakarta (TBC)" />
+              <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+            </Talk>
+          </ScheduleItem>
+          <ScheduleItem hour="10:15am">
+            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Coffe Break - Press Conference with City Mayors</Text>
+          </ScheduleItem>
+          <ScheduleItem hour="10:45am">
+            <Talk title="Mayors’ Interface with Civil Society (Part I)">
+              <SubTalk title="Inclusive and Sustainable City" speaker>
+                <TalkSpeaker
+                  name="Ms. Endah Setyowati"
+                  job="Executive Director, Ohana Indonesia TBC" />
+                <TalkSpeaker
+                  name="Dr. Bernadia Irawati Tjandradewi"
+                  job="Secretary General, United Cities and Local Governance Asia Pacific" />
+                <TalkSpeaker
+                  name="Dr. Sukanda Luangon Lewis"
+                  job="Project Director, Development of Creative Tourism, Chulalongkorn University" />
+              </SubTalk>
+              <SubTalk moderator title="Responses from mayors">
+                <TalkSpeaker
+                  name="(TBC) Dr. Hezri Adnan"
+                  job="Chief Executive Officer, Langkawi Development Agency (LADA), Malaysia" />
+              </SubTalk>
+              <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+            </Talk>
+          </ScheduleItem>
+          <ScheduleItem hour="12:45pm">
+            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Lunch Break</Text>
+          </ScheduleItem>
+          <ScheduleItem hour="2:00pm">
+            <Talk title="Mayors’ Interface with Civil Society (Part II)">
+              <SubTalk title="Faith and Human Dignity in the City" speaker>
+                <TalkSpeaker
+                  name="Dr. Elise Edwards"
+                  job="Baylor University, United States" />
+                <TalkSpeaker
+                  name="Dr. Brett Scharffs"
+                  job="Brigham University, United States" />
+                <TalkSpeaker
+                  name="Dr. Jeanny Dewayani"
+                  job="ICRS" />
+              </SubTalk>
+              <SubTalk moderator title="Responses from mayors">
+                <TalkSpeaker
+                  name="Dr. Yeoh Seng Guan"
+                  job="Monash University, Malaysia" />
+              </SubTalk>
+              <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+            </Talk>
+          </ScheduleItem>
+          <ScheduleItem hour="4:00pm">
+            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Coffee Break</Text>
+          </ScheduleItem>
+          <ScheduleItem hour="4:15pm">
+            <Talk title="Mayors’ Symposium Wrap Up"></Talk>
+            <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+          </ScheduleItem>
+          <ScheduleItem hour="4.45pm">
+            <SubTalk title="Solo Forum Wrap Up">
+              <Talk title="Civic Engagement 4.0: A Call for Action" style={{marginBottom: 0, paddingBottom: 0, paddingTop: 0,}}></Talk>
+            </SubTalk>
+            <SubTalk title="Closing Ceremony"></SubTalk>
+            <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+          </ScheduleItem>
+        </ScheduleSection>
+
+        <ScheduleSection>
+          <Day date="Day 4" day="Friday, August 23" theme="Public Event"/>
+          <ScheduleItem hour="" tag="Free Public Event (with Prior Registration)">
+            <Talk title="Eco Cycling Tour: For Sustainable Memories of Solo"></Talk>
+            <Talk title="Adjourn and departure of participants"></Talk>
           </ScheduleItem>
         </ScheduleSection>
       </Container>

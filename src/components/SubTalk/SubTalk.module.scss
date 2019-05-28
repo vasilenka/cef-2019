@@ -1,0 +1,25 @@
+@import 'src/tokens';
+
+.root {
+  width: 100%;
+  &:not(:first-child) {
+    padding-top: $space-sm;
+  }
+  &:not(:last-child) {
+    padding-bottom: $space-sm;
+  }
+}
+
+.title {
+  font-weight: $semibold;
+  color: $dark-alpha-70;
+  &:not(:last-child) {
+    margin: $space-stack-s;
+  }
+}
+
+.subheader {
+  display: block;
+  padding-top: $space-sm;
+  color: $dark-alpha-60;
+}

@@ -4,12 +4,12 @@ import cx from 'classnames';
 
 import Box from '../Box/Box';
 import Badge from '../../primitives/Badge/Badge';
+// import ScheduleVenue from '../ScheduleVenue/ScheduleVenue';
 
 const ScheduleItem = ({
   children,
   hour,
   tag,
-  venue,
   className,
   theme,
   title,

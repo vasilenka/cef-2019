@@ -13,10 +13,22 @@
   align-items: baseline;
 }
 
-.date,
+.date-container {
+  composes: col-12 col-sm-6 from global;
+  padding-bottom: 0;
+}
+
+.date {
+
+}
+
 .day {
   composes: col-12 col-sm-6 from global;
   padding-bottom: 0;
+}
+
+.theme {
+  padding-left: $space-ml;
 }
 
 .day {

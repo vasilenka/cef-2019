@@ -1,9 +1,12 @@
 @import 'src/tokens';
 
 .root {
-  padding: $space-vertical-ml;
   width: 100%;
+  &:not(:first-child) {
+    padding-top: $space-ml;
+  }
   &:not(:last-child) {
+    padding-bottom: $space-ml;
     border-bottom: 1px solid $dark-alpha-20;
   }
 }
@@ -12,4 +15,17 @@
   &:not(:last-child) {
     margin: $space-stack-sm;
   }
+}
+
+.subheader {
+  display: block;
+  padding-top: $space-sm;
+  color: $dark-alpha-60;
+}
+
+.workshop-icon {
+  width: 24px;
+  height: 24px;
+  color: #879F55;
+  margin: $space-inline-xs;
 }

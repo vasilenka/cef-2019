@@ -22,9 +22,39 @@
   font-size: 24px;
   line-height: 24px;
   display: block;
+  @include screen(phone) {
+
+  }
+  @include screen(tabPortrait) {
+    padding-bottom: 0;
+  }
+  @include screen(tabLandscape) {
+    padding-bottom: 0;
+  }
+  @include screen(desktop) {
+    padding-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    padding-bottom: 0;
+  }
 }
 
 .details {
   composes: col-12 col-sm-8 from global;
   flex: auto;
+  @include screen(phone) {
+
+  }
+  @include screen(tabPortrait) {
+    padding-bottom: 0;
+  }
+  @include screen(tabLandscape) {
+    padding-bottom: 0;
+  }
+  @include screen(desktop) {
+    padding-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    padding-bottom: 0;
+  }
 }
