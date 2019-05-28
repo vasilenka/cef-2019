@@ -1,19 +1,29 @@
 @import 'src/tokens';
 
 .root {
-  padding-bottom: $space-l;
+  padding-bottom: $space-ll;
   border-bottom: 1px solid $dark-alpha-20;
+  max-width: 700px;
   &:not(:first-child) {
-    padding-top: $space-l;
+    padding-top: $space-ll;
   }
 }
 
-.header {
+.section {
   padding: $space-inset-ml;
   background-color: $brand-primary-20;
   box-shadow: 0px 10px 16px -10px $brand-secondary-40;
   border-radius: 3px;
   max-width: 700px;
+  margin: $space-stack-ml;
+}
+
+.header {
+  margin: $space-stack-ml;
+}
+
+.title {
+  margin-bottom: 0;
 }
 
 .detail {
@@ -27,4 +37,8 @@
 .iconContainer {
   width: 28px;
   margin: $space-inline-s;
+}
+
+.footer {
+  padding-top: $space-ml;
 }

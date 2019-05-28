@@ -37,7 +37,7 @@ const SchedulesFull = ({
       </ScheduleSection>
 
         <ScheduleSection>
-          <Day date="Day 1" day="Tuesday, August 20"/>
+          <Day date="Day 1" day="Tuesday, August 20" theme="Thematic Field Visit"/>
           <ScheduleItem hour="8:00am - 3:00pm" tag="Field Experience">
             <Talk title="Thematic site visits">
               <SubTalk title="Sensing Sustainability in Solo Communities" />
