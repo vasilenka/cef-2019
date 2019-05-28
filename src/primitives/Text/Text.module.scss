@@ -54,6 +54,13 @@
   letter-spacing: -0.96px;
   font-weight: $bold;
 }
+.heading1Alt {
+  composes: root;
+  font-size: $heading-1;
+  line-height: 52px;
+  letter-spacing: -0.96px;
+  font-weight: $bold;
+}
 .heading2 {
   composes: alt;
   font-size: $heading-2;

@@ -1,0 +1,30 @@
+@import 'src/tokens';
+
+.root {
+  padding-bottom: $space-l;
+  border-bottom: 1px solid $dark-alpha-20;
+  &:not(:first-child) {
+    padding-top: $space-l;
+  }
+}
+
+.header {
+  padding: $space-inset-ml;
+  background-color: $brand-primary-20;
+  box-shadow: 0px 10px 16px -10px $brand-secondary-40;
+  border-radius: 3px;
+  max-width: 700px;
+}
+
+.detail {
+  list-style: none;
+  padding: $space-vertical-s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.iconContainer {
+  width: 28px;
+  margin: $space-inline-s;
+}

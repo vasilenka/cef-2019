@@ -1,14 +1,15 @@
-import styles from './Navbar.module.scss';
-import React from 'react';
-import cx from 'classnames';
+import styles from './Navbar.module.scss'
+import React from 'react'
+import cx from 'classnames'
+import {Link} from 'gatsby'
 
-import NavbarBrand from '../NavbarBrand/NavbarBrand';
-import NavbarSecondary from '../NavbarSecondary/NavbarSecondary';
-import NavbarPrimary from '../NavbarPrimary/NavbarPrimary';
-import NavbarMenu from '../NavbarMenu/NavbarMenu';
-import Button from '../../primitives/Button/Button';
-import Container from '../../layouts/Container/Container';
-import Text from '../../primitives/Text/Text';
+import NavbarBrand from '../NavbarBrand/NavbarBrand'
+import NavbarSecondary from '../NavbarSecondary/NavbarSecondary'
+import NavbarPrimary from '../NavbarPrimary/NavbarPrimary'
+import NavbarMenu from '../NavbarMenu/NavbarMenu'
+import Button from '../../primitives/Button/Button'
+import Container from '../../layouts/Container/Container'
+import Text from '../../primitives/Text/Text'
 
 const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
   return (
@@ -41,16 +42,18 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             [styles.secondaryMenu]: true,
           })}
           style={{paddingRight: '24px'}}>
-          <Button primary style={{ marginRight: '12px' }}>
-            JOIN AS PARTICIPANT
-          </Button>
+          <Link to="/join-participant">
+            <Button primary style={{ marginRight: '12px' }}>
+              JOIN AS PARTICIPANT
+            </Button>
+          </Link>
           <Button secondaryAlt>
             JOIN AS VOLUNTEER
           </Button>
         </NavbarSecondary>
       </Container>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

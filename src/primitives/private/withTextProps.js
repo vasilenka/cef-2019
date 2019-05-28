@@ -24,6 +24,7 @@ export const sizes = [
   'captionBold',
 
   'heading1',
+  'heading1Alt',
   'heading2',
   'heading3',
   'heading3Alt',

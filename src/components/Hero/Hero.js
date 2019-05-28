@@ -10,8 +10,8 @@ import Info from '../Info/Info'
 import Countdown from '../Countdown/Countdown'
 import Button from '../../primitives/Button/Button'
 
-import Calendar from './icons/calendar.inline.svg'
-import Place from './icons/place.inline.svg'
+import Calendar from './../icons/calendar.inline.svg'
+import Place from './../icons/place.inline.svg'
 
 const Hero = ({
   className,
