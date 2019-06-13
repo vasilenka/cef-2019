@@ -16,7 +16,6 @@
 .speakerContainer {
   composes: row from global;
   margin-bottom: 24px;
-  justify-content: center;
   @include screen(phone) {
     margin-left: -12px;
     margin-right: -12px;

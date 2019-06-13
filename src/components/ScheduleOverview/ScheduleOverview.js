@@ -91,8 +91,8 @@ const ScheduleOverview = ({
 
           </Box>
         </Box>
-        <SectionLink to="/schedule">
-          View to Full Schedules
+        <SectionLink to="/programs">
+          View to Full Programs
         </SectionLink>
       </Container>
     </Box>

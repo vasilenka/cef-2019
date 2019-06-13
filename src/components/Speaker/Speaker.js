@@ -29,9 +29,12 @@ const Speaker = ({
             [styles.identityBreakout]: breakout,
           })}
           >
-          <Text component="h3" heading3Alt className={cx({
-            [styles.name]: true,
-            [styles.banana]: !breakout })}>{name}</Text>
+          <Text component="h3"
+            heading3Alt={!breakout}
+            heading4={breakout}
+            className={cx({ [styles.name]: true })}
+            >{name}
+          </Text>
           {job &&
             <Text breakWord heading5 small className={cx({
               [styles.title]: true,

@@ -22,14 +22,14 @@ const SpeakerBreakout = ({
       <Container narrow className={styles.container}>
         <Text component="h2" heading2 className={styles.title}>Breakout Speakers</Text>
         <div className={styles.speakerContainer}>
-          <Speaker breakout photo={<Ita />} name="Paulista Surjadi" job="Communications Specialist" />
-          <Speaker breakout photo={<Febrian />} name="Febrian Gerinosky" job="Designer" />
-          <Speaker breakout photo={<Nina />} name="Nina Asterina" job="Knowledge Management Officer" />
-          <Speaker breakout photo={<Rian />} name="Rian Nugroho" job="Operations Director" />
-          <Speaker breakout photo={<Murni />} name="Murni" job="Finance Manager" />
-          <Speaker breakout photo={<Bima />} name="Bima Pratama Putra" job="Designer &amp Planner" />
-          <Speaker breakout photo={<Ita />} name="Paulista Surjadi" job="Communications Specialist" />
-          <Speaker breakout photo={<Febrian />} name="Febrian Gerinosky" job="Designer" />
+          <Speaker breakout name="Paulista Surjadi" job="" />
+          <Speaker breakout name="Febrian Gerinosky" job="" />
+          <Speaker breakout name="Nina Asterina" job="" />
+          <Speaker breakout name="Rian Nugroho" job="" />
+          <Speaker breakout name="Murni" job="" />
+          <Speaker breakout name="Bima Pratama Putra" job="" />
+          <Speaker breakout name="Paulista Surjadi" job="" />
+          <Speaker breakout name="Febrian Gerinosky" job="" />
         </div>
       </Container>
     </div>
