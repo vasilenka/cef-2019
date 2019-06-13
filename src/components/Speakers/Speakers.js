@@ -7,12 +7,6 @@ import Container from '../../layouts/Container/Container'
 import Box from '../Box/Box'
 import Speaker from '../Speaker/Speaker'
 
-import Ita from './../images/speakers/ita'
-import Nina from './../images/speakers/nina'
-import Bima from './../images/speakers/bima'
-import Febrian from './../images/speakers/febrian'
-import Rian from './../images/speakers/rian'
-import Murni from './../images/speakers/murni'
 import SectionLink from '../SectionLink/SectionLink';
 
 const Speakers = ({
@@ -26,17 +20,17 @@ const Speakers = ({
           Speakers Highlights
         </Text>
         <div className={styles.speakerContainer}>
-          <Speaker photo={<Ita />} name="Paulista Surjadi" job="Mayor of Surakarta, Indonesia" />
-          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Mayor of Surabaya, Indonesia" />
-          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Mayor of Surabaya, Indonesia" />
-          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Mayor of Sleman/Yogyakarta, Indonesia" />
-          <Speaker photo={<Nina />} name="Nina Asterina" job="Mayor of Jember, Indonesia" />
-          <Speaker photo={<Nina />} name="Nina Asterina" job="Mayor of Wonosobo, Indonesia" />
-          <Speaker photo={<Nina />} name="Nina Asterina" job="Mayor of Nan Province, Thailand" />
-          <Speaker photo={<Nina />} name="Nina Asterina" job="Mayor of Yala Province, Thailand" />
-          <Speaker photo={<Rian />} name="Rian Nugroho" job="Mayor from Malaysia" />
-          <Speaker photo={<Murni />} name="Murni" job="Mayor from Japan" />
-          <Speaker photo={<Bima />} name="Bima Pratama Putra" job="Mayor from the Philippines" />
+          <Speaker name="Mayor of Surakarta, Indonesia"/>
+          <Speaker name="Mayor of Mataram, Indonesia" />
+          <Speaker name="Mayor of Surabaya, Indonesia" />
+          <Speaker name="Mayor of Sleman/Yogyakarta, Indonesia" />
+          <Speaker name="Mayor of Jember, Indonesia" />
+          <Speaker name="Mayor of Wonosobo, Indonesia" />
+          <Speaker name="Mayor of Nan Province, Thailand" />
+          <Speaker name="Mayor of Yala Province, Thailand" />
+          <Speaker name="Mayor from Malaysia" />
+          <Speaker name="Mayor from Japan" />
+          <Speaker name="Mayor from the Philippines" />
         </div>
         <SectionLink to={'/speakers'}>
           View All Speakers

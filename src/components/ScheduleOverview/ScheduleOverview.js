@@ -21,7 +21,7 @@ const ScheduleOverview = ({
         <Box justifyCenter>
           <Box column className={styles.schedules}>
 
-            <ScheduleOverviewItem title="Augustus 19, 2019">
+            <ScheduleOverviewItem title="August 19, 2019">
               <Box column className={styles.item}>
                 <Text heading5Alt component="h5">
                   Arrival of Participants
@@ -37,7 +37,7 @@ const ScheduleOverview = ({
               </Box>
             </ScheduleOverviewItem>
 
-            <ScheduleOverviewItem title="Augustus 20, 2019">
+            <ScheduleOverviewItem title="August 20, 2019">
               <Box column className={styles.item}>
                 <Text heading5Alt component="h5" style={{marginBottom: '4px'}}>
                   Thematic site visits
@@ -56,7 +56,7 @@ const ScheduleOverview = ({
               </Box>
             </ScheduleOverviewItem>
 
-            <ScheduleOverviewItem title="Augustus 21, 2019">
+            <ScheduleOverviewItem title="August 21, 2019">
               <Box column className={styles.item}>
                 <Text heading5Alt component="h5" style={{marginBottom: '4px'}}>
                   Civil Society Open Forum
@@ -67,7 +67,7 @@ const ScheduleOverview = ({
               </Box>
             </ScheduleOverviewItem>
 
-            <ScheduleOverviewItem title="Augustus 22, 2019">
+            <ScheduleOverviewItem title="August 22, 2019">
               <Box column className={styles.item}>
                 <Text heading5Alt component="h5" style={{marginBottom: '4px'}}>
                   Mayor’s Symposium
@@ -78,7 +78,7 @@ const ScheduleOverview = ({
               </Box>
             </ScheduleOverviewItem>
 
-            <ScheduleOverviewItem title="Augustus 23, 2019">
+            <ScheduleOverviewItem title="August 23, 2019">
               <Box column className={styles.item}>
                 <Text heading5Alt component="h5" style={{marginBottom: '4px'}}>
                   Free Public Event (With Prior Registration)

@@ -23,18 +23,17 @@ const SpeakerKeynote = ({
       <Container narrow className={cx(styles.container)}>
         <Text component="h2" heading2 className={styles.title}>Plenary Speakers</Text>
         <div className={styles.speakerContainer}>
-          <Speaker photo={<Ita />} name="Paulista Surjadi" job="Communications Specialist" />
-          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Designer" />
-          <Speaker photo={<Nina />} name="Nina Asterina" job="Knowledge Management Officer" />
-          <Speaker photo={<Rian />} name="Rian Nugroho" job="Operations Director" />
-          <Speaker photo={<Murni />} name="Murni" job="Finance Manager" />
-          <Speaker photo={<Bima />} name="Bima Pratama Putra" job="Designer &amp; Planner" />
-          <Speaker photo={<Ita />} name="Paulista Surjadi" job="Communications Specialist" />
-          <Speaker photo={<Febrian />} name="Febrian Gerinosky" job="Designer" />
-          <Speaker photo={<Nina />} name="Nina Asterina" job="Knowledge Management Officer" />
-          <Speaker photo={<Rian />} name="Rian Nugroho" job="Operations Director" />
-          <Speaker photo={<Murni />} name="Murni" job="Finance Manager" />
-          <Speaker photo={<Bima />} name="Bima Pratama Putra" job="Designer &amp; Planner" />
+          <Speaker photo={<Ita />} name="Mayor of Surakarta" job="Indonesia" />
+          <Speaker photo={<Febrian />} name="Mayor of Mataram" job="Indonesia" />
+          <Speaker photo={<Nina />} name="Mayor of Surabaya" job="Indonesia" />
+          <Speaker photo={<Rian />} name="Mayor of Sleman/Yogyakarta" job="Indonesia" />
+          <Speaker photo={<Murni />} name="Mayor of Jember" job="Indonesia" />
+          <Speaker photo={<Bima />} name="Mayor of Wonosobo" job="Indonesia" />
+          <Speaker photo={<Ita />} name="Mayor of Nan Province" job="Thailand" />
+          <Speaker photo={<Nina />} name="Mayor of Yala Province" job="Thailand" />
+          <Speaker photo={<Rian />} name="Mayor from Malaysia" job="" />
+          <Speaker photo={<Murni />} name="Mayor from Japan" job="" />
+          <Speaker photo={<Bima />} name="Mayor from the Philippines" job="" />
         </div>
       </Container>
     </Box>

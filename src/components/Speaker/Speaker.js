@@ -22,23 +22,21 @@ const Speaker = ({
       <div
         className={cx({
           [styles.container]: true,
-          [styles.primaryBg]: !breakout,
         })}>
-        <div className={styles.photo}>
-          {photo}
-        </div>
         <div
           className={cx({
             [styles.identity]: !breakout,
             [styles.identityBreakout]: breakout,
           })}
           >
-          <Text component="h3" heading4 className={cx({
+          <Text component="h3" heading3Alt className={cx({
             [styles.name]: true,
             [styles.banana]: !breakout })}>{name}</Text>
-          <Text breakWord heading6 small className={cx({
-            [styles.title]: true,
-            [styles.banana]: !breakout })}>{job}</Text>
+          {job &&
+            <Text breakWord heading5 small className={cx({
+              [styles.title]: true,
+              [styles.banana]: !breakout })}>{job}</Text>
+          }
         </div>
       </div>
     </div>

@@ -4,42 +4,39 @@
   @include screen(phone) {
     padding-left: 12px;
     padding-right: 12px;
-    margin-bottom: 24px;
+    // margin-bottom: $space-sm;
   }
   @include screen(tabPortrait) {
     padding-left: 24px;
     padding-right: 24px;
-    margin-bottom: 32px;
+    // margin-bottom: $space-ml;
   }
   @include screen(tabLandscape) {
     padding-left: 24px;
     padding-right: 24px;
-    margin-bottom: 32px;
+    // margin-bottom: $space-ml;
   }
   @include screen(desktop) {
     padding-left: 24px;
     padding-right: 24px;
-    margin-bottom: 32px;
+    // margin-bottom: $space-ml;
   }
   @include screen(desktopWide) {
     padding-left: 24px;
     padding-right: 24px;
-    margin-bottom: 32px;
+    // margin-bottom: $space-ml;
   }
 }
 
 .root {
-  composes: col-md-4 col-sm-6 col-12 from global;
+  composes: col-sm-6 col-12 from global;
   composes: parent;
+  padding-bottom: 0;
 }
 
 .breakout {
-  composes: col-md-3 col-sm-4 col-10 from global;
+  composes: col-sm-4 col-10 from global;
   composes: parent;
-}
-
-.primaryBg {
-  background-color: $brand-primary-200;
 }
 
 .container {
@@ -85,8 +82,8 @@
 
 .identity {
   composes: text;
-  background-color: $brand-primary-200;
-  padding: $space-inset-m;
+  padding: $space-vertical-ml;
+  border-bottom: 1px solid $dark-alpha-30;
 }
 
 .identityBreakout {
@@ -95,21 +92,14 @@
   padding-top: $space-m;
 }
 
-// .identityBreakout {
-//   color: $bg-banana-200;
-// }
-
-.banana {
-  color: $bg-banana-200;
-}
-
 .name {
-  font-weight: 700;
+  font-weight: 600;
   text-transform: 'uppercase';
   margin: $space-stack-xs;
+  color: $dark-hex-90;
 }
 
 .title {
-  opacity: .90;
   letter-spacing: normal;
+  color: $dark-hex-70;
 }
