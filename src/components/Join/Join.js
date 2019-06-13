@@ -16,21 +16,21 @@ const Join = ({
         <div className={styles.row}>
           <Box column alignStart className={styles.section}>
             <Text heading2 component="h2" className={styles.title}>
-              Join the Event as Participant
+              Join the Event as a Participant
             </Text>
             <Text heading5 className={styles.description}>
               Experience the amazing event and lorem ipsum dolor  sit amet conseqteteur
             </Text>
-            <Button primary>Join as Participant</Button>
+            <Button primary>Join as a Participant</Button>
           </Box>
           <Box column alignStart className={styles.section}>
             <Text heading2 component="h2" className={styles.title}>
-              Join the Event as Volunteer
+              Join the Event as a Volunteer
             </Text>
             <Text heading5 className={styles.description}>
               Team up with amazing people around the world and together let’s prepare the best
             </Text>
-            <Button primary>Join as Volunteer</Button>
+            <Button primary>Join as a Volunteer</Button>
           </Box>
         </div>
       </Container>

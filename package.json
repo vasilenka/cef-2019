@@ -6,6 +6,7 @@
   "author": "Ongki 'vasilenka' Herlambang <ongki@herlambang.id>",
   "dependencies": {
     "@loadable/component": "^5.9.0",
+    "@reach/window-size": "^0.1.4",
     "add": "^2.0.6",
     "classnames": "^2.2.6",
     "gatsby": "^2.3.16",
@@ -52,6 +53,7 @@
     "static-build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
+    "dev-local": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",

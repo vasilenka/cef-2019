@@ -14,7 +14,7 @@ const SpeakerBreakout = ({
   return (
     <div className={cx(styles.root)}>
       <Container narrow className={styles.container}>
-        <Text component="h2" heading2 className={styles.title}>Breakout Speakers</Text>
+        <Text component="h2" heading2 className={styles.title}>Speakers</Text>
         <div className={styles.speakerContainer}>
           <Speaker breakout name="Paulista Surjadi" job="" />
           <Speaker breakout name="Febrian Gerinosky" job="" />

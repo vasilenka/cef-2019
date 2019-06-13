@@ -17,7 +17,7 @@ import Box from "../components/Box/Box";
 
 const NotFoundPage = () => (
   <Default>
-    <SEO title="Co-Organizers" />
+    <SEO title="Co-Organizers | Civic Engagement Forum 4.0 Solo" />
     <Cover
       title="Organizers"
       description="2019 International Forum of Civic Engagement 4.0, is co-organized by Chulalongkorn University with Kota Kita Foundation and Indonesian Consortium for Religious Studies."

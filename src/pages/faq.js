@@ -7,7 +7,7 @@ import Cover from "../components/Cover/Cover";
 
 const Faq = () => (
   <Default>
-    <SEO title="F.A.Q." />
+    <SEO title="F.A.Q. | Civic Engagement Forum 4.0 Solo" />
     <Cover
       title="Frequently Asked Questions"
       />

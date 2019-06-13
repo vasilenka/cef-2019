@@ -3,7 +3,7 @@
 .root {
   composes: row from global;
   &:not(:last-child) {
-    margin: $space-stack-m;
+    margin-bottom: $space-m;
   }
 }
 

@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
           <ActionMenu to='/organizers/'>Organizers</ActionMenu>
           <ActionMenu to='/programs/'>Programs</ActionMenu>
           <ActionMenu to='/speakers/'>Speakers</ActionMenu>
-          {/* <ActionMenu to='/venue/'>Venue</ActionMenu> */}
+          <ActionMenu to='/faq/'>FAQ</ActionMenu>
         </ActionBar>
       </>
     )}

@@ -3,6 +3,7 @@
 .root {
   position: fixed;
   overflow: hidden;
+  padding-bottom: env(safe-area-inset-bottom);
   will-change: transform;
   bottom: 0;
   left: 0;
