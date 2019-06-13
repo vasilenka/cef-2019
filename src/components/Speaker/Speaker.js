@@ -36,9 +36,16 @@ const Speaker = ({
             >{name}
           </Text>
           {job &&
-            <Text breakWord heading5 small className={cx({
-              [styles.title]: true,
-              [styles.banana]: !breakout })}>{job}</Text>
+            <Text
+              breakWord
+              heading5
+              small
+              className={cx({
+                [styles.title]: true,
+                [styles.banana]: !breakout })
+              }>
+              {job}
+            </Text>
           }
         </div>
       </div>

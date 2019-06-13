@@ -11,7 +11,6 @@ import Facebook from './icons/facebook.inline.svg'
 import Twitter from './icons/twitter.inline.svg'
 import Instagram from './icons/instagram.inline.svg'
 import Youtube from './icons/youtube.inline.svg'
-import Medium from './icons/medium.inline.svg'
 
 const Footer = ({
   className,
@@ -36,7 +35,6 @@ const Footer = ({
             <Facebook style={{ height: '24px', marginRight: '40px'}} />
             <Twitter style={{ height: '24px', marginRight: '40px'}} />
             <Youtube style={{ height: '24px', marginRight: '40px'}} />
-            <Medium style={{ height: '24px', }} />
           </Box>
         </Box>
       </Container>

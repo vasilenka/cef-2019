@@ -4,12 +4,6 @@ import cx from 'classnames'
 
 import Text from '../../primitives/Text/Text'
 
-import Ita from './../images/speakers/ita'
-import Nina from './../images/speakers/nina'
-import Bima from './../images/speakers/bima'
-import Febrian from './../images/speakers/febrian'
-import Rian from './../images/speakers/rian'
-import Murni from './../images/speakers/murni'
 import Container from '../../layouts/Container/Container'
 import Speaker from '../Speaker/Speaker'
 
