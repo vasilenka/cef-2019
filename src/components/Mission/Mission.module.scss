@@ -1,0 +1,66 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+}
+
+.container {
+  @include screen(phone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabLandscape) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xxl;
+    padding-bottom: 144px;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xxl;
+    padding-bottom: 144px;
+  }
+}
+
+.double {
+  composes: row from global;
+  padding-top: $space-ll;
+  padding-bottom: $space-ll;
+}
+
+.section {
+  composes: col-md-6 from global;
+  @include screen(smallPhone) {
+    padding-right: 0;
+  }
+  @include screen(phone) {
+    padding-right: 10%;
+  }
+  @include screen(tablet) {
+    padding-right: 10%;
+  }
+  @include screen(tabletLandscape) {
+    padding-right: 10%;
+  }
+  @include screen(desktop) {
+    padding-right: 10%;
+  }
+  @include screen(desktopWide) {
+    padding-right: 10%;
+  }
+}
+
+.title {
+  margin: $space-stack-ll;
+}
+
+.content {
+  &:not(:last-child) {
+    margin-bottom: $space-ml;
+  }
+}
