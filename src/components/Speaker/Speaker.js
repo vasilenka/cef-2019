@@ -7,7 +7,6 @@ const Speaker = ({
   name,
   breakout,
   job,
-  photo,
   className,
   ...restProps
   }) => {
@@ -30,8 +29,7 @@ const Speaker = ({
           })}
           >
           <Text component="h3"
-            heading3Alt={!breakout}
-            heading4={breakout}
+            heading4
             className={cx({ [styles.name]: true })}
             >{name}
           </Text>

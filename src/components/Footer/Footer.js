@@ -17,7 +17,7 @@ const Footer = ({
   ...restProps
   }) => {
   return (
-    <Box className={cx(styles.root)}>
+    <div className={cx(styles.root)}>
       <Container narrow className={styles.container}>
         <Box column alignStart justifyStart style={{marginBottom: '48px'}}>
           <Text component="h2" heading2 className={styles.title} style={{ marginBottom: '24px'}}>Contact us</Text>
@@ -27,18 +27,27 @@ const Footer = ({
         <Box alignCenter className={styles.footer}>
           <Box column alignStart className={styles.contact}>
             <a href="mailto:civicengagementforum.com" rel="noopener noreferrer">
-              <Text heading3Alt style={{fontWeight: 500, letterSpacing: '0'}}>info@civicengagementforum.net</Text>
+              <Text heading4 style={{fontWeight: 500, letterSpacing: '0'}}>info@civicengagementforum.net</Text>
             </a>
           </Box>
           <Box className={styles.socmed}>
-            <Instagram style={{ height: '24px', marginRight: '40px'}} />
-            <Facebook style={{ height: '24px', marginRight: '40px'}} />
-            <Twitter style={{ height: '24px', marginRight: '40px'}} />
-            <Youtube style={{ height: '24px', marginRight: '40px'}} />
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <Instagram style={{ height: '24px', marginRight: '40px'}} />
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <Facebook style={{ height: '24px', marginRight: '40px'}} />
+            </a>
+            <a href="https://twiiter.com" target="_blank" rel="noopener noreferrer">
+              <Twitter style={{ height: '24px', marginRight: '40px'}} />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <Youtube style={{ height: '24px', marginRight: '40px'}} />
+            </a>
           </Box>
         </Box>
       </Container>
-    </Box>
+      <div className={styles.pattern}></div>
+    </div>
   )
 }
 

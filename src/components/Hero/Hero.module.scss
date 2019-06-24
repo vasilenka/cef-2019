@@ -1,9 +1,10 @@
 @import 'src/tokens';
 
 .root {
-  // height: 64vh;
   min-height: 64vh;
   background-color: $brand-secondary-200;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -32,6 +33,13 @@
 
 .title {
   margin: $space-stack-m;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  background-image: url('./../../assets/images/patterns/pattern.png'), linear-gradient(90deg, rgba(0,0,0,.80),rgba(0,0,0,.80));
+  background-size: 60%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .tagline {
@@ -51,4 +59,46 @@
 
 .overline {
   margin: $space-stack-s;
+}
+
+.cloud {
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: initial;
+  }
+  @include screen(desktop) {
+    display: initial;
+  }
+  @include screen(desktopWide) {
+    display: initial;
+  }
+}
+
+.cloud1 {
+  composes: cloud;
+  position: absolute;
+  width: 320px;
+  right: -120px;
+  top: 40%;
+}
+
+.cloud2 {
+  composes: cloud;
+  position: absolute;
+  width: 320px;
+  right: 96px;
+  top: 32.5%;
+}
+
+.cloud3 {
+  composes: cloud;
+  position: absolute;
+  width: 320px;
+  right: -48px;
+  top: 20%;
 }

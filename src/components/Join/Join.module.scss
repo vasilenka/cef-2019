@@ -1,75 +1,29 @@
 @import 'src/tokens';
 
 .root {
-  background-color: $brand-primary-200;
+  background-color: $bg-banana-200;
 }
 
 .container {
   display: inline-flex;
-  @include screen(phone) {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-  @include screen(tabPortrait) {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-  @include screen(tabLandscape) {
-    padding-top: 144px;
-    padding-bottom: 144px;
-  }
-  @include screen(desktop) {
-    padding-top: 144px;
-    padding-bottom: 144px;
-  }
-  @include screen(desktopWide) {
-    padding-top: 144px;
-    padding-bottom: 144px;
-  }
+  width: 100%;
+  justify-content: space-between;
+  padding-top: $space-huge;
 }
 
-.title {
-  margin: $space-stack-m;
+.buttonContainer {
+  flex: 1;
 }
 
-.description {
+.button {
+  flex: 1;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 600;
-  @include screen(phone) {
-    margin: $space-stack-l;
-  }
-  @include screen(tabPortrait) {
-    margin: $space-stack-xl;
-  }
-  @include screen(tabLandscape) {
-    margin: $space-stack-xl;
-  }
-  @include screen(desktop) {
-    margin: $space-stack-xl;
-  }
-  @include screen(desktopWide) {
-    margin: $space-stack-xl;
-  }
-}
-
-.row {
-  composes: row from global;
-}
-
-.section {
-  composes: col-12 col-md-6 from global;
-  @include screen(phone) {
-    margin-bottom: $space-ll;
-  }
-  @include screen(tabPortrait) {
-    margin-bottom: $space-ll;
-  }
-  @include screen(tabLandscape) {
-    margin-bottom: 0;
-  }
-  @include screen(desktop) {
-    margin-bottom: 0;
-  }
-  @include screen(desktopWide) {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-right: 4px;
   }
 }

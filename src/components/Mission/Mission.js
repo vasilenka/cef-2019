@@ -4,12 +4,20 @@ import cx from 'classnames';
 import Box from '../Box/Box';
 import Text from '../../primitives/Text/Text';
 import Container from '../../layouts/Container/Container';
+import Join from "../Join/Join"
 
-import IconOne from '../images/icon1';
-import IconTwo from '../images/icon2';
-import IconThree from '../images/icon3';
-import IconFour from '../images/icon4';
-import IconFive from '../images/icon5';
+// import IconOne from '../images/icon1';
+// import IconTwo from '../images/icon2';
+// import IconThree from '../images/icon3';
+// import IconFour from '../images/icon4';
+// import IconFive from '../images/icon5';
+
+import Cloud1 from './../images/cloud1'
+import Cloud2 from './../images/cloud2'
+import Cloud3 from './../images/cloud3'
+import Ornament from '../Ornament/Ornament';
+
+// import Pattern from './../images/pattern0'
 
 const Mission = ({
   className,
@@ -17,12 +25,22 @@ const Mission = ({
   }) => {
   return (
     <Box className={cx(styles.root)}>
+      <Ornament />
+      <div className={styles.cloud1}>
+        <Cloud1 />
+      </div>
+      <div className={styles.cloud2}>
+        <Cloud2 />
+      </div>
+      <div className={styles.cloud3}>
+        <Cloud3 />
+      </div>
       <Container narrow className={cx(styles.container)}>
         <main>
-          <section>
+          <section className={styles.mainSection}>
             <Text heading1 component="h2" className={styles.title}>Our Mission</Text>
             <Text component="p" medium className={styles.content}>
-              <strong>Civic Engagement 4.0 (Four Point Zero) Dignity ~ Justice ~ Sustainability (Civic Engagement 4.0)</strong> is a project in the course of which participants from different sectors can share, discuss, and develop ideas and plans to achieve dignity, justice, and sustainability in Southeast Asia in the era of urbanization and technological advancement. Justice and dignity need to be championed as core values in pursuit of sustainability. This is because sustainability cannot be achieved in economic terms alone; environmental, socio-cultural, and spiritual aspects are equally essential. In a sustainable society, everyone should enjoy their life while being equally and mutually respected as humans.
+              <strong><span className={styles.dropcap}>C</span>ivic Engagement 4.0 (Four Point Zero) Dignity ~ Justice ~ Sustainability (Civic Engagement 4.0)</strong> is a project in the course of which participants from different sectors can share, discuss, and develop ideas and plans to achieve dignity, justice, and sustainability in Southeast Asia in the era of urbanization and technological advancement. Justice and dignity need to be championed as core values in pursuit of sustainability. This is because sustainability cannot be achieved in economic terms alone; environmental, socio-cultural, and spiritual aspects are equally essential. In a sustainable society, everyone should enjoy their life while being equally and mutually respected as humans.
             </Text>
             <Text component="p" medium className={styles.content}>
               <strong>Civic Engagement 4.0</strong> will begin with a launching event in Surakarta (Solo), Central Java, Indonesia (2019 International Forum in Solo) on August 20 to 23, 2019. The 2019 International Forum in Solo is a public event, comprised of an opening ceremony, the Public Forum, the Mayors’ Symposium, an eco-cycling tour, an art exhibition, and thematic field visits (by invitation only). Approximately 250 participants, including academics and students, NGO activists, government officials, and general public, are expected from ASEAN as well as its partners such as Australia, Canada, Japan and United States.
@@ -43,6 +61,7 @@ const Mission = ({
             </section>
           </div>
         </main>
+        <Join />
       </Container>
     </Box>
   )

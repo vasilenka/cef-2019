@@ -1,10 +1,14 @@
-import styles from './Join.module.scss';
-import React from 'react';
-import cx from 'classnames';
-import Box from '../Box/Box';
-import Container from '../../layouts/Container/Container';
-import Text from '../../primitives/Text/Text';
-import Button from '../../primitives/Button/Button';
+import styles from './Join.module.scss'
+import React from 'react'
+import cx from 'classnames'
+import {Link} from 'gatsby'
+
+import Box from '../Box/Box'
+import Container from '../../layouts/Container/Container'
+import Button from '../../primitives/Button/Button'
+// import Text from '../../primitives/Text/Text'
+
+// import Pattern from './../images/pattern0'
 
 const Join = ({
   className,
@@ -12,27 +16,11 @@ const Join = ({
   }) => {
   return (
     <Box className={cx(styles.root)}>
-      <Container narrow className={styles.container}>
-        <div className={styles.row}>
-          <Box column alignStart className={styles.section}>
-            <Text heading2 component="h2" className={styles.title}>
-              Join the Event as a Participant
-            </Text>
-            <Text heading5 className={styles.description}>
-              Experience the amazing event and lorem ipsum dolor  sit amet conseqteteur
-            </Text>
-            <Button primary>Join as a Participant</Button>
-          </Box>
-          <Box column alignStart className={styles.section}>
-            <Text heading2 component="h2" className={styles.title}>
-              Join the Event as a Volunteer
-            </Text>
-            <Text heading5 className={styles.description}>
-              Team up with amazing people around the world and together let’s prepare the best
-            </Text>
-            <Button primary>Join as a Volunteer</Button>
-          </Box>
-        </div>
+      <Container bleed className={styles.container}>
+        <Link className={styles.buttonContainer} to="/join-participant">
+          <Button className={styles.button} primary>Join the Event as a Participant</Button>
+        </Link>
+        <Button className={styles.button} primary>Join the Event as a Volunteer</Button>
       </Container>
     </Box>
   )

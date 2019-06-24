@@ -1,0 +1,29 @@
+@import 'src/tokens';
+
+.root {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 64px;
+  background-image: url('./../../assets/images/patterns/pattern.png');
+  background-position: bottom;
+  background-size: 300%;
+  opacity: .87;
+
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+
+  }
+  @include screen(tabLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: block;
+  }
+  @include screen(desktopWide) {
+
+  }
+}

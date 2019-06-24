@@ -2,6 +2,8 @@
 
 .root {
   background-color: $bg-banana-200;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -30,28 +32,31 @@
 .double {
   composes: row from global;
   padding-top: $space-ll;
-  padding-bottom: $space-ll;
+}
+
+.mainSection {
+  max-width: 720px;
 }
 
 .section {
   composes: col-md-6 from global;
-  @include screen(smallPhone) {
-    padding-right: 0;
+
+  &:not(:last-child) {
+    margin-bottom: $space-ml;
   }
+
   @include screen(phone) {
-    padding-right: 10%;
   }
-  @include screen(tablet) {
-    padding-right: 10%;
+  @include screen(tabPortrait) {
   }
-  @include screen(tabletLandscape) {
-    padding-right: 10%;
+  @include screen(tabLandscape) {
+    padding-right: 4%;
   }
   @include screen(desktop) {
-    padding-right: 10%;
+    padding-right: 4%;
   }
   @include screen(desktopWide) {
-    padding-right: 10%;
+    padding-right: 4%;
   }
 }
 
@@ -63,4 +68,56 @@
   &:not(:last-child) {
     margin-bottom: $space-ml;
   }
+}
+
+.dropcap {
+  float: left;
+  font-family: $font-display;
+  font-size: 75px;
+  line-height: 72px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.cloud {
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: initial;
+  }
+  @include screen(desktopWide) {
+    display: initial;
+  }
+}
+
+.cloud1 {
+  composes: cloud;
+  position: absolute;
+  width: 480px;
+  right: -80px;
+  top: 10%;
+}
+
+.cloud2 {
+  composes: cloud;
+  position: absolute;
+  width: 280px;
+  right: 96px;
+  top: 31%;
+}
+
+.cloud3 {
+  composes: cloud;
+  position: absolute;
+  width: 280px;
+  right: -128px;
+  top: 28%;
 }
