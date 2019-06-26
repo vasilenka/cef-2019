@@ -103,15 +103,7 @@
   position: absolute;
   width: 480px;
   right: -80px;
-  top: 10%;
-}
-
-.cloud2 {
-  composes: cloud;
-  position: absolute;
-  width: 280px;
-  right: 96px;
-  top: 31%;
+  top:8%;
 }
 
 .cloud3 {
@@ -119,5 +111,37 @@
   position: absolute;
   width: 280px;
   right: -128px;
-  top: 28%;
+  top: 25%;
+}
+
+.cloud2 {
+  composes: cloud;
+  position: absolute;
+  width: 192px;
+  left: -48px;
+  top: 26%;
+}
+
+.cloud4 {
+  composes: cloud;
+  position: absolute;
+  width: 144px;
+  left: -64px;
+  top: 20%;
+}
+
+.cloud5 {
+  composes: cloud;
+  position: absolute;
+  width: 160px;
+  left: -64px;
+  bottom: 16%;
+}
+
+.cloud6 {
+  composes: cloud;
+  position: absolute;
+  width: 160px;
+  right: 0px;
+  bottom: 14%;
 }

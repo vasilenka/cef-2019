@@ -12,10 +12,10 @@ import Join from "../Join/Join"
 // import IconFour from '../images/icon4';
 // import IconFive from '../images/icon5';
 
-import Cloud1 from './../images/cloud1'
-import Cloud2 from './../images/cloud2'
-import Cloud3 from './../images/cloud3'
-import Ornament from '../Ornament/Ornament';
+import Cloud1 from './../images/cloud1--alt'
+import Cloud2 from './../images/cloud2--alt'
+import Cloud3 from './../images/cloud3--alt'
+// import Ornament from '../Ornament/Ornament';
 
 // import Pattern from './../images/pattern0'
 
@@ -25,16 +25,13 @@ const Mission = ({
   }) => {
   return (
     <Box className={cx(styles.root)}>
-      <Ornament />
-      <div className={styles.cloud1}>
-        <Cloud1 />
-      </div>
-      <div className={styles.cloud2}>
-        <Cloud2 />
-      </div>
-      <div className={styles.cloud3}>
-        <Cloud3 />
-      </div>
+      {/* <Ornament /> */}
+      <div className={styles.cloud1}><Cloud1 /></div>
+      <div className={styles.cloud2}><Cloud2 /></div>
+      <div className={styles.cloud3}><Cloud3 /></div>
+      <div className={styles.cloud4}><Cloud3 /></div>
+      <div className={styles.cloud5}><Cloud1 /></div>
+      <div className={styles.cloud6}><Cloud2 /></div>
       <Container narrow className={cx(styles.container)}>
         <main>
           <section className={styles.mainSection}>

@@ -10,7 +10,7 @@ import Text from '../../primitives/Text/Text'
 import IcrsWeb from './../images/organizers/icrs-webp'
 import KotaKitaWeb from './../images/organizers/kk-webp'
 import UnivWeb from './../images/organizers/univ-webp'
-import Ornament from '../Ornament/Ornament';
+// import Ornament from '../Ornament/Ornament';
 
 const Organizers = ({
   className,
@@ -18,7 +18,7 @@ const Organizers = ({
   }) => {
   return (
     <Box className={cx(styles.root)}>
-      <Ornament />
+      {/* <Ornament /> */}
       <Container narrow className={cx(styles.container)}>
         <Box alignCenter className={styles.organizerContainer}>
           <Text heading5Alt component="h2" className={styles.title}>Co-organized by : </Text>

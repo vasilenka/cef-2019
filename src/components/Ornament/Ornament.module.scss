@@ -6,10 +6,10 @@
   top: 0px;
   bottom: 0px;
   width: 64px;
-  background-image: url('./../../assets/images/patterns/pattern.png');
-  background-position: bottom;
-  background-size: 300%;
-  opacity: .87;
+  background-image: url('./../../assets/images/patterns/parang-1.png');
+  background-size: 100%;
+  mix-blend-mode: multiply;
+  opacity: .9;
 
   @include screen(phone) {
     display: none;

@@ -9,6 +9,8 @@ import NavbarPrimary from '../NavbarPrimary/NavbarPrimary'
 import NavbarMenu from '../NavbarMenu/NavbarMenu'
 import Button from '../../primitives/Button/Button'
 import Container from '../../layouts/Container/Container'
+import Popout from '../../primitives/Popout/Popout';
+import Text from '../../primitives/Text/Text';
 
 const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
   return (
@@ -31,7 +33,25 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             <NavbarBrand/>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/">Home</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/about/">About</NavbarMenu>
-            <NavbarMenu containerClassName={styles.primaryMenu} to="/organizers/">Organizers</NavbarMenu>
+            <Popout
+              bottom
+              content={() =>
+                <>
+                  <NavbarMenu containerClassName={styles.dropdown} to="/organizers">Organizers</NavbarMenu>
+                  <NavbarMenu containerClassName={styles.dropdown} to="/organizers">Organizers</NavbarMenu>
+                </>
+              }>
+              {(
+                setVisible,
+                visible,
+              ) =>
+                <button type='button' className={styles.dropdownTrigger} onClick={() => setVisible(!visible)}>
+                  <Text heading5Alt className={styles.item} style={{fontWeight: '700'}}>
+                    Organizers
+                  </Text>
+                </button>
+              }
+            </Popout>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/programs/">Programs</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/speakers/">Speakers</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/faq/">FAQ</NavbarMenu>

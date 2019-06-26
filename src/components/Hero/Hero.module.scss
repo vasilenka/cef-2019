@@ -35,11 +35,7 @@
   margin: $space-stack-m;
   padding-bottom: 4px;
   padding-top: 4px;
-  background-image: url('./../../assets/images/patterns/pattern.png'), linear-gradient(90deg, rgba(0,0,0,.80),rgba(0,0,0,.80));
   background-size: 60%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .tagline {
@@ -82,23 +78,23 @@
 .cloud1 {
   composes: cloud;
   position: absolute;
-  width: 320px;
-  right: -120px;
-  top: 40%;
+  width: 380px;
+  right: 40px;
+  top: 2%;
 }
 
 .cloud2 {
   composes: cloud;
   position: absolute;
-  width: 320px;
-  right: 96px;
-  top: 32.5%;
+  width: 360px;
+  right: 160px;
+  top: 28%;
 }
 
 .cloud3 {
   composes: cloud;
   position: absolute;
-  width: 320px;
-  right: -48px;
+  width: 292px;
+  right: -60px;
   top: 20%;
 }

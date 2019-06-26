@@ -72,10 +72,10 @@
 
 .pattern {
   width: 100%;
-  height: 72px;
-  background-image: url('./../../assets/images/patterns/pattern.png');
+  height: 48px;
+  background-image: url('./../../assets/images/patterns/parang-hor-1--alt.png');
   background-position: bottom;
-  background-size: 240px;
-  opacity: 0.80;
-  mix-blend-mode: color-burn;
+  background-size: contain;
+  // opacity: 0.80;
+  // mix-blend-mode: multiply;
 }

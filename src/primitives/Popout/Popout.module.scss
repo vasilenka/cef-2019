@@ -1,4 +1,4 @@
-@import 'invoker-tokens/index.scss';
+@import 'src/tokens';
 
 .root {
   position: relative;
@@ -71,7 +71,7 @@
 .content {
   border: 1px solid $dark-alpha-30;
   width: max-content;
-  background: $light-alpha-100;
+  background-color: $brand-secondary-200;
   border-radius: 3px;
 }
 
@@ -83,7 +83,7 @@
   transform: rotate(45deg);
   border-width: 1px;
   border-style: solid;
-  background: $light-alpha-100;
+  background-color: $brand-secondary-200;
 }
 
 .arrowPositionTop {

@@ -13,9 +13,9 @@ import Button from '../../primitives/Button/Button'
 import Calendar from './../icons/calendar.inline.svg'
 import Place from './../icons/place.inline.svg'
 
-// import Cloud1 from './../images/cloud1'
-// import Cloud2 from './../images/cloud2'
-// import Cloud3 from './../images/cloud3'
+import Cloud1 from './../images/cloud1--alt'
+import Cloud2 from './../images/cloud2--alt'
+import Cloud3 from './../images/cloud3--alt'
 // import Ornament from '../Ornament/Ornament';
 
 const Hero = ({
@@ -24,7 +24,7 @@ const Hero = ({
   }) => {
   return (
     <div className={cx(styles.root)}>
-      {/* <div className={styles.cloud1}>
+      <div className={styles.cloud1}>
         <Cloud1 />
       </div>
       <div className={styles.cloud2}>
@@ -32,7 +32,7 @@ const Hero = ({
       </div>
       <div className={styles.cloud3}>
         <Cloud3 />
-      </div> */}
+      </div>
       <Container narrow className={cx(styles.container)}>
         <Box style={{ height: '100%', borderBottom: '1px solid rgba(0,0,0,.12)', paddingBottom: '48px', marginBottom: '48px' }} alignCenter justifyStart>
           <Box column alignStart>
