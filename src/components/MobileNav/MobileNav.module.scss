@@ -1,0 +1,114 @@
+@import 'src/tokens';
+
+.root {
+
+}
+
+.trigger {
+  cursor: pointer;
+  user-select: none;
+  position: fixed;
+  will-change: transform;
+  bottom: $space-sm;
+  right: $space-sm;
+  height: 56px;
+  width: 56px;
+  border: 0.5px solid $dark-alpha-30;
+  background: $brand-secondary-200;
+  border-radius: 999999px;
+  color: $dark-alpha-80;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  line-height: 40px;
+  box-shadow: 0px 2px 4px 0px $dark-alpha-30;
+  transition: all 0.40s;
+
+  &:hover {
+    box-shadow: 0px 8px 8px 0px $dark-alpha-40;
+    transition: all 0.28s;
+  }
+
+  @include screen(phone) {
+    display: flex;
+  }
+  @include screen(tabPortrait) {
+    display: flex;
+  }
+  @include screen(tabLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: none;
+  }
+  @include screen(desktopWide) {
+    display: none;
+  }
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $brand-secondary-200;
+  color: $dark-alpha-80;
+  z-index: $layer-top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: $space-inset-l;
+  align-items: center;
+}
+
+.brand {
+  width: 30%;
+  mix-blend-mode: darken;
+}
+
+.wrapper {
+  width: 100%;
+  padding: $space-vertical-ll;
+}
+
+.itemWrapper {
+  width: 100%;
+  padding: $space-vertical-m;
+  font-size: $heading-4;
+  border-bottom: 1px solid $dark-alpha-20;
+  transition: all .40s;
+  font-weight: 600;
+
+  &:hover {
+    border-bottom-color: $brand-primary-200;
+    transition: all .28s;
+
+    a {
+      color: $brand-primary-300;
+    }
+  }
+}
+
+.active {
+  color: $dark-alpha-80;
+  li {
+    border-bottom-color: $brand-primary-200;
+  }
+}
+
+.close {
+  width: 56px;
+  height: 56px;
+  background-color: $brand-secondary-200;
+  color: $dark-alpha-80;
+  border-radius: 99999px;
+  display: flex;
+  font-size: 24px;
+  line-height: 56px;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border: 1px solid $dark-alpha-20;
+  box-shadow: 0px 12px 20px -8px $dark-alpha-40;
+}

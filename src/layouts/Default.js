@@ -7,8 +7,7 @@ import "./../assets/sass/invoker-layout/grid.module.scss"
 import "./../assets/fonts/fonts"
 
 import Navbar from "./../components/Navbar/Navbar"
-// import ActionBar from "./../components/ActionBar/ActionBar";
-// import ActionMenu from './../components/ActionMenu/ActionMenu';
+import MobileNav from "./../components/MobileNav/MobileNav"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -25,14 +24,7 @@ const Layout = ({ children }) => (
       <>
         <Navbar bleed/>
         {children}
-        {/* <ActionBar>
-          <ActionMenu to='/'>Home</ActionMenu>
-          <ActionMenu to='/about/'>About</ActionMenu>
-          <ActionMenu to='/organizers/'>Organizers</ActionMenu>
-          <ActionMenu to='/programs/'>Programs</ActionMenu>
-          <ActionMenu to='/speakers/'>Speakers</ActionMenu>
-          <ActionMenu to='/faq/'>FAQ</ActionMenu>
-        </ActionBar> */}
+        <MobileNav />
       </>
     )}
   />
