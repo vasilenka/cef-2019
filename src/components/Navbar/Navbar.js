@@ -9,7 +9,6 @@ import NavbarPrimary from '../NavbarPrimary/NavbarPrimary'
 import NavbarMenu from '../NavbarMenu/NavbarMenu'
 import Button from '../../primitives/Button/Button'
 import Container from '../../layouts/Container/Container'
-import Text from '../../primitives/Text/Text'
 
 const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
   return (
@@ -29,9 +28,7 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
           })}
           >
           <NavbarPrimary>
-            <NavbarBrand>
-              <Text heading3>CE4.0</Text>
-            </NavbarBrand>
+            <NavbarBrand/>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/">Home</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/about/">About</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/organizers/">Organizers</NavbarMenu>

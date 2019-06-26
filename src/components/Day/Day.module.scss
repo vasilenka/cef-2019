@@ -3,7 +3,6 @@
 .root {
   composes: row from global;
   position: sticky;
-  top: 96px;
   padding: $space-vertical-ml;
   border-bottom: 2px solid $dark-alpha-20;
   background: $bg-banana-200;
@@ -11,6 +10,21 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  @include screen(phone) {
+    top: 120px;
+  }
+  @include screen(tabPortrait) {
+    top: 120px;
+  }
+  @include screen(tabLandscape) {
+    top: 96px;
+  }
+  @include screen(desktop) {
+    top: 96px;
+  }
+  @include screen(desktopWide) {
+    top: 96px;
+  }
 }
 
 .date-container {

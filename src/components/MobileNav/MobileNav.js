@@ -1,5 +1,5 @@
 import styles from './MobileNav.module.scss';
-import React, { useState, useLayoutEffect, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import cx from 'classnames';
 import { Link } from 'gatsby'
 
@@ -23,7 +23,7 @@ const Dialog = props => {
   }, [])
 
   return (
-    <nav className={styles.dialog}>
+    <nav className={cx(styles.dialog)}>
       <img className={styles.brand} src={Logo} alt="Civic Engagement 4.0"/>
       <ul className={styles.wrapper}>
         <Link to="/" activeClassName={styles.active}>
@@ -71,7 +71,9 @@ const MobileNav = ({
 
   return (
     <>
-      <Trigger onClick={() => setVisible(!visible)}/>
+      {!visible &&
+        <Trigger onClick={() => setVisible(!visible)}/>
+      }
       {
         visible && <Dialog visible={visible} setVisible={setVisible} />
       }

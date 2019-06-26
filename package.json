@@ -4,6 +4,19 @@
   "description": "Official website for Civic Engagement Forum 4.0 event",
   "version": "0.1.0",
   "author": "Ongki 'vasilenka' Herlambang <ongki@herlambang.id>",
+  "scripts": {
+    "build": "gatsby build",
+    "static-build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop",
+    "dev": "gatsby develop",
+    "dev-local": "gatsby develop -H 0.0.0.0",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "now-build": "npm run build",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
   "dependencies": {
     "@loadable/component": "^5.9.0",
     "@reach/window-size": "^0.1.4",
@@ -48,19 +61,6 @@
     "gatsby"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "static-build": "gatsby build --prefix-paths",
-    "develop": "gatsby develop",
-    "dev": "gatsby develop",
-    "dev-local": "gatsby develop -H 0.0.0.0",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "now-build": "npm run build",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"

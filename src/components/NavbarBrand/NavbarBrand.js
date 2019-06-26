@@ -3,7 +3,7 @@ import React from 'react'
 import cx from 'classnames'
 import { Link } from 'gatsby'
 
-import Logo from './logo/dark.inline.svg'
+import Logo from './../../assets/images/logo.jpg'
 
 const NavbarBrand = ({ children, className, ...restProps }) => {
   return (
@@ -16,7 +16,7 @@ const NavbarBrand = ({ children, className, ...restProps }) => {
       {...restProps}
       >
       <div className={styles.brandContainer}>
-        { children || <Logo className={styles.brand} /> }
+        { children || <img src={Logo} alt="Civic engagement 4.0" className={styles.brand}/> }
       </div>
     </Link>
   )
