@@ -1,6 +1,7 @@
 import styles from './SpeakersHighlight.module.scss'
 import React from 'react'
 import cx from 'classnames'
+import { Link } from 'gatsby'
 
 import Text from '../../primitives/Text/Text'
 import Container from '../../layouts/Container/Container'
@@ -21,33 +22,41 @@ const SpeakersHighlight = ({
         </Text>
 
         <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Keynote Speaker</Text>
-        <main className={styles.keynote} style={{ textAlign: 'center' }}>
-          <Text heading3Alt component="h3" className={styles.name}>Najwa Shihab*</Text>
-          <Text heading5 component="p" className={styles.job}>Founder of Narasi</Text>
-          <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text>
-        </main>
+        <Link to="/speakers#keynote-speaker">
+          <main className={styles.keynote} style={{ textAlign: 'center' }}>
+            <Text heading3Alt component="h3" className={styles.name}>Najwa Shihab*</Text>
+            <Text heading5 component="p" className={styles.job}>Founder of Narasi</Text>
+            <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text>
+          </main>
+        </Link>
 
         <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Mayors</Text>
 
         <Text heading5 component="h3" className={styles.mayorsTitle}>Indonesia</Text>
-        <div className={styles.speakerContainer}>
-          <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat, Indonesia)" />
-          <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta, Indonesia)" />
-          <Speaker name="Eko Purnomo*" job="Regent of Wonosobo (Central Java, Indonesia)" />
-          <Speaker name="F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java, Indonesia)" />
-          <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan, Indonesia)" />
-          <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java, Indonesia)" />
-        </div>
+        <Link to="/speakers#indonesia">
+          <div className={styles.speakerContainer}>
+            <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat, Indonesia)" />
+            <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta, Indonesia)" />
+            <Speaker name="Eko Purnomo*" job="Regent of Wonosobo (Central Java, Indonesia)" />
+            <Speaker name="F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java, Indonesia)" />
+            <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan, Indonesia)" />
+            <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java, Indonesia)" />
+          </div>
+        </Link>
 
         <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
-        <div className={styles.speakerContainer}>
-          <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala Province, Thailand" />
-        </div>
+        <Link to="/speakers#thailand">
+          <div className={styles.speakerContainer}>
+            <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala Province, Thailand" />
+          </div>
+        </Link>
 
         <Text heading5 component="h3" className={styles.mayorsTitle}>Philippines</Text>
-        <div className={styles.speakerContainer}>
-          <Speaker name="James Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
-        </div>
+        <Link to="/speakers#philippines">
+          <div className={styles.speakerContainer}>
+            <Speaker name="James Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
+          </div>
+        </Link>
 
         <Text heading5 component="h3" className={styles.mayorsTitle}>South Korea (to be confirmed)</Text>
         {/* <div className={styles.speakerContainer}>

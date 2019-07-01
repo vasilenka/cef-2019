@@ -2,8 +2,30 @@
 
 .root {
   background-color: $bg-banana-200;
+  position: relative;
   &:last-child {
     padding-bottom: $space-huge;
+  }
+}
+
+.hack {
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  @include screen(phone) {
+    height: 64px;
+  }
+  @include screen(tabPortrait) {
+    height: 144px;
+  }
+  @include screen(tabLandscape) {
+    height: 144px;
+  }
+  @include screen(desktop) {
+    height: 144px;
+  }
+  @include screen(desktopWide) {
+    height: 144px;
   }
 }
 

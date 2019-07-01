@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Footer from "../components/Footer/Footer";
 import Cover from "../components/Cover/Cover";
 import SpeakerKeynote from "../components/SpeakerKeynote/SpeakerKeynote";
-import SpeakerBreakout from "../components/SpeakerBreakout/SpeakerBreakout";
+// import SpeakerBreakout from "../components/SpeakerBreakout/SpeakerBreakout";
 import Speaker from '../components/Speaker/Speaker'
 import SpeakerKeynoteItem from "../components/SpeakerKeynoteIte/SpeakerKeynoteItem";
 import {
@@ -28,10 +28,10 @@ const NotFoundPage = () => (
       description=""
       />
       <main>
-        <SpeakerKeynote sectionTitle="Keynote Speaker">
+        <SpeakerKeynote sectionTitle="Keynote Speaker" id="keynote-speaker">
           <SpeakerKeynoteItem photo={<Najwa />}/>
         </SpeakerKeynote>
-        <SpeakerKeynote title="Indonesia" sectionTitle="Mayors">
+        <SpeakerKeynote title="Indonesia" sectionTitle="Mayors" id="indonesia">
           <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat, Indonesia)" photo={<Ahyar/>} />
           <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta, Indonesia)"  photo={<Badingah/>} />
           <Speaker name="Eko Purnomo*" job="Regent of Wonosobo (Central Java, Indonesia)"  photo={<Eko/>} />
@@ -39,13 +39,13 @@ const NotFoundPage = () => (
           <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan, Indonesia)"  photo={<IbnuSina/>} />
           <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java, Indonesia)"  photo={<Risma/>} />
         </SpeakerKeynote>
-        <SpeakerKeynote title="Thailand">
+        <SpeakerKeynote title="Thailand" id="thailand">
           <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala Province, Thailand" photo={<Pongsak/>}/>
         </SpeakerKeynote>
-        <SpeakerKeynote title="Philippines">
+        <SpeakerKeynote title="Philippines" id="philippines">
           <Speaker name="James Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
         </SpeakerKeynote>
-        <SpeakerKeynote title="South Korea (to be confirmed)">
+        <SpeakerKeynote title="South Korea (to be confirmed)" id="south-korea">
         </SpeakerKeynote>
     </main>
     <Footer />
