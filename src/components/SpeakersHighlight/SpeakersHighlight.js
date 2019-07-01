@@ -19,13 +19,16 @@ const SpeakersHighlight = ({
         <Text heading1 component="h2" style={{ width: '100%', textAlign: 'center', marginBottom: '64px'}}>
           Speakers Highlights
         </Text>
+
         <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Keynote Speaker</Text>
         <main className={styles.keynote} style={{ textAlign: 'center' }}>
-          <Text heading3Alt component="h3" className={styles.name}>Najwa Shihab</Text>
+          <Text heading3Alt component="h3" className={styles.name}>Najwa Shihab*</Text>
           <Text heading5 component="p" className={styles.job}>Founder of Narasi</Text>
           <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text>
         </main>
+
         <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Mayors</Text>
+
         <Text heading5 component="h3" className={styles.mayorsTitle}>Indonesia</Text>
         <div className={styles.speakerContainer}>
           <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat, Indonesia)" />

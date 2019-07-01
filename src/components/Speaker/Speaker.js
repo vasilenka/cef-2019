@@ -5,6 +5,7 @@ import Text from '../../primitives/Text/Text';
 
 const Speaker = ({
   name,
+  photo,
   breakout,
   job,
   className,
@@ -22,30 +23,37 @@ const Speaker = ({
         className={cx({
           [styles.container]: true,
         })}>
-        <div
-          className={cx({
-            [styles.identity]: !breakout,
-            [styles.identityBreakout]: breakout,
-          })}
-          >
-          <Text component="h3"
-            heading4
-            className={cx({ [styles.name]: true })}
-            >{name}
-          </Text>
-          {job &&
-            <Text
-              breakWord
-              heading5
-              small
-              className={cx({
-                [styles.title]: true,
-                [styles.banana]: !breakout })
-              }>
-              {job}
+        <div className={styles.bio}>
+          <div
+            className={cx({
+              [styles.identity]: !breakout,
+              [styles.identityBreakout]: breakout,
+            })}
+            >
+            <Text component="h3"
+              heading4
+              className={cx({ [styles.name]: true })}
+              >{name}
             </Text>
-          }
+            {job &&
+              <Text
+                breakWord
+                heading5
+                small
+                className={cx({
+                  [styles.title]: true,
+                  [styles.banana]: !breakout })
+                }>
+                {job}
+              </Text>
+            }
+          </div>
         </div>
+        {photo &&
+          <div className={styles.photo}>
+            {photo}
+          </div>
+        }
       </div>
     </div>
   )

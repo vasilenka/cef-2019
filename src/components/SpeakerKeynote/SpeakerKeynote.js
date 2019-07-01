@@ -9,16 +9,16 @@ import Text from '../../primitives/Text/Text';
 const SpeakerKeynote = ({
   className,
   children,
+  sectionTitle,
   title,
   ...restProps
   }) => {
   return (
     <Box className={cx(styles.root)} {...restProps}>
       <Container narrow className={cx(styles.container)}>
-        <Text component="h2" heading2 className={styles.title}>{title}</Text>
-        <div className={styles.speakerContainer}>
-          {children}
-        </div>
+        { sectionTitle && <Text heading3 component="h3" className={styles.sectionTitle}>{sectionTitle}</Text> }
+        { title && <Text component="h2" heading5 className={styles.title}>{title}</Text> }
+        { children && <div className={styles.speakerContainer}>{children}</div> }
       </Container>
     </Box>
   )

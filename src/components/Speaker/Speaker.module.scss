@@ -28,6 +28,11 @@
 .root {
   composes: col-sm-6 col-12 from global;
   composes: parent;
+  transition: all .4s;
+
+  &:hover {
+    transition: all .28s;
+  }
 }
 
 .breakout {
@@ -37,11 +42,42 @@
 
 .container {
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $space-vertical-l;
+  border-bottom: 1px solid $dark-alpha-30;
+}
+
+.bio {
+  flex: 1;
+  &:not(:last-child) {
+    padding-right: $space-ml;
+  }
+}
+
+.photo {
+  user-select: none;
+  width: 128px;
+  height: 144px;
+  border-radius: 16px;
+  background-color: $brand-primary-200;
+  transition: all 0.4s;
+  box-shadow: 0px 24px 20px -8px $brand-secondary-50;
+
+  > div > div {
+    padding-bottom: 144px !important;
+    border-radius: 16px;
+  }
+  img {
+    object-fit: cover !important;
+    border-radius: 16px;
+  }
 }
 
 .identity {
-  padding: $space-vertical-ml;
-  border-bottom: 1px solid $dark-alpha-30;
+  // padding: $space-vertical-ml;
+  // border-bottom: 1px solid $dark-alpha-30;
 }
 
 .identityBreakout {
@@ -51,7 +87,7 @@
 }
 
 .name {
-  font-weight: 600;
+  font-weight: 700;
   margin: $space-stack-xs;
   color: $dark-hex-90;
 }

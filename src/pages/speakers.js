@@ -9,6 +9,16 @@ import SpeakerKeynote from "../components/SpeakerKeynote/SpeakerKeynote";
 import SpeakerBreakout from "../components/SpeakerBreakout/SpeakerBreakout";
 import Speaker from '../components/Speaker/Speaker'
 import SpeakerKeynoteItem from "../components/SpeakerKeynoteIte/SpeakerKeynoteItem";
+import {
+  Ahyar,
+  Badingah,
+  Eko,
+  FxHadi,
+  IbnuSina,
+  Najwa,
+  Pongsak,
+  Risma,
+} from './../components/images/speakers'
 
 const NotFoundPage = () => (
   <Default>
@@ -17,25 +27,27 @@ const NotFoundPage = () => (
       title="Speakers"
       description=""
       />
-    <SpeakerKeynote title="Keynote">
-      <SpeakerKeynoteItem />
-    </SpeakerKeynote>
-    <SpeakerKeynote title="Mayors">
-      <Speaker name="Mayor of Surakarta" job="Indonesia" />
-      <Speaker name="Mayor of Mataram" job="Indonesia" />
-      <Speaker name="Mayor of Surabaya" job="Indonesia" />
-      <Speaker name="Mayor of Sleman/Yogyakarta" job="Indonesia" />
-      <Speaker name="Mayor of Jember" job="Indonesia" />
-      <Speaker name="Mayor of Wonosobo" job="Indonesia" />
-      <Speaker name="Mayor of Nan Province" job="Thailand" />
-      <Speaker name="Mayor of Yala Province" job="Thailand" />
-      <Speaker name="Mayor of Ipoh City" job="Malaysia" />
-      <Speaker name="Mayor of Tsukuba City" job="Japan" />
-      <Speaker name="Mayor of Sagada City" job="Philippines" />
-    </SpeakerKeynote>
-    <SpeakerKeynote title="Session Conveners">
-    </SpeakerKeynote>
-    <SpeakerBreakout />
+      <main>
+        <SpeakerKeynote sectionTitle="Keynote Speaker">
+          <SpeakerKeynoteItem photo={<Najwa />}/>
+        </SpeakerKeynote>
+        <SpeakerKeynote title="Indonesia" sectionTitle="Mayors">
+          <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat, Indonesia)" photo={<Ahyar/>} />
+          <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta, Indonesia)"  photo={<Badingah/>} />
+          <Speaker name="Eko Purnomo*" job="Regent of Wonosobo (Central Java, Indonesia)"  photo={<Eko/>} />
+          <Speaker name="F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java, Indonesia)"  photo={<FxHadi/>} />
+          <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan, Indonesia)"  photo={<IbnuSina/>} />
+          <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java, Indonesia)"  photo={<Risma/>} />
+        </SpeakerKeynote>
+        <SpeakerKeynote title="Thailand">
+          <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala Province, Thailand" photo={<Pongsak/>}/>
+        </SpeakerKeynote>
+        <SpeakerKeynote title="Philippines">
+          <Speaker name="James Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
+        </SpeakerKeynote>
+        <SpeakerKeynote title="South Korea (to be confirmed)">
+        </SpeakerKeynote>
+    </main>
     <Footer />
   </Default>
 )
