@@ -36,17 +36,17 @@ const SpeakersHighlight = ({
           <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java, Indonesia)" />
         </div>
 
-        <Text heading5 component="h3" className={styles.mayorsTitle}>Mayors from Thailand</Text>
+        <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
         <div className={styles.speakerContainer}>
           <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala Province, Thailand" />
         </div>
 
-        <Text heading5 component="h3" className={styles.mayorsTitle}>Mayors from Philippines</Text>
+        <Text heading5 component="h3" className={styles.mayorsTitle}>Philippines</Text>
         <div className={styles.speakerContainer}>
           <Speaker name="James Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
         </div>
 
-        <Text heading5 component="h3" className={styles.mayorsTitle}>Mayors from South Korea (to be confirmed)</Text>
+        <Text heading5 component="h3" className={styles.mayorsTitle}>South Korea (to be confirmed)</Text>
         {/* <div className={styles.speakerContainer}>
           <Speaker name="Mayor from South Korea*" />
         </div> */}
