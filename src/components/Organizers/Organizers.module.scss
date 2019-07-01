@@ -80,7 +80,7 @@
 }
 
 .logoContainer {
-  composes: col-6 col-sm-6 col-md-4 from global;
+  composes: col-6 col-sm-3 from global;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 0;
@@ -104,6 +104,13 @@
 .logo {
   display: block;
   min-width: 120px;
+  img {
+    mix-blend-mode: multiply;
+  }
+}
+
+.ias {
+  margin-top: -16px;
 }
 
 .logoUniv {

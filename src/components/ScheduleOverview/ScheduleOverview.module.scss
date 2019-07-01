@@ -6,6 +6,8 @@
   background-position: center -96px;
   background-repeat: no-repeat;
   background-size: 318px 136px;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -48,4 +50,70 @@
   &:not(:first-child) {
     padding-top: $space-m;
   }
+}
+
+.cloud {
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: initial;
+  }
+  @include screen(desktopWide) {
+    display: initial;
+  }
+}
+
+.cloud1 {
+  composes: cloud;
+  position: absolute;
+  width: 320px;
+  right: -80px;
+  top:8%;
+}
+
+.cloud3 {
+  composes: cloud;
+  position: absolute;
+  width: 280px;
+  right: -128px;
+  top: 25%;
+}
+
+.cloud2 {
+  composes: cloud;
+  position: absolute;
+  width: 264px;
+  left: -48px;
+  top: 26%;
+}
+
+.cloud4 {
+  composes: cloud;
+  position: absolute;
+  width: 292px;
+  left: -64px;
+  top: 5%;
+}
+
+.cloud5 {
+  composes: cloud;
+  position: absolute;
+  width: 160px;
+  left: -64px;
+  bottom: 16%;
+}
+
+.cloud6 {
+  composes: cloud;
+  position: absolute;
+  width: 160px;
+  right: 0px;
+  bottom: 14%;
 }

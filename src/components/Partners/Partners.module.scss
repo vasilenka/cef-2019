@@ -2,6 +2,7 @@
 
 .root {
   background-color: $light-alpha-100;
+  background-color: $brand-secondary-10;
 }
 
 .container {
@@ -37,13 +38,13 @@
     margin-bottom: $space-l;
   }
   @include screen(tabLandscape) {
-    margin-bottom: $space-xl;
+    margin-bottom: $space-xxl;
   }
   @include screen(desktop) {
-    margin-bottom: $space-xl;
+    margin-bottom: $space-xxl;
   }
   @include screen(desktopWide) {
-    margin-bottom: $space-xl;
+    margin-bottom: $space-xxl;
   }
 }
 
@@ -60,27 +61,28 @@
 }
 
 .mainPartner {
-  @include screen(phone) {
-    margin: $space-stack-ml;
-  }
-  @include screen(tabPortrait) {
-    margin: $space-stack-ml;
-  }
-  @include screen(tabLandscape) {
-    margin: $space-stack-ll;
-  }
-  @include screen(desktop) {
-    margin: $space-stack-ll;
-  }
-  @include screen(desktopWide) {
-    margin: $space-stack-ll;
+  &:not(:last-child) {
+    @include screen(phone) {
+      margin-bottom: $space-ml;
+    }
+    @include screen(tabPortrait) {
+      margin-bottom: $space-ml;
+    }
+    @include screen(tabLandscape) {
+      margin-bottom: $space-huge;
+    }
+    @include screen(desktop) {
+      margin-bottom: $space-huge;
+    }
+    @include screen(desktopWide) {
+      margin-bottom: $space-huge;
+    }
   }
 }
 
 .partnerContainer {
-  composes: col-sm-2 col-6 from global;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   margin-bottom: $space-ml;
   @include screen(phone) {
     &:last-child {
@@ -109,6 +111,16 @@
   }
 }
 
+.fundingFirst {
+  composes: col-xl-3 col-sm-4 col-6 from global;
+  composes: partnerContainer;
+}
+
+.fundingSecond {
+  composes: col-xl-2 col-sm-4 col-4 from global;
+  composes: partnerContainer;
+}
+
 .collaboratingPartnerContainer {
   composes: col-sm-2 col-6 from global;
   padding-left: 16px;
@@ -118,5 +130,13 @@
 }
 
 .partner {
-  max-height: 96px;
+  max-height: 72px;
+  display: block;
+  & * {
+    object-fit: contain !important;
+    mix-blend-mode: multiply;
+  }
+  > div > div {
+    padding-bottom: 72px !important;
+  }
 }

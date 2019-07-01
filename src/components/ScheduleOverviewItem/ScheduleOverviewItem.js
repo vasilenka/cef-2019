@@ -10,9 +10,9 @@ const ScheduleOverviewItem = ({
   ...restProps
   }) => {
   return (
-    <Box justifyBetween className={styles.root} {...restProps}>
+    <Box justifyBetween alignBaseline className={styles.root} {...restProps}>
       <Box className={styles.overview}>
-        <Text heading4Alt component="h4">
+        <Text heading5Alt component="h4">
           {title}
         </Text>
       </Box>

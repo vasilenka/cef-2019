@@ -14,6 +14,7 @@ import Cover from "../components/Cover/Cover";
 import Button from "../primitives/Button/Button";
 import Container from "../layouts/Container/Container";
 import Box from "../components/Box/Box";
+import FundingPartners from "../components/FundingPartners/FundingPartners";
 
 const NotFoundPage = () => (
   <Default>
@@ -37,7 +38,7 @@ const NotFoundPage = () => (
             Chulalongkorn University (CU) was officially established in March 1917 by King Vajiravudh (RamaVI) and named after his father, King Chulalongkorn (Rama V), who laid the foundations for modern education in Thailand.
           </Text>
           <a href="https://www.chula.ac.th/en/" target="_blank" rel="noopener noreferrer">
-            <Button primary>Visit website</Button>
+            <Button primary>Learn More</Button>
           </a>
         </CoOrganizers>
         <CoOrganizers
@@ -52,7 +53,7 @@ const NotFoundPage = () => (
             The Indonesian Consortium for Religious Studies (ICRS) is a consortium of three universities: Universitas Gadjah Mada (UGM), State Islamic University Sunan Kalijaga (UIN), and Duta Wacana Christian University (UKDW). Together they offer an integrative, international Ph.D. program in inter-religious studies. This is the only Religious Studies Ph.D. Program that is co-sponsored by Muslim, Christian, and national-secular universities.
           </Text>
           <a href="http://icrs.ugm.ac.id/" target="_blank" rel="noopener noreferrer">
-            <Button primary>Visit website</Button>
+            <Button primary>Learn More</Button>
           </a>
         </CoOrganizers>
         <CoOrganizers
@@ -71,11 +72,12 @@ const NotFoundPage = () => (
             Over the years, we have worked in more than 15 rapidly urbanizing Indonesian cities. We have developed effective methodologies for fine-grained analysis of cities and settlements. We leverage spatial analysis tools and participatory processes to tap into the knowledge of communities and local government alike, producing insights that can lead to inclusive solutions. Read more.
           </Text>
           <a href="http://kotakita.org" target="_blank" rel="noopener noreferrer">
-            <Button primary>Visit website</Button>
+            <Button primary>Learn More</Button>
           </a>
         </CoOrganizers>
       </Container>
     </Box>
+    <FundingPartners />
     <Footer />
   </Default>
 )

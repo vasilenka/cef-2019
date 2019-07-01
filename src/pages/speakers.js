@@ -8,6 +8,7 @@ import Cover from "../components/Cover/Cover";
 import SpeakerKeynote from "../components/SpeakerKeynote/SpeakerKeynote";
 import SpeakerBreakout from "../components/SpeakerBreakout/SpeakerBreakout";
 import Speaker from '../components/Speaker/Speaker'
+import SpeakerKeynoteItem from "../components/SpeakerKeynoteIte/SpeakerKeynoteItem";
 
 const NotFoundPage = () => (
   <Default>
@@ -16,6 +17,9 @@ const NotFoundPage = () => (
       title="Speakers"
       description=""
       />
+    <SpeakerKeynote title="Keynote">
+      <SpeakerKeynoteItem />
+    </SpeakerKeynote>
     <SpeakerKeynote title="Mayors">
       <Speaker name="Mayor of Surakarta" job="Indonesia" />
       <Speaker name="Mayor of Mataram" job="Indonesia" />
@@ -28,8 +32,6 @@ const NotFoundPage = () => (
       <Speaker name="Mayor of Ipoh City" job="Malaysia" />
       <Speaker name="Mayor of Tsukuba City" job="Japan" />
       <Speaker name="Mayor of Sagada City" job="Philippines" />
-    </SpeakerKeynote>
-    <SpeakerKeynote title="Keynote Speakers">
     </SpeakerKeynote>
     <SpeakerKeynote title="Session Conveners">
     </SpeakerKeynote>

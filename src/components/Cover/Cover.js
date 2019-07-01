@@ -8,6 +8,7 @@ import Container from '../../layouts/Container/Container'
 
 const Cover = ({
   className,
+  children,
   title,
   subtitle,
   description,
@@ -34,6 +35,7 @@ const Cover = ({
                 {description}
               </Text>
             }
+            {children}
           </Box>
         </Box>
       </Container>

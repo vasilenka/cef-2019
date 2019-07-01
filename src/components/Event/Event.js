@@ -1,7 +1,6 @@
 import styles from './Event.module.scss'
 import React from 'react'
 import cx from 'classnames'
-import {Link} from 'gatsby'
 
 import Place from './../icons/place.inline.svg'
 import Calendar from './../icons/calendar.inline.svg'
@@ -60,9 +59,9 @@ const Event = ({
       {children}
       <footer className={styles.footer}>
         {url &&
-          <Link to={url}>
+          <a href={url} rel="noopener noreferrer" target="_blank">
             <Button primary large>{register}</Button>
-          </Link>
+          </a>
         }
         {
           notes && <Text component="p" style={{marginBottom: 0, paddingTop: '12px'}} medium>{notes}</Text>

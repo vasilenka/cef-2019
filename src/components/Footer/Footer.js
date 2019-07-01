@@ -8,7 +8,7 @@ import Container from '../../layouts/Container/Container'
 import Text from '../../primitives/Text/Text'
 
 import Facebook from './icons/facebook.inline.svg'
-import Twitter from './icons/twitter.inline.svg'
+// import Twitter from './icons/twitter.inline.svg'
 import Instagram from './icons/instagram.inline.svg'
 import Youtube from './icons/youtube.inline.svg'
 
@@ -31,16 +31,16 @@ const Footer = ({
             </a>
           </Box>
           <Box className={styles.socmed}>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/civicengagement4.0" target="_blank" rel="noopener noreferrer">
               <Instagram style={{ height: '24px', marginRight: '40px'}} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/civicengagement2019" target="_blank" rel="noopener noreferrer">
               <Facebook style={{ height: '24px', marginRight: '40px'}} />
             </a>
-            <a href="https://twiiter.com" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://twiiter.com" target="_blank" rel="noopener noreferrer">
               <Twitter style={{ height: '24px', marginRight: '40px'}} />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            </a> */}
+            <a href="https://www.youtube.com/channel/UCZuDtCskSl2UDsoqGAdAhag" target="_blank" rel="noopener noreferrer">
               <Youtube style={{ height: '24px', marginRight: '40px'}} />
             </a>
           </Box>

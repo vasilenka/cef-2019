@@ -38,7 +38,7 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
               content={() =>
                 <>
                   <NavbarMenu containerClassName={styles.dropdown} to="/organizers">Organizers</NavbarMenu>
-                  <NavbarMenu containerClassName={styles.dropdown} to="/organizers">Organizers</NavbarMenu>
+                  <NavbarMenu containerClassName={styles.dropdown} to="/organizers#funding-partners">Funding Partners</NavbarMenu>
                 </>
               }>
               {(

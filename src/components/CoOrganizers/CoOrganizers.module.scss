@@ -3,9 +3,9 @@
 .root {
   position: relative;
   padding-bottom: $space-ll;
-  margin: $space-stack-ll;
   &:not(:last-child) {
     border-bottom: 2px solid $dark-alpha-20;
+    margin: $space-stack-ll;
   }
 }
 

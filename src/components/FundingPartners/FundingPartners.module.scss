@@ -1,0 +1,153 @@
+@import 'src/tokens';
+
+.root {
+  position: relative;
+  background-color: $brand-secondary-40;
+  @include screen(phone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabLandscape) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+}
+
+.hack {
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  @include screen(phone) {
+    height: 64px;
+  }
+  @include screen(tabPortrait) {
+    height: 144px;
+  }
+  @include screen(tabLandscape) {
+    height: 144px;
+  }
+  @include screen(desktop) {
+    height: 144px;
+  }
+  @include screen(desktopWide) {
+    height: 144px;
+  }
+}
+
+.title {
+  width: 100%;
+  @include screen(phone) {
+    margin-bottom: $space-l;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: $space-l;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: $space-xxl;
+  }
+  @include screen(desktop) {
+    margin-bottom: $space-xxl;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: $space-xxl;
+  }
+}
+
+.mainPartner {
+  &:not(:last-child) {
+    @include screen(phone) {
+      margin-bottom: $space-ml;
+    }
+    @include screen(tabPortrait) {
+      margin-bottom: $space-ml;
+    }
+    @include screen(tabLandscape) {
+      margin-bottom: $space-huge;
+    }
+    @include screen(desktop) {
+      margin-bottom: $space-huge;
+    }
+    @include screen(desktopWide) {
+      margin-bottom: $space-huge;
+    }
+  }
+}
+
+.partnerRow {
+  composes: row from global;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.partnerContainer {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: $space-ml;
+  @include screen(phone) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include screen(tabPortrait) {
+    &:last-child {
+      margin-bottom: $space-ml;
+    }
+  }
+  @include screen(tabLandscape) {
+    &:last-child {
+      margin-bottom: $space-ml;
+    }
+  }
+  @include screen(desktop) {
+    &:last-child {
+      margin-bottom: $space-ml;
+    }
+  }
+  @include screen(desktopWide) {
+    &:last-child {
+      margin-bottom: $space-ml;
+    }
+  }
+}
+
+.fundingFirst {
+  composes: col-xl-3 col-sm-4 col-6 from global;
+  composes: partnerContainer;
+}
+
+.fundingSecond {
+  composes: col-xl-2 col-sm-4 col-4 from global;
+  composes: partnerContainer;
+}
+
+.collaboratingPartnerContainer {
+  composes: col-sm-2 col-6 from global;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.partner {
+  max-height: 72px;
+  display: block;
+  & * {
+    object-fit: contain !important;
+    mix-blend-mode: multiply;
+  }
+  > div > div {
+    padding-bottom: 72px !important;
+  }
+}

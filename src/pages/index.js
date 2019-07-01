@@ -5,7 +5,7 @@ import Default from "./../layouts/Default"
 import SEO from "../components/seo"
 import Hero from "../components/Hero/Hero"
 import Organizers from "../components/Organizers/Organizers"
-import Speakers from "../components/Speakers/Speakers"
+import SpeakersHighlight from "../components/SpeakersHighlight/SpeakersHighlight"
 import Venue from "../components/Venue/Venue"
 import MapContainer from "../components/MapContainer/MapContainer"
 import ScheduleOverview from "../components/ScheduleOverview/ScheduleOverview"
@@ -33,7 +33,7 @@ const IndexPage = () => {
       <Organizers />
       <Mission/>
       <span ref={ref}/>
-      <Speakers />
+      <SpeakersHighlight />
       <Venue />
       <MapContainer inView={inView} />
       <ScheduleOverview />

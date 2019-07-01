@@ -68,7 +68,6 @@
 
 .dropdownTrigger {
   padding: $space-ml;
-  display: block;
   line-height: 16px;
   transition: all 0.36s cubic-bezier(0.8, 0, 0.2, 1);
   color: unset;
@@ -77,6 +76,22 @@
     color: #ca274c;
     // box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
     transition: all 0.28s cubic-bezier(0.8, 0, 0.2, 1);
+  }
+
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: block;
+  }
+  @include screen(desktop) {
+    display: block;
+  }
+  @include screen(desktopWide) {
+    display: block;
   }
 }
 

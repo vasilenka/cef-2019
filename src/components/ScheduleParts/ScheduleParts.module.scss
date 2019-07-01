@@ -1,0 +1,13 @@
+@import 'src/tokens';
+
+.root {
+  padding: $space-vertical-ll;
+}
+
+.item {
+  list-style: square;
+  padding-top: $space-sm;
+  padding-bottom: $space-sm;
+  font-weight: 600;
+  font-size: $heading-4;
+}

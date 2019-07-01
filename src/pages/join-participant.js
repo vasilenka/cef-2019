@@ -30,9 +30,9 @@ const NotFoundPage = () => (
           venue="Kampung Laweyan, Ngampon, Pepe River, Pasar Gede"
           date="August 20, 2019 (Day 1)"
           time="8:00am - 3:00pm"
-          url="/"
+          // url="/"
           register="Register for Thematic Field Visit *"
-          notes="* We kindly ask each participant to donate Rpxxxx (approx 3 US dollars) to the site community."
+          // notes="* We kindly ask each participant to donate Rpxxxx (approx 3 US dollars) to the site community."
           >
           <div>
             <Text heading5>Highlight of the visit:</Text>
@@ -50,7 +50,7 @@ const NotFoundPage = () => (
           date="Augus, 21, 2019 (Day 2)"
           venue="Sebelas Maret University, Solo"
           time="8:00am - 5:00pm"
-          url="/"
+          url="https://forms.gle/KkR4WNm9sWS6F8i96"
           register="Register for Public Forum"
           free
           >
@@ -64,7 +64,7 @@ const NotFoundPage = () => (
           date="August 22, 2019 (Day 3)"
           venue="Sunan Hotel, Solo"
           time="Start at 8:30am"
-          url="/"
+          url="https://forms.gle/RoTBQbH8vKjYS6Kh9"
           register="Register for Mayors’ Symposium"
           free
           >
@@ -78,7 +78,7 @@ const NotFoundPage = () => (
           date="August 23, 2019 (Day 4)"
           venue="Surakarta"
           time="6:00am - 9:00am"
-          url="/"
+          // url="/"
           register="Register for Bike Tour"
           free
           >

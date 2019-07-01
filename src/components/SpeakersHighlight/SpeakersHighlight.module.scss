@@ -11,7 +11,7 @@
 
 .speakerContainer {
   composes: row from global;
-  margin-bottom: 24px;
+  margin-bottom: $space-xxl;
   @include screen(phone) {
     margin-left: -12px;
     margin-right: -12px;
@@ -31,6 +31,39 @@
   @include screen(desktopWide) {
     margin-left: -24px;
     margin-right: -24px;
+  }
+}
+
+.subtitle {
+  margin: $space-stack-ml;
+  text-transform: uppercase;
+  letter-spacing: 1.24px;
+}
+
+.keynote {
+  margin: 0 auto $space-ll;
+  padding: $space-ml $space-ll;
+  width: fit-content;
+  // border-radius: $radius-l;
+  // border-bottom: 1px solid $dark-alpha-30;
+  // box-shadow: 0px 0px 2px $dark-alpha-10, 0px 12px 16px -4px $dark-alpha-10;
+}
+
+.name {
+  color: $dark-hex-80;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.job {
+  color: $dark-hex-70;
+
+  &:not(:last-child) {
+    margin-bottom: $space-xs;
+  }
+  &:last-child {
+    margin-bottom: $space-sm;
   }
 }
 

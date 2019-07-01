@@ -5,7 +5,33 @@ import cx from 'classnames';
 import Box from '../Box/Box';
 import Container from '../../layouts/Container/Container';
 import Text from '../../primitives/Text/Text';
-import Image from './../images/organizers/kk';
+import { Chulalongkorn, Ford, Kyoto, AsiaCenter, Solo  } from './../images/fundings'
+import {
+  AsianVision,
+  Chulalongkorn as ChulalongkornAlt,
+  CitizenFarm,
+  DutaWacana,
+  EcologicalAlert,
+  EngagedBuddhist,
+  Gadjah,
+  GraduateSchool,
+  Isis,
+  Mekong,
+  Monash,
+  Morris,
+  Participatory,
+  Simon,
+  Sunan  } from './../images/collaborators'
+
+const PartnerContainer = ({children, className, ...restProps}) => {
+  return (
+    <div className={className}>
+      <div className={cx(styles.partner)}>
+        {children}
+      </div>
+    </div>
+  )
+}
 
 const Partners = ({
   className,
@@ -14,76 +40,35 @@ const Partners = ({
   return (
     <Box className={cx(styles.root)}>
       <Container narrow className={styles.container}>
-        <Text heading1 component="h2" className={styles.title}>
-          Collaborators
-        </Text>
         <Box column className={styles.mainPartner}>
+          <Text heading2 component="h2" className={styles.title}>Collaborators</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <div className={styles.partnerContainer}>
-              <div className={cx(styles.partner, styles.one)}>
-                <Image />
-              </div>
-            </div>
-            <div className={styles.partnerContainer}>
-              <div className={cx(styles.partner, styles.two)}>
-                <Image />
-              </div>
-            </div>
-            <div className={styles.partnerContainer}>
-              <div className={cx(styles.partner, styles.three)}>
-                <Image />
-              </div>
-            </div>
-            <div className={styles.partnerContainer}>
-              <div className={cx(styles.partner, styles.four)}>
-                <Image />
-              </div>
-            </div>
-            <div className={styles.partnerContainer}>
-              <div className={cx(styles.partner, styles.five)}>
-                <Image />
-              </div>
-            </div>
-            <div className={styles.partnerContainer}>
-              <div className={cx(styles.partner, styles.six)}>
-                <Image />
-              </div>
-            </div>
-            <div className={styles.partnerContainer}>
-              <div className={cx(styles.partner, styles.seven)}>
-                <Image />
-              </div>
-            </div>
-            <div className={styles.partnerContainer}>
-              <div className={cx(styles.partner, styles.eight)}>
-                <Image />
-              </div>
-            </div>
-            <div className={styles.partnerContainer}>
-              <div className={cx(styles.partner, styles.nine)}>
-                <Image />
-              </div>
-            </div>
+            <PartnerContainer className={styles.fundingSecond} children={<Sunan />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Gadjah />} />
+            <PartnerContainer className={styles.fundingSecond} children={<DutaWacana />} />
+            <PartnerContainer className={styles.fundingSecond} children={<ChulalongkornAlt />} />
+            <PartnerContainer className={styles.fundingSecond} children={<EngagedBuddhist />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Mekong />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Monash />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Isis />} />
+            <PartnerContainer className={styles.fundingSecond} children={<AsianVision />} />
+            <PartnerContainer className={styles.fundingSecond} children={<CitizenFarm />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Participatory />} />
+            <PartnerContainer className={styles.fundingSecond} children={<EcologicalAlert />} />
+            <PartnerContainer className={styles.fundingSecond} children={<GraduateSchool />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Morris />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Simon />} />
           </Box>
         </Box>
-        <Box column>
-          <Text heading3 component="h2" className={styles.subheading}>
-            Funding Partners
-          </Text>
-          <Box column>
+        <Box column className={styles.mainPartner}>
+          <Text heading2 component="h2" className={styles.title}>Funding Partners</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <div className={styles.collaboratingPartnerContainer}>
-              <div className={cx(styles.partner, styles.one)}>
-                <Image />
-              </div>
-            </div>
-            <div className={styles.collaboratingPartnerContainer}>
-              <div className={cx(styles.partner, styles.two)}>
-                <Image />
-              </div>
-            </div>
+            <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Ford />} />
+            <PartnerContainer className={styles.fundingSecond} children={<AsiaCenter />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Kyoto />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Solo />} />
           </Box>
-        </Box>
         </Box>
       </Container>
     </Box>

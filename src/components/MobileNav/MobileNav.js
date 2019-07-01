@@ -41,6 +41,11 @@ const Dialog = props => {
             Organizers
           </li>
         </Link>
+        <Link to="/organizers#funding-partners" activeClassName={styles.active}>
+          <li className={cx(styles.itemWrapper, styles.secondary)}>
+            Funding Partners
+          </li>
+        </Link>
         <Link to="/programs" activeClassName={styles.active}>
           <li className={styles.itemWrapper}>
             Programs
