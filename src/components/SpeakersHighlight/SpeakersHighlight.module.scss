@@ -40,6 +40,13 @@
   letter-spacing: 1.24px;
 }
 
+.mayorsTitle {
+  text-transform: uppercase;
+  background-color: $brand-tertiary-80;
+  padding: $space-s;
+  color: $dark-alpha-80;
+}
+
 .keynote {
   margin: 0 auto $space-ll;
   padding: $space-ml $space-ll;

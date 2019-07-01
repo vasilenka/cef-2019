@@ -26,20 +26,39 @@ const SpeakersHighlight = ({
           <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text>
         </main>
         <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Mayors</Text>
+        <Text heading5 component="h3" className={styles.mayorsTitle}>Indonesia</Text>
         <div className={styles.speakerContainer}>
+          <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat, Indonesia)" />
+          <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta, Indonesia)" />
+          <Speaker name="Eko Purnomo*" job="Regent of Wonosobo (Central Java, Indonesia)" />
           <Speaker name="F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java, Indonesia)" />
-          <Speaker name="Ahyar Abduh" job="Mayor of Mataram (Nusa Tenggara Barat, Indonesia)" />
+          <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan, Indonesia)" />
           <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java, Indonesia)" />
-          <Speaker name="Badingah" job="Regent of Gunung Kidul (Yogyakarta, Indonesia)" />
-          <Speaker name="Eko Purnomo" job="Regent of Wonosobo (Central Java, Indonesia)" />
-          <Speaker name="Ibnu Sina" job="Mayor of Banjarmasin (South Kalimantan, Indonesia)" />
-          <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala Province, Thailand" />
-          <Speaker name="James Pooten, Jr." job="Mayor of Sagada" />
-          <Speaker name="Mayor of Ipoh City Council, Perak" />
         </div>
-        <SectionLink to={'/speakers'}>
-          View All Speakers
-        </SectionLink>
+
+        <Text heading5 component="h3" className={styles.mayorsTitle}>Mayors from Thailand</Text>
+        <div className={styles.speakerContainer}>
+          <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala Province, Thailand" />
+        </div>
+
+        <Text heading5 component="h3" className={styles.mayorsTitle}>Mayors from Philippines</Text>
+        <div className={styles.speakerContainer}>
+          <Speaker name="James Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
+        </div>
+
+        <Text heading5 component="h3" className={styles.mayorsTitle}>Mayors from South Korea (to be confirmed)</Text>
+        {/* <div className={styles.speakerContainer}>
+          <Speaker name="Mayor from South Korea*" />
+        </div> */}
+
+        <footer style={{paddingTop: '48px'}}>
+
+          <Text heading5 component="p" style={{ marginBottom: '48px', paddingTop: '12px', borderTop: '1px solid rgba(0,0,0,.12)' }}>(*) To be confirmed</Text>
+
+          <SectionLink to={'/speakers'}>
+            View All Speakers
+          </SectionLink>
+        </footer>
       </Container>
     </Box>
   )
