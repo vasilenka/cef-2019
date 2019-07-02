@@ -3,18 +3,23 @@
 .root {
   background-color: $bg-banana-200;
   @include screen(phone) {
-    padding-bottom: $space-ll;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
   }
   @include screen(tabPortrait) {
-    padding-bottom: $space-ll;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
   }
   @include screen(tabLandscape) {
+    padding-top: $space-huge;
     padding-bottom: $space-huge;
   }
   @include screen(desktop) {
+    padding-top: $space-huge;
     padding-bottom: $space-huge;
   }
   @include screen(desktopWide) {
+    padding-top: $space-huge;
     padding-bottom: $space-huge;
   }
 }
@@ -110,64 +115,42 @@
 }
 
 .content {
-  composes: col-sm-12 col-lg-7 from global;
+  composes: col-sm-12 col-lg-8 from global;
 }
 
 .section {
   position: relative;
-  @include screen(phone) {
-    &:not(:first-child) {
-      padding-top: $space-huge;
-    }
-    &:first-child {
-      padding-top: 0px;
-    }
-  }
-  @include screen(tabPortrait) {
-    &:not(:first-child) {
-      padding-top: $space-huge;
-    }
-    &:first-child {
-      padding-top: 0px;
-    }
-  }
-  @include screen(tabLandscape) {
-    &:not(:first-child) {
-      padding-top: $space-huge;
-    }
-    &:first-child {
-      padding-top: $space-huge;
-    }
-  }
-  @include screen(desktop) {
-    &:not(:first-child) {
-      padding-top: $space-huge;
-    }
-    &:first-child {
-      padding-top: $space-huge;
-    }
-  }
-  @include screen(desktopWide) {
-    &:not(:first-child) {
-      padding-top: $space-huge;
-    }
-    &:first-child {
-      padding-top: $space-huge;
-    }
-  }
+  border-bottom: 1px solid $dark-alpha-20;
+  transition: all .36s;
 }
 
 .item {
-  padding: $space-vertical-l;
-  border-bottom: 1px solid $dark-alpha-20;
+  list-style: disc;
+  padding-top: $space-ml;
+  // border-bottom: 1px solid $dark-alpha-20;
+  &:last-child {
+    padding-bottom: $space-ll;
+  }
 }
 
 .header {
-  margin-bottom: $space-ml;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $space-ml;
+  padding-bottom: $space-ml;
+  border-bottom: 1px dashed transparent;
+
+  &.active {
+    border-bottom-color: $brand-primary-50;
+  }
 }
 
 .title {
   font-weight: $bold;
+  flex: 1;
+  font-family: $font-primary;
 }
 
 .arrow {
@@ -181,20 +164,14 @@
   }
 }
 
-.questionContainer {
-  cursor: pointer;
-  transition: all .4s;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: all 0.36s;
-  color: $brand-primary-200;
+.sectionContent {
+  padding-left: $space-ml;
+  padding-right: $space-ml;
+}
 
-  &.active {
-    color: $brand-primary-200;
-    transition: all .28s;
-    padding-bottom: $space-ml;
-  }
+.questionContainer {
+  display: flex;
+  color: $brand-tertiary-200;
 }
 
 .question {
@@ -206,7 +183,7 @@
 }
 
 .answer {
-  padding-top: $space-ml;
+  padding-top: $space-sm;
   border-top: 1px dashed;
   border-top-color: transparent;
   &.active {
