@@ -1,7 +1,15 @@
 @import 'src/tokens';
 
 .root {
-  padding: $space-vertical-m;
+  padding: $space-vertical-ml;
+  width: 100%;
+}
+
+.container {
+  padding: $space-s;
+  width: 100%;
+  background-color: $brand-secondary-10;
+  border: 1px solid $brand-secondary-60;
 }
 
 .iconContainer {

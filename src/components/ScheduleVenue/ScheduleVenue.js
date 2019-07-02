@@ -12,14 +12,16 @@ const ScheduleVenue = ({
   ...restProps
   }) => {
   return (
-    <Box alignCenter={true} justifyStart={true} className={cx(styles.root)}>
-      <div className={styles.iconContainer}>
-        <Room />
-      </div>
-      <Text medium className={styles.venue}>
-        {children}
-      </Text>
-    </Box>
+    <div className={cx(styles.root)}>
+      <Box alignCenter justifyStart className={styles.container}>
+        <div className={styles.iconContainer}>
+          <Room />
+        </div>
+        <Text medium className={styles.venue}>
+          {children}
+        </Text>
+      </Box>
+    </div>
   )
 }
 

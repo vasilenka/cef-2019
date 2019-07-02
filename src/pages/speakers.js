@@ -2,11 +2,9 @@ import React from "react"
 
 import Default from "./../layouts/Default"
 import SEO from "../components/seo"
-// import Text from "../primitives/Text/Text"
 import Footer from "../components/Footer/Footer";
 import Cover from "../components/Cover/Cover";
 import SpeakerKeynote from "../components/SpeakerKeynote/SpeakerKeynote";
-// import SpeakerBreakout from "../components/SpeakerBreakout/SpeakerBreakout";
 import Speaker from '../components/Speaker/Speaker'
 import SpeakerKeynoteItem from "../components/SpeakerKeynoteIte/SpeakerKeynoteItem";
 import {

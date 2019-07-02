@@ -38,3 +38,28 @@
   color: $brand-tertiary-200;
   font-weight: $semibold;
 }
+
+.role {
+  width: fit-content;
+  display: block;
+  color: $dark-hex-60;
+  margin-bottom: $space-s;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+  font-weight: $bold;
+
+  &:not(:first-child) {
+    padding-top: 20px;
+  }
+}
+
+.country {
+  text-transform: uppercase;
+  background-color: $brand-tertiary-30;
+  padding: $space-xs;
+  width: fit-content;
+
+  &:not(:last-child) {
+    margin: $space-stack-s;
+  }
+}

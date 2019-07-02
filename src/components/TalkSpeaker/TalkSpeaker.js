@@ -11,7 +11,7 @@ const TalkSpeaker = ({
   }) => {
   return (
     <Text className={cx({[styles.root]: true, [className]: className, })} medium component="li" {...restProps}>
-      <strong>{name}</strong>, {job}
+      <strong className={styles.strong}>{name}</strong>, {job}
     </Text>
   )
 }

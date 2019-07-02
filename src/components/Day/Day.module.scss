@@ -11,19 +11,19 @@
   justify-content: space-between;
   align-items: baseline;
   @include screen(phone) {
-    top: 120px;
+    top: 96px;
   }
   @include screen(tabPortrait) {
-    top: 120px;
+    top: 96px;
   }
   @include screen(tabLandscape) {
-    top: 96px;
+    top: 120px;
   }
   @include screen(desktop) {
-    top: 96px;
+    top: 120px;
   }
   @include screen(desktopWide) {
-    top: 96px;
+    top: 120px;
   }
 }
 

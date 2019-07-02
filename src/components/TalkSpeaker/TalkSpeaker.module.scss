@@ -2,8 +2,17 @@
 
 .root {
   padding-left: 0;
+  color: $dark-alpha-60;
   list-style: none;
-  :not(:last-child) {
-    margin: $space-stack-s;
+  font-size: 15px;
+  padding-top: $space-xs;
+  &:not(:last-child) {
+    padding-bottom: $space-xs;
   }
+}
+
+.strong {
+  font-size: 16px;
+  font-weight: $bold;
+  color: $dark-hex-70;
 }
