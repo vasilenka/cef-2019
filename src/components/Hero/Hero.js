@@ -55,7 +55,7 @@ const Hero = ({
                 2019 International Forum in Solo
               </Text>
               <Info icon={<Calendar />} label="Date" value="August 20 - 23, 2019" />
-              <Info icon={<Place/>} label="Venue" value="Sunan Hotel & Universitas Sebelas Maret" />
+              <Info icon={<Place/>} label="Venue" value="Sunan Hotel & Universitas Sebelas Maret, Solo, Central Java, Indonesia" />
             </footer>
           </Box>
         </Box>

@@ -35,7 +35,7 @@ const Mission = ({
       <Container narrow className={cx(styles.container)}>
         <main>
           <section className={styles.mainSection}>
-            <Text heading1 component="h2" className={styles.title}>Our Mission</Text>
+            <Text heading1 component="h2" className={styles.title}>Mission</Text>
             <Text component="p" medium className={styles.content}>
               <strong><span className={styles.dropcap}>C</span>ivic Engagement 4.0 (Four Point Zero) Dignity ~ Justice ~ Sustainability (Civic Engagement 4.0)</strong> is a project in the course of which participants from different sectors can share, discuss, and develop ideas and plans to achieve dignity, justice, and sustainability in Southeast Asia in the era of urbanization and technological advancement. Justice and dignity need to be championed as core values in pursuit of sustainability. This is because sustainability cannot be achieved in economic terms alone; environmental, socio-cultural, and spiritual aspects are equally essential. In a sustainable society, everyone should enjoy their life while being equally and mutually respected as humans.
             </Text>

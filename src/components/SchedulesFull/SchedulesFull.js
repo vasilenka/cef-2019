@@ -367,10 +367,10 @@ const SchedulesFull = ({
                 <Role label="Speakers"/>
                 <TalkSpeaker
                   name="Ms. Endah Setyowati"
-                  job="Executive Director, Ohana Indonesia TBC" />
+                  job="Executive Director, Ohana Indonesia*" />
                 <TalkSpeaker
                   name="Dr. Bernadia Irawati Tjandradewi"
-                  job="Secretary General, United Cities and Local Governance Asia Pacific" />
+                  job="Secretary General, United Cities and Local Governance Asia Pacific*" />
                 <TalkSpeaker
                   name="Dr. Sukanda Luangon Lewis"
                   job="Project Director, Development of Creative Tourism, Chulalongkorn University" />
