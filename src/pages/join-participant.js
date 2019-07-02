@@ -15,24 +15,21 @@ const NotFoundPage = () => (
   <Default>
     <SEO title="Join as Participants | Civic Engagement 4.0" />
     <Cover
-      title="Participating in International Forum 2019"
-      subtitle="Civic Engagement 4.0"
+      title="Participating in 2019 International Forum in Solo"
       description="Enjoy the full experience of joining the international forum that addresses the wide-ranging topics in the civil society that is to build an effective community of practitioners—bringing together academics, policymakers, civil society, development partners, foundations and members of communities in rural and urban in national, regional and international levels."
       />
     <Box style={{backgroundColor: '#fff2c6', paddingTop: '96px', paddingBottom: '96px'}}>
       <Container narrow >
-        <Text medium component="p">
-          With prior registration online, you will be able to join 4 main events:
-        </Text>
 
         <Event
           title="1. Thematic Field Visit"
-          venue="Kampung Laweyan, Ngampon, Pepe River, Pasar Gede"
+          subtitle="The participation to this activity is by invitation only. There will be a suggested donation for each activity."
+          venue="Kampung Laweyan, Ngampon, Pepe River, Pasar Gede (details to be announced)"
           date="August 20, 2019 (Day 1)"
           time="8:00am - 3:00pm"
           // url="/"
           register="Register for Thematic Field Visit *"
-          // notes="* We kindly ask each participant to donate Rpxxxx (approx 3 US dollars) to the site community."
+          // notes=""
           >
           <div>
             <Text heading5>Highlight of the visit:</Text>
@@ -55,7 +52,7 @@ const NotFoundPage = () => (
           free
           >
           <Text medium component="p" style={{marginBottom: 0}}>
-            The Public Forum will be covering wide-ranging topics of common concerns and interests to the civil society, with special attention to the challenges and opportunities 4.0(Four Point Zero) brings. The Forum encourages interactive sessions which include three workshops where concrete skills of engagements can be learned. Click here for details
+            The Public Forum will be covering wide-ranging topics of common concerns and interests to the civil society, with special attention to the challenges and opportunities 4.0(Four Point Zero) brings. The Forum encourages interactive sessions which include three workshops where concrete skills of engagements can be learned.
           </Text>
         </Event>
 
@@ -63,24 +60,25 @@ const NotFoundPage = () => (
           title="3. Mayors Symposium"
           date="August 22, 2019 (Day 3)"
           venue="Sunan Hotel, Solo"
-          time="Start at 8:30am"
+          time="8:30am - 5:30pm"
           url="https://forms.gle/RoTBQbH8vKjYS6Kh9"
           register="Register for Mayors’ Symposium"
           free
           >
           <Text medium component="p" style={{marginBottom: 0}}>
-            The Mayors’ symposium enables unique exchanges between citizens and strategic partners, aiming to work together sustainable societies in “Civic Engagement 4.0” spirit.  I will highlight the unique challenges confronted by city and district governments in this fast-changing society, and focus on the good practices and innovative solutions local leaders have in resolving these problems.
+            The Mayors’ symposium enables unique exchanges between citizens and strategic partners, aiming to work together sustainable societies in “Civic Engagement 4.0” spirit. The event will highlight the unique challenges confronted by city and district governments in this fast-changing society, and focus on the good practices and innovative solutions local leaders have in resolving these problems.
           </Text>
         </Event>
 
         <Event
           title="4. Bike Tour"
+          subtitle="The tour will be co-hosted by the City Government of Surakarta. The participation to this bike tour is limited to partners and speakers. More details will be announced."
           date="August 23, 2019 (Day 4)"
           venue="Surakarta"
           time="6:00am - 9:00am"
           // url="/"
           register="Register for Bike Tour"
-          free
+          // free
           >
           <Text medium component="p" style={{marginBottom: 0}}>
             The Bike tour will introduce participants to the ecosystem of sustainable transportation and walkability in Solo, while allowing participants to enjoy Solo’s must-visit historical landmarks, including Loji Gandrung (the official house of the mayor), Keraton (the palace), and other destination such as Kampung Batik and Museum Batik Danar Hadi.

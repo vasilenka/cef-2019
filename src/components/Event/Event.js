@@ -13,6 +13,7 @@ const Event = ({
   children,
   className,
   title,
+  subtitle,
   venue,
   date,
   time,
@@ -32,8 +33,11 @@ const Event = ({
       >
       <header className={styles.header}>
         <Text heading2 component="h2" className={styles.title}>{title}</Text>
+        {
+          subtitle && <Text heading4 component="p" style={{marginBottom: 0, paddingTop: '12px' }}>{subtitle}</Text>
+        }
         {free &&
-          <Text component="p" style={{marginBottom: 0, paddingTop: '12px', color: '#767676' }} small>This is a free entry event with prior online registration</Text>
+          <Text heading4 component="p" style={{marginBottom: 0, paddingTop: '12px' }}>This is a free entry event with prior online registration</Text>
         }
       </header>
       <section className={styles.section}>
@@ -57,16 +61,18 @@ const Event = ({
         </li>
       </section>
       {children}
-      <footer className={styles.footer}>
-        {url &&
-          <a href={url} rel="noopener noreferrer" target="_blank">
-            <Button primary large>{register}</Button>
-          </a>
-        }
-        {
-          notes && <Text component="p" style={{marginBottom: 0, paddingTop: '12px'}} medium>{notes}</Text>
-        }
-      </footer>
+      {(url || notes) &&
+        <footer className={styles.footer}>
+          {url &&
+            <a href={url} rel="noopener noreferrer" target="_blank">
+              <Button primary large>{register}</Button>
+            </a>
+          }
+          {
+            notes && <Text component="p" style={{marginBottom: 0, paddingTop: '12px'}} medium>{notes}</Text>
+          }
+        </footer>
+      }
     </section>
   )
 }
