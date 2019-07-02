@@ -1,0 +1,215 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+  @include screen(phone) {
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabLandscape) {
+    padding-bottom: $space-huge;
+  }
+  @include screen(desktop) {
+    padding-bottom: $space-huge;
+  }
+  @include screen(desktopWide) {
+    padding-bottom: $space-huge;
+  }
+}
+
+.row {
+  composes: row from global;
+  @include screen(phone) {
+    flex-direction: column-reverse;
+  }
+  @include screen(tabPortrait) {
+    flex-direction: row-reverse;
+  }
+  @include screen(tabLandscape) {
+    flex-direction: row;
+  }
+  @include screen(desktop) {
+    flex-direction: row;
+  }
+  @include screen(desktopWide) {
+    flex-direction: row;
+  }
+}
+
+.nav {
+  composes: col-sm-12 col-lg-5 from global;
+  position: relative;
+  @include screen(phone) {
+    padding-left: $space-sm;
+    padding-bottom: $space-ll;
+    padding-top: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-left: $space-sm;
+    padding-bottom: $space-ll;
+    padding-top: $space-ll;
+  }
+  @include screen(tabLandscape) {
+    padding-left: $space-huge;
+    padding-bottom: $space-ml;
+    padding-top: $space-huge;
+  }
+  @include screen(desktop) {
+    padding-left: $space-huge;
+    padding-bottom: $space-ml;
+    padding-top: $space-huge;
+  }
+  @include screen(desktopWide) {
+    padding-left: $space-huge;
+    padding-bottom: $space-ml;
+    padding-top: $space-huge;
+  }
+}
+
+.navSection {
+  @include screen(phone) {
+    position: relative;
+    top: 0;
+  }
+  @include screen(tabPortrait) {
+    position: relative;
+    top: 0;
+  }
+  @include screen(tabLandscape) {
+    position: sticky;
+    top: 160px;
+  }
+  @include screen(desktop) {
+    position: sticky;
+    top: 160px;
+  }
+  @include screen(desktopWide) {
+    position: sticky;
+    top: 160px;
+  }
+}
+
+.faqnav {
+  position: sticky;
+  margin-bottom: $space-ml;
+  color: $dark-alpha-60;
+}
+
+.faqMenu {
+  color: $dark-alpha-70;
+  padding-top: $space-s;
+  padding-bottom: $space-s;
+  transition: all 0.36s;
+
+  &:hover {
+    color: $brand-primary-200;
+    transition: all 0.28s;
+  }
+}
+
+.content {
+  composes: col-sm-12 col-lg-7 from global;
+}
+
+.section {
+  position: relative;
+  @include screen(phone) {
+    &:not(:first-child) {
+      padding-top: $space-huge;
+    }
+    &:first-child {
+      padding-top: 0px;
+    }
+  }
+  @include screen(tabPortrait) {
+    &:not(:first-child) {
+      padding-top: $space-huge;
+    }
+    &:first-child {
+      padding-top: 0px;
+    }
+  }
+  @include screen(tabLandscape) {
+    &:not(:first-child) {
+      padding-top: $space-huge;
+    }
+    &:first-child {
+      padding-top: $space-huge;
+    }
+  }
+  @include screen(desktop) {
+    &:not(:first-child) {
+      padding-top: $space-huge;
+    }
+    &:first-child {
+      padding-top: $space-huge;
+    }
+  }
+  @include screen(desktopWide) {
+    &:not(:first-child) {
+      padding-top: $space-huge;
+    }
+    &:first-child {
+      padding-top: $space-huge;
+    }
+  }
+}
+
+.item {
+  padding: $space-vertical-l;
+  border-bottom: 1px solid $dark-alpha-20;
+}
+
+.header {
+  margin-bottom: $space-ml;
+}
+
+.title {
+  font-weight: $bold;
+}
+
+.arrow {
+  width: 40px;
+  transition: all .36s;
+  transform: rotateX(0);
+
+  &.activeArrow {
+    transform: rotateX(180deg);
+    transition: all .12s;
+  }
+}
+
+.questionContainer {
+  cursor: pointer;
+  transition: all .4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.36s;
+  color: $brand-primary-200;
+
+  &.active {
+    color: $brand-primary-200;
+    transition: all .28s;
+    padding-bottom: $space-ml;
+  }
+}
+
+.question {
+  flex: 1;
+  padding-right: $space-ll;
+  font-weight: $bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.answer {
+  padding-top: $space-ml;
+  border-top: 1px dashed;
+  border-top-color: transparent;
+  &.active {
+    border-top-color: $brand-primary-50;
+  }
+}

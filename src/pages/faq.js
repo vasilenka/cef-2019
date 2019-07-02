@@ -4,6 +4,7 @@ import Default from "../layouts/Default"
 import SEO from "../components/seo"
 import Footer from "../components/Footer/Footer";
 import Cover from "../components/Cover/Cover";
+import SectionFaq from "../components/SectionFaq/SectionFaq";
 
 const Faq = () => (
   <Default>
@@ -11,6 +12,7 @@ const Faq = () => (
     <Cover
       title="Frequently Asked Questions"
       />
+    <SectionFaq />
     <Footer />
   </Default>
 )

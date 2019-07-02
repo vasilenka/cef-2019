@@ -13,24 +13,3 @@
   width: 280px;
   margin-bottom: $space-ll;
 }
-
-.hack {
-  position: absolute;
-  width: 100%;
-  bottom: 100%;
-  @include screen(phone) {
-    height: 64px;
-  }
-  @include screen(tabPortrait) {
-    height: 144px;
-  }
-  @include screen(tabLandscape) {
-    height: 144px;
-  }
-  @include screen(desktop) {
-    height: 144px;
-  }
-  @include screen(desktopWide) {
-    height: 144px;
-  }
-}
