@@ -4,7 +4,7 @@ import cx from 'classnames';
 import Box from '../Box/Box';
 import Text from '../../primitives/Text/Text';
 
-import { Chulalongkorn, Ford, Kyoto, AsiaCenter, Solo  } from './../images/fundings'
+import { Chulalongkorn, Ford, Kyoto, AsiaCenter, Solo, Ayus  } from './../images/fundings'
 import Container from '../../layouts/Container/Container';
 
 const PartnerContainer = ({children, className, ...restProps}) => {
@@ -32,8 +32,9 @@ const FundingPartners = ({
             <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} />
             <PartnerContainer className={styles.fundingSecond} children={<AsiaCenter />} />
             <PartnerContainer className={styles.fundingFirst} children={<Ford />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Kyoto />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Solo />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Kyoto />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Solo />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Ayus />} />
           </Box>
         </Box>
       </Container>

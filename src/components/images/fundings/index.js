@@ -1,3 +1,4 @@
+export { Ayus } from './Ayus'
 export { Chulalongkorn } from './Chulalongkorn'
 export { Ford } from './Ford'
 export { AsiaCenter } from './AsiaCenter'

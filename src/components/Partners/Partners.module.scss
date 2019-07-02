@@ -61,6 +61,8 @@
 }
 
 .mainPartner {
+  margin-left: auto;
+  margin-right: auto;
   &:not(:last-child) {
     @include screen(phone) {
       margin-bottom: $space-ml;
@@ -112,12 +114,17 @@
 }
 
 .fundingFirst {
-  composes: col-xl-3 col-sm-4 col-6 from global;
+  composes: col-xl-4 col-sm-4 col-6 from global;
   composes: partnerContainer;
 }
 
 .fundingSecond {
   composes: col-xl-2 col-sm-4 col-4 from global;
+  composes: partnerContainer;
+}
+
+.fundingCity {
+  composes: col-lg-1 col-2 from global;
   composes: partnerContainer;
 }
 

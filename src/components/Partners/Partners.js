@@ -5,7 +5,9 @@ import cx from 'classnames';
 import Box from '../Box/Box';
 import Container from '../../layouts/Container/Container';
 import Text from '../../primitives/Text/Text';
-import { Chulalongkorn, Ford, Kyoto, AsiaCenter, Solo  } from './../images/fundings'
+import { Chulalongkorn, Ford, Kyoto, AsiaCenter, Solo, Ayus  } from './../images/fundings'
+import { SoloCity, Banjarmasin, Surabaya, Yala, Sagada, Wonosobo, Ipoh, Gunungkidul, Mataram  } from './../images/govs'
+
 import {
   AsianVision,
   Chulalongkorn as ChulalongkornAlt,
@@ -43,9 +45,9 @@ const Partners = ({
         <Box column className={styles.mainPartner}>
           <Text heading2 component="h2" className={styles.title}>Collaborators</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.fundingSecond} children={<Sunan />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Gadjah />} />
             <PartnerContainer className={styles.fundingSecond} children={<DutaWacana />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Gadjah />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Sunan />} />
             <PartnerContainer className={styles.fundingSecond} children={<ChulalongkornAlt />} />
             <PartnerContainer className={styles.fundingSecond} children={<EngagedBuddhist />} />
             <PartnerContainer className={styles.fundingSecond} children={<Mekong />} />
@@ -59,15 +61,27 @@ const Partners = ({
             <PartnerContainer className={styles.fundingSecond} children={<Morris />} />
             <PartnerContainer className={styles.fundingSecond} children={<Simon />} />
           </Box>
+          <Box justifyCenter alignCenter className={styles.partnerRow} style={{paddingTop: '64px'}}>
+            <PartnerContainer className={styles.fundingCity} children={<Banjarmasin />} />
+            <PartnerContainer className={styles.fundingCity} children={<Gunungkidul />} />
+            <PartnerContainer className={styles.fundingCity} children={<Ipoh />} />
+            <PartnerContainer className={styles.fundingCity} children={<Mataram />} />
+            <PartnerContainer className={styles.fundingCity} children={<Sagada />} />
+            <PartnerContainer className={styles.fundingCity} children={<SoloCity />} />
+            <PartnerContainer className={styles.fundingCity} children={<Surabaya />} />
+            <PartnerContainer className={styles.fundingCity} children={<Wonosobo />} />
+            <PartnerContainer className={styles.fundingCity} children={<Yala />} />
+          </Box>
         </Box>
-        <Box column className={styles.mainPartner}>
+        <Box column className={styles.mainPartner} style={{maxWidth: '720px' }}>
           <Text heading2 component="h2" className={styles.title}>Funding Partners</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
             <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} />
             <PartnerContainer className={styles.fundingFirst} children={<Ford />} />
-            <PartnerContainer className={styles.fundingSecond} children={<AsiaCenter />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Kyoto />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Solo />} />
+            <PartnerContainer className={styles.fundingFirst} children={<AsiaCenter />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Kyoto />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Solo />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Ayus />} />
           </Box>
         </Box>
       </Container>

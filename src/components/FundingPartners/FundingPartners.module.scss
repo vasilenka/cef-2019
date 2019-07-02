@@ -123,12 +123,12 @@
 }
 
 .fundingFirst {
-  composes: col-xl-3 col-sm-4 col-6 from global;
+  composes: col-xl-4 col-sm-4 col-6 from global;
   composes: partnerContainer;
 }
 
 .fundingSecond {
-  composes: col-xl-2 col-sm-4 col-4 from global;
+  composes: col-xl-4 col-sm-4 col-4 from global;
   composes: partnerContainer;
 }
 
@@ -141,13 +141,13 @@
 }
 
 .partner {
-  max-height: 72px;
+  max-height: 64px;
   display: block;
   & * {
     object-fit: contain !important;
     mix-blend-mode: multiply;
   }
   > div > div {
-    padding-bottom: 72px !important;
+    padding-bottom: 64px !important;
   }
 }
