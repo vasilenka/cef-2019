@@ -6,10 +6,24 @@
 
 .container {
   padding-top: 96px;
-  padding-bottom: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include screen(phone) {
+    padding-bottom: 0px;
+  }
+  @include screen(tabPortrait) {
+    padding-bottom: 0px;
+  }
+  @include screen(tabLandscape) {
+    padding-bottom: 48px;
+  }
+  @include screen(desktop) {
+    padding-bottom: 48px;
+  }
+  @include screen(desktopWide) {
+    padding-bottom: 48px;
+  }
 }
 
 .title {
@@ -20,4 +34,57 @@
 .overview {
   text-align: center;
   margin: $space-stack-l;
+}
+
+.overviewDesktop {
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: inherit;
+  }
+  @include screen(desktop) {
+    display: inherit;
+  }
+  @include screen(desktopWide) {
+    display: inherit;
+  }
+}
+
+.mobileVenue {
+  width: 100%;
+  @include screen(phone) {
+    display: block;
+  }
+  @include screen(tabPortrait) {
+    display: block;
+  }
+  @include screen(tabLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: none;
+  }
+  @include screen(desktopWide) {
+    display: none;
+  }
+}
+
+.venue {
+  width: 100%;
+  padding: $space-inset-ml;
+  background-color: $bg-banana-200;
+  color: $dark-alpha-70;
+  border-bottom: 1px solid $dark-alpha-20;
+}
+
+.venueName {
+  margin-bottom: $space-sm;
+}
+
+.venueAddress {
+  margin-bottom: $space-sm;
 }

@@ -24,10 +24,10 @@
   transition: all .28s;
 
   @include screen(phone) {
-    border-radius: 12px;
+    border-radius: 0px;
   }
   @include screen(tabPortrait) {
-    border-radius: 12px;
+    border-radius: 0px;
   }
   @include screen(tabLandscape) {
     border-radius: 24px;
@@ -43,4 +43,91 @@
     box-shadow: 0px 32px 40px -32px rgba(0,0,0,.33);
     transition: all .28s;
   }
+}
+
+.infobox {
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: block;
+  }
+  @include screen(desktop) {
+    display: block;
+  }
+  @include screen(desktopWide) {
+    display: block;
+  }
+}
+
+.infoBoxContainer {
+  background-color: $brand-primary-200;
+  width: 200px;
+  @include screen(phone) {
+    padding: $space-s;
+  }
+  @include screen(tabPortrait) {
+    padding: $space-s;
+  }
+  @include screen(tabLandscape) {
+    padding: $space-ml;
+  }
+  @include screen(desktop) {
+    padding: $space-ml;
+  }
+  @include screen(desktopWide) {
+    padding: $space-ml;
+  }
+}
+
+.venue {
+  color: $light-alpha-100;
+  @include screen(phone) {
+    margin-bottom: 0;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: 0;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: $space-sm;
+  }
+  @include screen(desktop) {
+    margin-bottom: $space-sm;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: $space-sm;
+  }
+}
+
+.infoFooter {
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: $medium;
+  color: $bg-banana-200;
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: flex;
+  }
+  @include screen(desktop) {
+    display: flex;
+  }
+  @include screen(desktopWide) {
+    display: flex;
+  }
+}
+
+.arrow {
+  width: 16px;
+  transform: rotate(-90deg);
 }
