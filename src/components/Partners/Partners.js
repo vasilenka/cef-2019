@@ -6,7 +6,7 @@ import Box from '../Box/Box';
 import Container from '../../layouts/Container/Container';
 import Text from '../../primitives/Text/Text';
 import { Chulalongkorn, Ford, Kyoto, AsiaCenter, Solo, Ayus  } from './../images/fundings'
-import { SoloCity, Banjarmasin, Surabaya, Yala, Sagada, Wonosobo, Ipoh, Gunungkidul, Mataram  } from './../images/govs'
+import { SoloCity, Banjarmasin, Surabaya, Yala, Sagada, Wonosobo, Gunungkidul, Mataram  } from './../images/govs'
 
 import {
   AsianVision,
@@ -62,13 +62,12 @@ const Partners = ({
             <PartnerContainer className={styles.fundingSecond} children={<EcologicalAlert />} />
             <PartnerContainer className={styles.fundingSecond} children={<GraduateWordmark />} />
             <PartnerContainer className={styles.fundingSecond} children={<GraduateSchool />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Morris />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Simon />} />
+            <PartnerContainer className={styles.fundingThird} children={<Morris />} />
+            <PartnerContainer className={styles.fundingThird} children={<Simon />} />
           </Box>
           <Box justifyCenter alignCenter className={styles.partnerRow} style={{paddingTop: '64px'}}>
             <PartnerContainer className={styles.fundingCity} children={<Banjarmasin />} />
             <PartnerContainer className={styles.fundingCity} children={<Gunungkidul />} />
-            <PartnerContainer className={styles.fundingCity} children={<Ipoh />} />
             <PartnerContainer className={styles.fundingCity} children={<Mataram />} />
             <PartnerContainer className={styles.fundingCity} children={<Sagada />} />
             <PartnerContainer className={styles.fundingCity} children={<SoloCity />} />

@@ -36,13 +36,13 @@ const Organizers = ({
               </Link>
             </div>
             <div className={styles.logoContainer}>
-              <Link to="/organizers#kotakita" className={cx(styles.logo)}>
-                <KotaKitaWeb />
+              <Link to="/organizers#icrs" className={cx(styles.logo)}>
+                <IcrsWeb />
               </Link>
             </div>
             <div className={styles.logoContainer}>
-              <Link to="/organizers#icrs" className={cx(styles.logo)}>
-                <IcrsWeb />
+              <Link to="/organizers#kotakita" className={cx(styles.logo)}>
+                <KotaKitaWeb />
               </Link>
             </div>
           </Box>

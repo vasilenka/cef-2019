@@ -86,11 +86,11 @@
   padding-left: 8px;
   padding-right: 8px;
   margin-bottom: $space-ml;
-  @include screen(phone) {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+  // @include screen(phone) {
+  //   &:last-child {
+  //     margin-bottom: 0;
+  //   }
+  // }
   @include screen(tabPortrait) {
     &:last-child {
       margin-bottom: $space-ml;
@@ -118,13 +118,18 @@
   composes: partnerContainer;
 }
 
+.fundingThird {
+  composes: col-xl-3 col-sm-4 col-6 from global;
+  composes: partnerContainer;
+}
+
 .fundingSecond {
   composes: col-xl-2 col-sm-4 col-4 from global;
   composes: partnerContainer;
 }
 
 .fundingCity {
-  composes: col-2 from global;
+  composes: col-1 from global;
   composes: partnerContainer;
 }
 

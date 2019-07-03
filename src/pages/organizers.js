@@ -5,7 +5,8 @@ import SEO from "../components/seo"
 import Text from "../primitives/Text/Text"
 import Footer from "../components/Footer/Footer";
 
-import UnivWeb from './../components/images/organizers/univ'
+// import UnivWeb from './../components/images/organizers/univ'
+import Combine from './../components/images/organizers/combine'
 import IcrsWeb from './../components/images/organizers/icrs'
 import KotaKitaWeb from './../components/images/organizers/kk'
 
@@ -29,7 +30,7 @@ const NotFoundPage = () => (
           id="chulalongkorn-university"
           photo={
             <a href="https://www.chula.ac.th/en/" target="_blank" rel="noopener noreferrer">
-              <UnivWeb />
+              <Combine />
             </a>
           }
           style={{ maxWidth: '720px' }}>
