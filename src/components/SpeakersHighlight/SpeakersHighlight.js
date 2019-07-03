@@ -52,9 +52,9 @@ const SpeakersHighlight = ({
         </Link>
 
         <Text heading5 component="h3" className={styles.mayorsTitle}>South Korea (to be confirmed)</Text>
-        {/* <div className={styles.speakerContainer}>
-          <Speaker name="Mayor from South Korea*" />
-        </div> */}
+        <div className={styles.speakerContainer}>
+          {/* <Speaker name="Mayor from South Korea*" /> */}
+        </div>
 
         <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
         <Link to="/speakers#thailand">
