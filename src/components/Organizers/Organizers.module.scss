@@ -101,6 +101,10 @@
   }
 }
 
+.combine {
+  composes: col-8 col-sm-4 from global;
+}
+
 .logo {
   display: block;
   min-width: 120px;
