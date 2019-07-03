@@ -62,13 +62,8 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             })}
             style={{paddingRight: '24px'}}>
             <Link to="/join-participant">
-              <Button primary style={{ marginRight: '8px' }}>
-                JOIN AS A PARTICIPANT
-              </Button>
+              <Button primary>JOIN AS A PARTICIPANT</Button>
             </Link>
-            <Button secondaryAlt>
-              JOIN AS A VOLUNTEER
-            </Button>
           </NavbarSecondary>
         </Container>
       </nav>

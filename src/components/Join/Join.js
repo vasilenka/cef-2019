@@ -20,7 +20,6 @@ const Join = ({
         <Link className={styles.buttonContainer} to="/join-participant">
           <Button className={styles.button} primary>Join as a Participant</Button>
         </Link>
-        <Button className={styles.button} primary>Join as a Volunteer</Button>
       </Container>
     </Box>
   )

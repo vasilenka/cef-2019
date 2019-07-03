@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   @include screen(phone) {
-    justify-content: center;
+    justify-content: space-between;
     padding-top: $space-xs;
     padding-bottom: $space-xs;
   }

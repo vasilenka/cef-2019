@@ -7,11 +7,11 @@
 }
 
 .timer {
-  composes: col-6 col-sm-3 from global;
+  composes: col-5 col-sm-3 from global;
 }
 
 .text {
-  composes: col-12 col-sm-3 from global;
+  composes: col-8 col-sm-3 from global;
   padding-bottom: 0;
   @include screen(phone) {
     margin-bottom: 0px;
