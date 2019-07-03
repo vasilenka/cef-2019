@@ -13,8 +13,107 @@ import ScheduleVenue from '../ScheduleVenue/ScheduleVenue';
 import TalkSpeaker from '../TalkSpeaker/TalkSpeaker';
 import SubTalk from '../SubTalk/SubTalk';
 
+import Arrow from './../icons/arrow.inline.svg'
+
 const Role = props => <Text component="h4" heading6 className={styles.role}>{props.label}</Text>
 const Country = props => <Text component="h4" heading6 className={styles.country}>{props.label}</Text>
+
+const Details = props => {
+  const [show, setShow] = React.useState(false)
+  return (
+    <>
+      <button
+        type="button"
+        className={styles.detailAction}
+        onClick={() => setShow(!show)}>
+          {show
+            ? <>Hide details <Arrow style={{width: '24px', transform: 'rotate(180deg)' }} /></>
+            : <>Show details <Arrow style={{width: '24px' }} /></>
+          }
+        </button>
+      {show &&
+        <main className={styles.detail}>
+          { props.children }
+          <button
+            type="button"
+            className={styles.detailAction}
+            onClick={() => setShow(!show)}>
+              {show
+                ? <>Hide details <Arrow style={{width: '24px', transform: 'rotate(180deg)' }} /></>
+                : <>Show details <Arrow style={{width: '24px' }} /></>
+              }
+            </button>
+        </main>
+      }
+    </>
+  )
+}
+
+const ListeningPartnership = () => {
+  return (
+    <Details>
+      <Text heading3Alt component="h3" style={{marginBottom: '24px'}}>Listening Partnerships: Living Fully and Leading with Integrity in a Time of Crisis</Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        The many crises facing the world’s peoples at present—climate change, severe social inequality and social division, challenges to democracy, and the resort to violence—do not require us to panic. Quite the opposite is true. We must be able to think clearly, join together with others, and take action. Forming listening partnerships with others is a very direct way of enabling us to do all three of these important tasks. They help us to realize that we can live beautiful lives and act with integrity in the midst of difficult times. Such partnerships allow us to see each other’s humanity, move us beyond our isolation and indulgence in consumer satisfactions, and give us the courage to act boldly.
+      </Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        This workshop provides the basic instructions in how to create and maintain listening partnerships as effective tools of self-knowledge, transformation, and engagement with others and the wider world. This is a hands-on workshop, and participants will receive the guidance necessary to practice listening to others and being listened to safely and effectively within the workshop itself. Please sign up in advance, as the number of participants will be limited to 50.
+      </Text>
+    </Details>
+  )
+}
+
+const StrategicLens = () => {
+  return (
+    <Details>
+      <Text heading3Alt component="h3" style={{marginBottom: '24px'}}>Civic Engagement, A Strategic Lens</Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        Expert opinion. Tight budgets. Electoral platforms. Public input. Everyone agrees that public engagement is important, but decision-making can feel like a crowded space. To succeed, engagement efforts are under increasing expectations to find authentic questions, get beyond the “same ten people,” and account for the practical constraints faced by decision-makers.
+      </Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        This workshop will provide senior staff in local government an opportunity to address the tough questions of sponsoring and planning public engagement initiatives. Participants will explore tools and principles to help design high-quality public engagement processes and to clarify strategic intentions before hitting the streets. Using applied case studies and connecting with their current projects, participants will leave with practical skills to apply in their communities.
+      </Text>
+      <Text heading4 component="h3" style={{marginBottom: '12px'}}>Learning Objectives:</Text>
+      <ul style={{marginBottom: '24px', paddingLeft: '24px'}}>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Understanding when to engage, and creating role clarity between members of the public, experts, staff and elected officials
+        </Text>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Defining your local government’s intended outcomes for public engagement
+        </Text>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Integrating the IAP2 spectrum of participation into a wider strategic context
+        </Text>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Reviewing the characteristics of highly effective public engagement, including structured questions to ask when starting a new engagement initiative
+        </Text>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Supporting alignment of public engagement goals and planning across your organization
+        </Text>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Planning post-engagement follow-through
+        </Text>
+      </ul>
+    </Details>
+  )
+}
+
+const UrbanFarming = () => {
+  return (
+    <Details>
+      <Text heading3Alt component="h3" style={{marginBottom: '24px'}}>Urban Farming: A way for City Planning to Achieve Food Security and Sovereignty</Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        Urbanization is happening to every country in Asia, especially over the past decade. The growth rate of the city is remarkable. The United Nations Food and Agriculture Organization (FAO) predicts that in 2050, up to 2.4 billion people or 66 percent of the world's population will live in cities. The expansion of the city takes over rural areas which are sources for food production. Urbanization thus directly impacts our food safety, security and sovereignty. It also affects food transportation and distribution systems.
+      </Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        Urban agriculture is becoming an important tool for sustainable urban planning, which helps fight the challenge of rapid urbanization. Its roles in urban planning have been widely accepted in many parts of the world, including the Asia-Pacific region. Urban agriculture provides urban dwellers with better food security and sovereignty. It also provides urban residents, especially urban poor and marginalized groups, with rights to safe food, thus helping alleviate poverty. Urban agriculture is regarded as a mechanism to reduce social inequality and increase resilience. The United Nations Sustainable Development Goals (SDGs) target to create sustainable cities and communities. The SDGs promote investment in effective public transport systems, creation of green public spaces and improved urban planning and management in ways that are both participatory and inclusive. Urban agriculture can thus be a tool that can contribute to driving sustainable development.
+      </Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        This seminar will be an opportunity to share and discuss experiences and lessons related to urban agriculture in some Asia-Pacific countries, including Thailand, Singapore and Indonesia. Focus will be on cases in which urban dwellers practice urban agriculture for themselves to achieve food safety, security, self-reliance and sovereignty. Their experiences and lessons will be viewed and discussed in the wider perspective of urban planning to create livable urban environment. Urban planning which provides urban residents with fair access to resources can reduce economic inequality and improve the quality of life. Such experiences and lessons learned also show key roles of civil society in achieving sustainable urban development.
+      </Text>
+    </Details>
+  )
+}
 
 const SchedulesFull = ({
   className,
@@ -208,9 +307,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Rep. from Kebun Kumara"
                 job="TBC" />
-              {/* <TalkSpeaker
-                name="Dr. Alvin Mannisi"
-                job="RMIT Urban Design School" /> */}
+              <UrbanFarming />
               <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
 
@@ -226,6 +323,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Ms. Dewi Martina"
                 job="Muhammadiyah University in Riau" />
+              <ListeningPartnership/>
               <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
 
@@ -252,6 +350,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Ms. Elodie Jacquet"
                 job="Manager of Knowledge and Practice, Dialogue and Civic Engagement Program, Simon Fraser University, Canada" />
+              <StrategicLens />
               <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
 
