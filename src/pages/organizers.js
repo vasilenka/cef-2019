@@ -5,9 +5,9 @@ import SEO from "../components/seo"
 import Text from "../primitives/Text/Text"
 import Footer from "../components/Footer/Footer";
 
-import UnivWeb from './../components/images/organizers/univ-webp'
-import IcrsWeb from './../components/images/organizers/icrs-webp'
-import KotaKitaWeb from './../components/images/organizers/kk-webp'
+import UnivWeb from './../components/images/organizers/univ'
+import IcrsWeb from './../components/images/organizers/icrs'
+import KotaKitaWeb from './../components/images/organizers/kk'
 
 import CoOrganizers from "../components/CoOrganizers/CoOrganizers";
 import Cover from "../components/Cover/Cover";
