@@ -66,7 +66,7 @@ const ListeningPartnership = () => {
 const StrategicLens = () => {
   return (
     <Details>
-      <Text heading3Alt component="h3" style={{marginBottom: '24px'}}>Civic Engagement, A Strategic Lens</Text>
+      <Text heading3Alt component="h3" style={{marginBottom: '24px'}}>Civic Engagement, a Strategic Lens</Text>
       <Text medium component="p" style={{marginBottom: '24px'}}>
         Expert opinion. Tight budgets. Electoral platforms. Public input. Everyone agrees that public engagement is important, but decision-making can feel like a crowded space. To succeed, engagement efforts are under increasing expectations to find authentic questions, get beyond the “same ten people,” and account for the practical constraints faced by decision-makers.
       </Text>
@@ -115,6 +115,8 @@ const UrbanFarming = () => {
   )
 }
 
+const ToBeConfirmed = () => <footer style={{marginTop: '24px', marginBottom: '64px', padding: '8px', backgroundColor: 'rgba(0,0,0,.04)' }}><strong>* To be confirmed</strong></footer>
+
 const SchedulesFull = ({
   className,
   ...restProps
@@ -123,32 +125,32 @@ const SchedulesFull = ({
     <Box className={cx(styles.root)} {...restProps}>
       <Container narrow className={cx(styles.container)}>
 
-      <ScheduleSection>
-        <Day date="Day 0" day="Monday, August 19"/>
-        <ScheduleItem hour="All day" tag="">
-          <SubTalk title="Arrival of Participants">
-            <Text component="p" medium>Accomodation at <a href="https://thesunanhotelsolo.com/" target="_blank" rel="noopener noreferrer">The Sunan Hotel</a></Text>
-            <Text small>
-              Jl. A. Yani No.40, Kerten, Laweyan, Kota Surakarta
-              <br/>
-              Jawa Tengah 57143, Indonesia
-            </Text>
-          </SubTalk>
-        </ScheduleItem>
-        <ScheduleItem hour="3:00pm" tag="">
-          <SubTalk title="Art Exhibition Opening">
-            <Talk title="Urban Landscape, Our Communities"></Talk>
-          </SubTalk>
-          <Role label="Navigators" />
-          <TalkSpeaker
-            name="Dr. Yeoh Seng Guan"
-            job="Monash University, Malaysia" />
-          <TalkSpeaker
-            name="Dr. Dicky Sofjan"
-            job="ICRS" />
-          <ScheduleVenue>Sunan Hotel</ScheduleVenue>
-        </ScheduleItem>
-      </ScheduleSection>
+        <ScheduleSection>
+          <Day date="Day 0" day="Monday, August 19"/>
+          <ScheduleItem hour="All day" tag="">
+            <SubTalk title="Arrival of Participants">
+              <Text component="p" medium>Accomodation at <a href="https://thesunanhotelsolo.com/" target="_blank" rel="noopener noreferrer">The Sunan Hotel</a></Text>
+              <Text small>
+                Jl. A. Yani No.40, Kerten, Laweyan, Kota Surakarta
+                <br/>
+                Jawa Tengah 57143, Indonesia
+              </Text>
+            </SubTalk>
+          </ScheduleItem>
+          <ScheduleItem hour="3:00pm" tag="">
+            <SubTalk title="Art Exhibition Opening">
+              <Talk title="Urban Landscape, Our Communities"></Talk>
+            </SubTalk>
+            <Role label="Navigators" />
+            <TalkSpeaker
+              name="Dr. Yeoh Seng Guan"
+              job="Monash University, Malaysia" />
+            <TalkSpeaker
+              name="Dr. Dicky Sofjan"
+              job="ICRS" />
+            <ScheduleVenue>Sunan Hotel</ScheduleVenue>
+          </ScheduleItem>
+        </ScheduleSection>
 
         <ScheduleSection>
           <Day date="Day 1" day="Tuesday, August 20" theme="Thematic Field Visit"/>
@@ -216,15 +218,15 @@ const SchedulesFull = ({
               <Role label="MC: Michiko Yoshida, Chulalongkorn University" />
               <SubTalk title="Welcome Address">
                 <TalkSpeaker
-                  name="Representative from School of Social and Political Science"
-                  job="Sebelas Maret University*" />
+                  name="Representative from School of Social and Political Science*"
+                  job="Sebelas Maret University" />
                 <TalkSpeaker
                   name="Dr. Nualnoi Treerat"
                   job="Director, Institute of Asian Studies, Chulalongkorn University" />
               </SubTalk>
               <SubTalk title="Keynote Speech: Youth Leadership toward People-Centered Society">
                 <TalkSpeaker
-                  name="Najwa Shihab"
+                  name="Najwa Shihab*"
                   job="Founder of Narasi, Indonesia’s Literacy Ambassador" />
               </SubTalk>
             </Talk>
@@ -266,7 +268,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Ms. Mayu Seto"
                 job="Former Youth Communicator, “World without Nuclear Weapons”"/>
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
             <Talk title="Showcasing Innovative Products for Urban Living">
@@ -275,9 +277,9 @@ const SchedulesFull = ({
                 name="Dr.Leonard Chrysostomos"
                 job="ICRS" />
               <TalkSpeaker
-                name="Awardees of “Sustainable,Just, Smart Urban Living Innovation Award”"/>
+                name="Awardees of “Sustainable, Just, Smart Urban Living Innovation Award”"/>
               <Role label="Presenter: TBC" />
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
             <Talk title="Education 4.0: Knowledge, Innovation and Civic Engagement toward Global Leadership">
@@ -292,7 +294,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Mr. Khampoui Saythalat"
                 job="Executive Director, Participatory Development Training Centre, Lao PDR"/>
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
             <Talk workshop title="Urban Farming: Steps toward Food Safety, Security and Sovereignty">
@@ -308,7 +310,7 @@ const SchedulesFull = ({
                 name="Rep. from Kebun Kumara"
                 job="TBC" />
               <UrbanFarming />
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
             <Talk workshop title="Listening Partnerships Living Fully and Leading with Integrity in a Time of Crisis">
@@ -324,7 +326,7 @@ const SchedulesFull = ({
                 name="Ms. Dewi Martina"
                 job="Muhammadiyah University in Riau" />
               <ListeningPartnership/>
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
           </ScheduleItem>
@@ -339,7 +341,7 @@ const SchedulesFull = ({
                 name="Dr. Rachada Jayagupta"
                 job="Asian Research Center for Migration, Inst. of Asian Studies, Chulalongkorn University"
                 />
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
             <Talk workshop title="Civic Engagement, a Strategic Lens">
@@ -351,7 +353,7 @@ const SchedulesFull = ({
                 name="Ms. Elodie Jacquet"
                 job="Manager of Knowledge and Practice, Dialogue and Civic Engagement Program, Simon Fraser University, Canada" />
               <StrategicLens />
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
             <Talk title="Pushing the Boundaries: Asian Youth in Trans-Culture 4.0">
@@ -362,7 +364,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Dr. Chhaeng Vannarith"
                 job="President, Asian Vision Institute, Cambodia" />
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
             <Talk title="Beyond Waste Management">
@@ -377,12 +379,12 @@ const SchedulesFull = ({
                 name="Prof. Tomoko Okayama"
                 job="Taisho University (TBC)" />
               <TalkSpeaker
-                name="Mr. Supardi Asmorobangun"
+                name="Mr. Supardi Asmorobangun*"
                 job="Rumah Kompos, Bali" />
               <TalkSpeaker
                 name="Ms. Penchom Saetang"
                 job="Director, Ecological Alert and Recovery, Thailand" />
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
           </ScheduleItem>
@@ -391,9 +393,10 @@ const SchedulesFull = ({
           </ScheduleItem>
           <ScheduleItem hour="4:15pm - 5.15pm" tag="Plenary Session">
             <Talk title="Synthesis Building Linkages with Strategic Partners">
-              <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
           </ScheduleItem>
+          <ToBeConfirmed />
         </ScheduleSection>
 
         <ScheduleSection>
@@ -406,11 +409,9 @@ const SchedulesFull = ({
                   job="Director, ICRS" />
               </SubTalk>
               <SubTalk title="Award giving ceremony “Sustainable, Just and Smart Urban Living Innovation Award"></SubTalk>
-              <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
             <Talk title="Roundtable: Mayors’ Innovation Pitch">
-              {/* <TalkSpeaker
-                  name="INDONESIA" /> */}
               <Country label="Indonesia" />
               <TalkSpeaker
                 name="Ahyar Abduh*"
@@ -451,7 +452,7 @@ const SchedulesFull = ({
                 name="Mr. Ahmad Rifai"
                 job="Kota Kita Foundation" />
 
-              <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="10:15am">
@@ -465,8 +466,8 @@ const SchedulesFull = ({
                   name="Ms. Endah Setyowati"
                   job="Executive Director, Ohana Indonesia*" />
                 <TalkSpeaker
-                  name="Dr. Bernadia Irawati Tjandradewi"
-                  job="Secretary General, United Cities and Local Governance Asia Pacific*" />
+                  name="Dr. Bernadia Irawati Tjandradewi*"
+                  job="Secretary General, United Cities and Local Governance Asia Pacific" />
                 <TalkSpeaker
                   name="Dr. Sukanda Luangon Lewis"
                   job="Project Director, Development of Creative Tourism, Chulalongkorn University" />
@@ -477,7 +478,7 @@ const SchedulesFull = ({
                   name="Dr. Hezri Adnan*"
                   job="Chief Executive Officer, Langkawi Development Agency (LADA), Malaysia" />
               </SubTalk>
-              <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="12:45pm">
@@ -503,7 +504,7 @@ const SchedulesFull = ({
                   name="Dr. Yeoh Seng Guan"
                   job="Monash University, Malaysia" />
               </SubTalk>
-              <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="4:00pm">
@@ -511,15 +512,16 @@ const SchedulesFull = ({
           </ScheduleItem>
           <ScheduleItem hour="4:15pm">
             <Talk title="Mayors’ Symposium Wrap Up"></Talk>
-            <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+            <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
           </ScheduleItem>
           <ScheduleItem hour="4.45pm">
             <SubTalk title="Solo Forum Wrap Up">
               <Talk title="Civic Engagement 4.0: A Call for Action" style={{marginBottom: 0, paddingBottom: 0, paddingTop: 0,}}></Talk>
             </SubTalk>
             <SubTalk title="Closing Ceremony"></SubTalk>
-            <ScheduleVenue><strong>TBC</strong>, The Sunan Hotel</ScheduleVenue>
+            <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
           </ScheduleItem>
+          <ToBeConfirmed />
         </ScheduleSection>
 
         <ScheduleSection>
