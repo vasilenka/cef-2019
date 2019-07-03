@@ -13,7 +13,7 @@ import Event from "../components/Event/Event";
 
 const NotFoundPage = () => (
   <Default>
-    <SEO title="Join as Participants | Civic Engagement 4.0" />
+    <SEO title="Join as Participants" />
     <Cover
       title="Participating in 2019 International Forum in Solo"
       description="Enjoy the full experience of joining the international forum that addresses the wide-ranging topics in the civil society that is to build an effective community of practitioners—bringing together academics, policymakers, civil society, development partners, foundations and members of communities in rural and urban in national, regional and international levels."

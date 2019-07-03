@@ -32,7 +32,7 @@ function SEO({ description, lang, meta, keywords, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={`${title} | Civic Engagement 4.0, 2019 International Forum in Solo`}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {

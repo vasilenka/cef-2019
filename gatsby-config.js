@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/solo`,
   siteMetadata: {
-    title: `Civic Engagement Forum 4.0`,
+    title: `Civic Engagement 4.0, 2019 International Forum in Solo`,
     description: `Civic Engagement 4.0: Dignity ~ Justice ~ Sustainability is a regional platform for mutual learning, action and advocacy, working toward achieving dignity, justice and sustainability in Southeast Asian (SEA) society, where the wave of Fourth Industrial Revolution is affecting each of us living in the region, we become increasingly aware of the need for multi-stakeholder collaboration which can effectively respond to it. The platform is expected to facilitate exchanges of knowledge for further collaboration in implementing actions and advocacy to achieve dignity, justice and sustainability among active members of communities working on the ground at the national, regional and international levels.`,
     author: `kotakita.org - meridian.id - ongki 'vasilenka' herlambang <ongki@herlambang.id>`,
     siteUrl: `https://civicengagementforum.net/solo/`
@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Civic Engagement Forum 4.0`,
+        name: `Civic Engagement 4.0, 2019 International Forum in Solo`,
         short_name: `CEF 4.0`,
         start_url: `/`,
         background_color: `#E8C23D`,

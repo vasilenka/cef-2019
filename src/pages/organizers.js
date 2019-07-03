@@ -19,7 +19,7 @@ import FundingPartners from "../components/FundingPartners/FundingPartners";
 
 const NotFoundPage = () => (
   <Default>
-    <SEO title="Co-Organizers | Civic Engagement Forum 4.0 Solo" />
+    <SEO title="Organizers" />
     <Cover
       title="Organizers"
       description="2019 International Forum of Civic Engagement 4.0, is co-organized by Chulalongkorn University with Kota Kita Foundation and Indonesian Consortium for Religious Studies."

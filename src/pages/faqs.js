@@ -9,7 +9,7 @@ import Text from "../primitives/Text/Text";
 
 const Faqs = () => (
   <Default>
-    <SEO title="F.A.Q. | Civic Engagement Forum 4.0 Solo" />
+    <SEO title="FAQs" description="Frequently asked questions for civic engagement 4.0 2019 International Forum in Solo"/>
     <CoverAlt
       subtitle="Frequently Asked Questions"
       title={

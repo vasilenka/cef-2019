@@ -9,7 +9,7 @@ import ScheduleParts from "../components/ScheduleParts/ScheduleParts";
 
 const NotFoundPage = () => (
   <Default>
-    <SEO title="Programs | Civic Engagement 4.0 Solo" />
+    <SEO title="Programs" />
     <Cover
       title="Programs"
       description="2019 International Forum in Solo will be running for a week in the city of Solo.  Most activities are open to  public with prior registration. Simultaneous interpretation between English and Bahasa Indonesia will be available for plenary sessions.  The main language to be used during the Forum is English."

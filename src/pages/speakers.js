@@ -20,7 +20,7 @@ import {
 
 const NotFoundPage = () => (
   <Default>
-    <SEO title="Speakers | Civic Engagement Forum 4.0 Solo" />
+    <SEO title="Speakers" />
     <Cover
       title="Speakers"
       description=""
