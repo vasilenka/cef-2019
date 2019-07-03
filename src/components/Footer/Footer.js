@@ -21,7 +21,7 @@ const Footer = ({
       <Container narrow className={styles.container}>
         <Box column alignStart justifyStart style={{marginBottom: '48px'}}>
           <Text component="h2" heading2 className={styles.title} style={{ marginBottom: '24px'}}>Contact us</Text>
-          <Text medium>For general questions, please refer to <Link to="/faq">FAQs</Link> page.</Text>
+          <Text medium>For general questions, please refer to <Link to="/faqs">FAQs</Link> page.</Text>
           <Text medium>If your inquiry/question is not yet addressed by the FAQs, please contact us at</Text>
         </Box>
         <Box alignCenter className={styles.footer}>
