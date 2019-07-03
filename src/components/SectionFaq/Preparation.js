@@ -12,12 +12,15 @@ const Preparation = ({
     <FaqItemSection id="preparation-for-attendance" title="2. Preparation for attendance" {...restProps}>
       <Item
         question={`Can you issue an official letter of invitation for every participant?`}
-        answer={`No. The Secretariat will only issue official invitation letters to the invited speakers and guests.`} />
+        answer={`No. The organizer will only issue official invitation letters to the invited speakers and guests.`} />
       <Item
         question={`I need to apply for a visa to enter Indonesia.  Will you issue me a visa endorsement letter?`}
         answer={
           <Text component="p" medium>Yes. Please go to the <strong><Link to="/faq#visa-information">FAQs Visa below</Link></strong>, download the visa application form and send the request to the Secretariat at <Email />. If you are not an invited paper presenter/invited guest, the organizer is obliged to verify your application information first. Please attend to these steps as soon as possible.</Text>
         } />
+      <Item
+        question={`Will I be able to receive a certificate of participation?`}
+        answer={`Yes, upon you successfully complete the participants’ online survey which will be launched soon.`} />
     </FaqItemSection>
   )
 }

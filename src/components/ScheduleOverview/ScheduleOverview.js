@@ -89,7 +89,7 @@ const ScheduleOverview = ({
               </Box>
               <Box column className={styles.item}>
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
-                  Note Speech
+                  Keynote Speech
                 </Text>
                 <Text medium>
                   “Youth Leadership toward People-Centered Society”

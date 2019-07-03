@@ -17,7 +17,9 @@ import {
   EngagedBuddhist,
   Gadjah,
   GraduateSchool,
+  GraduateWordmark,
   Isis,
+  Saft,
   Mekong,
   Monash,
   Morris,
@@ -53,10 +55,12 @@ const Partners = ({
             <PartnerContainer className={styles.fundingSecond} children={<Mekong />} />
             <PartnerContainer className={styles.fundingSecond} children={<Monash />} />
             <PartnerContainer className={styles.fundingSecond} children={<Isis />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Saft />} />
             <PartnerContainer className={styles.fundingSecond} children={<AsianVision />} />
             <PartnerContainer className={styles.fundingSecond} children={<CitizenFarm />} />
             <PartnerContainer className={styles.fundingSecond} children={<Participatory />} />
             <PartnerContainer className={styles.fundingSecond} children={<EcologicalAlert />} />
+            <PartnerContainer className={styles.fundingSecond} children={<GraduateWordmark />} />
             <PartnerContainer className={styles.fundingSecond} children={<GraduateSchool />} />
             <PartnerContainer className={styles.fundingSecond} children={<Morris />} />
             <PartnerContainer className={styles.fundingSecond} children={<Simon />} />

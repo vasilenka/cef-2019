@@ -124,7 +124,7 @@
 }
 
 .fundingCity {
-  composes: col-lg-1 col-2 from global;
+  composes: col-2 from global;
   composes: partnerContainer;
 }
 

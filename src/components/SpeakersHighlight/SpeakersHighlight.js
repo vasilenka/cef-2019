@@ -44,13 +44,6 @@ const SpeakersHighlight = ({
           </div>
         </Link>
 
-        <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
-        <Link to="/speakers#thailand">
-          <div className={styles.speakerContainer}>
-            <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala Province, Thailand" />
-          </div>
-        </Link>
-
         <Text heading5 component="h3" className={styles.mayorsTitle}>Philippines</Text>
         <Link to="/speakers#philippines">
           <div className={styles.speakerContainer}>
@@ -62,6 +55,13 @@ const SpeakersHighlight = ({
         {/* <div className={styles.speakerContainer}>
           <Speaker name="Mayor from South Korea*" />
         </div> */}
+
+        <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
+        <Link to="/speakers#thailand">
+          <div className={styles.speakerContainer}>
+            <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality, Thailand" />
+          </div>
+        </Link>
 
         <footer style={{paddingTop: '48px'}}>
 

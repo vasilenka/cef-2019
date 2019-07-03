@@ -208,9 +208,9 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Rep. from Kebun Kumara"
                 job="TBC" />
-              <TalkSpeaker
+              {/* <TalkSpeaker
                 name="Dr. Alvin Mannisi"
-                job="RMIT Urban Design School" />
+                job="RMIT Urban Design School" /> */}
               <ScheduleVenue><strong>TBC</strong>, University Sebelas Maret</ScheduleVenue>
             </Talk>
 
@@ -246,9 +246,9 @@ const SchedulesFull = ({
 
             <Talk workshop title="Civic Engagement, a Strategic Lens">
               <Role label="Convener" />
-              <TalkSpeaker
+              {/* <TalkSpeaker
                 name="Ms. Shauna Sylvester"
-                job="Executive Director of Simon Fraser University, Canada" />
+                job="Executive Director of Simon Fraser University, Canada" /> */}
               <TalkSpeaker
                 name="Ms. Elodie Jacquet"
                 job="Manager of Knowledge and Practice, Dialogue and Civic Engagement Program, Simon Fraser University, Canada" />
@@ -278,7 +278,7 @@ const SchedulesFull = ({
                 name="Prof. Tomoko Okayama"
                 job="Taisho University (TBC)" />
               <TalkSpeaker
-                name="Mr. Supardi"
+                name="Mr. Supardi Asmorobangun"
                 job="Rumah Kompos, Bali" />
               <TalkSpeaker
                 name="Ms. Penchom Saetang"
@@ -314,14 +314,8 @@ const SchedulesFull = ({
                   name="INDONESIA" /> */}
               <Country label="Indonesia" />
               <TalkSpeaker
-                name="F.X. Hadi Rudyatmo"
-                job="Mayor of Surakarta (Central Java) " />
-              <TalkSpeaker
                 name="Ahyar Abduh*"
                 job="Mayor of Mataram (Nusa Tenggara Barat)" />
-              <TalkSpeaker
-                name="Tri Rismaharini*"
-                job="Mayor of Surabaya (East Java)" />
               <TalkSpeaker
                 name="Badingah*"
                 job="Regent of Gunung Kidul (Yogyakarta)" />
@@ -329,23 +323,26 @@ const SchedulesFull = ({
                 name="Eko Purnomo*"
                 job="Regent of Wonosobo (Central Java)" />
               <TalkSpeaker
+                name="F.X. Hadi Rudyatmo"
+                job="Mayor of Surakarta (Central Java) " />
+              <TalkSpeaker
                 name="Ibnu Sina*"
                 job="Mayor of Banjarmasin (South Kalimantan)" style={{marginBottom: '24px'}}/>
-
-              <Country label="Thailand" />
               <TalkSpeaker
-                name="Mr. Pongsak Yingchoncharoen"
-                job="Mayor of Yala" style={{marginBottom: '24px'}}/>
+                name="Tri Rismaharini*"
+                job="Mayor of Surabaya (East Java)" />
 
               <Country label="Philippines" />
               <TalkSpeaker
                 name="James Pooten, Jr.*"
-                job="Mayor of Sagada" style={{marginBottom: '24px'}}/>
+                job="Mayor of Municipality of Sagada" style={{marginBottom: '24px'}}/>
 
-              <Country label="Malaysia" />
+              <Country label="South Korea" />
+
+              <Country label="Thailand" />
               <TalkSpeaker
                 name="Mr. Pongsak Yingchoncharoen"
-                job="Mayor of Ipoh City Council, Perak"/>
+                job="Mayor of Yala City Municipality" style={{marginBottom: '24px'}}/>
 
               <Role label="Facilitators" />
               <TalkSpeaker

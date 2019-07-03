@@ -25,7 +25,7 @@ const Registration = ({
         answer={`There is no registration fee.`} />
       <Item
         question={`Can I do walk-in registration?`}
-        answer={`Yes, subject to venue availability.`} />
+        answer={`It will be subjected to seat availability. Participants will be accepted “a first-come first-served” basis therefore the organizer highly recommends you register online soonest.`} />
       <Item
         question={`Can I bring my friend/family member to listen to my session only?`}
         answer={`Yes, of course. But each person you invite must register online.`} />
@@ -33,7 +33,7 @@ const Registration = ({
         question={`What do I do if I can no longer attend the Forum after my registration?`}
         answer={
           <Text medium>
-            Please email our representative to <Email /> so our representative can allocate your slot to other potential participants.
+            Please email to <Email /> immediately, so the organizer can allocate your slot to other potential participants.
           </Text>
         } />
     </FaqItemSection>
