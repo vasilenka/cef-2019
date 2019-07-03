@@ -6,7 +6,7 @@ export const Morris = ({url, ...restProps}) => {
   return (<StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "collaborators/morris-j-wosk-centre-for-dialogue.jpg"}) {
+        placeholderImage: file(relativePath: { eq: "collaborators/morris-j-wosk-centre-for-dialogue.png"}) {
           childImageSharp {
             fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid

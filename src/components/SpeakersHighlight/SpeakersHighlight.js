@@ -37,12 +37,12 @@ const SpeakersHighlight = ({
           <Text heading5 component="h3" className={styles.mayorsTitle}>Indonesia</Text>
           <Link to="/speakers#indonesia">
             <div className={styles.speakerContainer}>
-              <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat, Indonesia)" />
-              <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta, Indonesia)" />
-              <Speaker name="Eko Purnomo*" job="Regent of Wonosobo (Central Java, Indonesia)" />
-              <Speaker name="F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java, Indonesia)" />
-              <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan, Indonesia)" />
-              <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java, Indonesia)" />
+              <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat)" />
+              <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta)" />
+              <Speaker name="Eko Purnomo*" job="Regent of Wonosobo (Central Java)" />
+              <Speaker name="F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" />
+              <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan)" />
+              <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java)" />
             </div>
           </Link>
 
@@ -61,7 +61,7 @@ const SpeakersHighlight = ({
           <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
           <Link to="/speakers#thailand">
             <div className={styles.speakerContainer} style={{marginBottom: 0}}>
-              <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality, Thailand" />
+              <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" />
             </div>
           </Link>
 
