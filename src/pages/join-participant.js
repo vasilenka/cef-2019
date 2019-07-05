@@ -23,7 +23,7 @@ const NotFoundPage = () => (
 
         <Event
           title="1. Thematic Field Visit"
-          subtitle="The participation to this activity is by invitation only. There will be a suggested donation for each activity."
+          subtitle="The participation to this activity is by invitation only."
           venue="Kampung Laweyan, Ngampon, Pepe River, Pasar Gede (details to be announced)"
           date="August 20, 2019 (Day 1)"
           time="8:00am - 3:00pm"
@@ -69,7 +69,7 @@ const NotFoundPage = () => (
             The Mayors’ symposium enables unique exchanges between citizens and strategic partners, aiming to work together sustainable societies in “Civic Engagement 4.0” spirit. The event will highlight the unique challenges confronted by city and district governments in this fast-changing society, and focus on the good practices and innovative solutions local leaders have in resolving these problems.
           </Text>
         </Event>
-
+{/*
         <Event
           title="4. Bike Tour"
           subtitle="The tour will be co-hosted by the City Government of Surakarta. The participation to this bike tour is limited to partners and speakers. More details will be announced."
@@ -83,7 +83,7 @@ const NotFoundPage = () => (
           <Text medium component="p" style={{marginBottom: 0}}>
             The Bike tour will introduce participants to the ecosystem of sustainable transportation and walkability in Solo, while allowing participants to enjoy Solo’s must-visit historical landmarks, including Loji Gandrung (the official house of the mayor), Keraton (the palace), and other destination such as Kampung Batik and Museum Batik Danar Hadi.
           </Text>
-        </Event>
+        </Event> */}
 
       </Container>
     </Box>

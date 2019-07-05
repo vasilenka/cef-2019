@@ -43,7 +43,7 @@ const NotFoundPage = () => (
         <SpeakerKeynote title="South Korea (to be confirmed)" id="south-korea">
         </SpeakerKeynote>
         <SpeakerKeynote title="Thailand" id="thailand">
-          <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala Province" photo={<Pongsak/>}/>
+          <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" photo={<Pongsak/>}/>
         </SpeakerKeynote>
     </main>
     <Footer />

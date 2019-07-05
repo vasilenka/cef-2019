@@ -9,8 +9,8 @@ import Text from '../../primitives/Text/Text'
 
 import IcrsWeb from './../images/organizers/icrs'
 import KotaKitaWeb from './../images/organizers/kk'
-import Combine from './../images/organizers/combine'
-// import UnivWeb from './../images/organizers/univ'
+// import Combine from './../images/organizers/combine'
+import UnivWeb from './../images/organizers/univ'
 // import Ias from './../images/organizers/ias'
 // import Ornament from '../Ornament/Ornament';
 
@@ -25,16 +25,16 @@ const Organizers = ({
         <Box alignCenter className={styles.organizerContainer}>
           <Text heading5Alt component="h2" className={styles.title}>Co-organized by : </Text>
           <Box alignCenter className={cx(styles.columnRow)}>
-            {/* <div className={styles.logoContainer}>
+            <div className={styles.logoContainer}>
               <Link to="/organizers#chulalongkorn-university" className={cx(styles.logo, styles.logoUniv)}>
                 <UnivWeb />
               </Link>
-            </div> */}
-            <div className={cx(styles.logoContainer, styles.combine)}>
-              <Link to="/organizers#chulalongkorn-university" className={cx(styles.logo, styles.ias)}>
-                <Combine />
-              </Link>
             </div>
+            {/* <div className={cx(styles.logoContainer, styles.univ)}>
+              <Link to="/organizers#chulalongkorn-university" className={cx(styles.logo, styles.ias)}>
+                <UnivWeb />
+              </Link>
+            </div> */}
             <div className={styles.logoContainer}>
               <Link to="/organizers#icrs" className={cx(styles.logo)}>
                 <IcrsWeb />

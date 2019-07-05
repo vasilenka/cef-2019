@@ -15,7 +15,7 @@ import SubTalk from '../SubTalk/SubTalk';
 
 import Arrow from './../icons/arrow.inline.svg'
 
-const Role = props => <Text component="h4" heading6 className={styles.role}>{props.label}</Text>
+const Role = props => <Text component="h4" heading5={props.name} heading6={!props.name} className={styles.role}>{props.label} <span style={{textTransform: 'capitalize'}}>{props.name && props.name}</span></Text>
 const Country = props => <Text component="h4" heading6 className={styles.country}>{props.label}</Text>
 
 const Details = props => {
@@ -159,7 +159,7 @@ const SchedulesFull = ({
               <SubTalk title="Sensing Sustainability in Solo Communities">
                 <TalkSpeaker name="Facilitated by Kota Kita, Indonesia Consortium for Religious Studies (ICRS), and local communities."/>
                 <Role label="Navigators"/>
-                <TalkSpeaker name="Paulista Surjadi" job="Kota Kita" />
+                <TalkSpeaker name="Ms. Paulista Surjadi" job="Kota Kita" />
                 <TalkSpeaker name="Dr.Kohei Watanabe" job="Teikyo University" />
                 <TalkSpeaker name="Prof. Tomoko Okayama" job="Taisho University" />
               </SubTalk>
@@ -215,11 +215,11 @@ const SchedulesFull = ({
           <ScheduleItem hour="8:30am" tag="Plenary Session">
             <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Opening</Text>
             <Talk title="Civic Engagement 4.0: Creating an Innovative Platform">
-              <Role label="MC: Michiko Yoshida, Chulalongkorn University" />
+              <Role label="MC: " name="Michiko Yoshida, Chulalongkorn University" />
               <SubTalk title="Welcome Address">
                 <TalkSpeaker
-                  name="Representative from School of Social and Political Science*"
-                  job="Sebelas Maret University" />
+                  name="Prof. Dr. Ismi Dwi Astuti Nurhaeni, M.Si"
+                  job="Dean of School of Social and Political Science, Universitas Sebelas Maret" />
                 <TalkSpeaker
                   name="Dr. Nualnoi Treerat"
                   job="Director, Institute of Asian Studies, Chulalongkorn University" />
@@ -307,8 +307,8 @@ const SchedulesFull = ({
                 name="Mr. Bjorn Low"
                 job="Director, Citizen Farm, Singapore" />
               <TalkSpeaker
-                name="Rep. from Kebun Kumara"
-                job="TBC" />
+                name="Aryo Wiryawan*"
+                job="CEO Indmira and Founder of Jala" />
               <UrbanFarming />
               <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
@@ -374,16 +374,16 @@ const SchedulesFull = ({
                 job="Teikyo University, Japan" />
               <Role label="Presenter" />
               <TalkSpeaker
-                name="Bank Sampah (Waste Bank Women’s Group)" />
-              <TalkSpeaker
                 name="Prof. Tomoko Okayama"
-                job="Taisho University (TBC)" />
+                job="Taisho University" />
               <TalkSpeaker
-                name="Mr. Supardi Asmorobangun*"
+                name="Mr. Supardi Asmorobangun"
                 job="Rumah Kompos, Bali" />
               <TalkSpeaker
                 name="Ms. Penchom Saetang"
                 job="Director, Ecological Alert and Recovery, Thailand" />
+              <TalkSpeaker
+                name="Bank Sampah (Waste Bank Women’s Group)" />
               <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 
@@ -414,27 +414,27 @@ const SchedulesFull = ({
             <Talk title="Roundtable: Mayors’ Innovation Pitch">
               <Country label="Indonesia" />
               <TalkSpeaker
-                name="Ahyar Abduh*"
+                name="Mr. H. Ahyar Abduh*"
                 job="Mayor of Mataram (Nusa Tenggara Barat)" />
               <TalkSpeaker
-                name="Badingah*"
+                name="Mrs. Hj. Badingah, S.sos.*"
                 job="Regent of Gunung Kidul (Yogyakarta)" />
               <TalkSpeaker
-                name="Eko Purnomo*"
+                name="Mr. Eko Purnomo, S.E., M.M.*"
                 job="Regent of Wonosobo (Central Java)" />
               <TalkSpeaker
-                name="F.X. Hadi Rudyatmo"
+                name="Mr. F.X. Hadi Rudyatmo"
                 job="Mayor of Surakarta (Central Java) " />
               <TalkSpeaker
-                name="Ibnu Sina*"
+                name="Mr. H. Ibnu Sina, S.Pi., M.Si.*"
                 job="Mayor of Banjarmasin (South Kalimantan)" style={{marginBottom: '24px'}}/>
               <TalkSpeaker
-                name="Tri Rismaharini*"
+                name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*"
                 job="Mayor of Surabaya (East Java)" />
 
               <Country label="Philippines" />
               <TalkSpeaker
-                name="James Pooten, Jr.*"
+                name="Mr. James B. Pooten, Jr.*"
                 job="Mayor of Municipality of Sagada" style={{marginBottom: '24px'}}/>
 
               <Country label="South Korea" />
@@ -456,7 +456,7 @@ const SchedulesFull = ({
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="10:15am">
-            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Coffe Break - Press Conference with City Mayors</Text>
+            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Coffee Break - Press Conference with City Mayors</Text>
           </ScheduleItem>
           <ScheduleItem hour="10:45am">
             <Talk title="Mayors’ Interface with Civil Society (Part I)">
