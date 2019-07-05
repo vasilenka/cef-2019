@@ -37,19 +37,19 @@ const SpeakersHighlight = ({
           <Text heading5 component="h3" className={styles.mayorsTitle}>Indonesia</Text>
           <Link to="/speakers#indonesia">
             <div className={styles.speakerContainer}>
-              <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat)" />
-              <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta)" />
-              <Speaker name="Eko Purnomo*" job="Regent of Wonosobo (Central Java)" />
-              <Speaker name="F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" />
-              <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan)" />
-              <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java)" />
+              <Speaker name="Mr. H. Ahyar Abduh**" job="Mayor of Mataram (Nusa Tenggara Barat)" />
+              <Speaker name="Mrs. Hj. Badingah, S.sos.*" job="Regent of Gunung Kidul (Yogyakarta)" />
+              <Speaker name="Mr. Eko Purnomo, S.E., M.M.*" job="Regent of Wonosobo (Central Java)" />
+              <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" />
+              <Speaker name="Mr. H. Ibnu Sina, S.Pi., M.Si.*" job="Mayor of Banjarmasin (South Kalimantan)" />
+              <Speaker name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*" job="Mayor of Surabaya (East Java)" />
             </div>
           </Link>
 
           <Text heading5 component="h3" className={styles.mayorsTitle}>Philippines</Text>
           <Link to="/speakers#philippines">
             <div className={styles.speakerContainer}>
-              <Speaker name="James Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
+              <Speaker name="Mr. James B. Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
             </div>
           </Link>
 
@@ -61,7 +61,7 @@ const SpeakersHighlight = ({
           <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
           <Link to="/speakers#thailand">
             <div className={styles.speakerContainer} style={{marginBottom: 0}}>
-              <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" />
+              <Speaker name="Mr. Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" />
             </div>
           </Link>
 
