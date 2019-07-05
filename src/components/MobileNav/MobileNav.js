@@ -3,12 +3,12 @@ import React, { useState, useLayoutEffect } from 'react';
 import cx from 'classnames';
 import { Link } from 'gatsby'
 
-import Logo from './../../assets/images/logo.jpg'
+import Logo from './../../assets/images/logo.png'
 
 const Trigger = ({className, ...restProps}) => {
   return (
     <div className={styles.trigger} {...restProps}>
-      =
+      menu
     </div>
   )
 }
@@ -36,12 +36,12 @@ const Dialog = props => {
             About
           </li>
         </Link>
-        <Link to="/organizers" activeClassName={styles.active}>
+        <Link to="/organizers" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
           <li className={styles.itemWrapper}>
             Organizers
           </li>
         </Link>
-        <Link to="/organizers#funding-partners" activeClassName={styles.active}>
+        <Link to="/organizers#funding-partners" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
           <li className={cx(styles.itemWrapper, styles.secondary)}>
             Funding Partners
           </li>
@@ -62,7 +62,7 @@ const Dialog = props => {
           </li>
         </Link>
       </ul>
-      <button type="button" className={styles.close} onClick={() => props.setVisible(!props.visible)}>X</button>
+      <button type="button" className={styles.close} onClick={() => props.setVisible(!props.visible)}>Close</button>
     </nav>
   )
 }

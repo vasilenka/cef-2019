@@ -132,6 +132,16 @@
   composes: partnerContainer;
 }
 
+.partnerFunding {
+  composes: col-md-4 col-6 from global;
+  composes: partnerContainer;
+}
+
+.partnerCity {
+  composes: col-5 col-md-3 from global;
+  composes: partnerContainer;
+}
+
 .fundingCity {
   composes: col-4 col-md-2 col-lg-2 from global;
   composes: partnerContainer;

@@ -41,24 +41,22 @@ const FundingPartners = ({
         <Box column className={styles.mainPartner} >
           <Text heading1 component="h2" className={styles.title}>Funding Partners</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
-            <PartnerContainer className={styles.fundingFirst} children={<Ford />} to="https://www.fordfoundation.org/"/>
-            <PartnerContainer className={styles.fundingFirst} children={<AsiaCenter />} to="https://www.jpf.go.jp/e/index.html"/>
-          </Box>
-          <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <PartnerContainer className={styles.partnerFunding} children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
+            <PartnerContainer className={styles.partnerFunding} children={<Ford />} to="https://www.fordfoundation.org/"/>
+            <PartnerContainer className={styles.partnerFunding} children={<AsiaCenter />} to="https://www.jpf.go.jp/e/index.html"/>
             <PartnerContainer
-              className={styles.fundingFirst}
+              className={styles.partnerFunding}
               children={<Solo />}
               name="The City of Surakarta"
               to="http://surakarta.go.id/"
               />
             <PartnerContainer
-              className={styles.fundingFirst}
+              className={styles.partnerFunding}
               children={<GraduateWordmark />}
               to="http://www.kyoto-u.ac.jp/ja/"
               />
             <PartnerContainer
-              className={styles.fundingFirst}
+              className={styles.partnerFunding}
               name="Ayus: Network of Buddhists Volunteers on International Cooperation"
               to="http://jneb.jp/english/japan/ayus"
               children={<Ayus />} />

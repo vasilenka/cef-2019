@@ -127,6 +127,11 @@
   composes: partnerContainer;
 }
 
+.partnerFunding {
+  composes: col-md-4 col-6 from global;
+  composes: partnerContainer;
+}
+
 .fundingSecond {
   composes: col-xl-4 col-sm-4 col-4 from global;
   composes: partnerContainer;

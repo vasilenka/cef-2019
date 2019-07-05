@@ -115,43 +115,63 @@ const Partners = ({
         <Box column className={styles.mainPartner}>
           <Text heading3 component="h2" className={cx(styles.title, styles.subtitle)}>City Governments of:</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.fundingCity} children={<Banjarmasin />} name="Banjarmasin" to="http://banjarmasinkota.go.id/"/>
-            <PartnerContainer className={styles.fundingCity} children={<Mataram />} name="Mataram" to="http://mataramkota.go.id/"/>
-            <PartnerContainer className={styles.fundingCity} children={<Surabaya />} name="Surabaya" to="https://www.surabaya.go.id/" />
-            <PartnerContainer className={styles.fundingCity} children={<SoloCity />} name="Surakarta" to="http://surakarta.go.id/"/>
+            <PartnerContainer className={styles.partnerCity} children={<Banjarmasin />} name="Banjarmasin" to="http://banjarmasinkota.go.id/"/>
+            <PartnerContainer className={styles.partnerCity} children={<Mataram />} name="Mataram" to="http://mataramkota.go.id/"/>
+            <PartnerContainer className={styles.partnerCity} children={<Surabaya />} name="Surabaya" to="https://www.surabaya.go.id/" />
+            <PartnerContainer className={styles.partnerCity} children={<SoloCity />} name="Surakarta" to="http://surakarta.go.id/"/>
+            <PartnerContainer className={styles.partnerCity} children={<Gunungkidul />} name="Gunungkidul Regency" to="https://gunungkidulkab.go.id/"/>
+            <PartnerContainer className={styles.partnerCity} children={<Sagada />} name="Municipality of Sagada"/>
+            <PartnerContainer className={styles.partnerCity} children={<Wonosobo />} name="Wonosobo Regency" to="https://wonosobokab.go.id/" />
+            <PartnerContainer className={styles.partnerCity} children={<Yala />} name="Yala Municipality" to="http://www.yalacity.go.th/frontpage"/>
           </Box>
-          <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.fundingCity} children={<Gunungkidul />} name="Gunungkidul Regency" to="https://gunungkidulkab.go.id/"/>
-            <PartnerContainer className={styles.fundingCity} children={<Sagada />} name="Municipality of Sagada"/>
-            <PartnerContainer className={styles.fundingCity} children={<Wonosobo />} name="Wonosobo Regency" to="https://wonosobokab.go.id/" />
-            <PartnerContainer className={styles.fundingCity} children={<Yala />} name="Yala Municipality" to="http://www.yalacity.go.th/frontpage"/>
-          </Box>
+          {/* <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <PartnerContainer className={styles.partnerCity} children={<Gunungkidul />} name="Gunungkidul Regency" to="https://gunungkidulkab.go.id/"/>
+            <PartnerContainer className={styles.partnerCity} children={<Sagada />} name="Municipality of Sagada"/>
+            <PartnerContainer className={styles.partnerCity} children={<Wonosobo />} name="Wonosobo Regency" to="https://wonosobokab.go.id/" />
+            <PartnerContainer className={styles.partnerCity} children={<Yala />} name="Yala Municipality" to="http://www.yalacity.go.th/frontpage"/>
+          </Box> */}
         </Box>
         <Box column className={styles.mainPartner} style={{maxWidth: '720px' }}>
           <Text heading2 component="h2" className={styles.title}>Funding Partners</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
-            <PartnerContainer className={styles.fundingFirst} children={<Ford />} to="https://www.fordfoundation.org/"/>
-            <PartnerContainer className={styles.fundingFirst} children={<AsiaCenter />} to="https://www.jpf.go.jp/e/index.html"/>
-          </Box>
-          <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <PartnerContainer className={styles.partnerFunding} children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
+            <PartnerContainer className={styles.partnerFunding} children={<Ford />} to="https://www.fordfoundation.org/"/>
+            <PartnerContainer className={styles.partnerFunding} children={<AsiaCenter />} to="https://www.jpf.go.jp/e/index.html"/>
             <PartnerContainer
-              className={styles.fundingFirst}
+              className={styles.partnerFunding}
               children={<Solo />}
               name="The City of Surakarta"
               to="http://surakarta.go.id/"
               />
             <PartnerContainer
-              className={styles.fundingFirst}
+              className={styles.partnerFunding}
               children={<GraduateWordmark />}
               to="http://www.kyoto-u.ac.jp/ja/"
               />
             <PartnerContainer
-              className={styles.fundingFirst}
+              className={styles.partnerFunding}
               name="Ayus: Network of Buddhists Volunteers on International Cooperation"
               to="http://jneb.jp/english/japan/ayus"
               children={<Ayus />} />
           </Box>
+          {/* <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <PartnerContainer
+              className={styles.partnerFunding}
+              children={<Solo />}
+              name="The City of Surakarta"
+              to="http://surakarta.go.id/"
+              />
+            <PartnerContainer
+              className={styles.partnerFunding}
+              children={<GraduateWordmark />}
+              to="http://www.kyoto-u.ac.jp/ja/"
+              />
+            <PartnerContainer
+              className={styles.partnerFunding}
+              name="Ayus: Network of Buddhists Volunteers on International Cooperation"
+              to="http://jneb.jp/english/japan/ayus"
+              children={<Ayus />} />
+          </Box> */}
         </Box>
       </Container>
     </Box>
