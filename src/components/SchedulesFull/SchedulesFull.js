@@ -182,7 +182,7 @@ const SchedulesFull = ({
                 name="Dr. Dicky Sofjan"
                 job="ICRS" />
               <TalkSpeaker
-                name="Ms. Ms. Michiko Yoshida"
+                name="Ms. Michiko Yoshida"
                 job="Chulalongkorn University" />
               <ScheduleVenue>Sunan Hotel</ScheduleVenue>
             </Talk>
