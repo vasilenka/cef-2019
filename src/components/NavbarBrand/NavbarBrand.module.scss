@@ -6,32 +6,18 @@
   justify-content: center;
   align-items: center;
   color: $dark-hex-80;
-  @include screen(phone) {
-    padding: $space-s $space-ml;
-  }
-  @include screen(tabPortrait) {
-    padding: $space-m $space-ml;
-  }
-  @include screen(tabLandscape) {
-    padding: $space-m $space-ml;
-  }
-  @include screen(desktop) {
-    padding: $space-m $space-ml;
-  }
-  @include screen(desktopWide) {
-    padding: $space-m $space-ml;
-  }
+  padding: $space-s $space-ml;
 }
 
 .brandContainer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 52px;
+  height: 76px;
   mix-blend-mode: darken;
 }
 
 .brand {
-  height: 52px;
+  height: 76px;
   color: $dark-alpha-70;
 }

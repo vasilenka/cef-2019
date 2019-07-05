@@ -3,7 +3,7 @@ import React from 'react'
 import cx from 'classnames'
 import { Link } from 'gatsby'
 
-import Logo from './../../assets/images/logo.jpg'
+import Logo from './../../assets/images/logo.png'
 
 const NavbarBrand = ({ children, className, ...restProps }) => {
   return (

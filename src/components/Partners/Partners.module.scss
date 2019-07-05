@@ -48,6 +48,10 @@
   }
 }
 
+.subtitle {
+  font-family: $font-primary !important;
+}
+
 .subheading {
   width: 100%;
   text-align: center;
@@ -129,7 +133,7 @@
 }
 
 .fundingCity {
-  composes: col-4 col-md-2 col-lg-1 from global;
+  composes: col-4 col-md-2 col-lg-2 from global;
   composes: partnerContainer;
 }
 
@@ -151,4 +155,12 @@
   > div > div {
     padding-bottom: 72px !important;
   }
+}
+
+.partnerName {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  color: $dark-alpha-70;
 }

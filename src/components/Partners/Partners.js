@@ -28,13 +28,24 @@ import {
   Simon,
   Sunan  } from './../images/collaborators'
 
-const PartnerContainer = ({children, className, ...restProps}) => {
+const PartnerContainer = ({to, name, children, className, ...restProps}) => {
   return (
-    <div className={className}>
-      <div className={cx(styles.partner)}>
-        {children}
+    to
+    ?
+      <div className={className}>
+        <a href={to} target="_blank" rel="noopener noreferrer">
+          <div className={cx(styles.partner)}>
+            {children}
+          </div>
+          {name && <Text heading6 className={styles.partnerName} >{name}</Text>}
+        </a>
       </div>
-    </div>
+    : <div className={className}>
+        <div className={cx(styles.partner)}>
+          {children}
+        </div>
+        {name && <Text heading6 className={styles.partnerName} >{name}</Text>}
+      </div>
   )
 }
 
@@ -48,47 +59,92 @@ const Partners = ({
         <Box column className={styles.mainPartner}>
           <Text heading2 component="h2" className={styles.title}>Collaborators</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.fundingSecond} children={<DutaWacana />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Gadjah />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Sunan />} />
-            <PartnerContainer className={styles.fundingSecond} children={<ChulalongkornAlt />} />
-            <PartnerContainer className={styles.fundingSecond} children={<EngagedBuddhist />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Monash />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Isis />} />
-            <PartnerContainer className={styles.fundingThird} children={<Morris />} />
-            <PartnerContainer className={styles.fundingThird} children={<Simon />} />
-            <PartnerContainer className={styles.fundingSecond} children={<AsianVision />} />
-            <PartnerContainer className={styles.fundingSecond} children={<CitizenFarm />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Mekong />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Ias />} />
-            <PartnerContainer className={styles.fundingSecond} children={<EcologicalAlert />} />
-            <PartnerContainer className={styles.fundingSecond} children={<GraduateSchool />} />
-            <PartnerContainer className={styles.fundingSecond} children={<GraduateWordmark />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Saft />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Participatory />} />
+            <PartnerContainer className={styles.fundingSecond} children={<DutaWacana />} to="https://www.ukdw.ac.id/" />
+            <PartnerContainer className={styles.fundingSecond} children={<Gadjah />} to="https://ugm.ac.id/" />
+            <PartnerContainer className={styles.fundingSecond} children={<Sunan />} to="http://uin-suka.ac.id/" />
+            <PartnerContainer className={styles.fundingSecond} children={<Ias />} to="http://www.ias.chula.ac.th/ias/en/index.php"/>
+            {/* <PartnerContainer className={styles.fundingSecond} children={<ChulalongkornAlt />} to="https://www.chula.ac.th/en/" /> */}
+            <PartnerContainer className={styles.fundingSecond} children={<EngagedBuddhist />} to="http://inebnetwork.org/" />
+          </Box>
+          <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <PartnerContainer className={styles.fundingSecond} children={<Monash />} to="https://monash.edu.my/" />
+            <PartnerContainer className={styles.fundingSecond} children={<Isis />} to="https://www.isis.org.my/" />
+            <PartnerContainer className={styles.fundingSecond} children={<Morris />} to="https://www.sfu.ca/dialogue.html"/>
+            <PartnerContainer className={styles.fundingSecond} children={<Simon />} to="https://www.sfu.ca/" />
+            <PartnerContainer className={styles.fundingSecond} children={<AsianVision />} to="https://www.asianvision.org/" />
+            <PartnerContainer className={styles.fundingSecond} children={<CitizenFarm />} to="https://www.citizenfarm.com.sg/"/>
+          </Box>
+          <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <PartnerContainer
+              className={styles.fundingSecond}
+              children={<EcologicalAlert />}
+              name="Ecological Alert and Recovery - Thailand"
+              to="http://www.earththailand.org/en/"
+              />
+            <PartnerContainer
+              className={styles.fundingSecond}
+              children={<Kyoto />}
+              name="Kyoto University"
+              to="https://www.kyoto-u.ac.jp/en/"
+              />
+            <PartnerContainer
+              className={styles.fundingSecond}
+              children={<GraduateSchool />}
+              name="Global Education School"
+              to="https://www.educ.kyoto-u.ac.jp/en/graduate-school-of-education"
+              />
+            <PartnerContainer
+              className={styles.fundingSecond}
+              children={<Saft />}
+              name="Sustainable Agriculture Foundation Thailand"
+              to="http://www.sathai.org/joomla/"
+              />
+            <PartnerContainer
+              className={styles.fundingSecond}
+              children={<Mekong />}
+              name="Mekong Watch"
+              to="http://www.mekongwatch.org/english/"/>
+            <PartnerContainer
+              className={styles.fundingSecond}
+              children={<Participatory />}
+              name="Participatory Development Training Centre"
+              to="https://www.padetc.org/"
+              />
           </Box>
         </Box>
         <Box column className={styles.mainPartner}>
-          <Text heading2 component="h2" className={styles.title}>City Governments of</Text>
+          <Text heading3 component="h2" className={cx(styles.title, styles.subtitle)}>City Governments of:</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.fundingCity} children={<Banjarmasin />} />
-            <PartnerContainer className={styles.fundingCity} children={<Gunungkidul />} />
-            <PartnerContainer className={styles.fundingCity} children={<Mataram />} />
-            <PartnerContainer className={styles.fundingCity} children={<Sagada />} />
-            <PartnerContainer className={styles.fundingCity} children={<SoloCity />} />
-            <PartnerContainer className={styles.fundingCity} children={<Surabaya />} />
-            <PartnerContainer className={styles.fundingCity} children={<Wonosobo />} />
-            <PartnerContainer className={styles.fundingCity} children={<Yala />} />
+            <PartnerContainer className={styles.fundingCity} children={<Banjarmasin />} name="Banjarmasin" to="http://banjarmasinkota.go.id/"/>
+            <PartnerContainer className={styles.fundingCity} children={<Mataram />} name="Mataram" to="http://mataramkota.go.id/"/>
+            <PartnerContainer className={styles.fundingCity} children={<Surabaya />} name="Surabaya" to="https://www.surabaya.go.id/" />
+            <PartnerContainer className={styles.fundingCity} children={<SoloCity />} name="Surakarta" to="http://surakarta.go.id/"/>
+          </Box>
+          <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <PartnerContainer className={styles.fundingCity} children={<Gunungkidul />} name="Gunungkidul Regency" to="https://gunungkidulkab.go.id/"/>
+            <PartnerContainer className={styles.fundingCity} children={<Sagada />} name="Municipality of Sagada"/>
+            <PartnerContainer className={styles.fundingCity} children={<Wonosobo />} name="Wonosobo Regency" to="https://wonosobokab.go.id/" />
+            <PartnerContainer className={styles.fundingCity} children={<Yala />} name="Yala Municipality" to="http://www.yalacity.go.th/frontpage"/>
           </Box>
         </Box>
         <Box column className={styles.mainPartner} style={{maxWidth: '720px' }}>
           <Text heading2 component="h2" className={styles.title}>Funding Partners</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
             <PartnerContainer className={styles.fundingFirst} children={<Ford />} />
             <PartnerContainer className={styles.fundingFirst} children={<AsiaCenter />} />
-            <PartnerContainer className={styles.fundingFirst} children={<Solo />} />
-            <PartnerContainer className={styles.fundingFirst} children={<Kyoto />} />
+          </Box>
+          <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <PartnerContainer
+              className={styles.fundingFirst}
+              children={<Solo />}
+              to="http://surakarta.go.id/"
+              />
+            <PartnerContainer
+              className={styles.fundingFirst}
+              children={<GraduateWordmark />}
+              to="http://www.kyoto-u.ac.jp/ja/"
+              />
             <PartnerContainer className={styles.fundingFirst} children={<Ayus />} />
           </Box>
         </Box>

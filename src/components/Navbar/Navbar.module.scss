@@ -22,27 +22,27 @@
   align-items: center;
   @include screen(phone) {
     justify-content: space-between;
-    padding-top: $space-xs;
+    // padding-top: $space-xs;
     padding-bottom: $space-xs;
   }
   @include screen(tabPortrait) {
     justify-content: space-between;
-    padding-top: $space-s;
+    // padding-top: $space-s;
     padding-bottom: $space-s;
   }
   @include screen(tabLandscape) {
     justify-content: space-between;
-    padding-top: $space-s;
+    // padding-top: $space-s;
     padding-bottom: $space-s;
   }
   @include screen(desktop) {
     justify-content: space-between;
-    padding-top: $space-s;
+    // padding-top: $space-s;
     padding-bottom: $space-s;
   }
   @include screen(desktopWide) {
     justify-content: space-between;
-    padding-top: $space-s;
+    // padding-top: $space-s;
     padding-bottom: $space-s;
   }
 }
