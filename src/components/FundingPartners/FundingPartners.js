@@ -53,7 +53,7 @@ const FundingPartners = ({
             <PartnerContainer
               className={styles.partnerFunding}
               children={<GraduateWordmark />}
-              to="http://www.kyoto-u.ac.jp/ja/"
+              // to="http://www.kyoto-u.ac.jp/ja/"
               />
             <PartnerContainer
               className={styles.partnerFunding}
