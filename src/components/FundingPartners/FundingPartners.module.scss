@@ -123,7 +123,7 @@
 }
 
 .fundingFirst {
-  composes: col-xl-4 col-sm-4 col-6 from global;
+  composes: col-xl-3 col-sm-4 col-6 from global;
   composes: partnerContainer;
 }
 
@@ -141,13 +141,21 @@
 }
 
 .partner {
-  max-height: 64px;
+  max-height: 72px;
   display: block;
   & * {
     object-fit: contain !important;
     mix-blend-mode: multiply;
   }
   > div > div {
-    padding-bottom: 64px !important;
+    padding-bottom: 72px !important;
   }
+}
+
+.partnerName {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  color: $dark-alpha-70;
 }

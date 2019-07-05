@@ -4,16 +4,28 @@ import cx from 'classnames';
 import Box from '../Box/Box';
 import Text from '../../primitives/Text/Text';
 
-import { Chulalongkorn, Ford, Kyoto, AsiaCenter, Solo, Ayus  } from './../images/fundings'
+import { Chulalongkorn, Ford, AsiaCenter, Solo, Ayus  } from './../images/fundings'
+import { GraduateWordmark  } from './../images/collaborators'
 import Container from '../../layouts/Container/Container';
 
-const PartnerContainer = ({children, className, ...restProps}) => {
+const PartnerContainer = ({to, name, children, className, ...restProps}) => {
   return (
-    <div className={className}>
-      <div className={cx(styles.partner)}>
-        {children}
+    to
+    ?
+      <div className={className}>
+        <a href={to} target="_blank" rel="noopener noreferrer">
+          <div className={cx(styles.partner)}>
+            {children}
+          </div>
+          {name && <Text heading6 className={styles.partnerName} >{name}</Text>}
+        </a>
       </div>
-    </div>
+    : <div className={className}>
+        <div className={cx(styles.partner)}>
+          {children}
+        </div>
+        {name && <Text heading6 className={styles.partnerName} >{name}</Text>}
+      </div>
   )
 }
 
@@ -29,12 +41,27 @@ const FundingPartners = ({
         <Box column className={styles.mainPartner} >
           <Text heading1 component="h2" className={styles.title}>Funding Partners</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} />
-            <PartnerContainer className={styles.fundingSecond} children={<AsiaCenter />} />
-            <PartnerContainer className={styles.fundingFirst} children={<Ford />} />
-            <PartnerContainer className={styles.fundingFirst} children={<Kyoto />} />
-            <PartnerContainer className={styles.fundingFirst} children={<Solo />} />
-            <PartnerContainer className={styles.fundingFirst} children={<Ayus />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
+            <PartnerContainer className={styles.fundingFirst} children={<Ford />} to="https://www.fordfoundation.org/"/>
+            <PartnerContainer className={styles.fundingFirst} children={<AsiaCenter />} to="https://www.jpf.go.jp/e/index.html"/>
+          </Box>
+          <Box justifyCenter alignCenter className={styles.partnerRow}>
+            <PartnerContainer
+              className={styles.fundingFirst}
+              children={<Solo />}
+              name="The City of Surakarta"
+              to="http://surakarta.go.id/"
+              />
+            <PartnerContainer
+              className={styles.fundingFirst}
+              children={<GraduateWordmark />}
+              to="http://www.kyoto-u.ac.jp/ja/"
+              />
+            <PartnerContainer
+              className={styles.fundingFirst}
+              name="Ayus: Network of Buddhists Volunteers on International Cooperation"
+              to="http://jneb.jp/english/japan/ayus"
+              children={<Ayus />} />
           </Box>
         </Box>
       </Container>
