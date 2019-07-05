@@ -182,7 +182,7 @@ const SchedulesFull = ({
                 name="Dr. Dicky Sofjan"
                 job="ICRS" />
               <TalkSpeaker
-                name="Ms. Michiko Yoshida"
+                name="Ms. Ms. Michiko Yoshida"
                 job="Chulalongkorn University" />
               <ScheduleVenue>Sunan Hotel</ScheduleVenue>
             </Talk>
@@ -215,7 +215,7 @@ const SchedulesFull = ({
           <ScheduleItem hour="8:30am" tag="Plenary Session">
             <Text component="h3" heading5Alt style={{marginBottom: '4px', textTransform: 'capitalize', }}>Opening</Text>
             <Talk title="Civic Engagement 4.0: Creating an Innovative Platform">
-              <Role label="MC: " name="Michiko Yoshida, Chulalongkorn University" />
+              <Role label="MC: " name="Ms. Michiko Yoshida, Chulalongkorn University" />
               <SubTalk title="Welcome Address">
                 <TalkSpeaker
                   name="Prof. Dr. Ismi Dwi Astuti Nurhaeni, M.Si"
