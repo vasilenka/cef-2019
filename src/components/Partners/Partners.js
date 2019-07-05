@@ -53,21 +53,24 @@ const Partners = ({
             <PartnerContainer className={styles.fundingSecond} children={<Sunan />} />
             <PartnerContainer className={styles.fundingSecond} children={<ChulalongkornAlt />} />
             <PartnerContainer className={styles.fundingSecond} children={<EngagedBuddhist />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Mekong />} />
             <PartnerContainer className={styles.fundingSecond} children={<Monash />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Ias />} />
             <PartnerContainer className={styles.fundingSecond} children={<Isis />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Saft />} />
-            <PartnerContainer className={styles.fundingSecond} children={<AsianVision />} />
-            <PartnerContainer className={styles.fundingSecond} children={<CitizenFarm />} />
-            <PartnerContainer className={styles.fundingSecond} children={<Participatory />} />
-            <PartnerContainer className={styles.fundingSecond} children={<EcologicalAlert />} />
-            <PartnerContainer className={styles.fundingSecond} children={<GraduateWordmark />} />
-            <PartnerContainer className={styles.fundingSecond} children={<GraduateSchool />} />
             <PartnerContainer className={styles.fundingThird} children={<Morris />} />
             <PartnerContainer className={styles.fundingThird} children={<Simon />} />
+            <PartnerContainer className={styles.fundingSecond} children={<AsianVision />} />
+            <PartnerContainer className={styles.fundingSecond} children={<CitizenFarm />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Mekong />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Ias />} />
+            <PartnerContainer className={styles.fundingSecond} children={<EcologicalAlert />} />
+            <PartnerContainer className={styles.fundingSecond} children={<GraduateSchool />} />
+            <PartnerContainer className={styles.fundingSecond} children={<GraduateWordmark />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Saft />} />
+            <PartnerContainer className={styles.fundingSecond} children={<Participatory />} />
           </Box>
-          <Box justifyCenter alignCenter className={styles.partnerRow} style={{paddingTop: '64px'}}>
+        </Box>
+        <Box column className={styles.mainPartner}>
+          <Text heading2 component="h2" className={styles.title}>City Governments of</Text>
+          <Box justifyCenter alignCenter className={styles.partnerRow}>
             <PartnerContainer className={styles.fundingCity} children={<Banjarmasin />} />
             <PartnerContainer className={styles.fundingCity} children={<Gunungkidul />} />
             <PartnerContainer className={styles.fundingCity} children={<Mataram />} />
@@ -84,8 +87,8 @@ const Partners = ({
             <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} />
             <PartnerContainer className={styles.fundingFirst} children={<Ford />} />
             <PartnerContainer className={styles.fundingFirst} children={<AsiaCenter />} />
-            <PartnerContainer className={styles.fundingFirst} children={<Kyoto />} />
             <PartnerContainer className={styles.fundingFirst} children={<Solo />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Kyoto />} />
             <PartnerContainer className={styles.fundingFirst} children={<Ayus />} />
           </Box>
         </Box>
