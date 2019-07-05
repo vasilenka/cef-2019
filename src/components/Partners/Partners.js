@@ -10,7 +10,7 @@ import { SoloCity, Banjarmasin, Surabaya, Yala, Sagada, Wonosobo, Gunungkidul, M
 
 import {
   AsianVision,
-  Chulalongkorn as ChulalongkornAlt,
+  // Chulalongkorn as ChulalongkornAlt,
   CitizenFarm,
   DutaWacana,
   EcologicalAlert,
@@ -131,13 +131,14 @@ const Partners = ({
           <Text heading2 component="h2" className={styles.title}>Funding Partners</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
             <PartnerContainer className={styles.fundingFirst} children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
-            <PartnerContainer className={styles.fundingFirst} children={<Ford />} />
-            <PartnerContainer className={styles.fundingFirst} children={<AsiaCenter />} />
+            <PartnerContainer className={styles.fundingFirst} children={<Ford />} to="https://www.fordfoundation.org/"/>
+            <PartnerContainer className={styles.fundingFirst} children={<AsiaCenter />} to="https://www.jpf.go.jp/e/index.html"/>
           </Box>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
             <PartnerContainer
               className={styles.fundingFirst}
               children={<Solo />}
+              name="The City of Surakarta"
               to="http://surakarta.go.id/"
               />
             <PartnerContainer
@@ -145,7 +146,11 @@ const Partners = ({
               children={<GraduateWordmark />}
               to="http://www.kyoto-u.ac.jp/ja/"
               />
-            <PartnerContainer className={styles.fundingFirst} children={<Ayus />} />
+            <PartnerContainer
+              className={styles.fundingFirst}
+              name="Ayus: Network of Buddhists Volunteers on International Cooperation"
+              to="http://jneb.jp/english/japan/ayus"
+              children={<Ayus />} />
           </Box>
         </Box>
       </Container>
