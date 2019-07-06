@@ -90,7 +90,7 @@ const Partners = ({
             <PartnerContainer
               className={styles.fundingSecond}
               children={<GraduateSchool />}
-              name="Global Education School"
+              name="Graduate School of Education, Kyoto University"
               to="https://www.educ.kyoto-u.ac.jp/en/graduate-school-of-education"
               />
             <PartnerContainer
