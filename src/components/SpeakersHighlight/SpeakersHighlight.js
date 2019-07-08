@@ -48,7 +48,7 @@ const SpeakersHighlight = ({
           <Text heading5 component="h3" className={styles.mayorsTitle}>Philippines</Text>
           <Link to="/speakers#philippines">
             <div className={styles.speakerContainer}>
-              <Speaker name="Mr. James B. Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
+              <Speaker name="Mr. James B. Pooten, Jr." job="Mayor of Municipality of Sagada" />
             </div>
           </Link>
 

@@ -7,6 +7,8 @@ import Cover from "../components/Cover/Cover";
 import SpeakerKeynote from "../components/SpeakerKeynote/SpeakerKeynote";
 import Speaker from '../components/Speaker/Speaker'
 import SpeakerKeynoteItem from "../components/SpeakerKeynoteIte/SpeakerKeynoteItem";
+import SpeakerNotes from "../components/SpeakerNotes/SpeakerNotes";
+
 import {
   Ahyar,
   Badingah,
@@ -18,7 +20,7 @@ import {
   Risma,
 } from './../components/images/speakers'
 
-const NotFoundPage = () => (
+const Speakers = () => (
   <Default>
     <SEO title="Speakers" />
     <Cover
@@ -30,23 +32,24 @@ const NotFoundPage = () => (
           <SpeakerKeynoteItem photo={<Najwa />}/>
         </SpeakerKeynote>
         <SpeakerKeynote title="Indonesia" sectionTitle="Mayors" id="indonesia">
-          <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat)" photo={<Ahyar/>} />
-          <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta)"  photo={<Badingah/>} />
-          <Speaker name="F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)"  photo={<FxHadi/>} />
-          <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan)"  photo={<IbnuSina/>} />
-          <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java)"  photo={<Risma/>} />
+          <Speaker name="Mr. H. Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat)" photo={<Ahyar/>} />
+          <Speaker name="Mrs. Hj. Badingah, S.sos.*" job="Regent of Gunung Kidul (Yogyakarta)"  photo={<Badingah/>} />
+          <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)"  photo={<FxHadi/>} />
+          <Speaker name="Mr. H. Ibnu Sina, S.Pi., M.Si.*" job="Mayor of Banjarmasin (South Kalimantan)"  photo={<IbnuSina/>} />
+          <Speaker name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*" job="Mayor of Surabaya (East Java)"  photo={<Risma/>} />
         </SpeakerKeynote>
         <SpeakerKeynote title="Philippines" id="philippines">
-          <Speaker name="James Pooten, Jr.*" job="Mayor of Municipality of Sagada" />
+          <Speaker name="Mr. James B. Pooten, Jr." job="Mayor of Municipality of Sagada" />
         </SpeakerKeynote>
         <SpeakerKeynote title="South Korea (to be confirmed)" id="south-korea">
         </SpeakerKeynote>
         <SpeakerKeynote title="Thailand" id="thailand">
-          <Speaker name="Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" photo={<Pongsak/>}/>
+          <Speaker name="Mr. Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" photo={<Pongsak/>}/>
         </SpeakerKeynote>
-    </main>
+        <SpeakerNotes />
+      </main>
     <Footer />
   </Default>
 )
 
-export default NotFoundPage
+export default Speakers

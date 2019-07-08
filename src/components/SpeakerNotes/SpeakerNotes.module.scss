@@ -1,0 +1,13 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+  padding: $space-l 0 $space-xl;
+}
+
+.text {
+  padding: $space-xs $space-sm;
+  background-color: $dark-alpha-10;
+  border-radius: 4px;
+  width: fit-content;
+}

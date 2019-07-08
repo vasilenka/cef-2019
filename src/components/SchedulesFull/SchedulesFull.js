@@ -143,8 +143,8 @@ const SchedulesFull = ({
             </SubTalk>
             <Role label="Navigators" />
             <TalkSpeaker
-              name="Dr. Yeoh Seng Guan"
-              job="Monash University, Malaysia" />
+              name="Associate Professor Dr. Yeoh Seng Guan"
+              job="School of Arts and Social Sciences, Monash University, Malaysia" />
             <TalkSpeaker
               name="Dr. Dicky Sofjan"
               job="ICRS" />
@@ -242,8 +242,8 @@ const SchedulesFull = ({
                 name="Mr. Ted Mayer"
                 job="Academic Director, Institute of Transformative Learning, International Network for Engaged Buddhists (INEB), Thailand" />
               <TalkSpeaker
-                name="Dr. Yeoh Seng Guan"
-                job="Associate Professor, Monash University, Malaysia" />
+                name="Associate Professor Dr. Yeoh Seng Guan"
+                job="School of Arts and Social Sciences, Monash University, Malaysia" />
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="10:00am">
@@ -425,10 +425,10 @@ const SchedulesFull = ({
                 job="Mayor of Surakarta (Central Java) " />
               <TalkSpeaker
                 name="Mr. H. Ibnu Sina, S.Pi., M.Si.*"
-                job="Mayor of Banjarmasin (South Kalimantan)" style={{marginBottom: '24px'}}/>
+                job="Mayor of Banjarmasin (South Kalimantan)"/>
               <TalkSpeaker
                 name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*"
-                job="Mayor of Surabaya (East Java)" />
+                job="Mayor of Surabaya (East Java)" style={{marginBottom: '24px'}}/>
 
               <Country label="Philippines" />
               <TalkSpeaker
@@ -436,6 +436,8 @@ const SchedulesFull = ({
                 job="Mayor of Municipality of Sagada" style={{marginBottom: '24px'}}/>
 
               <Country label="South Korea" />
+              <TalkSpeaker
+                name="" style={{marginBottom: '24px'}}/>
 
               <Country label="Thailand" />
               <TalkSpeaker
