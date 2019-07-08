@@ -12,7 +12,7 @@ const SpeakerKeynoteItem = ({
     <div className={cx(styles.keynote)}>
       <main className={styles.profile}>
         <div className={styles.bio}>
-          <Text heading3Alt component="h3" className={styles.name}>Najwa Shihab</Text>
+          <Text heading3Alt component="h3" className={styles.name}>Ms. Najwa Shihab</Text>
           <Text heading5 component="p" className={styles.job}>Founder of Narasi</Text>
           <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text>
         </div>

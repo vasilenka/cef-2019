@@ -6,6 +6,10 @@
 }
 
 .container {
+  width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   @include screen(phone) {
     padding-top: $space-ll;
     padding-bottom: $space-ll;
@@ -127,6 +131,21 @@
   composes: partnerContainer;
 }
 
+.fundingSmall {
+  composes: col-xl-1 col-sm-4 col-4 from global;
+  composes: partnerContainer;
+}
+
+.firstRowSmall {
+  composes: col-xl-2 col-sm-4 col-4 from global;
+  composes: partnerContainer;
+}
+
+.fundingLarge {
+  composes: col-xl-2 col-sm-4 col-4 from global;
+  composes: partnerContainer;
+}
+
 .fundingSecond {
   composes: col-xl-2 col-sm-4 col-4 from global;
   composes: partnerContainer;
@@ -173,4 +192,20 @@
   text-align: center;
   padding-top: 8px;
   color: $dark-alpha-70;
+}
+
+.monash {
+  .partner {
+    > div > div {
+      padding-bottom: 64px !important;
+    }
+  }
+}
+
+.fukushima {
+  .partner {
+    > div > div {
+      padding-bottom: 56px !important;
+    }
+  }
 }

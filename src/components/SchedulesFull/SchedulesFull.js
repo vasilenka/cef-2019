@@ -115,7 +115,7 @@ const UrbanFarming = () => {
   )
 }
 
-const ToBeConfirmed = () => <footer style={{marginTop: '24px', marginBottom: '64px', padding: '8px', backgroundColor: 'rgba(0,0,0,.04)' }}><strong>* To be confirmed</strong></footer>
+const ToBeConfirmed = () => <footer style={{ width: 'fit-content', marginTop: '24px', marginBottom: '24px', fontSize: '12px', padding: '8px', backgroundColor: 'rgba(0,0,0,.04)' }}><strong>* To be confirmed</strong></footer>
 
 const SchedulesFull = ({
   className,
@@ -226,10 +226,11 @@ const SchedulesFull = ({
               </SubTalk>
               <SubTalk title="Keynote Speech: Youth Leadership toward People-Centered Society">
                 <TalkSpeaker
-                  name="Najwa Shihab*"
+                  name="Ms. Najwa Shihab*"
                   job="Founder of Narasi, Indonesia’s Literacy Ambassador" />
               </SubTalk>
             </Talk>
+            <ToBeConfirmed />
           </ScheduleItem>
           <ScheduleItem hour="9:30am" tag="Plenary Session" venue="Sebelas Maret University, Solo">
             <Text component="h3" heading5Alt style={{ marginBottom: '4px', textTransform: 'capitalize' }}>Civic Engagement 4.0: Overview</Text>
@@ -307,10 +308,11 @@ const SchedulesFull = ({
                 name="Mr. Bjorn Low"
                 job="Director, Citizen Farm, Singapore" />
               <TalkSpeaker
-                name="Aryo Wiryawan*"
+                name="Mr. Aryo Wiryawan*"
                 job="CEO Indmira and Founder of Jala" />
               <UrbanFarming />
               <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ToBeConfirmed/>
             </Talk>
 
             <Talk workshop title="Listening Partnerships Living Fully and Leading with Integrity in a Time of Crisis">
@@ -396,7 +398,6 @@ const SchedulesFull = ({
               <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
           </ScheduleItem>
-          <ToBeConfirmed />
         </ScheduleSection>
 
         <ScheduleSection>
@@ -420,9 +421,6 @@ const SchedulesFull = ({
                 name="Mrs. Hj. Badingah, S.sos.*"
                 job="Regent of Gunung Kidul (Yogyakarta)" />
               <TalkSpeaker
-                name="Mr. Eko Purnomo, S.E., M.M.*"
-                job="Regent of Wonosobo (Central Java)" />
-              <TalkSpeaker
                 name="Mr. F.X. Hadi Rudyatmo"
                 job="Mayor of Surakarta (Central Java) " />
               <TalkSpeaker
@@ -434,7 +432,7 @@ const SchedulesFull = ({
 
               <Country label="Philippines" />
               <TalkSpeaker
-                name="Mr. James B. Pooten, Jr.*"
+                name="Mr. James B. Pooten, Jr."
                 job="Mayor of Municipality of Sagada" style={{marginBottom: '24px'}}/>
 
               <Country label="South Korea" />
@@ -453,6 +451,7 @@ const SchedulesFull = ({
                 job="Kota Kita Foundation" />
 
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ToBeConfirmed/>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="10:15am">
@@ -479,6 +478,7 @@ const SchedulesFull = ({
                   job="Chief Executive Officer, Langkawi Development Agency (LADA), Malaysia" />
               </SubTalk>
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ToBeConfirmed/>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="12:45pm">
@@ -501,8 +501,8 @@ const SchedulesFull = ({
               <SubTalk title="Responses from mayors">
                 <Role label="Moderator"/>
                 <TalkSpeaker
-                  name="Dr. Yeoh Seng Guan"
-                  job="Monash University, Malaysia" />
+                  name="Associate Professor Dr. Yeoh Seng Guan"
+                  job="School of Arts and Social Sciences, Monash University, Malaysia" />
               </SubTalk>
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
@@ -521,7 +521,6 @@ const SchedulesFull = ({
             <SubTalk title="Closing Ceremony"></SubTalk>
             <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
           </ScheduleItem>
-          <ToBeConfirmed />
         </ScheduleSection>
 
         <ScheduleSection>

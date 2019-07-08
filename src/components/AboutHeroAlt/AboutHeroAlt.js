@@ -6,9 +6,9 @@ import Text from '../../primitives/Text/Text'
 import Box from '../Box/Box'
 import Container from '../../layouts/Container/Container'
 
-import Cloud1 from './../images/cloud1'
-import Cloud2 from './../images/cloud2'
-import Cloud3 from './../images/cloud3'
+import Cloud1 from './../images/cloud1--alt'
+import Cloud2 from './../images/cloud2--alt'
+import Cloud3 from './../images/cloud3--alt'
 
 const AboutHeroAlt = ({
   className,

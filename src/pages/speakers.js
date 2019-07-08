@@ -10,7 +10,7 @@ import SpeakerKeynoteItem from "../components/SpeakerKeynoteIte/SpeakerKeynoteIt
 import {
   Ahyar,
   Badingah,
-  Eko,
+  // Eko,
   FxHadi,
   IbnuSina,
   Najwa,
@@ -32,7 +32,6 @@ const NotFoundPage = () => (
         <SpeakerKeynote title="Indonesia" sectionTitle="Mayors" id="indonesia">
           <Speaker name="Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat)" photo={<Ahyar/>} />
           <Speaker name="Badingah*" job="Regent of Gunung Kidul (Yogyakarta)"  photo={<Badingah/>} />
-          <Speaker name="Eko Purnomo*" job="Regent of Wonosobo (Central Java)"  photo={<Eko/>} />
           <Speaker name="F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)"  photo={<FxHadi/>} />
           <Speaker name="Ibnu Sina*" job="Mayor of Banjarmasin (South Kalimantan)"  photo={<IbnuSina/>} />
           <Speaker name="Tri Rismaharini*," job="Mayor of Surabaya (East Java)"  photo={<Risma/>} />
