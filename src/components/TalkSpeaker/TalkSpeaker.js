@@ -6,12 +6,13 @@ import Text from '../../primitives/Text/Text';
 const TalkSpeaker = ({
   job,
   name,
+  italic,
   className,
   ...restProps
   }) => {
   return (
     <Text className={cx({[styles.root]: true, [className]: className, })} medium component="li" {...restProps}>
-      <strong className={styles.strong}>{name}</strong>{job ? ', ' + job : ''}
+      <strong className={styles.strong}>{name}{italic && <em>: {italic}</em>}</strong>{job ? ', ' + job : ''}
     </Text>
   )
 }

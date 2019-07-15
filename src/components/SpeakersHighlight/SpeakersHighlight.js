@@ -26,9 +26,9 @@ const SpeakersHighlight = ({
           <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Keynote Speaker</Text>
           <Link to="/speakers#keynote-speaker">
             <main className={styles.keynote} style={{ textAlign: 'center' }}>
-              <Text heading3Alt component="h3" className={styles.name}>Ms. Najwa Shihab*</Text>
-              <Text heading5 component="p" className={styles.job}>Founder of Narasi</Text>
-              <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text>
+              <Text heading3Alt component="h3" className={styles.name}><em>To be confirmed</em></Text>
+              {/* <Text heading5 component="p" className={styles.job}>Founder of Narasi</Text> */}
+              {/* <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text> */}
             </main>
           </Link>
 
@@ -37,7 +37,7 @@ const SpeakersHighlight = ({
           <Text heading5 component="h3" className={styles.mayorsTitle}>Indonesia</Text>
           <Link to="/speakers#indonesia">
             <div className={styles.speakerContainer}>
-              <Speaker name="Mr. H. Ahyar Abduh**" job="Mayor of Mataram (Nusa Tenggara Barat)" />
+              <Speaker name="Mr. H. Ahyar Abduh*" job="Mayor of Mataram (Nusa Tenggara Barat)" />
               <Speaker name="Mrs. Hj. Badingah, S.sos.*" job="Regent of Gunung Kidul (Yogyakarta)" />
               <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" />
               <Speaker name="Mr. H. Ibnu Sina, S.Pi., M.Si.*" job="Mayor of Banjarmasin (South Kalimantan)" />

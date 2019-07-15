@@ -226,11 +226,12 @@ const SchedulesFull = ({
               </SubTalk>
               <SubTalk title="Keynote Speech: Youth Leadership toward People-Centered Society">
                 <TalkSpeaker
-                  name="Ms. Najwa Shihab*"
-                  job="Founder of Narasi, Indonesia’s Literacy Ambassador" />
+                  name="Keynote Speaker"
+                  italic="To be confirmed"
+                  job="" />
               </SubTalk>
             </Talk>
-            <ToBeConfirmed />
+            {/* <ToBeConfirmed /> */}
           </ScheduleItem>
           <ScheduleItem hour="9:30am" tag="Plenary Session" venue="Sebelas Maret University, Solo">
             <Text component="h3" heading5Alt style={{ marginBottom: '4px', textTransform: 'capitalize' }}>Civic Engagement 4.0: Overview</Text>
