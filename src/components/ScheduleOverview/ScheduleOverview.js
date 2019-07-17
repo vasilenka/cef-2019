@@ -15,6 +15,7 @@ import FullPrograms from '../FullPrograms/FullPrograms';
 
 const ScheduleOverview = ({
   className,
+  inView,
   ...restProps
   }) => {
 
