@@ -43,18 +43,14 @@ const MayorsSpeaker = props => {
     <>
       <SpeakerKeynote sectionTitle="Mayors" />
       <Container narrow {...props}>
-        <section className={styles.wrapper}>
-          <div className='col-12'>
-            <CountrySection label="Indonesia" id="indonesia">
-              <Speaker name="Mr. H. Ahyar Abduh" job="Mayor of Mataram (Nusa Tenggara Barat)" photo={<Ahyar/>} />
-              <Speaker name="Mrs. Hj. Badingah, S.sos.*" job="Regent of Gunung Kidul (Yogyakarta)" photo={<Badingah/>} />
-              <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" photo={<FxHadi/>} />
-              <Speaker name="Mr. H. Ibnu Sina, S.Pi., M.Si." job="Mayor of Banjarmasin (South Kalimantan)" photo={<IbnuSina/>} />
-              <Speaker name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*" job="Mayor of Surabaya (East Java)" photo={<Risma/>} />
-              <Speaker name="Dr. H. Najmul Akhyar, S.H., M.H." job="Regent of Lombok Utara (Nusa Tenggara Barat)" noPhoto />
-            </CountrySection>
-          </div>
-        </section>
+        <CountrySection label="Indonesia" id="indonesia">
+          <Speaker name="Mr. H. Ahyar Abduh" job="Mayor of Mataram (Nusa Tenggara Barat)" photo={<Ahyar/>} />
+          <Speaker name="Mrs. Hj. Badingah, S.sos.*" job="Regent of Gunung Kidul (Yogyakarta)" photo={<Badingah/>} />
+          <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" photo={<FxHadi/>} />
+          <Speaker name="Mr. H. Ibnu Sina, S.Pi., M.Si." job="Mayor of Banjarmasin (South Kalimantan)" photo={<IbnuSina/>} />
+          <Speaker name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*" job="Mayor of Surabaya (East Java)" photo={<Risma/>} />
+          <Speaker name="Dr. H. Najmul Akhyar, S.H., M.H." job="Regent of Lombok Utara (Nusa Tenggara Barat)" noPhoto />
+        </CountrySection>
         <section className={styles.wrapper}>
           <div className={styles.column}>
             <CountrySection label="Philippines" id="philippines">

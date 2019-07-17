@@ -11,7 +11,7 @@ import Img from "gatsby-image"
  * For more information, see the docs:
  * - `gatsby-image`: https://gatsby.dev/gatsby-image
  * - `StaticQuery`: https://gatsby.dev/staticquery
- */
+*/
 
 const Image = ({url, ...restProps}) => {
   return(
