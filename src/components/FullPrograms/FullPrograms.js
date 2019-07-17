@@ -23,7 +23,7 @@ const FullPrograms = ({
             </Button>
             <Text heading3 component="h1" style={{ flex: 'auto', textAlign: 'center'}}>Full Programs</Text>
             <a href="https://drive.google.com/uc?id=1kFhBgUrnUkTAcWfD0EnZuwXT03esIpmg&amp;export=download" rel="noopener noreferrer" target="_blank">
-              <Button primary>Download PDF</Button>
+              <Button primary>Download Programs as PDF</Button>
             </a>
           </Box>
         </Container>
