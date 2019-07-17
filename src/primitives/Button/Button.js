@@ -25,7 +25,6 @@ const Button = ({
   ...restProps
 }) => {
   const handleClickLink = e => {
-    e.preventDefault();
     if (onClick) {
       onClick(e);
     }

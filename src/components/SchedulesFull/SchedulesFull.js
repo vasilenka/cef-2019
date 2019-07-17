@@ -15,7 +15,7 @@ import SubTalk from '../SubTalk/SubTalk';
 
 import Arrow from './../icons/arrow.inline.svg'
 
-const Role = props => <Text component="h4" heading5={props.name} heading6={!props.name} className={styles.role}>{props.label} <span style={{textTransform: 'capitalize'}}>{props.name && props.name}</span></Text>
+const Role = props => <Text component="h4" heading5={props.name ? true : false} heading6={!props.name ? true : false} className={styles.role}>{props.label} <span style={{textTransform: 'capitalize'}}>{props.name && props.name}</span></Text>
 const Country = props => <Text component="h4" heading6 className={styles.country}>{props.label}</Text>
 
 const Details = props => {
@@ -59,6 +59,33 @@ const ListeningPartnership = () => {
       <Text medium component="p" style={{marginBottom: '24px'}}>
         This workshop provides the basic instructions in how to create and maintain listening partnerships as effective tools of self-knowledge, transformation, and engagement with others and the wider world. This is a hands-on workshop, and participants will receive the guidance necessary to practice listening to others and being listened to safely and effectively within the workshop itself. Please sign up in advance, as the number of participants will be limited to 50.
       </Text>
+    </Details>
+  )
+}
+
+const Education = () => {
+  return (
+    <Details>
+      <Text heading3Alt component="h3" style={{marginBottom: '24px'}}>Education 4.0: Knowledge, Innovation and Civic Engagement toward Global Leadership</Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        In this globalized and digitalized world, or society 4.0, social and human phenomena are even more interconnected. Technological and scientific advances aim at connecting, not dividing, people and community toward shared missions, as shown in various projects under the UN’s SDGs. Today’s education is expected to produce higher social impact on social / human issues we face today. To nurture tomorrow’s leaders, how should educators transform its teaching and learning modalities?
+      </Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        This session will first introduce two panels who share their efforts in experiential and participatory learning, followed by small group discussion with the participants. The session will conclude with the wrap-up discussion to consider what “Education 4.0” should be like.
+      </Text>
+      <Text heading4 component="h3" style={{marginBottom: '12px'}}>Learning Objectives:</Text>
+      <Text medium component="p">Upon attendance, the session participants will be able to</Text>
+      <ul style={{marginBottom: '24px', paddingLeft: '24px'}}>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Learn best practices;
+        </Text>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Examine strengths and weaknesses, as well as potentials and pitfalls, of these case examples; and
+        </Text>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Generate ideas for applying the knowledge to their local examples and beyond.
+        </Text>
+      </ul>
     </Details>
   )
 }
@@ -296,6 +323,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Mr. Khampoui Saythalat"
                 job="Executive Director, Participatory Development Training Centre, Lao PDR"/>
+              <Education/>
               <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
             </Talk>
 

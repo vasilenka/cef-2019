@@ -11,11 +11,15 @@ import ScheduleOverviewItem from '../ScheduleOverviewItem/ScheduleOverviewItem';
 import Cloud1 from './../images/cloud1--alt'
 import Cloud2 from './../images/cloud2--alt'
 import Cloud3 from './../images/cloud3--alt'
+import FullPrograms from '../FullPrograms/FullPrograms';
 
 const ScheduleOverview = ({
   className,
   ...restProps
   }) => {
+
+  const [showPrograms, setShowPrograms] = React.useState(false);
+
   return (
     <Box className={cx(styles.root)}>
       <div className={styles.cloud1}><Cloud1 /></div>
@@ -199,10 +203,17 @@ const ScheduleOverview = ({
 
           </Box>
         </Box>
-        <SectionLink to="/programs">
-          See full program details
-        </SectionLink>
+        <Box component="footer" alignBaseline justifyCenter style={{width: '100%', position: 'relative'}}>
+          <SectionLink to="/programs" containerClassName={styles.containerFooter}>
+            See Full Program Details
+          </SectionLink>
+          <Text style={{ marginLeft: '24px', marginRight: '24px' }}>or</Text>
+          <SectionLink onClick={() => setShowPrograms(true)} containerClassName={styles.containerFooter}>
+            Click to View Full Programs
+          </SectionLink>
+        </Box>
       </Container>
+      {showPrograms && <FullPrograms setShowPrograms={setShowPrograms}/>}
     </Box>
   )
 }

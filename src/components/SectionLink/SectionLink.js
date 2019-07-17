@@ -8,21 +8,30 @@ const SectionLink = ({
   to,
   children,
   className,
+  containerClassName,
   ...restProps
   }) => {
   return (
-    <div style={{width: '100%', textAlign: 'center'}}>
-      <Link
-        to={to}
-        className={cx({
-          [styles.root]: true,
-          [className]: className,
-        })}
-        {...restProps}>
-        <Text heading4 style={{color: '#ca274c', fontWeight: '700', }}>
-          {children}
-        </Text>
-      </Link>
+    <div style={{width: '100%', textAlign: 'center'}} className={containerClassName}>
+      {
+        to ? <Link
+              to={to}
+              className={cx({
+                [styles.root]: true,
+                [className]: className,
+              })}
+              {...restProps}>
+              <Text heading4 style={{color: '#ca274c', fontWeight: '700', }}>
+                {children}
+              </Text>
+            </Link>
+        : <button
+            className={cx({ [styles.root]: true, [className]: className})} {...restProps}>
+            <Text heading4 style={{color: '#ca274c', fontWeight: '700', }}>
+              {children}
+            </Text>
+          </button>
+      }
     </div>
   )
 }

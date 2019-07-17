@@ -1,7 +1,7 @@
-@import 'invoker-tokens/index.scss';
+@import 'src/tokens';
 
 .root {
-  z-index: 999999;
+  z-index: $layer-extra;
   position: fixed;
   top: 0;
   right: 0;

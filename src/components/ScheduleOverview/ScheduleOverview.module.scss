@@ -13,6 +13,7 @@
 .container {
   padding-top: 96px;
   padding-bottom: 96px;
+  position: relative;
 }
 
 .title {
@@ -116,4 +117,8 @@
   width: 160px;
   right: 0px;
   bottom: 14%;
+}
+
+.containerFooter {
+  width: fit-content !important;
 }

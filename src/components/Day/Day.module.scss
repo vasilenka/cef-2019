@@ -11,10 +11,10 @@
   justify-content: space-between;
   align-items: baseline;
   @include screen(phone) {
-    top: 96px;
+    top: 112px;
   }
   @include screen(tabPortrait) {
-    top: 96px;
+    top: 112px;
   }
   @include screen(tabLandscape) {
     top: 120px;
@@ -33,16 +33,60 @@
 }
 
 .date {
-
+  @include screen(phone) {
+    font-size: 24px;
+  }
+  @include screen(tabPortrait) {
+    font-size: 24px;
+  }
+  @include screen(tabLandscape) {
+    font-size: $heading-2;
+  }
+  @include screen(desktop) {
+    font-size: $heading-2;
+  }
+  @include screen(desktopWide) {
+    font-size: $heading-2;
+  }
 }
 
 .day {
   composes: col-12 col-sm-6 from global;
   padding-bottom: 0;
+  @include screen(phone) {
+    font-size: 24px;
+  }
+  @include screen(tabPortrait) {
+    font-size: 24px;
+  }
+  @include screen(tabLandscape) {
+    font-size: $heading-2;
+  }
+  @include screen(desktop) {
+    font-size: $heading-2;
+  }
+  @include screen(desktopWide) {
+    font-size: $heading-2;
+  }
 }
 
 .theme {
   padding-left: $space-ml;
+  @include screen(phone) {
+    font-size: 18px;
+  }
+  @include screen(tabPortrait) {
+    font-size: 18px;
+  }
+  @include screen(tabLandscape) {
+    font-size: $heading-3;
+  }
+  @include screen(desktop) {
+    font-size: $heading-3;
+  }
+  @include screen(desktopWide) {
+    font-size: $heading-3;
+  }
 }
 
 .day {
