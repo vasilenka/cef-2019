@@ -207,9 +207,8 @@ const ScheduleOverview = ({
           <SectionLink to="/programs" containerClassName={styles.containerFooter}>
             See Full Program Details
           </SectionLink>
-          <Text className={styles.or} component="p">or</Text>
           <SectionLink onClick={() => setShowPrograms(true)} containerClassName={styles.containerFooter}>
-            Click to View Full Programs
+            Download Program as PDF
           </SectionLink>
         </footer>
       </Container>

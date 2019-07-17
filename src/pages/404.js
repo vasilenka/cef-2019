@@ -17,11 +17,13 @@ const NotFoundPage = () => (
         <Text medium component="p">
           You just hit a route that doesn&#39;t exist... the sadness.
         </Text>
-        <Link to="/">
-          <Button primary small>
-            Let's back to Home
-          </Button>
-        </Link>
+        <footer style={{ paddingTop: '64px' }}>
+          <Link to="/">
+            <Button primary>
+              Let's Back to Home
+            </Button>
+          </Link>
+        </footer>
       </Container>
     </main>
     <Footer />

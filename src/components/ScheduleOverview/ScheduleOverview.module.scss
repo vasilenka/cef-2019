@@ -130,13 +130,13 @@
     flex-direction: column;
   }
   @include screen(tabLandscape) {
-    flex-direction: row;
+    flex-direction: column;
   }
   @include screen(desktop) {
-    flex-direction: row;
+    flex-direction: column;
   }
   @include screen(desktopWide) {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
