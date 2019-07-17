@@ -96,3 +96,11 @@
 .identity {
   padding: $space-vertical-m;
 }
+
+.wrapper {
+  composes: row from global;
+}
+
+.mayorColumn {
+  composes: col-sm-12 col-lg-6 from global;
+}

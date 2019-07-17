@@ -34,6 +34,7 @@
 }
 
 .sectionTitle {
+  font-family: $font-primary;
   margin: $space-stack-ll;
   text-transform: uppercase;
   letter-spacing: 1.24px;
@@ -45,7 +46,7 @@
   background-color: $brand-tertiary-50;
   color: $dark-alpha-80;
   text-transform: uppercase;
-  width: fit-content;
+  // width: fit-content;
 }
 
 .speakerContainer {

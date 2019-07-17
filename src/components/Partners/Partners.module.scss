@@ -184,6 +184,12 @@
   > div > div {
     padding-bottom: 72px !important;
   }
+  &.chula{
+    max-height: 84px;
+    > div > div {
+      padding-bottom: 84px !important;
+    }
+  }
 }
 
 .partnerName {

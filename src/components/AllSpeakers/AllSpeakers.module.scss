@@ -1,0 +1,57 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+}
+
+.sectionTitle {
+  font-family: $font-primary;
+  margin: $space-stack-ll;
+  text-transform: uppercase;
+  letter-spacing: 1.24px;
+}
+
+.speakersContainer {
+  composes: row from global;
+  margin-bottom: $space-xxl;
+  @include screen(phone) {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  @include screen(tabPortrait) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include screen(tabLandscape) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include screen(desktop) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include screen(desktopWide) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
+
+.country {
+  text-transform: uppercase;
+  background-color: $brand-tertiary-80;
+  padding: $space-s;
+  color: $dark-alpha-80;
+  text-align: left;
+}
+
+.wrapper {
+  composes: row from global;
+}
+
+.column {
+  composes: col-sm-12 col-lg-6 from global;
+}
+
+// .row {
+//   composes: row from global;
+// }

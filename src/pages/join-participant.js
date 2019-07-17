@@ -24,7 +24,7 @@ const NotFoundPage = () => (
         <Event
           title="1. Thematic Field Visit"
           subtitle="The participation to this activity is by invitation only."
-          venue="Kampung Laweyan, Ngampon, Pepe River, Pasar Gede (details to be announced)"
+          venue="Kampung Laweyan, Ngampon, Pasar Gede (details to be announced)"
           date="August 20, 2019 (Day 1)"
           time="8:00am - 3:00pm"
           // url="/"
@@ -36,8 +36,7 @@ const NotFoundPage = () => (
             <ul style={{padding: '12px 0px'}}>
               <Text component="li" medium>Visit 1: Solo Batik Production in Kampung Batik Laweyan</Text>
               <Text component="li" medium>Visit 2: Urban Farming and Waste Management in Kampung Ngampon</Text>
-              <Text component="li" medium>Visit 3: Participatory relocation project for river bank community in Soloin Pepe River</Text>
-              <Text component="li" medium>Visit 4 : Co-existence of Cultural Diversity in Pasar Gede</Text>
+              <Text component="li" medium>Visit 3 : Co-existence of Cultural Diversity in Pasar Gede</Text>
             </ul>
           </div>
         </Event>
@@ -45,7 +44,7 @@ const NotFoundPage = () => (
         <Event
           title="2. Public Forum"
           date="Augus, 21, 2019 (Day 2)"
-          venue="Sebelas Maret University, Solo"
+          venue="The Sunan Hotel"
           time="8:00am - 5:00pm"
           url="https://forms.gle/KkR4WNm9sWS6F8i96"
           register="Register for Public Forum"

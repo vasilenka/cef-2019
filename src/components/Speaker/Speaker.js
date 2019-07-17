@@ -1,11 +1,14 @@
 import styles from './Speaker.module.scss';
 import React from 'react';
 import cx from 'classnames';
+
 import Text from '../../primitives/Text/Text';
+import UserAvatar from './../icons/user.inline.svg';
 
 const Speaker = ({
   name,
   photo,
+  noPhoto,
   breakout,
   job,
   className,
@@ -49,10 +52,15 @@ const Speaker = ({
             }
           </div>
         </div>
-        {photo &&
-          <div className={styles.photo}>
-            {photo}
-          </div>
+        {photo
+          ? <div className={styles.photo}>
+              {photo}
+            </div>
+          : noPhoto
+            ? <div className={styles.photoContainer}>
+                <UserAvatar className={styles.userAvatar}/>
+              </div>
+            : null
         }
       </div>
     </div>

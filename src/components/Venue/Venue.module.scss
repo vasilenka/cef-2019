@@ -34,9 +34,6 @@
 .overview {
   text-align: center;
   margin: $space-stack-l;
-}
-
-.overviewDesktop {
   @include screen(phone) {
     display: none;
   }

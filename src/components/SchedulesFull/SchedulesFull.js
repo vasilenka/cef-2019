@@ -184,7 +184,7 @@ const SchedulesFull = ({
           <ScheduleItem hour="8:00am - 3:00pm" tag="Field Experience">
             <Talk title="Thematic site visits">
               <SubTalk title="Sensing Sustainability in Solo Communities">
-                <TalkSpeaker name="Facilitated by Kota Kita, Indonesia Consortium for Religious Studies (ICRS), and local communities."/>
+                <TalkSpeaker name="Facilitated by Kota Kita"/>
                 <Role label="Navigators"/>
                 <TalkSpeaker name="Ms. Paulista Surjadi" job="Kota Kita" />
                 <TalkSpeaker name="Dr.Kohei Watanabe" job="Teikyo University" />
@@ -245,9 +245,6 @@ const SchedulesFull = ({
               <Role label="MC: " name="Ms. Michiko Yoshida, Chulalongkorn University" />
               <SubTalk title="Welcome Address">
                 <TalkSpeaker
-                  name="Prof. Dr. Ismi Dwi Astuti Nurhaeni, M.Si"
-                  job="Dean of School of Social and Political Science, Universitas Sebelas Maret" />
-                <TalkSpeaker
                   name="Dr. Nualnoi Treerat"
                   job="Director, Institute of Asian Studies, Chulalongkorn University" />
               </SubTalk>
@@ -297,7 +294,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Ms. Mayu Seto"
                 job="Former Youth Communicator, “World without Nuclear Weapons”"/>
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
             <Talk title="Showcasing Innovative Products for Urban Living">
@@ -308,7 +305,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Awardees of “Sustainable, Just, Smart Urban Living Innovation Award”"/>
               <Role label="Presenter: TBC" />
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
             <Talk title="Education 4.0: Knowledge, Innovation and Civic Engagement toward Global Leadership">
@@ -324,7 +321,7 @@ const SchedulesFull = ({
                 name="Mr. Khampoui Saythalat"
                 job="Executive Director, Participatory Development Training Centre, Lao PDR"/>
               <Education/>
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
             <Talk workshop title="Urban Farming: Steps toward Food Safety, Security and Sovereignty">
@@ -340,7 +337,7 @@ const SchedulesFull = ({
                 name="Mr. Aryo Wiryawan*"
                 job="CEO Indmira and Founder of Jala" />
               <UrbanFarming />
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
               <ToBeConfirmed/>
             </Talk>
 
@@ -357,7 +354,7 @@ const SchedulesFull = ({
                 name="Ms. Dewi Martina"
                 job="Muhammadiyah University in Riau" />
               <ListeningPartnership/>
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
           </ScheduleItem>
@@ -372,19 +369,16 @@ const SchedulesFull = ({
                 name="Dr. Rachada Jayagupta"
                 job="Asian Research Center for Migration, Inst. of Asian Studies, Chulalongkorn University"
                 />
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
             <Talk workshop title="Civic Engagement, a Strategic Lens">
               <Role label="Convener" />
-              {/* <TalkSpeaker
-                name="Ms. Shauna Sylvester"
-                job="Executive Director of Simon Fraser University, Canada" /> */}
               <TalkSpeaker
                 name="Ms. Elodie Jacquet"
                 job="Manager of Knowledge and Practice, Dialogue and Civic Engagement Program, Simon Fraser University, Canada" />
               <StrategicLens />
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
             <Talk title="Pushing the Boundaries: Asian Youth in Trans-Culture 4.0">
@@ -395,7 +389,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Dr. Chhaeng Vannarith"
                 job="President, Asian Vision Institute, Cambodia" />
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
             <Talk title="Beyond Waste Management">
@@ -415,7 +409,7 @@ const SchedulesFull = ({
                 job="Director, Ecological Alert and Recovery, Thailand" />
               <TalkSpeaker
                 name="Bank Sampah (Waste Bank Women’s Group)" />
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
           </ScheduleItem>
@@ -424,7 +418,7 @@ const SchedulesFull = ({
           </ScheduleItem>
           <ScheduleItem hour="4:15pm - 5.15pm" tag="Plenary Session">
             <Talk title="Synthesis Building Linkages with Strategic Partners">
-              <ScheduleVenue>University Sebelas Maret</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
           </ScheduleItem>
         </ScheduleSection>
@@ -444,20 +438,23 @@ const SchedulesFull = ({
             <Talk title="Roundtable: Mayors’ Innovation Pitch">
               <Country label="Indonesia" />
               <TalkSpeaker
-                name="Mr. H. Ahyar Abduh*"
+                name="Mr. H. Ahyar Abduh"
                 job="Mayor of Mataram (Nusa Tenggara Barat)" />
               <TalkSpeaker
                 name="Mrs. Hj. Badingah, S.sos.*"
                 job="Regent of Gunung Kidul (Yogyakarta)" />
               <TalkSpeaker
                 name="Mr. F.X. Hadi Rudyatmo"
-                job="Mayor of Surakarta (Central Java) " />
+                job="Mayor of Surakarta (Central Java)"/>
               <TalkSpeaker
-                name="Mr. H. Ibnu Sina, S.Pi., M.Si.*"
+                name="Mr. H. Ibnu Sina, S.Pi., M.Si."
                 job="Mayor of Banjarmasin (South Kalimantan)"/>
               <TalkSpeaker
                 name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*"
-                job="Mayor of Surabaya (East Java)" style={{marginBottom: '24px'}}/>
+                job="Mayor of Surabaya (East Java)"/>
+              <TalkSpeaker
+                name="Dr. H. Najmul Akhyar, S.H., M.H."
+                job="Regent of Lombok Utara (Nusa Tenggara Barat)" style={{marginBottom: '24px'}}/>
 
               <Country label="Philippines" />
               <TalkSpeaker
@@ -466,12 +463,17 @@ const SchedulesFull = ({
 
               <Country label="South Korea" />
               <TalkSpeaker
-                name="" style={{marginBottom: '24px'}}/>
+                name={<em>To be confirmed</em>} style={{marginBottom: '24px'}}/>
 
               <Country label="Thailand" />
               <TalkSpeaker
                 name="Mr. Pongsak Yingchoncharoen"
                 job="Mayor of Yala City Municipality" style={{marginBottom: '24px'}}/>
+
+              <Country label="Cambodia" />
+              <TalkSpeaker
+                name="H. E. Prak Sovann"
+                job="Governor of Preah Vihear Province" style={{marginBottom: '24px'}}/>
 
               <Role label="Facilitators" />
               <TalkSpeaker
@@ -494,7 +496,7 @@ const SchedulesFull = ({
                 <Role label="Speakers"/>
                 <TalkSpeaker
                   name="Ms. Endah Setyowati"
-                  job="Executive Director, Ohana Indonesia*" />
+                  job="Executive Director, Ohana Indonesia" />
                 <TalkSpeaker
                   name="Dr. Bernadia Irawati Tjandradewi*"
                   job="Secretary General, United Cities and Local Governance Asia Pacific" />

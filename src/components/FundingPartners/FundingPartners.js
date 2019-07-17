@@ -8,20 +8,20 @@ import { Chulalongkorn, Ford, AsiaCenter, Solo, Ayus  } from './../images/fundin
 import { GraduateWordmark  } from './../images/collaborators'
 import Container from '../../layouts/Container/Container';
 
-const PartnerContainer = ({to, name, children, className, ...restProps}) => {
+const PartnerContainer = ({to, chula, name, children, className, ...restProps}) => {
   return (
     to
     ?
       <div className={className}>
         <a href={to} target="_blank" rel="noopener noreferrer">
-          <div className={cx(styles.partner)}>
+          <div className={cx(styles.partner, chula ? styles.chula : null)}>
             {children}
           </div>
           {name && <Text heading6 className={styles.partnerName} >{name}</Text>}
         </a>
       </div>
     : <div className={className}>
-        <div className={cx(styles.partner)}>
+        <div className={cx(styles.partner, chula ? styles.chula : null)}>
           {children}
         </div>
         {name && <Text heading6 className={styles.partnerName} >{name}</Text>}
@@ -41,7 +41,7 @@ const FundingPartners = ({
         <Box column className={styles.mainPartner} >
           <Text heading1 component="h2" className={styles.title}>Funding Partners</Text>
           <Box justifyCenter alignCenter className={styles.partnerRow}>
-            <PartnerContainer className={styles.partnerFunding} children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
+            <PartnerContainer className={cx(styles.partnerFunding)} chula children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
             <PartnerContainer className={styles.partnerFunding} children={<Ford />} to="https://www.fordfoundation.org/"/>
             <PartnerContainer className={styles.partnerFunding} children={<AsiaCenter />} to="https://www.jpf.go.jp/e/index.html"/>
             <PartnerContainer
