@@ -10,6 +10,7 @@
   text-decoration: none;
   transition: background-size 0.2s cubic-bezier(.8,0,.2,1);
   border-bottom: 2px solid $brand-primary-90;
+  display: inline-flex;
 
   &:hover {
     transition: all .24s cubic-bezier(.8,0,.2,1);

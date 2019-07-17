@@ -203,15 +203,15 @@ const ScheduleOverview = ({
 
           </Box>
         </Box>
-        <Box component="footer" alignBaseline justifyCenter style={{width: '100%', position: 'relative'}}>
+        <footer className={styles.footer} style={{width: '100%', position: 'relative'}}>
           <SectionLink to="/programs" containerClassName={styles.containerFooter}>
             See Full Program Details
           </SectionLink>
-          <Text style={{ marginLeft: '24px', marginRight: '24px' }}>or</Text>
+          <Text className={styles.or} component="p">or</Text>
           <SectionLink onClick={() => setShowPrograms(true)} containerClassName={styles.containerFooter}>
             Click to View Full Programs
           </SectionLink>
-        </Box>
+        </footer>
       </Container>
       {showPrograms && <FullPrograms setShowPrograms={setShowPrograms}/>}
     </Box>
