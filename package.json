@@ -6,6 +6,7 @@
   "author": "Ongki 'vasilenka' Herlambang <ongki@herlambang.id>",
   "scripts": {
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "static-build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
