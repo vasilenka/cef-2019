@@ -175,7 +175,7 @@ const SchedulesFull = ({
             <TalkSpeaker
               name="Dr. Dicky Sofjan"
               job="ICRS" />
-            <ScheduleVenue>Sunan Hotel</ScheduleVenue>
+            <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
           </ScheduleItem>
         </ScheduleSection>
 
@@ -211,7 +211,7 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Ms. Michiko Yoshida"
                 job="Chulalongkorn University" />
-              <ScheduleVenue>Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="7:00pm - 8:30pm">

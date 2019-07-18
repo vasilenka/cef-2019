@@ -42,7 +42,7 @@ const ScheduleOverview = ({
                   Arrival of Participants
                 </Text>
                 <Text medium>
-                  at Sunan Hotel
+                  at The Sunan Hotel
                 </Text>
               </Box>
               <Box column className={styles.item}>
@@ -134,7 +134,7 @@ const ScheduleOverview = ({
                   Mayors’ Symposium
                 </Text>
                 <Text medium>
-                  at Sunan Hotel
+                  at The Sunan Hotel
                 </Text>
               </Box>
               <Box column className={styles.item}>
