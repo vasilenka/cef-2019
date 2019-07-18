@@ -6,9 +6,9 @@ export const Chulalongkorn = ({url, ...restProps}) => {
   return (<StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "fundings/chulalongkorn-university.jpeg"}) {
+        placeholderImage: file(relativePath: { eq: "fundings/chula.png"}) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 320) {
               ...GatsbyImageSharpFluid
             }
           }

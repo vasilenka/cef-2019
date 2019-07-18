@@ -175,6 +175,7 @@
 }
 
 .partner {
+  // max-width: 232px;
   max-height: 72px;
   display: block;
   & * {
@@ -185,9 +186,10 @@
     padding-bottom: 72px !important;
   }
   &.chula{
-    max-height: 84px;
+    max-height: 76px;
+    margin-top: -20px;
     > div > div {
-      padding-bottom: 84px !important;
+      padding-bottom: 76px !important;
     }
   }
 }

@@ -58,7 +58,7 @@ const NotFoundPage = () => (
         <Event
           title="3. Mayors Symposium"
           date="August 22, 2019 (Day 3)"
-          venue="Sunan Hotel, Solo"
+          venue="The Sunan Hotel"
           time="8:30am - 5:30pm"
           url="https://forms.gle/RoTBQbH8vKjYS6Kh9"
           register="Register for Mayors’ Symposium"

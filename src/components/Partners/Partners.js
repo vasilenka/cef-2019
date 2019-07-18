@@ -133,11 +133,11 @@ const Partners = ({
             </Box>
           </Container>
         </Box>
-        <Box column className={styles.mainPartner} style={{maxWidth: '720px' }}>
+        <Box column className={styles.mainPartner} style={{maxWidth: '880px' }}>
           <Text heading2 component="h2" className={styles.title}>Funding Partners</Text>
           <Container narrow>
             <Box justifyCenter alignCenter className={styles.partnerRow}>
-              <PartnerContainer className={styles.partnerFunding} chula children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
+              <PartnerContainer className={cx(styles.partnerFunding, styles.fundingChula)} chula children={<Chulalongkorn />} to="https://www.chula.ac.th/en/"/>
               <PartnerContainer className={styles.partnerFunding} children={<AsiaCenter />} to="https://www.jpf.go.jp/e/index.html"/>
               <PartnerContainer className={styles.partnerFunding} children={<Ford />} to="https://www.fordfoundation.org/"/>
               <PartnerContainer

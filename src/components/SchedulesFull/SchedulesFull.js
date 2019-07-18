@@ -334,7 +334,7 @@ const SchedulesFull = ({
                 name="Mr. Bjorn Low"
                 job="Director, Citizen Farm, Singapore" />
               <TalkSpeaker
-                name="Mr. Aryo Wiryawan*"
+                name="Mr. Aryo Wiryawan"
                 job="CEO Indmira and Founder of Jala" />
               <UrbanFarming />
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
@@ -436,6 +436,11 @@ const SchedulesFull = ({
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
             <Talk title="Roundtable: Mayors’ Innovation Pitch">
+              <Country label="Cambodia" />
+              <TalkSpeaker
+                name="H. E. Prak Sovann"
+                job="Governor of Preah Vihear Province" style={{marginBottom: '24px'}}/>
+
               <Country label="Indonesia" />
               <TalkSpeaker
                 name="Mr. H. Ahyar Abduh"
@@ -450,11 +455,11 @@ const SchedulesFull = ({
                 name="Mr. H. Ibnu Sina, S.Pi., M.Si."
                 job="Mayor of Banjarmasin (South Kalimantan)"/>
               <TalkSpeaker
-                name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*"
-                job="Mayor of Surabaya (East Java)"/>
-              <TalkSpeaker
                 name="Dr. H. Najmul Akhyar, S.H., M.H."
-                job="Regent of Lombok Utara (Nusa Tenggara Barat)" style={{marginBottom: '24px'}}/>
+                job="Regent of Lombok Utara (Nusa Tenggara Barat)"/>
+              <TalkSpeaker
+                name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*"
+                job="Mayor of Surabaya (East Java)" style={{marginBottom: '24px'}}/>
 
               <Country label="Philippines" />
               <TalkSpeaker
@@ -469,11 +474,6 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Mr. Pongsak Yingchoncharoen"
                 job="Mayor of Yala City Municipality" style={{marginBottom: '24px'}}/>
-
-              <Country label="Cambodia" />
-              <TalkSpeaker
-                name="H. E. Prak Sovann"
-                job="Governor of Preah Vihear Province" style={{marginBottom: '24px'}}/>
 
               <Role label="Facilitators" />
               <TalkSpeaker

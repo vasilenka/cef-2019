@@ -34,6 +34,13 @@ const SpeakersHighlight = ({
 
           <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Mayors</Text>
 
+          <Text heading5 component="h3" className={styles.mayorsTitle}>Cambodia</Text>
+          <Link to="/speakers#cambodia">
+            <div className={styles.speakerContainer} style={{marginBottom: 0}}>
+              <Speaker name="H. E. Prak Sovann" job="Governor of Preah Vihear Province" />
+            </div>
+          </Link>
+
           <Text heading5 component="h3" className={styles.mayorsTitle}>Indonesia</Text>
           <Link to="/speakers#indonesia">
             <div className={styles.speakerContainer}>
@@ -41,46 +48,29 @@ const SpeakersHighlight = ({
               <Speaker name="Mrs. Hj. Badingah, S.sos.*" job="Regent of Gunung Kidul (Yogyakarta)" />
               <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" />
               <Speaker name="Mr. H. Ibnu Sina, S.Pi., M.Si." job="Mayor of Banjarmasin (South Kalimantan)" />
-              <Speaker name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*" job="Mayor of Surabaya (East Java)" />
               <Speaker name="Dr. H. Najmul Akhyar, S.H., M.H." job="Regent of Lombok Utara (Nusa Tenggara Barat)" />
+              <Speaker name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*" job="Mayor of Surabaya (East Java)" />
             </div>
           </Link>
 
-          <section className={styles.wrapper}>
-            <div className={styles.mayorColumn}>
-              <Text heading5 component="h3" className={styles.mayorsTitle}>Philippines</Text>
-              <Link to="/speakers#philippines">
-                <div className={styles.speakerContainer}>
-                  <Speaker name="Mr. James B. Pooten, Jr." job="Mayor of Municipality of Sagada" />
-                </div>
-              </Link>
+          <Text heading5 component="h3" className={styles.mayorsTitle}>Philippines</Text>
+          <Link to="/speakers#philippines">
+            <div className={styles.speakerContainer}>
+              <Speaker name="Mr. James B. Pooten, Jr." job="Mayor of Municipality of Sagada" />
             </div>
-            <div className={styles.mayorColumn}>
-              <Text heading5 component="h3" className={styles.mayorsTitle}>South Korea (to be confirmed)</Text>
-              <div className={styles.speakerContainer}>
-                {/* <Speaker name="Mayor from South Korea*" /> */}
-              </div>
-            </div>
-          </section>
+          </Link>
 
-          <section className={styles.wrapper}>
-            <div className={styles.mayorColumn}>
-              <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
-              <Link to="/speakers#thailand">
-                <div className={styles.speakerContainer} style={{marginBottom: 0}}>
-                  <Speaker name="Mr. Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" />
-                </div>
-              </Link>
+          <Text heading5 component="h3" className={styles.mayorsTitle}>South Korea (to be confirmed)</Text>
+          <div className={styles.speakerContainer}>
+            {/* <Speaker name="Mayor from South Korea*" /> */}
+          </div>
+
+          <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
+          <Link to="/speakers#thailand">
+            <div className={styles.speakerContainer} style={{marginBottom: 0}}>
+              <Speaker name="Mr. Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" />
             </div>
-            <div className={styles.mayorColumn}>
-              <Text heading5 component="h3" className={styles.mayorsTitle}>Cambodia</Text>
-              <Link to="/speakers#cambodia">
-                <div className={styles.speakerContainer} style={{marginBottom: 0}}>
-                  <Speaker name="H. E. Prak Sovann" job="Governor of Preah Vihear Province" />
-                </div>
-              </Link>
-            </div>
-          </section>
+          </Link>
 
         </div>
 
