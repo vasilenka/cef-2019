@@ -172,7 +172,7 @@ const ScheduleOverview = ({
               </Box>
               <Box column className={styles.item}>
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
-                  Mayors’ Symposium Wrap Up
+                  Mayors’ Symposium Synthesis
                 </Text>
               </Box>
               <Box column className={styles.item}>
