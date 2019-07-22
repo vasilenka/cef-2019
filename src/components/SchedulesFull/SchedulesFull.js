@@ -142,6 +142,33 @@ const UrbanFarming = () => {
   )
 }
 
+const ShowcasingInnovativeProducts = () => {
+  return (
+    <Details>
+      <Text heading3Alt component="h3" style={{marginBottom: '24px'}}>Showcasing Innovative Products for Urban Living</Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        The projection of sustainable, just, and smart urban living demands the creative and innovative initiatives that would be part of the realization of such dream. It appeals for the participation and civic engagement of the larger segment of society in addressing public concern and as the fabric of the sustainability.
+      </Text>
+      <Text medium component="p" style={{marginBottom: '24px'}}>
+        This session will be the showcasing of the two innovative initiatives produced by the concern citizens. They were the winner of the competition of “Sustainable, Just and Smart Urban Living Innovation Award” conducted on May and June 2019. The winner will tell their stories behind the product initiative, describe the specification and demonstrate the usage and utilization of the products. Through this presentation, it hopes to open the serious discussion of sustainable, just and smart urban living and moreover, to invite the larger public participation and engagement.
+      </Text>
+      <Text heading4 component="h3" style={{marginBottom: '12px'}}>Learning Objectives:</Text>
+      <Text medium component="p">Upon attendance, the session participants will be able to</Text>
+      <ul style={{marginBottom: '24px', paddingLeft: '24px'}}>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Update their knowledge for the new initiative of public participation on the innovation for the urban living;
+        </Text>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Invite public and corporate investment to develop the product to ensure its sustainability; and
+        </Text>
+        <Text medium component="li" style={{listStyle: 'disc', paddingTop: '4px', paddingBottom: '4px'}}>
+          Activate the public awareness of the importance of the initiative and boost further the creative ideas.
+        </Text>
+      </ul>
+    </Details>
+  )
+}
+
 const ToBeConfirmed = () => <footer style={{ width: 'fit-content', marginTop: '24px', marginBottom: '24px', fontSize: '12px', padding: '8px', backgroundColor: 'rgba(0,0,0,.04)' }}><strong>* To be confirmed</strong></footer>
 
 const SchedulesFull = ({
@@ -155,7 +182,7 @@ const SchedulesFull = ({
         <ScheduleSection>
           <Day date="Day 0" day="Monday, August 19"/>
           <ScheduleItem hour="All day" tag="">
-            <SubTalk title="Arrival of Participants">
+            <SubTalk title="Arrival of Speakers and Invited Participants">
               <Text component="p" medium>Accomodation at <a href="https://thesunanhotelsolo.com/" target="_blank" rel="noopener noreferrer">The Sunan Hotel</a></Text>
               <Text small>
                 Jl. A. Yani No.40, Kerten, Laweyan, Kota Surakarta
@@ -164,26 +191,13 @@ const SchedulesFull = ({
               </Text>
             </SubTalk>
           </ScheduleItem>
-          <ScheduleItem hour="3:00pm" tag="">
-            <SubTalk title="Art Exhibition Opening">
-              <Talk title="Urban Landscape, Our Communities"></Talk>
-            </SubTalk>
-            <Role label="Navigators" />
-            <TalkSpeaker
-              name="Associate Professor Dr. Yeoh Seng Guan"
-              job="School of Arts and Social Sciences, Monash University, Malaysia" />
-            <TalkSpeaker
-              name="Dr. Dicky Sofjan"
-              job="ICRS" />
-            <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
-          </ScheduleItem>
         </ScheduleSection>
 
         <ScheduleSection>
           <Day date="Day 1" day="Tuesday, August 20" theme="Thematic Field Visit"/>
-          <ScheduleItem hour="8:00am - 3:00pm" tag="Field Experience">
-            <Talk title="Thematic site visits">
-              <SubTalk title="Sensing Sustainability in Solo Communities">
+          <ScheduleItem hour="8:00am - 1:00pm" tag="Field Experience">
+            <Talk title="Thematic Site Visits">
+              <SubTalk title="Locating Sustainability in Solo and Its Communities">
                 <TalkSpeaker name="Facilitated by Kota Kita"/>
                 <Role label="Navigators"/>
                 <TalkSpeaker name="Ms. Paulista Surjadi" job="Kota Kita" />
@@ -193,7 +207,7 @@ const SchedulesFull = ({
               <ScheduleVenue>Solo Vicinity</ScheduleVenue>
             </Talk>
           </ScheduleItem>
-          <ScheduleItem hour="4:00pm - 6:00pm" tag="Executive Meeting">
+          <ScheduleItem hour="3:00pm - 4:30pm" tag="Executive Meeting">
             <Talk title="Meeting of Conveners">
               <Role label="Facilitators" />
               <TalkSpeaker
@@ -213,6 +227,20 @@ const SchedulesFull = ({
                 job="Chulalongkorn University" />
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
+          </ScheduleItem>
+          <ScheduleItem hour="6:00pm" tag="">
+            <SubTalk title="Art Exhibition Opening">
+              <Talk title="Urban Landscape, Our Communities"></Talk>
+            </SubTalk>
+            <Text component="p" medium>Opening address by Director of Exhibition, <strong>Dr. Mohamad</strong>, Graduate School Universitas Gadjah Mada (UGM)</Text>
+            {/* <Role label="Navigators" />
+            <TalkSpeaker
+              name="Associate Professor Dr. Yeoh Seng Guan"
+              job="School of Arts and Social Sciences, Monash University, Malaysia" />
+            <TalkSpeaker
+              name="Dr. Dicky Sofjan"
+              job="ICRS" /> */}
+            <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
           </ScheduleItem>
           <ScheduleItem hour="7:00pm - 8:30pm">
             <Talk title="Opening Ceremony">
@@ -276,35 +304,41 @@ const SchedulesFull = ({
           </ScheduleItem>
           <ScheduleItem hour="10:30am" tag="Parallel Session I">
 
-            <Talk title="Memory as Resilience: Inter- spatial and generational Transmission of Disaster Experience to Build a Sustainable Society">
+            <Talk title="Mobility in the Changing Landscape of Southeast Asia">
               <Role label="Convener"/>
               <TalkSpeaker
-                name="Dr. Toshiyuki Doi"
-                job="Mekong Watch" />
-              <TalkSpeaker
-                name="Ms. Hiroko Aihara"
-                job="Japan Perspective News Inc." />
-              <TalkSpeaker
-                name="Ms. Mariko Komatsu"
-                job="Hiroshima University" />
+                name="Dr. Rachada Jayagupta"
+                job="Asian Research Center for Migration, Inst. of Asian Studies, Chulalongkorn University" />
               <Role label="Presenter" />
               <TalkSpeaker
-                name="Ms. Keiko Takahashi"
-                job="Hutaba Info., Fukushima, Japan"/>
+                name="Ms. Rizqa Hidayani"
+                job="Kota Kita Foundation"/>
               <TalkSpeaker
-                name="Ms. Mayu Seto"
-                job="Former Youth Communicator, “World without Nuclear Weapons”"/>
+                name="Dr. Keo Piseth"
+                job="Director, Center for Sustainable Development Studies, Asian Vision Institute, Cambodia"/>
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
             <Talk title="Showcasing Innovative Products for Urban Living">
-            <Role label="Convener"/>
+              <Role label="Convener"/>
               <TalkSpeaker
-                name="Dr.Leonard Chrysostomos"
+                name="Dr. Leonard Chrysostomos"
                 job="ICRS" />
+              <Role label="Presenters" />
+              <TalkSpeaker job="Awardees of “Sustainable, Just, Smart Urban Living Innovation Award”"/>
+              <TalkSpeaker name="Ms. Sri Yusnita Irda Sari"/>
+              <TalkSpeaker name="Mr. Yudhis Thiro Kabul Yunior"/>
+              <Role label="Discussants" />
               <TalkSpeaker
-                name="Awardees of “Sustainable, Just, Smart Urban Living Innovation Award”"/>
-              <Role label="Presenter: TBC" />
+                name="Mr. Muhammad Ismail"
+                job="Sasana Inklusi dan Gerakan Advokasi Difabel – SIGAB Indonesia [Inclusive Forum and Advocacy for Diffable in Indonesia]" />
+              <TalkSpeaker
+                name="Dr. Dian Arymami"
+                job="Universitas Gadjah Mada" />
+              <TalkSpeaker
+                name="Dr. Wahju Satrio Wibowo"
+                job="Universitas Kristen Duta Wacana" />
+              <ShowcasingInnovativeProducts/>
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
@@ -315,34 +349,112 @@ const SchedulesFull = ({
                 job="Office of Global Education, Graduate School of Education, Kyoto University" />
               <Role label="Presenter" />
               <TalkSpeaker
+                name="Dr. Wasana Wongsutarat"
+                job="Deputy Director, IAS, Chulalongkorn University"/>
+              <TalkSpeaker
+                name="Dr. Chhaeng Vannarith"
+                job="President, Asian Vision Institute, Cambodia"/>
+              <TalkSpeaker
                 name="Dr. Chatchawan Chaisuekul"
                 job="Dept. of Biology, Chulalongkorn University"/>
+              <Role label="Discussant" />
               <TalkSpeaker
-                name="Mr. Khampoui Saythalat"
-                job="Executive Director, Participatory Development Training Centre, Lao PDR"/>
+                name="Dr. Wasana Wongsutarat" />
               <Education/>
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
-            <Talk workshop title="Urban Farming: Steps toward Food Safety, Security and Sovereignty">
+            <Talk title="Beyond Waste Management">
               <Role label="Convener" />
+              <TalkSpeaker
+                name="Dr. Kohei Watanabe"
+                job="Teikyo University, Japan" />
+              <Role label="Presenters" />
+              <TalkSpeaker
+                name="Bank Sampah (Waste Bank Women’s Group)" />
+              <TalkSpeaker
+                name="Prof. Tomoko Okayama"
+                job="Taisho University, Japan" />
+              <TalkSpeaker
+                name="Mr. Supardi Asmorobangun"
+                job="Rumah Kompos, Bali" />
+              <TalkSpeaker
+                name="Ms. Penchom Saetang"
+                job="Director, Ecological Alert and Recovery, Thailand" />
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+            </Talk>
+
+          </ScheduleItem>
+          <ScheduleItem hour="00:30pm">
+            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Lunch Break</Text>
+          </ScheduleItem>
+          <ScheduleItem hour="2:00pm" tag="Parallel Session II">
+
+            <Talk workshop title="Memory as Resilience: Inter-spatial and generational Transmission of Disaster Experience to Build a Sustainable Society">
+              <Role label="Conveners/Facilitators"/>
+              <TalkSpeaker
+                name="Dr. Toshiyuki Doi"
+                job="Mekong Watch" />
+              <TalkSpeaker
+                name="Ms. Hiroko Aihara"
+                job="Japan Perspective News Inc." />
+              <TalkSpeaker
+                name="Ms. Mariko Komatsu"
+                job="Hiroshima University" />
+              <Role label="Resource Person" />
+              <TalkSpeaker
+                name="Ms. Keiko Takahashi"
+                job="Hutaba Info., Fukushima, Japan"/>
+              <TalkSpeaker
+                name="Ms. Mayu Seto"
+                job="Former Youth Communicator, “World without Nuclear Weapons”"/>
+              <TalkSpeaker
+                name="Mr. Totok Pratopo"
+                job="Pemerti Kali Code (River Forum)"/>
+              <TalkSpeaker
+                name="Prof. Michael Northcott"
+                job="University of Edinburgh"/>
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+            </Talk>
+
+            <Talk workshop title="Civic Engagement, a Strategic Lens">
+              <Role label="Convener/Facilitator" />
+              <TalkSpeaker
+                name="Ms. Elodie Jacquet"
+                job="Manager of Knowledge and Practice, Dialogue and Civic Engagement Program, Simon Fraser University, Canada" />
+              <Role label="Resource Person" />
+              <TalkSpeaker
+                name="Dr. Chhaeng Vannarith"
+                job="President, Asian Vision Institute, Cambodia" />
+              <StrategicLens />
+              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+            </Talk>
+
+            <Talk workshop title="Urban Farming: Steps toward Food Safety, Security and Sovereignty">
+              <Role label="Convener/Facilitator" />
               <TalkSpeaker
                 name="Ms. Supa Yaimuang"
                 job="Sustainable Agriculture Foundation, Thailand" />
-              <Role label="Presenter" />
+              <Role label="Resource Person" />
               <TalkSpeaker
                 name="Mr. Bjorn Low"
                 job="Director, Citizen Farm, Singapore" />
               <TalkSpeaker
                 name="Mr. Aryo Wiryawan"
-                job="CEO Indmira and Founder of Jala" />
+                job="CEO, Indmira; Founder of Jala" />
+              <TalkSpeaker
+                name="Dr. Saroja Devi D/O Neyson Doraira"
+                job="Senior Lecturer, Dept. of Sociology, National University of Singapore" />
+              <TalkSpeaker
+                name="Ms. Varangkhana Nimhatta"
+                job="Sustainable Agriculture Foundation, Thailand" />
               <UrbanFarming />
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
               <ToBeConfirmed/>
             </Talk>
 
             <Talk workshop title="Listening Partnerships Living Fully and Leading with Integrity in a Time of Crisis">
-              <Role label="Facilitators" />
+              <Role label="Convenor/Facilitator" />
               <TalkSpeaker
                 name="Mr. Ted Mayer"
                 job="Institute of Transformative Learning (INEB)" />
@@ -357,31 +469,7 @@ const SchedulesFull = ({
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
-          </ScheduleItem>
-          <ScheduleItem hour="00:30pm">
-            <Text component="h3" heading4 style={{marginBottom: '0px'}}>Lunch Break</Text>
-          </ScheduleItem>
-          <ScheduleItem hour="2:00pm" tag="Parallel Session II">
-
-            <Talk title="Mobility in Changing Landscape of Southeast Asia">
-              <Role label="Convener" />
-              <TalkSpeaker
-                name="Dr. Rachada Jayagupta"
-                job="Asian Research Center for Migration, Inst. of Asian Studies, Chulalongkorn University"
-                />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
-            </Talk>
-
-            <Talk workshop title="Civic Engagement, a Strategic Lens">
-              <Role label="Convener" />
-              <TalkSpeaker
-                name="Ms. Elodie Jacquet"
-                job="Manager of Knowledge and Practice, Dialogue and Civic Engagement Program, Simon Fraser University, Canada" />
-              <StrategicLens />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
-            </Talk>
-
-            <Talk title="Pushing the Boundaries: Asian Youth in Trans-Culture 4.0">
+            {/* <Talk title="Pushing the Boundaries: Asian Youth in Trans-Culture 4.0">
               <Role label="Co-Convener" />
               <TalkSpeaker
                 name="Dr. Wasana Wongsutarat"
@@ -390,27 +478,7 @@ const SchedulesFull = ({
                 name="Dr. Chhaeng Vannarith"
                 job="President, Asian Vision Institute, Cambodia" />
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
-            </Talk>
-
-            <Talk title="Beyond Waste Management">
-              <Role label="Convener" />
-              <TalkSpeaker
-                name="Dr. Kohei Watanabe"
-                job="Teikyo University, Japan" />
-              <Role label="Presenter" />
-              <TalkSpeaker
-                name="Prof. Tomoko Okayama"
-                job="Taisho University" />
-              <TalkSpeaker
-                name="Mr. Supardi Asmorobangun"
-                job="Rumah Kompos, Bali" />
-              <TalkSpeaker
-                name="Ms. Penchom Saetang"
-                job="Director, Ecological Alert and Recovery, Thailand" />
-              <TalkSpeaker
-                name="Bank Sampah (Waste Bank Women’s Group)" />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
-            </Talk>
+            </Talk> */}
 
           </ScheduleItem>
           <ScheduleItem hour="4:00pm">
@@ -461,10 +529,10 @@ const SchedulesFull = ({
                 name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*"
                 job="Mayor of Surabaya (East Java)" style={{marginBottom: '24px'}}/>
 
-              <Country label="Philippines" />
+              {/* <Country label="Philippines" />
               <TalkSpeaker
                 name="Mr. James B. Pooten, Jr."
-                job="Mayor of Municipality of Sagada" style={{marginBottom: '24px'}}/>
+                job="Mayor of Municipality of Sagada" style={{marginBottom: '24px'}}/> */}
 
               <Country label="South Korea" />
               <TalkSpeaker
@@ -476,6 +544,9 @@ const SchedulesFull = ({
                 job="Mayor of Yala City Municipality" style={{marginBottom: '24px'}}/>
 
               <Role label="Facilitators" />
+              <TalkSpeaker
+                name="Dr. Siti Syamsiyatun"
+                job="Director, ICRS" />
               <TalkSpeaker
                 name="Dr. Dicky Sofjan"
                 job="ICRS" />
@@ -500,6 +571,9 @@ const SchedulesFull = ({
                 <TalkSpeaker
                   name="Dr. Bernadia Irawati Tjandradewi*"
                   job="Secretary General, United Cities and Local Governance Asia Pacific" />
+                <TalkSpeaker
+                  name="Ajarn Heng Monychenda"
+                  job="Founding Director, Buddhism for Development, Cambodia" />
                 <TalkSpeaker
                   name="Dr. Sukanda Luangon Lewis"
                   job="Project Director, Development of Creative Tourism, Chulalongkorn University" />
@@ -530,6 +604,9 @@ const SchedulesFull = ({
                 <TalkSpeaker
                   name="Dr. Jeanny Dewayani"
                   job="ICRS" />
+                <TalkSpeaker
+                  name="Prof. Michael Northcott"
+                  job="University of Edinburgh" />
               </SubTalk>
               <SubTalk title="Responses from mayors">
                 <Role label="Moderator"/>
@@ -544,10 +621,10 @@ const SchedulesFull = ({
             <Text component="h3" heading4 style={{marginBottom: '0px'}}>Coffee Break</Text>
           </ScheduleItem>
           <ScheduleItem hour="4:15pm">
-            <Talk title="Mayors’ Symposium Wrap Up"></Talk>
+            <Talk title="Mayors’ Symposium Synthesis"></Talk>
             <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
           </ScheduleItem>
-          <ScheduleItem hour="4.45pm">
+          <ScheduleItem hour="4:45pm">
             <SubTalk title="Solo Forum Wrap Up">
               <Talk title="Civic Engagement 4.0: A Call for Action" style={{marginBottom: 0, paddingBottom: 0, paddingTop: 0,}}></Talk>
             </SubTalk>
@@ -558,8 +635,12 @@ const SchedulesFull = ({
 
         <ScheduleSection>
           <Day date="Day 4" day="Friday, August 23" theme="Closed Event"/>
-          <ScheduleItem hour="" tag="Closed Event">
-            <Talk title="Eco Cycling Tour: For Sustainable Memories of Solo"></Talk>
+          <ScheduleItem hour="9:00am - 11:00am" tag="Closed Event">
+            <Talk title="Solo Community Cycling Visit with the Mayor of Surakarta (for invited participants only)">
+              <Text medium component="li" style={{paddingLeft: 0, listStyle: 'none'}}>
+                Hosted by the City Government of Solo
+              </Text>
+            </Talk>
             <Talk title="Adjourn and departure of participants"></Talk>
           </ScheduleItem>
         </ScheduleSection>

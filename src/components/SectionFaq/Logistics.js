@@ -11,7 +11,7 @@ const Logistics = ({
     <FaqItemSection id="logistics" title="4. Forum Logistics" {...restProps}>
       <Item
         question={`Where Civic Engagement 4.0 2019 International Forum in Solo is taking place?`}
-        answer={`There will be multiple venues designated for its various activities which includes Universitas Sebelas Maret and The Sunan Hotel. Further announcement will follow.`} />
+        answer={`There will be multiple venues designated for its various activities which includes The Sunan Hotel as the main venue. Further announcement will follow.`} />
       <Item
         question={`Where can I stay during the forum? Will the organizers arrange my accommodation?`}
         answer={

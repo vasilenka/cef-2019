@@ -39,18 +39,10 @@ const ScheduleOverview = ({
             <ScheduleOverviewItem title="August 19, 2019">
               <Box column className={styles.item}>
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
-                  Arrival of Participants
+                  Arrival of Speakers and Invited Participants
                 </Text>
                 <Text medium>
                   at The Sunan Hotel
-                </Text>
-              </Box>
-              <Box column className={styles.item}>
-                <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
-                  Art Exhibition Opening
-                </Text>
-                <Text medium>
-                  Urban Landscape, Our Communities
                 </Text>
               </Box>
             </ScheduleOverviewItem>
@@ -58,23 +50,27 @@ const ScheduleOverview = ({
             <ScheduleOverviewItem title="August 20, 2019">
               <Box column className={styles.item}>
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
-                  Thematic site visits
+                  Thematic Site Visits
                 </Text>
               </Box>
               <Box column className={styles.item}>
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
                   Meeting of Conveners
                 </Text>
-              </Box>
-              <Box column className={styles.item}>
-                <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
-                  Opening Ceremony
+                <Text medium>
+                  Mr. Ahmad Rifai, Kota Kita Foundation
                 </Text>
               </Box>
               <Box column className={styles.item}>
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
-                  Reception and Cultural performance
+                  Opening Ceremony and Welcome Reception
                 </Text>
+              </Box>
+              <Box column className={styles.item}>
+                <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
+                  Cultural Performance and Dinner
+                </Text>
+                <Text medium>at The Sunan Hotel</Text>
               </Box>
             </ScheduleOverviewItem>
 
@@ -94,10 +90,10 @@ const ScheduleOverview = ({
               </Box>
               <Box column className={styles.item}>
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
-                  Keynote Speech
+                  Keynote Speeches
                 </Text>
                 <Text medium>
-                  “Youth Leadership toward People-Centered Society”
+                  Youth Leadership toward People-Centered Society
                 </Text>
               </Box>
               <Box column className={styles.item}>
@@ -105,7 +101,7 @@ const ScheduleOverview = ({
                   Civic Engagement 4.0: Overview
                 </Text>
                 <Text medium>
-                  Building on: From Yogya and Bangkok to Solo
+                  Building on: from Yogya and Bangkok to Solo
                 </Text>
               </Box>
               <Box column className={styles.item}>
@@ -192,12 +188,20 @@ const ScheduleOverview = ({
                   Closing Ceremony
                 </Text>
               </Box>
+              {/* <Box column className={styles.item}>
+                <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
+                  Art Exhibition Opening
+                </Text>
+                <Text medium>
+                  Urban Landscape, Our Communities
+                </Text>
+              </Box> */}
             </ScheduleOverviewItem>
 
             <ScheduleOverviewItem title="August 23, 2019">
               <Box column className={styles.item}>
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
-                  Eco Cycling Tour: For Sustainable Memories of Solo
+                  Solo Community Cycling Visit with the Mayor of Surakarta
                 </Text>
               </Box>
             </ScheduleOverviewItem>
