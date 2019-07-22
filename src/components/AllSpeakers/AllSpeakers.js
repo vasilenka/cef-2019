@@ -55,11 +55,11 @@ const MayorsSpeaker = props => {
           <Speaker name="Dr. H. Najmul Akhyar, S.H., M.H." job="Regent of Lombok Utara (Nusa Tenggara Barat)" noPhoto />
           <Speaker name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*" job="Mayor of Surabaya (East Java)" photo={<Risma/>} />
         </CountrySection>
-        <CountrySection label="Philippines" id="philippines">
+        {/* <CountrySection label="Philippines" id="philippines">
           <Speaker name="Mr. James B. Pooten, Jr." job="Mayor of Municipality of Sagada" noPhoto />
           <span></span>
         </CountrySection>
-        <CountrySection label="South Korea (to be confirmed)" id="south-korea"></CountrySection>
+        <CountrySection label="South Korea (to be confirmed)" id="south-korea"></CountrySection> */}
         <CountrySection label="Thailand" id="thailand">
           <Speaker name="Mr. Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" photo={<Pongsak/>}/>
           <span></span>

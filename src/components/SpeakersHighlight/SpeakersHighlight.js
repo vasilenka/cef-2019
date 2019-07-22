@@ -36,14 +36,14 @@ const SpeakersHighlight = ({
 
           <Text heading5 component="h3" className={styles.mayorsTitle}>Cambodia</Text>
           <Link to="/speakers#cambodia">
-            <div className={styles.speakerContainer} style={{marginBottom: 0}}>
+            <div className={styles.speakerContainer} style={{marginBottom: '48px'}}>
               <Speaker name="H. E. Prak Sovann" job="Governor of Preah Vihear Province" />
             </div>
           </Link>
 
           <Text heading5 component="h3" className={styles.mayorsTitle}>Indonesia</Text>
           <Link to="/speakers#indonesia">
-            <div className={styles.speakerContainer}>
+            <div className={styles.speakerContainer} style={{marginBottom: '48px'}}>
               <Speaker name="Mr. H. Ahyar Abduh" job="Mayor of Mataram (Nusa Tenggara Barat)" />
               <Speaker name="Mrs. Hj. Badingah, S.sos.*" job="Regent of Gunung Kidul (Yogyakarta)" />
               <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" />
@@ -53,7 +53,7 @@ const SpeakersHighlight = ({
             </div>
           </Link>
 
-          <Text heading5 component="h3" className={styles.mayorsTitle}>Philippines</Text>
+          {/* <Text heading5 component="h3" className={styles.mayorsTitle}>Philippines</Text>
           <Link to="/speakers#philippines">
             <div className={styles.speakerContainer}>
               <Speaker name="Mr. James B. Pooten, Jr." job="Mayor of Municipality of Sagada" />
@@ -61,13 +61,13 @@ const SpeakersHighlight = ({
           </Link>
 
           <Text heading5 component="h3" className={styles.mayorsTitle}>South Korea (to be confirmed)</Text>
-          <div className={styles.speakerContainer}>
+          <div className={styles.speakerContainer}> */}
             {/* <Speaker name="Mayor from South Korea*" /> */}
-          </div>
+          {/* </div> */}
 
           <Text heading5 component="h3" className={styles.mayorsTitle}>Thailand</Text>
           <Link to="/speakers#thailand">
-            <div className={styles.speakerContainer} style={{marginBottom: 0}}>
+            <div className={styles.speakerContainer} style={{marginBottom: '48px'}}>
               <Speaker name="Mr. Pongsak Yingchoncharoen" job="Mayor of Yala City Municipality" />
             </div>
           </Link>
