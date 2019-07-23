@@ -233,13 +233,13 @@ const SchedulesFull = ({
               <Talk title="Urban Landscape, Our Communities"></Talk>
             </SubTalk>
             <Text component="p" medium>Opening address by Director of Exhibition, <strong>Dr. Mohamad</strong>, Graduate School Universitas Gadjah Mada (UGM)</Text>
-            {/* <Role label="Navigators" />
+            <Role label="Navigators" />
             <TalkSpeaker
               name="Associate Professor Dr. Yeoh Seng Guan"
               job="School of Arts and Social Sciences, Monash University, Malaysia" />
             <TalkSpeaker
               name="Dr. Dicky Sofjan"
-              job="ICRS" /> */}
+              job="ICRS" />
             <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
           </ScheduleItem>
           <ScheduleItem hour="7:00pm - 8:30pm">
