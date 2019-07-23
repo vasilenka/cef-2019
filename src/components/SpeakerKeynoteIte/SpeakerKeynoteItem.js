@@ -6,19 +6,17 @@ import Text from '../../primitives/Text/Text';
 const SpeakerKeynoteItem = ({
   className,
   photo,
+  name,
+  number,
+  job,
   ...restProps
   }) => {
   return (
     <div className={cx(styles.keynote)}>
       <main className={styles.profile}>
-        <div className={styles.bio}>
-          <Text heading3Alt component="h3" className={styles.name}><em>To be confirmed</em></Text>
-          {/* <Text heading5 component="p" className={styles.job}>Founder of Narasi</Text> */}
-          {/* <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text> */}
-        </div>
-        {/* <div className={styles.photo}>
-          {photo}
-        </div> */}
+        <Text heading5 component="p" className={styles.number}>SPEAKER {number}</Text>
+        <Text heading3Alt component="h3" className={styles.name} style={{fontSize: '20px'}}>{name}</Text>
+        <Text heading5 component="p" className={styles.job}>{job}</Text>
       </main>
     </div>
   )

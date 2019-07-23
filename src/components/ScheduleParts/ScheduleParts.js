@@ -22,7 +22,7 @@ const ScheduleParts = ({
       </ul>
       <Box component="footer">
         <SectionLink onClick={() => setShowPrograms(true)} containerClassName={styles.containerFooter}>
-          Click to View Full Programs
+          Download Program as PDF
         </SectionLink>
       </Box>
       {showPrograms && <FullPrograms setShowPrograms={setShowPrograms}/>}

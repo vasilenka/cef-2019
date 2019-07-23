@@ -9,6 +9,7 @@ import Box from '../Box/Box'
 import Speaker from '../Speaker/Speaker'
 
 import SectionLink from '../SectionLink/SectionLink';
+import { KeynoteSpeakers } from './../AllSpeakers/AllSpeakers'
 
 const SpeakersHighlight = ({
   className,
@@ -24,12 +25,13 @@ const SpeakersHighlight = ({
         <div>
 
           <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Keynote Speaker</Text>
-          <Link to="/speakers#keynote-speaker">
-            <main className={styles.keynote} style={{ textAlign: 'center' }}>
-              <Text heading3Alt component="h3" className={styles.name}><em>To be confirmed</em></Text>
+          <Link to="/speakers#keynote-speakers">
+            <KeynoteSpeakers noHeader/>
+            {/* <main className={styles.keynote} style={{ textAlign: 'center' }}>
+              <Text heading3Alt component="h3" className={styles.name}><em>To be confirmed</em></Text> */}
               {/* <Text heading5 component="p" className={styles.job}>Founder of Narasi</Text> */}
               {/* <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text> */}
-            </main>
+            {/* </main> */}
           </Link>
 
           <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Mayors</Text>
@@ -45,7 +47,7 @@ const SpeakersHighlight = ({
           <Link to="/speakers#indonesia">
             <div className={styles.speakerContainer} style={{marginBottom: '48px'}}>
               <Speaker name="Mr. H. Ahyar Abduh" job="Mayor of Mataram (Nusa Tenggara Barat)" />
-              <Speaker name="Mrs. Hj. Badingah, S.sos.*" job="Regent of Gunung Kidul (Yogyakarta)" />
+              <Speaker name="Mrs. Hj. Badingah, S.sos." job="Regent of Gunung Kidul (Yogyakarta)" />
               <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" />
               <Speaker name="Mr. H. Ibnu Sina, S.Pi., M.Si." job="Mayor of Banjarmasin (South Kalimantan)" />
               <Speaker name="Dr. H. Najmul Akhyar, S.H., M.H." job="Regent of Lombok Utara (Nusa Tenggara Barat)" />

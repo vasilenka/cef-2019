@@ -12,7 +12,6 @@ import {
   Badingah,
   FxHadi,
   IbnuSina,
-  Najwa,
   Pongsak,
   Risma,
 } from './../images/speakers'
@@ -30,11 +29,25 @@ const CountrySection = props => {
   )
 }
 
-const KeynoteSpeakers = props => {
-  return (
-    <SpeakerKeynote sectionTitle="Keynote Speaker" id="keynote-speaker" {...props}>
-      <SpeakerKeynoteItem photo={<Najwa />}/>
-    </SpeakerKeynote>
+export const KeynoteSpeakers = props => {
+  return (!props.noHeader
+    ?
+      <>
+        {<SpeakerKeynote sectionTitle="Keynote Speakers" id="keynote-speakers" {...props} />}
+        <Container narrow>
+          <div className={styles.speakersContainer} style={{marginBottom: 0}}>
+            <SpeakerKeynoteItem number="I" name="Dr. Michael Northcott" job="Professor of Religion and Ecology"/>
+            <SpeakerKeynoteItem number="II" name="Dr. Melani Budianta" job="Professor of Interdisciplinary Humanities"/>
+            <SpeakerKeynoteItem number="III" name="Mr. Adamas Belva Syah Devara*" job="CEO and Founder of Ruang Guru"/>
+          </div>
+        </Container>
+      </>
+    :
+      <div className={styles.speakersContainer} style={{marginBottom: 0}}>
+        <SpeakerKeynoteItem number="I" name="Dr. Michael Northcott" job="Professor of Religion and Ecology"/>
+        <SpeakerKeynoteItem number="II" name="Dr. Melani Budianta" job="Professor of Interdisciplinary Humanities"/>
+        <SpeakerKeynoteItem number="III" name="Mr. Adamas Belva Syah Devara*" job="CEO and Founder of Ruang Guru"/>
+      </div>
   )
 }
 
@@ -49,7 +62,7 @@ const MayorsSpeaker = props => {
         </CountrySection>
         <CountrySection label="Indonesia" id="indonesia">
           <Speaker name="Mr. H. Ahyar Abduh" job="Mayor of Mataram (Nusa Tenggara Barat)" photo={<Ahyar/>} />
-          <Speaker name="Mrs. Hj. Badingah, S.sos.*" job="Regent of Gunung Kidul (Yogyakarta)" photo={<Badingah/>} />
+          <Speaker name="Mrs. Hj. Badingah, S.sos." job="Regent of Gunung Kidul (Yogyakarta)" photo={<Badingah/>} />
           <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" photo={<FxHadi/>} />
           <Speaker name="Mr. H. Ibnu Sina, S.Pi., M.Si." job="Mayor of Banjarmasin (South Kalimantan)" photo={<IbnuSina/>} />
           <Speaker name="Dr. H. Najmul Akhyar, S.H., M.H." job="Regent of Lombok Utara (Nusa Tenggara Barat)" noPhoto />

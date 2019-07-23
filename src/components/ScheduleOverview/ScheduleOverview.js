@@ -57,9 +57,6 @@ const ScheduleOverview = ({
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
                   Meeting of Conveners
                 </Text>
-                <Text medium>
-                  Mr. Ahmad Rifai, Kota Kita Foundation
-                </Text>
               </Box>
               <Box column className={styles.item}>
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
@@ -70,7 +67,7 @@ const ScheduleOverview = ({
                 <Text heading4 component="h5" style={{fontWeight: '700', marginBottom: '4px'}}>
                   Cultural Performance and Dinner
                 </Text>
-                <Text medium>at The Sunan Hotel</Text>
+                <Text medium>at Loji Gandrung</Text>
               </Box>
             </ScheduleOverviewItem>
 

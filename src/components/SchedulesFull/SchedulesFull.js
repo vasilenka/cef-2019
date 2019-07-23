@@ -199,10 +199,10 @@ const SchedulesFull = ({
             <Talk title="Thematic Site Visits">
               <SubTalk title="Locating Sustainability in Solo and Its Communities">
                 <TalkSpeaker name="Facilitated by Kota Kita"/>
-                <Role label="Navigators"/>
+                {/* <Role label="Navigators"/>
                 <TalkSpeaker name="Ms. Paulista Surjadi" job="Kota Kita" />
                 <TalkSpeaker name="Dr.Kohei Watanabe" job="Teikyo University" />
-                <TalkSpeaker name="Prof. Tomoko Okayama" job="Taisho University" />
+                <TalkSpeaker name="Prof. Tomoko Okayama" job="Taisho University" /> */}
               </SubTalk>
               <ScheduleVenue>Solo Vicinity</ScheduleVenue>
             </Talk>
@@ -225,6 +225,9 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Ms. Michiko Yoshida"
                 job="Chulalongkorn University" />
+              <TalkSpeaker
+                name="Mr. Ahmad Rifai"
+                job="Kota Kita Foundation" />
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
           </ScheduleItem>
@@ -233,13 +236,13 @@ const SchedulesFull = ({
               <Talk title="Urban Landscape, Our Communities"></Talk>
             </SubTalk>
             <Text component="p" medium>Opening address by Director of Exhibition, <strong>Dr. Mohamad</strong>, Graduate School Universitas Gadjah Mada (UGM)</Text>
-            <Role label="Navigators" />
+            {/* <Role label="Navigators" />
             <TalkSpeaker
               name="Associate Professor Dr. Yeoh Seng Guan"
               job="School of Arts and Social Sciences, Monash University, Malaysia" />
             <TalkSpeaker
               name="Dr. Dicky Sofjan"
-              job="ICRS" />
+              job="ICRS" /> */}
             <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
           </ScheduleItem>
           <ScheduleItem hour="7:00pm - 8:30pm">
@@ -278,12 +281,20 @@ const SchedulesFull = ({
               </SubTalk>
               <SubTalk title="Keynote Speech: Youth Leadership toward People-Centered Society">
                 <TalkSpeaker
-                  name="Keynote Speaker"
-                  italic="To be confirmed"
-                  job="" />
+                  label="Speaker I"
+                  name="Dr. Michael Northcott"
+                  job="Professor of Religion and Ecology" />
+                <TalkSpeaker
+                  label="Speaker II"
+                  name="Dr. Melani Budianta"
+                  job="Professor of Interdisciplinary Humanities" />
+                <TalkSpeaker
+                  label="Speaker III"
+                  name="Mr. Adamas Belva Syah Devara*"
+                  job="CEO and Founder of Ruang Guru" />
               </SubTalk>
             </Talk>
-            {/* <ToBeConfirmed /> */}
+            <ToBeConfirmed />
           </ScheduleItem>
           <ScheduleItem hour="9:30am" tag="Plenary Session" venue="Sebelas Maret University, Solo">
             <Text component="h3" heading5Alt style={{ marginBottom: '4px', textTransform: 'capitalize' }}>Civic Engagement 4.0: Overview</Text>
@@ -370,8 +381,8 @@ const SchedulesFull = ({
                 name="Dr. Kohei Watanabe"
                 job="Teikyo University, Japan" />
               <Role label="Presenters" />
-              <TalkSpeaker
-                name="Bank Sampah (Waste Bank Women’s Group)" />
+              {/* <TalkSpeaker
+                name="Bank Sampah (Waste Bank Women’s Group)" /> */}
               <TalkSpeaker
                 name="Prof. Tomoko Okayama"
                 job="Taisho University, Japan" />
@@ -514,7 +525,7 @@ const SchedulesFull = ({
                 name="Mr. H. Ahyar Abduh"
                 job="Mayor of Mataram (Nusa Tenggara Barat)" />
               <TalkSpeaker
-                name="Mrs. Hj. Badingah, S.sos.*"
+                name="Mrs. Hj. Badingah, S.sos."
                 job="Regent of Gunung Kidul (Yogyakarta)" />
               <TalkSpeaker
                 name="Mr. F.X. Hadi Rudyatmo"
@@ -534,9 +545,9 @@ const SchedulesFull = ({
                 name="Mr. James B. Pooten, Jr."
                 job="Mayor of Municipality of Sagada" style={{marginBottom: '24px'}}/> */}
 
-              <Country label="South Korea" />
+              {/* <Country label="South Korea" />
               <TalkSpeaker
-                name={<em>To be confirmed</em>} style={{marginBottom: '24px'}}/>
+                name={<em>To be confirmed</em>} style={{marginBottom: '24px'}}/> */}
 
               <Country label="Thailand" />
               <TalkSpeaker

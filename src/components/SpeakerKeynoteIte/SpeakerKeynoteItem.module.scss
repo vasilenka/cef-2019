@@ -1,6 +1,9 @@
 @import 'src/tokens';
 
 .keynote {
+  composes: col-12 col-sm-12 col-md-6 col-lg-4 from global;
+  padding-bottom: 0;
+  margin-bottom: $space-ml;
   @include screen(phone) {
     padding-left: 12px;
     padding-right: 12px;
@@ -24,28 +27,23 @@
 }
 
 .profile {
-  display: flex;
-  align-items: center;
   padding-top: $space-l;
   padding-bottom: $space-l;
   border-bottom: 1px solid $dark-alpha-20;
-}
-
-.bio {
   @include screen(phone) {
-    padding-right: $space-ml;
+    min-height: 0px;
   }
   @include screen(tabPortrait) {
-    padding-right: $space-ml;
+    min-height: 0px;
   }
   @include screen(tabLandscape) {
-    padding-right: $space-huge;
+    min-height: 232px;
   }
   @include screen(desktop) {
-    padding-right: $space-huge;
+    min-height: 232px;
   }
   @include screen(desktopWide) {
-    padding-right: $space-huge;
+    min-height: 232px;
   }
 }
 
@@ -65,6 +63,16 @@
   &:last-child {
     margin-bottom: $space-sm;
   }
+}
+
+.number {
+  text-transform: uppercase;
+  background-color: $brand-tertiary-80;
+  padding: $space-s;
+  color: $dark-alpha-80;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: $space-m;
 }
 
 .photo {
