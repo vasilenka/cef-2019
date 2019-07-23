@@ -26,12 +26,7 @@ const SpeakersHighlight = ({
 
           <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Keynote Speaker</Text>
           <Link to="/speakers#keynote-speakers">
-            <KeynoteSpeakers noHeader/>
-            {/* <main className={styles.keynote} style={{ textAlign: 'center' }}>
-              <Text heading3Alt component="h3" className={styles.name}><em>To be confirmed</em></Text> */}
-              {/* <Text heading5 component="p" className={styles.job}>Founder of Narasi</Text> */}
-              {/* <Text heading5 component="p" className={styles.job}>Indonesia’s Literacy Ambassador (Duta Baca Indonesia)</Text> */}
-            {/* </main> */}
+            <KeynoteSpeakers noHeader />
           </Link>
 
           <Text heading4Alt component="h3" className={styles.subtitle} style={{ textAlign: 'center' }}>Mayors</Text>

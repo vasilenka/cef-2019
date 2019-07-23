@@ -43,7 +43,7 @@ export const KeynoteSpeakers = props => {
         </Container>
       </>
     :
-      <div className={styles.speakersContainer} style={{marginBottom: 0}}>
+      <div className={styles.speakersContainer} style={{marginBottom: '48px'}} >
         <SpeakerKeynoteItem number="I" name="Dr. Michael Northcott" job="Professor of Religion and Ecology"/>
         <SpeakerKeynoteItem number="II" name="Dr. Melani Budianta" job="Professor of Interdisciplinary Humanities"/>
         <SpeakerKeynoteItem number="III" name="Mr. Adamas Belva Syah Devara*" job="CEO and Founder of Ruang Guru"/>
