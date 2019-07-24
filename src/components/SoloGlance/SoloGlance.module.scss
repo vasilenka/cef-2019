@@ -1,0 +1,227 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $brand-secondary-200;
+  padding-bottom: $space-ll;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  padding-top: $space-ml;
+  padding-bottom: $space-xxl;
+}
+
+.photo {
+  filter: grayscale(.28);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $brand-primary-200;
+  transition: all .4s;
+  border-radius: 2px;
+}
+
+.photo1 {
+  composes: photo;
+  background-image: url('/solo/mangkunegara.jpg');
+  @include screen(phone) {
+    grid-area: 1 / 1 / 4 / 5;
+  }
+  @include screen(tabPortrait) {
+    grid-area: 1 / 1 / 4 / 5;
+  }
+  @include screen(tabLandscape) {
+    grid-area: 1 / 2 / 4 / 5;
+  }
+  @include screen(desktop) {
+    grid-area: 1 / 2 / 4 / 5;
+  }
+  @include screen(desktopWide) {
+    grid-area: 1 / 2 / 4 / 5;
+  }
+}
+
+.photo2 {
+  composes: photo;
+  background-image: url('/solo/skk39.jpg');
+  @include screen(phone) {
+    grid-area: 1 / 5 / 3 / 9;
+  }
+  @include screen(tabPortrait) {
+    grid-area: 1 / 5 / 3 / 9;
+  }
+  @include screen(tabLandscape) {
+    grid-area: 1 / 5 / 5 / 7;
+  }
+  @include screen(desktop) {
+    grid-area: 1 / 5 / 5 / 7;
+  }
+  @include screen(desktopWide) {
+    grid-area: 1 / 5 / 5 / 7;
+  }
+}
+
+.photo3 {
+  composes: photo;
+  background-image: url('/solo/bst.jpg');
+  @include screen(phone) {
+    grid-area: 4 / 1 / 6 / 5;
+  }
+  @include screen(tabPortrait) {
+    grid-area: 4 / 1 / 6 / 5;
+  }
+  @include screen(tabLandscape) {
+    grid-area: 4 / 3 / 6 / 5;
+  }
+  @include screen(desktop) {
+    grid-area: 4 / 3 / 6 / 5;
+  }
+  @include screen(desktopWide) {
+    grid-area: 4 / 3 / 6 / 5;
+  }
+}
+
+.photo4 {
+  composes: photo;
+  background-image: url('/solo/skk168.jpg');
+  @include screen(phone) {
+    grid-area: 5 / 5 / 9 / 9;
+  }
+  @include screen(tabPortrait) {
+    grid-area: 5 / 5 / 9 / 9;
+  }
+  @include screen(tabLandscape) {
+    grid-area: 5 / 5 / 8 / 8;
+  }
+  @include screen(desktop) {
+    grid-area: 5 / 5 / 8 / 8;
+  }
+  @include screen(desktopWide) {
+    grid-area: 5 / 5 / 8 / 8;
+  }
+}
+
+.photo5 {
+  composes: photo;
+  background-image: url('/solo/surabi.jpg');
+  @include screen(phone) {
+    grid-area: 3 / 5 / 5 / 9;
+  }
+  @include screen(tabPortrait) {
+    grid-area: 3 / 5 / 5 / 9;
+  }
+  @include screen(tabLandscape) {
+    grid-area: 3 / 7 / 5 / 9;
+  }
+  @include screen(desktop) {
+    grid-area: 3 / 7 / 5 / 9;
+  }
+  @include screen(desktopWide) {
+    grid-area: 3 / 7 / 5 / 9;
+  }
+}
+
+.photo6 {
+  composes: photo;
+  background-image: url('/solo/triwindu-market.jpg');
+  grid-area: 6 / 1 / 9 / 5;
+}
+
+.row {
+  composes: row from global;
+  padding-bottom: $space-ll;
+  position: relative;
+}
+
+.subheading {
+  composes: col-lg-3 col-12 from global;
+  margin-bottom: $space-l;
+  height: fit-content;
+  font-family: $font-primary;
+
+  @include screen(phone) {
+    position: unset;
+    top: 0;
+  }
+  @include screen(tabPortrait) {
+    position: unset;
+    top: 0;
+  }
+  @include screen(tabLandscape) {
+    position: sticky;
+    top: 164px;
+  }
+  @include screen(desktop) {
+    position: sticky;
+    top: 164px;
+  }
+  @include screen(desktopWide) {
+    position: sticky;
+    top: 164px;
+  }
+}
+
+.article {
+  composes: col-lg-8 col-12 from global;
+}
+
+.details {
+  padding-bottom: $space-l;
+}
+
+.placeName {
+  margin-bottom: $space-m;
+}
+
+.listContainer {
+  padding-top: $space-ml;
+  padding-bottom: $space-s;
+}
+
+.eatPlace {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 100%;
+  border-bottom: 1px solid $dark-alpha-20;
+  padding-bottom: $space-m;
+  margin-bottom: $space-m;
+}
+
+.eatHeader {
+  margin-bottom: $space-xs;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.eatName {
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.eatAddress {
+  &:not(:last-child) {
+    margin-bottom: $space-sm;
+  }
+}
+
+.eatPhoneLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.eatIcon {
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.eatCall {
+  margin-bottom: 0px;
+}

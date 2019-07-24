@@ -20,7 +20,7 @@ const TheSunanHotel = ({
   return (
     <section className={cx(styles.root)} id="about-the-sunan-hotel" {...restProps}>
       <Cover
-        title={<Text heading1 component="h2" style={{marginBottom: '12px'}}>About The Sunan Hotel</Text>}
+        title={<Text heading1 component="h2">About The Sunan Hotel</Text>}
       />
       <Container narrow>
         <SunanHotel />

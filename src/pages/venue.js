@@ -5,6 +5,7 @@ import Default from './../layouts/Default'
 import SEO from './../components/seo'
 import Footer from './../components/Footer/Footer'
 import TheSunanHotel from './../components/TheSunanHotel/TheSunanHotel'
+import SoloGlance from '../components/SoloGlance/SoloGlance';
 
 
 const venue = () => {
@@ -12,6 +13,7 @@ const venue = () => {
     <Default>
       <SEO title="Venue" description="Frequently asked questions for civic engagement 4.0 2019 International Forum in Solo"/>
       <TheSunanHotel/>
+      <SoloGlance/>
       <Footer />
     </Default>
   )
