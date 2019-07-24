@@ -55,6 +55,7 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             <NavbarMenu containerClassName={styles.primaryMenu} to="/programs/">Programs</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/speakers/">Speakers</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/faqs/">FAQs</NavbarMenu>
+            <NavbarMenu containerClassName={styles.primaryMenu} to="/venue/">Venue</NavbarMenu>
           </NavbarPrimary>
           <NavbarSecondary
             className={cx({

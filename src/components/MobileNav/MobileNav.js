@@ -61,6 +61,11 @@ const Dialog = props => {
             FAQ
           </li>
         </Link>
+        <Link to="/venue"  activeClassName={styles.active}>
+          <li className={styles.itemWrapper}>
+            Venue
+          </li>
+        </Link>
       </ul>
       <button type="button" className={styles.close} onClick={() => props.setVisible(!props.visible)}>Close</button>
     </nav>

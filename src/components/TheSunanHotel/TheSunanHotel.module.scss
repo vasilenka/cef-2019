@@ -1,0 +1,131 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $brand-secondary-200;
+  padding-bottom: $space-xl;
+}
+
+.about {
+  display: flex;
+  padding-top: $space-ll;
+  padding-left: $space-ml;
+  padding-right: $space-ml;
+
+  @include screen(phone) {
+    flex-direction: column;
+  }
+  @include screen(tabPortrait) {
+    flex-direction: column;
+  }
+  @include screen(tabLandscape) {
+    flex-direction: row-reverse;
+  }
+  @include screen(desktop) {
+    flex-direction: row-reverse;
+  }
+  @include screen(desktopWide) {
+    flex-direction: row-reverse;
+  }
+}
+
+.image {
+  background-color: $dark-alpha-20;
+  margin-bottom: $space-ll;
+  width: 100%;
+}
+
+.header {
+  flex: 2;
+  @include screen(phone) {
+    margin-bottom: $space-l;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: $space-l;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: 0;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+  }
+}
+
+.main {
+  flex: 3;
+  @include screen(phone) {
+    padding-right: 0;
+  }
+  @include screen(tabPortrait) {
+    padding-right: 0;
+  }
+  @include screen(tabLandscape) {
+    padding-right: $space-huge;
+  }
+  @include screen(desktop) {
+    padding-right: $space-huge;
+  }
+  @include screen(desktopWide) {
+    padding-right: $space-huge;
+  }
+}
+
+.headerItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &:not(:last-child) {
+    margin-bottom: $space-ml;
+  }
+}
+
+.icon {
+  width: 28px;
+  max-width: 28px;
+  min-width: 28px;
+  margin-right: $space-m;
+}
+
+.itemText {
+  margin: 0;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.footer {
+  padding-top: $space-ml;
+}
+
+.access {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: $space-m;
+  border-bottom: 1px solid $dark-alpha-20;
+  &:not(:last-child) {
+    margin-bottom: $space-m;
+  }
+}
+
+.accessIcon {
+  width: $space-l;
+  min-width: $space-l;
+  margin-right: $space-sm;
+  opacity: 0.72;
+}
+
+.accessText {
+  flex: 1;
+}
+
+.accessTitle {
+  text-transform: uppercase;
+  margin-bottom: $space-xs;
+}
+
+.accessName {
+
+}
