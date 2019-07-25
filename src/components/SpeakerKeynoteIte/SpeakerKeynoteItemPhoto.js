@@ -1,10 +1,13 @@
 import styles from './SpeakerKeynoteItem.module.scss';
 import React from 'react';
 import cx from 'classnames';
-import Text from '../../primitives/Text/Text';
 
-const SpeakerKeynoteItem = ({
+import Text from '../../primitives/Text/Text';
+import Speaker from '../Speaker/Speaker'
+
+const SpeakerKeynoteItemPhoto = ({
   className,
+  photo,
   name,
   number,
   job,
@@ -14,14 +17,14 @@ const SpeakerKeynoteItem = ({
     <div className={cx(styles.keynote)}>
       <main className={styles.profile}>
         <Text heading5 component="p" className={styles.number}>SPEAKER {number}</Text>
-        <header>
-          <Text heading3Alt component="h3" className={styles.name} style={{fontSize: '20px'}}>{name}</Text>
-          <Text heading5 component="p" className={styles.job}>{job}</Text>
-        </header>
-
+        <Speaker
+          name={name}
+          job={job}
+          photo={photo}
+          />
       </main>
     </div>
   )
 }
 
-export default SpeakerKeynoteItem
+export default SpeakerKeynoteItemPhoto

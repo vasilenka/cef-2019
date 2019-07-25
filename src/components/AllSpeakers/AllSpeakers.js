@@ -5,6 +5,7 @@ import cx from 'classnames';
 import SpeakerKeynote from "../SpeakerKeynote/SpeakerKeynote";
 import Speaker from '../Speaker/Speaker'
 import SpeakerKeynoteItem from "../SpeakerKeynoteIte/SpeakerKeynoteItem";
+import SpeakerKeynoteItemPhoto from "../SpeakerKeynoteIte/SpeakerKeynoteItemPhoto";
 import SpeakerNotes from "../SpeakerNotes/SpeakerNotes";
 
 import {
@@ -12,6 +13,7 @@ import {
   Badingah,
   FxHadi,
   IbnuSina,
+  Northcott,
   Pongsak,
   Risma,
 } from './../images/speakers'
@@ -30,8 +32,14 @@ const CountrySection = props => {
 }
 
 export const KeynoteSpeakers = props => {
-  return (!props.noHeader
+  return (props.noHeader
     ?
+      <div className={styles.speakersContainer} style={{marginBottom: '48px'}} >
+        <SpeakerKeynoteItem number="I" name="Dr. Michael Northcott" job="Professor of Religion and Ecology"/>
+        <SpeakerKeynoteItem number="II" name="Dr. Melani Budianta" job="Professor of Interdisciplinary Humanities"/>
+        <SpeakerKeynoteItem number="III" name="Mr. Adamas Belva Syah Devara*" job="CEO and Founder of Ruang Guru"/>
+      </div>
+    :
       <>
         {<SpeakerKeynote sectionTitle="Keynote Speakers" id="keynote-speakers" {...props} />}
         <Container narrow>
@@ -42,12 +50,6 @@ export const KeynoteSpeakers = props => {
           </div>
         </Container>
       </>
-    :
-      <div className={styles.speakersContainer} style={{marginBottom: '48px'}} >
-        <SpeakerKeynoteItem number="I" name="Dr. Michael Northcott" job="Professor of Religion and Ecology"/>
-        <SpeakerKeynoteItem number="II" name="Dr. Melani Budianta" job="Professor of Interdisciplinary Humanities"/>
-        <SpeakerKeynoteItem number="III" name="Mr. Adamas Belva Syah Devara*" job="CEO and Founder of Ruang Guru"/>
-      </div>
   )
 }
 
