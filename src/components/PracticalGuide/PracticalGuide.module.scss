@@ -1,0 +1,172 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $bg-banana-200;
+  padding-bottom: $space-xl;
+}
+
+.row {
+  composes: row from global;
+  position: relative;
+  &:not(:last-child) {
+    @include screen(phone) {
+      padding-bottom: $space-ll;
+    }
+    @include screen(tabPortrait) {
+      padding-bottom: $space-ll;
+    }
+    @include screen(tabLandscape) {
+      padding-bottom: $space-ll;
+    }
+    @include screen(desktop) {
+      padding-bottom: $space-xxl;
+    }
+    @include screen(desktopWide) {
+      padding-bottom: $space-xxl;
+    }
+  }
+}
+
+.subheading {
+  composes: col-lg-5 col-12 from global;
+  background-color: $bg-banana-200;
+  width: 100%;
+  height: fit-content;
+  font-family: $font-primary;
+  z-index: 9;
+  margin-bottom: 24px;
+
+  @include screen(phone) {
+    position: sticky;
+    top: 116px;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+  @include screen(tabPortrait) {
+    position: sticky;
+    top: 120px;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+  @include screen(tabLandscape) {
+    position: sticky;
+    top: 120px;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+  @include screen(desktop) {
+    position: sticky;
+    top: 164px;
+    padding-top: 0px;
+    padding-bottom: $space-l;
+  }
+  @include screen(desktopWide) {
+    position: sticky;
+    top: 164px;
+    padding-top: 0px;
+    padding-bottom: $space-l;
+  }
+}
+
+.subheadingAlt {
+  composes: col-12 from global;
+  background-color: $bg-banana-200;
+  width: 100%;
+  height: fit-content;
+  font-family: $font-primary;
+  z-index: 9;
+  margin-bottom: 24px;
+
+  @include screen(phone) {
+    position: sticky;
+    top: 116px;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+  @include screen(tabPortrait) {
+    position: sticky;
+    top: 120px;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+  @include screen(tabLandscape) {
+    position: sticky;
+    top: 120px;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+  @include screen(desktop) {
+    position: unset;
+    top: 164px;
+    padding-top: 0px;
+    padding-bottom: $space-ll;
+  }
+  @include screen(desktopWide) {
+    position: unset;
+    top: 164px;
+    padding-top: 0px;
+    padding-bottom: $space-ll;
+  }
+}
+
+.article {
+  composes: col-lg-7 col-12 from global;
+}
+
+.emergencyContact {
+  padding-bottom: $space-ml;
+  margin-bottom: $space-ml;
+  border-bottom: 1px solid $dark-alpha-20;
+}
+
+.erContainer {
+  composes: col-lg-4 col-md-6 col-12 from global;
+  list-style: none;
+}
+
+.emergencyRoom {
+  padding: $space-ml;
+  border: 1px solid $dark-alpha-40;
+  border-radius: 4px;
+
+  @include screen(phone) {
+    min-height: 0px;
+  }
+  @include screen(tabPortrait) {
+    min-height: 240px;
+  }
+  @include screen(tabLandscape) {
+    min-height: 240px;
+  }
+  @include screen(desktop) {
+    min-height: 200px;
+  }
+  @include screen(desktopWide) {
+    min-height: 200px;
+  }
+}
+
+.emergencyHeader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $space-s;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contactIcon {
+  width: 24px;
+  max-width: 24px;
+  margin-right: 8px;
+}
+
+.contactNumber {
+  margin-bottom: 0px;
+}
+
+.contactAddress {
+  margin-bottom: 0px;
+}

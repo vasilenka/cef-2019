@@ -133,35 +133,49 @@
 
 .row {
   composes: row from global;
-  padding-bottom: $space-ll;
   position: relative;
+  &:not(:last-child) {
+    padding-bottom: $space-ll;
+  }
 }
 
 .subheading {
   composes: col-lg-3 col-12 from global;
-  margin-bottom: $space-l;
+  background-color: $brand-secondary-200;
+  width: 100%;
   height: fit-content;
   font-family: $font-primary;
+  z-index: 9;
 
   @include screen(phone) {
-    position: unset;
-    top: 0;
+    position: sticky;
+    top: 116px;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
   }
   @include screen(tabPortrait) {
-    position: unset;
-    top: 0;
+    position: sticky;
+    top: 120px;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
   }
   @include screen(tabLandscape) {
     position: sticky;
-    top: 164px;
+    top: 120px;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
   }
   @include screen(desktop) {
     position: sticky;
     top: 164px;
+    padding-top: 0px;
+    padding-bottom: $space-l;
   }
   @include screen(desktopWide) {
     position: sticky;
     top: 164px;
+    padding-top: 0px;
+    padding-bottom: $space-l;
   }
 }
 
@@ -170,7 +184,9 @@
 }
 
 .details {
-  padding-bottom: $space-l;
+  &:not(:last-child) {
+    padding-bottom: $space-l;
+  }
 }
 
 .placeName {
@@ -182,21 +198,27 @@
   padding-bottom: $space-s;
 }
 
-.eatPlace {
+.eat {
   list-style: none;
   margin-left: 0px;
-  padding-left: 0px;
-  width: 100%;
   border-bottom: 1px solid $dark-alpha-20;
   padding-bottom: $space-m;
   margin-bottom: $space-m;
 }
 
+.eatPlace {
+  width: 100%;
+  box-shadow: inset 4px 0px 0px 0px $brand-tertiary-200;
+  padding-left: $space-ml;
+}
+
 .eatHeader {
-  margin-bottom: $space-xs;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  &:not(:last-child) {
+    margin-bottom: $space-xs;
+  }
 }
 
 .eatName {
@@ -205,9 +227,7 @@
 }
 
 .eatAddress {
-  &:not(:last-child) {
-    margin-bottom: $space-sm;
-  }
+  margin-bottom: 0;
 }
 
 .eatPhoneLink {

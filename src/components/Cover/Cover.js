@@ -11,11 +11,12 @@ const Cover = ({
   children,
   title,
   subtitle,
+  containerStyle,
   description,
   ...restProps
   }) => {
   return (
-    <div className={cx(styles.root)}>
+    <div className={cx(styles.root)} style={containerStyle}>
       <Container narrow className={cx(styles.container)} {...restProps}>
         <Box alignCenter justifyStart style={{ height: '100%' }}>
           <Box column alignStart style={{width: '100%'}}>

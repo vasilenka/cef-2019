@@ -8,11 +8,16 @@ import Text from '../../primitives/Text/Text';
 
 import CallIcon from './../icons/call.inline.svg';
 
-const PlaceDetails = props => {
+export const PlaceDetails = props => {
   return (
     <article className={styles.details}>
-      <Text heading3 component="h3" className={styles.placeName}>{props.name}</Text>
-      <Text medium component="p">{props.details}</Text>
+      {props.name &&
+        <Text heading3 component="h3" className={styles.placeName}>{props.name}</Text>
+      }
+      {props.details
+        && <Text medium component="p">{props.details}</Text>
+      }
+      {props.rawDetails && props.rawDetails}
       {props.additional &&
         <ul className={styles.listContainer}>
           {props.additional}
@@ -22,21 +27,25 @@ const PlaceDetails = props => {
   )
 }
 
-const EatPlace = props => {
+export const EatPlace = props => {
   return (
-    <li className={styles.eatPlace}>
-      <header className={styles.eatHeader}>
-        <Text heading4 className={styles.eatName} component="h4">{props.name}</Text>
-        {props.phone &&
-          <a href={`tel:${props.phone}`} className={styles.eatPhoneLink}>
-            <div className={styles.eatIcon}>
-              <CallIcon />
-            </div>
-            <Text heading6 className={styles.eatCall} component="p">{props.phone}</Text>
-          </a>
+    <li className={styles.eat}>
+      <div className={styles.eatPlace}>
+        <header className={styles.eatHeader}>
+          <Text heading4 className={styles.eatName} component="h4">{props.name}</Text>
+          {props.phone &&
+            <a href={`tel:${props.phone}`} className={styles.eatPhoneLink}>
+              <div className={styles.eatIcon}>
+                <CallIcon />
+              </div>
+              <Text heading6 className={styles.eatCall} component="p">{props.phone}</Text>
+            </a>
+          }
+        </header>
+        {props.address &&
+          <Text small className={styles.eatAddress} component="p">{props.address}</Text>
         }
-      </header>
-      <Text medium className={styles.eatAddress} component="p">{props.address}</Text>
+      </div>
     </li>
   )
 }
@@ -104,10 +113,6 @@ const SoloGlance = ({
               name="Wayang Wong Sriwedari (Traditional Drama Performance)"
               details="Wayang Wong is one of traditional Javanese performances that still exists. This performance was created by Mangkunegara I, combining dance, vocal and characters with Mahabarata and Ramayana stories. Wayang Wong Sriwedari is a legendary community that was established since the early 20th century during the reign of Pakubuwono X."
               />
-            <PlaceDetails
-              name=""
-              details=""
-            />
           </section>
         </div>
         <div className={styles.row}>
