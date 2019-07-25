@@ -7,12 +7,34 @@
 
 .gridContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
   grid-column-gap: 4px;
   grid-row-gap: 4px;
   padding-top: $space-ml;
-  padding-bottom: $space-xxl;
+  @include screen(phone) {
+    padding-bottom: $space-ll;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 72px 72px 72px 72px 72px 72px 72px 72px 72px;
+  }
+  @include screen(tabPortrait) {
+    padding-bottom: $space-ll;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 72px 72px 72px 72px 72px 72px 72px 72px 72px;
+  }
+  @include screen(tabLandscape) {
+    padding-bottom: $space-xxl;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 72px 72px 72px 72px 72px 72px 72px 72px;
+  }
+  @include screen(desktop) {
+    padding-bottom: $space-xxl;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 72px 72px 72px 72px 72px 72px 72px 72px;
+  }
+  @include screen(desktopWide) {
+    padding-bottom: $space-xxl;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 72px 72px 72px 72px 72px 72px 72px 72px;
+  }
 }
 
 .photo {
@@ -35,13 +57,13 @@
     grid-area: 1 / 1 / 4 / 5;
   }
   @include screen(tabLandscape) {
-    grid-area: 1 / 2 / 4 / 5;
+    grid-area: 1 / 1 / 5 / 4;
   }
   @include screen(desktop) {
-    grid-area: 1 / 2 / 4 / 5;
+    grid-area: 1 / 1 / 5 / 4;
   }
   @include screen(desktopWide) {
-    grid-area: 1 / 2 / 4 / 5;
+    grid-area: 1 / 1 / 5 / 4;
   }
 }
 
@@ -49,86 +71,100 @@
   composes: photo;
   background-image: url('/solo/skk39.jpg');
   @include screen(phone) {
-    grid-area: 1 / 5 / 3 / 9;
+    grid-area: 1 / 5 / 4 / 9;
   }
   @include screen(tabPortrait) {
-    grid-area: 1 / 5 / 3 / 9;
+    grid-area: 1 / 5 / 4 / 9;
   }
   @include screen(tabLandscape) {
-    grid-area: 1 / 5 / 5 / 7;
+    grid-area: 1 / 4 / 5 / 7;
   }
   @include screen(desktop) {
-    grid-area: 1 / 5 / 5 / 7;
+    grid-area: 1 / 4 / 5 / 7;
   }
   @include screen(desktopWide) {
-    grid-area: 1 / 5 / 5 / 7;
+    grid-area: 1 / 4 / 5 / 7;
   }
 }
 
 .photo3 {
   composes: photo;
-  background-image: url('/solo/bst.jpg');
+  background-image: url('/solo/skk168.jpg');
   @include screen(phone) {
-    grid-area: 4 / 1 / 6 / 5;
+    grid-area: 4 / 5 / 7 / 9;
   }
   @include screen(tabPortrait) {
-    grid-area: 4 / 1 / 6 / 5;
+    grid-area: 4 / 5 / 7 / 9;
   }
   @include screen(tabLandscape) {
-    grid-area: 4 / 3 / 6 / 5;
+    grid-area: 1 / 7 / 5 / 10;
   }
   @include screen(desktop) {
-    grid-area: 4 / 3 / 6 / 5;
+    grid-area: 1 / 7 / 5 / 10;
   }
   @include screen(desktopWide) {
-    grid-area: 4 / 3 / 6 / 5;
+    grid-area: 1 / 7 / 5 / 10;
   }
 }
 
 .photo4 {
   composes: photo;
-  background-image: url('/solo/skk168.jpg');
+  background-image: url('/solo/surabi.jpg');
   @include screen(phone) {
-    grid-area: 5 / 5 / 9 / 9;
+    grid-area: 4 / 1 / 7 / 5;
   }
   @include screen(tabPortrait) {
-    grid-area: 5 / 5 / 9 / 9;
+    grid-area: 4 / 1 / 7 / 5;
   }
   @include screen(tabLandscape) {
-    grid-area: 5 / 5 / 8 / 8;
+    grid-area: 5 / 1 / 9 / 4;
   }
   @include screen(desktop) {
-    grid-area: 5 / 5 / 8 / 8;
+    grid-area: 5 / 1 / 9 / 4;
   }
   @include screen(desktopWide) {
-    grid-area: 5 / 5 / 8 / 8;
+    grid-area: 5 / 1 / 9 / 4;
   }
 }
 
 .photo5 {
   composes: photo;
-  background-image: url('/solo/surabi.jpg');
+  background-image: url('/solo/bst.jpg');
   @include screen(phone) {
-    grid-area: 3 / 5 / 5 / 9;
+    grid-area: 7 / 1 / 10 / 5;
   }
   @include screen(tabPortrait) {
-    grid-area: 3 / 5 / 5 / 9;
+    grid-area: 7 / 1 / 10 / 5;
   }
   @include screen(tabLandscape) {
-    grid-area: 3 / 7 / 5 / 9;
+    grid-area: 5 / 7 / 9 / 10;
   }
   @include screen(desktop) {
-    grid-area: 3 / 7 / 5 / 9;
+    grid-area: 5 / 7 / 9 / 10;
   }
   @include screen(desktopWide) {
-    grid-area: 3 / 7 / 5 / 9;
+    grid-area: 5 / 7 / 9 / 10;
   }
 }
 
 .photo6 {
   composes: photo;
   background-image: url('/solo/triwindu-market.jpg');
-  grid-area: 6 / 1 / 9 / 5;
+  @include screen(phone) {
+    grid-area: 7 / 5 / 10 / 9;
+  }
+  @include screen(tabPortrait) {
+    grid-area: 7 / 5 / 10 / 9;
+  }
+  @include screen(tabLandscape) {
+    grid-area: 5 / 4 / 9 / 7;
+  }
+  @include screen(desktop) {
+    grid-area: 5 / 4 / 9 / 7;
+  }
+  @include screen(desktopWide) {
+    grid-area: 5 / 4 / 9 / 7;
+  }
 }
 
 .row {
