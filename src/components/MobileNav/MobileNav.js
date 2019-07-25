@@ -36,6 +36,11 @@ const Dialog = props => {
             About
           </li>
         </Link>
+        <Link to="/venue"  activeClassName={styles.active}>
+          <li className={styles.itemWrapper}>
+            Venue
+          </li>
+        </Link>
         <Link to="/organizers" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
           <li className={styles.itemWrapper}>
             Organizers
@@ -59,11 +64,6 @@ const Dialog = props => {
         <Link to="/faq"  activeClassName={styles.active}>
           <li className={styles.itemWrapper}>
             FAQ
-          </li>
-        </Link>
-        <Link to="/venue"  activeClassName={styles.active}>
-          <li className={styles.itemWrapper}>
-            Venue
           </li>
         </Link>
       </ul>

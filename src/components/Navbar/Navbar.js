@@ -33,6 +33,7 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             <NavbarBrand/>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/">Home</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/about/">About</NavbarMenu>
+            <NavbarMenu containerClassName={styles.primaryMenu} to="/venue/">Venue</NavbarMenu>
             <Popout
               bottom
               content={() =>
@@ -55,7 +56,6 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             <NavbarMenu containerClassName={styles.primaryMenu} to="/programs/">Programs</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/speakers/">Speakers</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/faqs/">FAQs</NavbarMenu>
-            <NavbarMenu containerClassName={styles.primaryMenu} to="/venue/">Venue</NavbarMenu>
           </NavbarPrimary>
           <NavbarSecondary
             className={cx({
