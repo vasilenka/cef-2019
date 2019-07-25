@@ -1,7 +1,33 @@
 @import 'src/tokens';
 
 .keynote {
-  composes: col-12 col-sm-12 col-md-6 col-lg-4 from global;
+  composes: col-12 from global;
+  padding-bottom: 0;
+  margin-bottom: $space-ml;
+  @include screen(phone) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  @include screen(tabPortrait) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include screen(tabLandscape) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include screen(desktop) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include screen(desktopWide) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.keynoteAlt {
+  composes: col-12 col-sm-12 col-md-6 col-lg-6 from global;
   padding-bottom: 0;
   margin-bottom: $space-ml;
   @include screen(phone) {
@@ -36,31 +62,87 @@
     min-height: 0px;
   }
   @include screen(tabLandscape) {
-    min-height: 192px;
+    min-height: 124px;
   }
   @include screen(desktop) {
-    min-height: 192px;
+    min-height: 124px;
   }
   @include screen(desktopWide) {
-    min-height: 192px;
+    min-height: 124px;
   }
+}
+
+.container {
+  display: flex;
+  @include screen(phone) {
+    align-items: center;
+  }
+  @include screen(tabPortrait) {
+    align-items: center;
+  }
+  @include screen(tabLandscape) {
+    align-items: flex-start;
+  }
+  @include screen(desktop) {
+    align-items: flex-start;
+  }
+  @include screen(desktopWide) {
+    align-items: flex-start;
+  }
+}
+
+.bio {
+  padding-right: $space-ml;
 }
 
 .name {
   color: $dark-hex-80;
+  font-family: $font-primary;
   &:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 }
 
 .job {
   color: $dark-hex-70;
+  margin-bottom: $space-sm;
+}
 
-  &:not(:last-child) {
-    margin-bottom: $space-xs;
+.description {
+  padding-right: $space-ll;
+  @include screen(phone) {
+    display: none;
   }
-  &:last-child {
-    margin-bottom: $space-sm;
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: block;
+  }
+  @include screen(desktop) {
+    display: block;
+  }
+  @include screen(desktopWide) {
+    display: block;
+  }
+}
+
+.mobileDescription {
+  padding-top: $space-ml;
+  @include screen(phone) {
+    display: block;
+  }
+  @include screen(tabPortrait) {
+    display: block;
+  }
+  @include screen(tabLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: none;
+  }
+  @include screen(desktopWide) {
+    display: none;
   }
 }
 
@@ -71,18 +153,54 @@
   color: $dark-alpha-80;
   text-align: left;
   font-weight: 600;
-  margin-bottom: $space-m;
+  margin-bottom: $space-l;
 }
 
 .photo {
-  width: 200px;
-  min-width: 128px;
+  width: 240px;
+
+  @include screen(phone) {
+    min-width: 128px;
+    height: 216px;
+  }
+  @include screen(tabPortrait) {
+    min-width: 128px;
+    height: 240px;
+  }
+  @include screen(tabLandscape) {
+    min-width: 240px;
+    height: 320px;
+  }
+  @include screen(desktop) {
+    min-width: 240px;
+    height: 320px;
+  }
+  @include screen(desktopWide) {
+    min-width: 240px;
+    height: 320px;
+  }
 
   > div > div {
-    border-radius: 20px;
+    border-radius: 4px;
+    @include screen(phone) {
+      padding-bottom: 216px !important;
+    }
+    @include screen(tabPortrait) {
+      padding-bottom: 240px !important;
+    }
+    @include screen(tabLandscape) {
+      padding-bottom: 320px !important;
+    }
+    @include screen(desktop) {
+      padding-bottom: 320px !important;
+    }
+    @include screen(desktopWide) {
+      padding-bottom: 320px !important;
+    }
   }
 
   img {
-    border-radius: 20px;
+    object-fit: cover !important;
+    border-radius: 4px;
   }
 }

@@ -1,15 +1,13 @@
-import styles from './MobileNav.module.scss';
-import React, { useState, useLayoutEffect } from 'react';
-import cx from 'classnames';
+import styles from './MobileNav.module.scss'
+import React, { useState, useLayoutEffect } from 'react'
+import cx from 'classnames'
 import { Link } from 'gatsby'
 
 import Logo from './../../assets/images/logo.png'
 
 const Trigger = ({className, ...restProps}) => {
   return (
-    <div className={styles.trigger} {...restProps}>
-      menu
-    </div>
+    <div className={styles.trigger} {...restProps}>menu</div>
   )
 }
 
