@@ -9,6 +9,7 @@ import Text from '../../primitives/Text/Text';
 import CallIcon from './../icons/call.inline.svg';
 
 import { PlaceDetails, EatPlace } from './../SoloGlance/SoloGlance'
+import Hack from '../Hack/Hack';
 
 const ContactNumber = props => {
   return (
@@ -68,7 +69,8 @@ const PracticalGuide = ({
   ...restProps
   }) => {
   return (
-    <section id="pratical-information" className={cx(styles.root)} {...restProps}>
+    <section className={cx(styles.root)} {...restProps}>
+      <Hack id="pratical-information" />
       <Cover containerStyle={{ backgroundColor: '#fff2c6', paddingTop: '64px', paddingBottom: '64px' }} title={<Text heading1 component="h2">Practical Information</Text>} />
       <Container narrow>
         <div className={styles.row}>

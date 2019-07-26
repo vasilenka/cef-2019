@@ -33,7 +33,26 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             <NavbarBrand/>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/">Home</NavbarMenu>
             <NavbarMenu containerClassName={styles.primaryMenu} to="/about/">About</NavbarMenu>
-            <NavbarMenu containerClassName={styles.primaryMenu} to="/venue/">Venue</NavbarMenu>
+            <Popout
+              bottom
+              content={() =>
+                <>
+                  <NavbarMenu containerClassName={styles.dropdown} to="/venue#about-the-sunan-hotel">About The Sunan Hotel</NavbarMenu>
+                  <NavbarMenu containerClassName={styles.dropdown} to="/venue#solo-at-a-glance">Solo at A Glance</NavbarMenu>
+                  <NavbarMenu containerClassName={styles.dropdown} to="/venue#pratical-information">Practical Information</NavbarMenu>
+                </>
+              }>
+              {(
+                setVisible,
+                visible,
+              ) =>
+                <button type='button' className={styles.dropdownTrigger} onClick={() => setVisible(!visible)}>
+                  <Text heading5Alt className={styles.item} style={{fontWeight: '700'}}>
+                    Venue
+                  </Text>
+                </button>
+              }
+            </Popout>
             <Popout
               bottom
               content={() =>

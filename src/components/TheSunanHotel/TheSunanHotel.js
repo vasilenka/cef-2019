@@ -12,13 +12,15 @@ import PlaceIcon from './../icons/place.inline.svg';
 import StationIcon from './../icons/station.inline.svg';
 import AirportIcon from './../icons/airport.inline.svg';
 import { SunanHotel } from './../images/photos/sunan'
+import Hack from '../Hack/Hack';
 
 const TheSunanHotel = ({
   className,
   ...restProps
   }) => {
   return (
-    <section className={cx(styles.root)} id="about-the-sunan-hotel" {...restProps}>
+    <section className={cx(styles.root)} {...restProps}>
+      <Hack id="about-the-sunan-hotel" />
       <Cover
         title={<Text heading1 component="h2">About The Sunan Hotel</Text>}
       />

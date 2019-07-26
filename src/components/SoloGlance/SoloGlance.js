@@ -7,6 +7,7 @@ import Cover from '../Cover/Cover';
 import Text from '../../primitives/Text/Text';
 
 import CallIcon from './../icons/call.inline.svg';
+import Hack from '../Hack/Hack';
 
 export const PlaceDetails = props => {
   return (
@@ -55,7 +56,8 @@ const SoloGlance = ({
   ...restProps
   }) => {
   return (
-    <section id="solo-at-a-glance" className={cx(styles.root)}>
+    <section className={cx(styles.root)}>
+      <Hack id="solo-at-a-glance" />
       <Cover title={<Text heading1 component="h2">Solo at A Glance</Text>} />
       <div className={styles.gridContainer}>
         <div className={cx(styles.photo, styles.photo1)} />

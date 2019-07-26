@@ -21,52 +21,69 @@ const Dialog = props => {
   }, [])
 
   return (
-    <nav className={cx(styles.dialog)}>
-      <img className={styles.brand} src={Logo} alt="Civic Engagement 4.0"/>
-      <ul className={styles.wrapper}>
-        <Link to="/" activeClassName={styles.active}>
-          <li className={styles.itemWrapper}>
-            Home
-          </li>
-        </Link>
-        <Link to="/about" activeClassName={styles.active}>
-          <li className={styles.itemWrapper}>
-            About
-          </li>
-        </Link>
-        <Link to="/venue"  activeClassName={styles.active}>
-          <li className={styles.itemWrapper}>
-            Venue
-          </li>
-        </Link>
-        <Link to="/organizers" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
-          <li className={styles.itemWrapper}>
-            Organizers
-          </li>
-        </Link>
-        <Link to="/organizers#funding-partners" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
-          <li className={cx(styles.itemWrapper, styles.secondary)}>
-            Funding Partners
-          </li>
-        </Link>
-        <Link to="/programs" activeClassName={styles.active}>
-          <li className={styles.itemWrapper}>
-            Programs
-          </li>
-        </Link>
-        <Link to="/speakers" activeClassName={styles.active}>
-          <li className={styles.itemWrapper}>
-            Speakers
-          </li>
-        </Link>
-        <Link to="/faq"  activeClassName={styles.active}>
-          <li className={styles.itemWrapper}>
-            FAQ
-          </li>
-        </Link>
-      </ul>
-      <button type="button" className={styles.close} onClick={() => props.setVisible(!props.visible)}>Close</button>
-    </nav>
+    <div className={styles.dialogContainer}>
+      <nav className={cx(styles.dialog)}>
+        <img className={styles.brand} src={Logo} alt="Civic Engagement 4.0"/>
+        <ul className={styles.wrapper}>
+          <Link to="/" activeClassName={styles.active}>
+            <li className={styles.itemWrapper}>
+              Home
+            </li>
+          </Link>
+          <Link to="/about" activeClassName={styles.active}>
+            <li className={styles.itemWrapper}>
+              About
+            </li>
+          </Link>
+          <Link to="/venue"  activeClassName={styles.active}>
+            <li className={styles.itemWrapper}>
+              Venue
+            </li>
+          </Link>
+          <Link to="/venue#about-the-sunan-hotel" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
+            <li className={cx(styles.itemWrapper, styles.secondary)}>
+              About The Sunan Hotel
+            </li>
+          </Link>
+          <Link to="/venue#solo-at-a-glance" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
+            <li className={cx(styles.itemWrapper, styles.secondary)}>
+              Solo at A Glance
+            </li>
+          </Link>
+          <Link to="/venue#pratical-information" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
+            <li className={cx(styles.itemWrapper, styles.secondary)}>
+              Practical Information
+            </li>
+          </Link>
+          <Link to="/organizers" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
+            <li className={styles.itemWrapper}>
+              Organizers
+            </li>
+          </Link>
+          <Link to="/organizers#funding-partners" onClick={() => props.setVisible(false)} activeClassName={styles.active}>
+            <li className={cx(styles.itemWrapper, styles.secondary)}>
+              Funding Partners
+            </li>
+          </Link>
+          <Link to="/programs" activeClassName={styles.active}>
+            <li className={styles.itemWrapper}>
+              Programs
+            </li>
+          </Link>
+          <Link to="/speakers" activeClassName={styles.active}>
+            <li className={styles.itemWrapper}>
+              Speakers
+            </li>
+          </Link>
+          <Link to="/faq"  activeClassName={styles.active}>
+            <li className={styles.itemWrapper}>
+              FAQ
+            </li>
+          </Link>
+        </ul>
+        <button type="button" className={styles.close} onClick={() => props.setVisible(!props.visible)}>Close</button>
+      </nav>
+    </div>
   )
 }
 
