@@ -173,17 +173,12 @@ const PracticalGuide = ({
               details="Batik Solo Trans, the only scheduled bus that serves the inner city. It goes to and from the airport and along Jl Slamet Riyadi. The Batik Solo Trans (BST) bus network is subsidized by the local government, and is the cheapest transport in town, Rp4,500. There are eight corridors."
               />
             <PlaceDetails
-              name="By Self-drive Car"
-              details="Driving in Indonesia is rarely rewarding, especially in Java. Either opt with a taxi or rent a driver to easily navigate within the city."
-            />
-            <PlaceDetails
               name="By Car"
               details=""
               rawDetails={
                 <>
-                  <Text component="p" heading5 style={{marginBottom: '12px'}}>Self-drive</Text>
                   <Text component="p" medium>
-                    Driving in Indonesia is rarely rewarding, especially in Java. Either opt with a taxi or rent a driver to easily navigate within the city.
+                    The organizers suggest to opt with a taxi or rent a driver to easily navigate within the city.
                   </Text>
                 </>
               }

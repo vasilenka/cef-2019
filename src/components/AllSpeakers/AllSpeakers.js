@@ -12,6 +12,8 @@ import {
   Badingah,
   FxHadi,
   IbnuSina,
+  Melani,
+  Najmul,
   Northcott,
   Pongsak,
   Risma,
@@ -36,7 +38,6 @@ export const KeynoteSpeakers = props => {
       <div className={styles.speakersContainer} style={{marginBottom: '48px'}} >
         <SpeakerKeynoteItem number="I" name="Dr. Michael Northcott" job="Professor of Religion and Ecology"/>
         <SpeakerKeynoteItem number="II" name="Dr. Melani Budianta" job="Professor of Interdisciplinary Humanities"/>
-        <SpeakerKeynoteItem number="III" name="Mr. Adamas Belva Syah Devara*" job="CEO and Founder of Ruang Guru"/>
       </div>
     :
       <>
@@ -59,8 +60,25 @@ export const KeynoteSpeakers = props => {
                 </>
               }
               />
-            <SpeakerKeynoteItem number="II" name="Dr. Melani Budianta" job="Professor of Interdisciplinary Humanities"/>
-            <SpeakerKeynoteItem number="III" name="Mr. Adamas Belva Syah Devara*" job="CEO and Founder of Ruang Guru"/>
+            <SpeakerKeynoteItem
+              number="II"
+              name="Dr. Melani Budianta"
+              job="Professor of Interdisciplinary Humanities"
+              photo={<Melani />}
+              description={
+                <>
+                  <Text medium component="p">
+                    Melani Budianta, is a professor at the Faculty of Humanities, Universitas Indonesia, teaching cultural studies, multiculturalism and literary studies. She got her BA at the English Studies Program, UI, and MA in American Studies at the University of Southern California, and Ph.D. in English from Cornell University. She serves as member of editorial collective in a number of academic journals, including Inter-Asia Cultural Studies, Jurnal Wacana (FIBUI), Wacana Seni (Malaysia), Indian Journal of Gender Studies.  She has also served in various professional and regional/international collaborative efforts in futhering scholarship and exchanges: as fellow and board member in ARENA (Asian Regional Exchange for New Alternatives), Asian Scholarship Foundation, and Consortium of Inter-Asia Cultural Studies Institution; selection committee member in Arryman Fellowship, Asian Public Intellectual,  SEASREP,  and EUROSEAS Book Prize 2015;  research fellow at Asia Research Institute (2010), KITLV (2011); visiting lecturer at Kyoto University (2016) dan University of Naples d’Orientale (2018).
+                  </Text>
+                  <Text medium component="p">
+                    Known as a scholar/activist with interdisciplinary and transdisciplinary engagements, Melani has worked with women’s groups, village community leaders, and cultural workers to promote gender equity, tolerant and culturally vibrant society. Together with Dhita Hapsarani, Melani Budianta recently edited a book entitled Meniti Arus Lokal-Global, Jejaring Budaya Kampung (Jakarta, Infermia Publishing, 2018), written by members of Jaringan Kampung Nusantara (Nusantara Kampung Network), who share their experience in empowering kampung communities.  Her article, “Smart Kampung: Doing Cultural Studies in the Global South” is forthcoming in the journal Critical/Communication Studies. In 2017 she and Manneke Budiman served as literary curators for the Europalia Indonesia Festival in Europe, bringing 11 writers to showcase the diversity of Indonesian culture.
+                  </Text>
+                  <Text medium component="p">
+                    Her other publications include An Ocean of Becoming, Literature from the Indonesian Archipelago (editor, with Manneke Budiman), Jakarta, Lontar Foundation, 2017, Indonesian Women Writers, (editor, with Yvonne Michalik), Regiospectra Verlag, 2015.  Among her published articles are “Work Migration and Cultural Belonging in Globalized Asia”, IJCS 2016 vol 19 (3); “Malang Cosmopolitanism in 1950” in Cosmopolitan Asia; Littoral Epistemologies of the Global South , eds. Sharmani Patricia Gabriel,  Fernando Rosa,  Routledge, 2015;  “Beyond Multiculturalism: Redefining Nationhood in a Globalized Age, “ Naam-Kok, Kim (ed), Multiculturalism and Challenges of Democratization in Europe and Asia,  Ashgate, 2014. With Hilmar Farid and Abidin Kusno, she edited a special issue of Inter-Asia Cultural Studies, Vol 12, 4 December (2011) on Runaway City/Leftover Spaces.
+                  </Text>
+                </>
+              }
+              />
           </div>
         </Container>
       </>
@@ -81,7 +99,7 @@ const MayorsSpeaker = props => {
           <Speaker name="Mrs. Hj. Badingah, S.sos." job="Regent of Gunung Kidul (Yogyakarta)" photo={<Badingah/>} />
           <Speaker name="Mr. F.X. Hadi Rudyatmo" job="Mayor of Surakarta (Central Java)" photo={<FxHadi/>} />
           <Speaker name="Mr. H. Ibnu Sina, S.Pi., M.Si." job="Mayor of Banjarmasin (South Kalimantan)" photo={<IbnuSina/>} />
-          <Speaker name="Dr. H. Najmul Akhyar, S.H., M.H." job="Regent of Lombok Utara (Nusa Tenggara Barat)" noPhoto />
+          <Speaker name="Dr. H. Najmul Akhyar, S.H., M.H." job="Regent of Lombok Utara (Nusa Tenggara Barat)" photo={<Najmul/>} />
           <Speaker name="Dr.(H.C.) Ir. Tri Rismaharini, M.T.*" job="Mayor of Surabaya (East Java)" photo={<Risma/>} />
         </CountrySection>
         {/* <CountrySection label="Philippines" id="philippines">

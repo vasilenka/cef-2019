@@ -288,10 +288,10 @@ const SchedulesFull = ({
                   label="Speaker II"
                   name="Dr. Melani Budianta"
                   job="Professor of Interdisciplinary Humanities" />
-                <TalkSpeaker
+                {/* <TalkSpeaker
                   label="Speaker III"
                   name="Mr. Adamas Belva Syah Devara*"
-                  job="CEO and Founder of Ruang Guru" />
+                  job="CEO and Founder of Ruang Guru" /> */}
               </SubTalk>
             </Talk>
             <ToBeConfirmed />
@@ -327,6 +327,9 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Dr. Keo Piseth"
                 job="Director, Center for Sustainable Development Studies, Asian Vision Institute, Cambodia"/>
+              <TalkSpeaker
+                name="Dr. Vissia Ita Yulianto"
+                job="Universitas Gadjah Mada"/>
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 

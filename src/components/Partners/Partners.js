@@ -6,7 +6,7 @@ import Box from '../Box/Box';
 import Container from '../../layouts/Container/Container';
 import Text from '../../primitives/Text/Text';
 import { Chulalongkorn, Ford, Kyoto, AsiaCenter, Solo, Ayus  } from './../images/fundings'
-import { SoloCity, Banjarmasin, Surabaya, Yala, Sagada, Gunungkidul, Mataram  } from './../images/govs'
+import { SoloCity, Banjarmasin, Surabaya, Yala, LombokUtara, Gunungkidul, Mataram  } from './../images/govs'
 
 import {
   AsianVision,
@@ -25,7 +25,7 @@ import {
   Mekong,
   Monash,
   Morris,
-  Participatory,
+  // Participatory,
   Simon,
   Sunan  } from './../images/collaborators'
 
@@ -110,12 +110,12 @@ const Partners = ({
                 children={<Mekong />}
                 name="Mekong Watch"
                 to="http://www.mekongwatch.org/english/"/>
-              <PartnerContainer
+              {/* <PartnerContainer
                 className={styles.fundingSecond}
                 children={<Participatory />}
                 name="Participatory Development Training Centre"
                 to="https://www.padetc.org/"
-                />
+                /> */}
             </Box>
           </Container>
         </Box>
@@ -128,7 +128,7 @@ const Partners = ({
               <PartnerContainer className={styles.partnerCity} children={<Surabaya />} name="Surabaya" to="https://www.surabaya.go.id/" />
               <PartnerContainer className={styles.partnerCity} children={<SoloCity />} name="Surakarta" to="http://surakarta.go.id/"/>
               <PartnerContainer className={styles.partnerCity} children={<Gunungkidul />} name="Gunungkidul Regency" to="https://gunungkidulkab.go.id/"/>
-              <PartnerContainer className={styles.partnerCity} children={<Sagada />} name="Municipality of Sagada"/>
+              <PartnerContainer className={styles.partnerCity} children={<LombokUtara />} name="Lombok Utara Regency" to="http://lombokutarakab.go.id/v1/"/>
               <PartnerContainer className={styles.partnerCity} children={<Yala />} name="Yala Municipality" to="http://www.yalacity.go.th/frontpage"/>
             </Box>
           </Container>
