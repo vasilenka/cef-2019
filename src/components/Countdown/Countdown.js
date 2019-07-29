@@ -10,7 +10,7 @@ const Countdown = ({
   ...restProps
   }) => {
 
-  const [then] = React.useState(new Date('Augustus 20, 2019 08:00:00'))
+  const [then] = React.useState(Date.parse('August 20, 2019 08:00:00'))
   const [now] = React.useState(Date.now())
   const [daysLeft, setDaysLeft] = React.useState(0)
   const [hoursLeft, setHoursLeft] = React.useState(0)
