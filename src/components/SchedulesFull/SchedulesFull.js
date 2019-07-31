@@ -282,11 +282,11 @@ const SchedulesFull = ({
               <SubTalk title="Keynote Speech: Youth Leadership toward People-Centered Society">
                 <TalkSpeaker
                   label="Speaker I"
-                  name="Dr. Michael Northcott"
+                  name="Prof. Michael Northcott"
                   job="Professor of Religion and Ecology" />
                 <TalkSpeaker
                   label="Speaker II"
-                  name="Dr. Melani Budianta"
+                  name="Prof. Melani Budianta"
                   job="Professor of Interdisciplinary Humanities" />
                 {/* <TalkSpeaker
                   label="Speaker III"
@@ -318,7 +318,7 @@ const SchedulesFull = ({
             <Talk title="Mobility in the Changing Landscape of Southeast Asia">
               <Role label="Convener"/>
               <TalkSpeaker
-                name="Dr. Rachada Jayagupta"
+                name="Dr. Ratchada Jayagupta"
                 job="Asian Research Center for Migration, Inst. of Asian Studies, Chulalongkorn University" />
               <Role label="Presenter" />
               <TalkSpeaker
@@ -328,8 +328,8 @@ const SchedulesFull = ({
                 name="Dr. Keo Piseth"
                 job="Director, Center for Sustainable Development Studies, Asian Vision Institute, Cambodia"/>
               <TalkSpeaker
-                name="Dr. Vissia Ita Yulianto"
-                job="Universitas Gadjah Mada"/>
+                name="Dr. Vissia Ita Yullianto"
+                job="Center for Southeast Asian Social Studies, Universitas Gadjah Mada"/>
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
             </Talk>
 
@@ -456,11 +456,11 @@ const SchedulesFull = ({
               <TalkSpeaker
                 name="Mr. Aryo Wiryawan"
                 job="CEO, Indmira; Founder of Jala" />
-              <TalkSpeaker
+              {/* <TalkSpeaker
                 name="Dr. Saroja Devi D/O Neyson Doraira"
-                job="Senior Lecturer, Dept. of Sociology, National University of Singapore" />
+                job="Senior Lecturer, Dept. of Sociology, National University of Singapore" /> */}
               <TalkSpeaker
-                name="Ms. Varangkhana Nimhatta"
+                name="Ms. Varangkanang Nimhutta"
                 job="Sustainable Agriculture Foundation, Thailand" />
               <UrbanFarming />
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>

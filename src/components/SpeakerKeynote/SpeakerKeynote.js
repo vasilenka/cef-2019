@@ -16,12 +16,12 @@ const SpeakerKeynote = ({
   ...restProps
   }) => {
   return (
-    <Box className={cx(styles.root)} {...restProps}>
+    <Box className={cx(styles.root)}>
       {id && <Hack id={id.toLowerCase().replace(' ', '-')}/>}
       <Container narrow className={cx(styles.container)}>
         { sectionTitle && <Text heading3 component="h3" className={styles.sectionTitle}>{sectionTitle}</Text> }
         { title && <Text component="h2" heading5 className={styles.title}>{title}</Text> }
-        { children && <div className={styles.speakerContainer}>{children}</div> }
+        { children && <div className={styles.speakerContainer} {...restProps}>{children}</div> }
       </Container>
     </Box>
   )

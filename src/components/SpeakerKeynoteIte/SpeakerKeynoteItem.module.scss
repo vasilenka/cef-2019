@@ -3,7 +3,7 @@
 .keynote {
   composes: col-12 from global;
   padding-bottom: 0;
-  margin-bottom: $space-ml;
+  margin-bottom: $space-ll;
   @include screen(phone) {
     padding-left: 12px;
     padding-right: 12px;
@@ -93,9 +93,18 @@
 
 .bio {
   padding-right: $space-ml;
+  flex: 1;
 }
 
 .name {
+  color: $dark-hex-80;
+  font-family: $font-secondary;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.nameAlt {
   color: $dark-hex-80;
   font-family: $font-primary;
   &:not(:last-child) {
@@ -158,13 +167,16 @@
 
 .photo {
   width: 240px;
+  // max-width: 240px;
 
   @include screen(phone) {
     min-width: 128px;
+    max-width: 192px;
     height: 216px;
   }
   @include screen(tabPortrait) {
     min-width: 128px;
+    max-width: 192px;
     height: 240px;
   }
   @include screen(tabLandscape) {

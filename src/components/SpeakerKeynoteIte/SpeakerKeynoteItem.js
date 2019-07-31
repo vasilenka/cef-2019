@@ -13,15 +13,15 @@ const SpeakerKeynoteItem = ({
   ...restProps
   }) => {
   return (
-    photo
+    photo || description
       ?
       <div className={cx(styles.keynote)}>
         <main className={styles.profile}>
-          <Text heading5 component="p" className={styles.number}>SPEAKER {number}</Text>
+          {number && <Text heading5 component="p" className={styles.number}>SPEAKER {number}</Text>}
           <div className={styles.container}>
             <header className={styles.bio}>
               <Text heading3Alt component="h3" className={styles.name}>{name}</Text>
-              <Text heading5 component="p" className={styles.job}>{job}</Text>
+              {job && <Text heading5 component="p" className={styles.job}>{job}</Text>}
               {description && <article className={styles.description}>{description}</article>}
             </header>
             <div className={styles.photo}>
@@ -40,7 +40,7 @@ const SpeakerKeynoteItem = ({
         <main className={styles.profile}>
           <Text heading5 component="p" className={styles.number}>SPEAKER {number}</Text>
           <header>
-            <Text heading3Alt component="h3" className={styles.name} style={{fontSize: '20px'}}>{name}</Text>
+            <Text heading3Alt component="h3" className={styles.nameAlt} style={{fontSize: '20px'}}>{name}</Text>
             <Text heading5 component="p" className={styles.job}>{job}</Text>
           </header>
         </main>

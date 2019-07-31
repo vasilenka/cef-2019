@@ -10,12 +10,15 @@ import SpeakerNotes from "../SpeakerNotes/SpeakerNotes"
 import {
   Ahyar,
   Badingah,
+  EEdwards,
   FxHadi,
+  DefaultPhoto,
   IbnuSina,
   Melani,
   Najmul,
   Northcott,
   Pongsak,
+  Ratchada,
   Risma,
 } from './../images/speakers'
 import Text from '../../primitives/Text/Text'
@@ -36,8 +39,8 @@ export const KeynoteSpeakers = props => {
   return (props.noHeader
     ?
       <div className={styles.speakersContainer} style={{marginBottom: '48px'}} >
-        <SpeakerKeynoteItem number="I" name="Dr. Michael Northcott" job="Professor of Religion and Ecology"/>
-        <SpeakerKeynoteItem number="II" name="Dr. Melani Budianta" job="Professor of Interdisciplinary Humanities"/>
+        <SpeakerKeynoteItem number="I" name="Prof. Michael Northcott" job="Professor of Religion and Ecology"/>
+        <SpeakerKeynoteItem number="II" name="Prof. Melani Budianta" job="Professor of Interdisciplinary Humanities"/>
       </div>
     :
       <>
@@ -46,7 +49,7 @@ export const KeynoteSpeakers = props => {
           <div className={styles.speakersContainer} style={{marginBottom: 0}}>
             <SpeakerKeynoteItem
               number="I"
-              name="Dr. Michael Northcott"
+              name="Prof. Michael Northcott"
               job="Professor of Religion and Ecology"
               photo={<Northcott />}
               description={
@@ -62,7 +65,7 @@ export const KeynoteSpeakers = props => {
               />
             <SpeakerKeynoteItem
               number="II"
-              name="Dr. Melani Budianta"
+              name="Prof. Melani Budianta"
               job="Professor of Interdisciplinary Humanities"
               photo={<Melani />}
               description={
@@ -118,7 +121,60 @@ const MayorsSpeaker = props => {
 
 const SessionConveners = props => {
   return (
-    <SpeakerKeynote sectionTitle="Public Forum‘s Session Conveners" id="session-conveners">
+    <SpeakerKeynote sectionTitle="Public Forum‘s Session Conveners" id="session-conveners" style={{ paddingTop: 48 }}>
+      <SpeakerKeynoteItem
+        name="Dr. Ratchada Jayagupta "
+        photo={<Ratchada />}
+        description={
+          <>
+            <Text medium component="p">
+              Dr. Ratchada JAYAGUPTA is the Thailand’s Representative to the ASEAN Commission on the Promotion and Protection of the Rights of Women and Children (ACWC) for Women’s Rights. She is also a senior researcher and a lecturer at the Asian Research Center for Migration at the Institute of Asian Studies, Chulalongkorn University, Bangkok, Thailand. Currently, she is a member of National Sub-Committee on anti-human trafficking especially for women and children. She is also a member of National Sub-Committee on anti-human trafficking in the Mekong Sub-Region.
+              In August 2018, she received the distinguished award from the Department of Special Investigation (DSI), Ministry of Justice, Thailand; the Network Model Award 2018 in saluting her collaboration with DSI to accentuate the prevention and protection of the organised crime in Thailand and Southeast Asian region.
+            </Text>
+            <Text medium component="p">
+              Previously, Dr. Ratchada Jayagupta was a National Programme Officer for Governance CEDAW (Convention on the Elimination of All Forms of Discrimination Against Women) Southeast Asia Programme at UN WOMEN regional office for Asia and the Pacific. She was also a National Project Coordinator of United Nations Inter- Agency Project on Human Trafficking in the Mekhong Sub-Region (UNIAP-Thailand Office). Dr. Ratchada received her Ph.D. in Development Administration at the National Institute for Development Administration (NIDA), Thailand (international program). She was a visiting fellow at University of Oxford during her dissertation development in 2006. She was an elected Member of Executive Committee for 11th International Association for the Study of Forced Migration (IASFM) International Conference (2006-2008), and an appointed Member of Program Committee for 9th and 10th IASFM International Conference (2003-2006).
+            </Text>
+          </>
+        }
+      />
+    </SpeakerKeynote>
+  )
+}
+
+const MayorsSymposium = props => {
+  return (
+    <SpeakerKeynote sectionTitle="MAYORS’ SYMPOSIUM’S SPEAKERS" id="symposium-speakers" style={{ paddingTop: 48 }}>
+      <SpeakerKeynoteItem
+        name="Dr. Toshiyuki Doi"
+        photo={<DefaultPhoto />}
+        description={
+          <>
+            <Text medium component="p">
+              Toshiyuki Doi works for Mekong Watch, a Tokyo-based NGO, which monitors environmental, social, and human rights impacts of large-scale projects, such as hydropower dams, to ensure that local communities are not negatively affected but are instead benefited by Mekong’s development. Toshi has also helped organize the Solo Forum as Academic Advisor, Institute of Asian Studies, Chulalongkorn University in Thailand.
+            </Text>
+            <Text medium component="p">
+              Toshi’s research interest covers language endangerment and revitalization, bio-cultural diversity, and peoples’ stories. His recent publications include “Plants, Animals, Salt, and Spirits: How People Live with and Talk about the Environment” (With Bampen Chaiyarak, in Militante et al. eds. Humanity and Nature: Traditional, Cultural, and Alternative Perspectives, Focus on the Global South, 2016), “Cheum Chong: Outcomes and Challenges of Chong Language Revitalization Project” (In Premsrirat &amp; Hirsh eds. Language Revitalization: Insights from Thailand. Peter Lang, 2018), and Motion Event Expression of So, a Marginal Language in Sakhon Nakhon Province in Northeast Thailand (Ph.D. thesis, Mahidol University, Thailand, 2018).
+            </Text>
+          </>
+        }
+      />
+      <SpeakerKeynoteItem
+        name="Dr. Elise Edwards"
+        photo={<EEdwards />}
+        description={
+          <>
+            <Text medium component="p">
+              Elise Edwards is an Assistant Professor of Religion at Baylor University in Waco, Texas.   Dr. Edwards teaches courses in Christian ethics and theology in Baylor’s Department of Religion.  She earned her Ph.D. in Religion at Claremont Graduate University in California, where she studied Theology, Ethics, and Culture.  Prior to pursuing a Ph.D. in theology, Dr. Edwards worked as an architect in Washington D.C. and she still maintains her license to practice architecture.  She earned her Bachelor of Science and Master of Architecture degrees at Florida A&amp;M University, and a Master of Theological Studies at the John Leland Center for Theological Studies, a Baptist seminary.
+            </Text>
+            <Text medium component="p">
+              In her architectural career, Dr. Edwards focused on college and university buildings, which is now where she spends most of her days teaching and doing research. Her research is interdisciplinary, moving between fields of theology, ethics, architectural theory, and aesthetics to examine issues of civic engagement and to question how Christian beliefs and commitments are expressed publicly. As a black feminist, Dr. Edwards focuses her research on cultural expressions by, for, and about women and marginalized communities. She is co-editing the Routledge Handbook of Religion and Cities and also working on her first book, Building Justice: Theological Commitments in Architectural Design, which is about Christian values in architecture.
+            </Text>
+            <Text medium component="p">
+              Dr. Edwards serves her local community and broader academic community through numerous leadership roles in Creative Waco, the American Academy of Religion, and the Society of Christian Ethics.
+            </Text>
+          </>
+        }
+      />
     </SpeakerKeynote>
   )
 }
@@ -132,6 +188,7 @@ const AllSpeakers = ({
       <KeynoteSpeakers/>
       <MayorsSpeaker />
       <SessionConveners />
+      <MayorsSymposium/>
       <SpeakerNotes />
     </main>
   )
