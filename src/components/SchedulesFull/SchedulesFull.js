@@ -20,8 +20,7 @@ const Role = props => (
     component="h4"
     heading5={props.name ? true : false}
     heading6={!props.name ? true : false}
-    className={styles.role}
-  >
+    className={styles.role}>
     {props.label}{" "}
     <span style={{ textTransform: "capitalize" }}>
       {props.name && props.name}
@@ -34,23 +33,23 @@ const Country = props => (
   </Text>
 )
 
-const Details = props => {
+export const Details = props => {
   const [show, setShow] = React.useState(false)
   return (
     <>
       <button
         type="button"
         className={styles.detailAction}
-        onClick={() => setShow(!show)}
-      >
+        onClick={() => setShow(!show)}>
         {show ? (
           <>
-            Hide details{" "}
+            {props.close ? props.close + " " : "Hide details "}
             <Arrow style={{ width: "24px", transform: "rotate(180deg)" }} />
           </>
         ) : (
           <>
-            Show details <Arrow style={{ width: "24px" }} />
+            {props.open ? props.open + " " : "Show details "}
+            <Arrow style={{ width: "24px" }} />
           </>
         )}
       </button>
@@ -60,22 +59,99 @@ const Details = props => {
           <button
             type="button"
             className={styles.detailAction}
-            onClick={() => setShow(!show)}
-          >
+            onClick={() => setShow(!show)}>
             {show ? (
               <>
-                Hide details{" "}
+                {props.close ? props.close + " " : "Hide details "}
                 <Arrow style={{ width: "24px", transform: "rotate(180deg)" }} />
               </>
             ) : (
               <>
-                Show details <Arrow style={{ width: "24px" }} />
+                {props.open ? props.open + " " : "Show details "}
+                <Arrow style={{ width: "24px" }} />
               </>
             )}
           </button>
         </main>
       )}
     </>
+  )
+}
+
+const MemoryResillence = () => {
+  return (
+    <Details>
+      <Text heading3Alt component="h3" style={{ marginBottom: "24px" }}>
+        Memory as Resilience: Inter-spatial and generational Transmission of
+        Disaster Experience to Build a Sustainable Society
+      </Text>
+      <Text medium component="p" style={{ marginBottom: "24px" }}>
+        In this workshop, we view resilience as the extent to which
+        urban/community residents can access opportunities to “narrate” their
+        experiences with the disaster to find ways to cope with it, rather than
+        simply relying on means given externally, in particular infrastructure
+        improvement, training, media reports, etc. In this definition,
+        survivors’ practices such as recalling their first meals after the
+        disaster while conversing with their neighbors, taking pictures of their
+        houses which are being dismantled, or even resisting to talking about
+        the disaster can all count as “acts of resilience”.
+      </Text>
+      <Text medium component="p" style={{ marginBottom: "24px" }}>
+        We first try to substantiate this view of resilience by understanding
+        how disaster-affected people try to make sense of what has happened to
+        them, while looking into several disasters which have occured in Asia:
+        an atomic bomb attack and a recent large-scale flooding in Hiroshima,
+        nuclear explosions triggered by an earthquake and tsunami in Fukushima,
+        mass killing and other crimes against humanity committed by Khmer Rough
+        in Cambodia, and impacts felt by the disaster-vulnerable riverbank
+        community in Kali Code, Indonesia. The guiding question is when, how,
+        why, through what (digital) means, and with whom do disaster survivors
+        talk (or not talk) about the disaster?
+      </Text>
+      <Text heading4 component="h3" style={{ marginBottom: "12px" }}>
+        Following and / or during this discussion, we also try to answer
+        questions such as:
+      </Text>
+      <ul style={{ marginBottom: "24px", paddingLeft: "24px" }}>
+        <Text
+          medium
+          component="li"
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
+          Learn best practices;
+        </Text>
+        <Text
+          medium
+          component="li"
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
+          “Acts of resilience” are very diverse.How diverse do we like them to
+          be ? As an extreme example, can we consider memory of a new- born baby
+          at the time of the disaster be an act of resilience ? Can “outsiders”
+          like volunteer rescuers talk about their disaster experiences ? What
+          about news reporters, scientists, and others?
+        </Text>
+        <Text
+          medium
+          component="li"
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
+          Do “acts of resilience” contribute to building a resilient and
+          sustainable(and just and dignified) society ? If so, how ? How are
+          they different from other more “usual” measures of resilience such as
+          infrastructure development and security training ?
+        </Text>
+      </ul>
+    </Details>
   )
 }
 
@@ -143,23 +219,32 @@ const Education = () => {
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Learn best practices;
         </Text>
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Examine strengths and weaknesses, as well as potentials and pitfalls,
           of these case examples; and
         </Text>
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Generate ideas for applying the knowledge to their local examples and
           beyond.
         </Text>
@@ -199,32 +284,44 @@ const StrategicLens = () => {
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Understanding when to engage, and creating role clarity between
           members of the public, experts, staff and elected officials
         </Text>
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Defining your local government’s intended outcomes for public
           engagement
         </Text>
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Integrating the IAP2 spectrum of participation into a wider strategic
           context
         </Text>
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Reviewing the characteristics of highly effective public engagement,
           including structured questions to ask when starting a new engagement
           initiative
@@ -232,16 +329,22 @@ const StrategicLens = () => {
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Supporting alignment of public engagement goals and planning across
           your organization
         </Text>
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Planning post-engagement follow-through
         </Text>
       </ul>
@@ -333,24 +436,33 @@ const ShowcasingInnovativeProducts = () => {
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Update their knowledge for the new initiative of public participation
           on the innovation for the urban living;
         </Text>
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Invite public and corporate investment to develop the product to
           ensure its sustainability; and
         </Text>
         <Text
           medium
           component="li"
-          style={{ listStyle: "disc", paddingTop: "4px", paddingBottom: "4px" }}
-        >
+          style={{
+            listStyle: "disc",
+            paddingTop: "4px",
+            paddingBottom: "4px",
+          }}>
           Activate the public awareness of the importance of the initiative and
           boost further the creative ideas.
         </Text>
@@ -368,8 +480,7 @@ const ToBeConfirmed = () => (
       fontSize: "12px",
       padding: "8px",
       backgroundColor: "rgba(0,0,0,.04)",
-    }}
-  >
+    }}>
     <strong>* To be confirmed</strong>
   </footer>
 )
@@ -387,8 +498,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 <a
                   href="https://thesunanhotelsolo.com/"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   The Sunan Hotel
                 </a>
               </Text>
@@ -478,8 +588,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 <Text
                   medium
                   component="li"
-                  style={{ paddingLeft: 0, listStyle: "none" }}
-                >
+                  style={{ paddingLeft: 0, listStyle: "none" }}>
                   Hosted by City of Surakarta
                 </Text>
               </SubTalk>
@@ -494,8 +603,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
             <Text
               component="h3"
               heading5Alt
-              style={{ marginBottom: "4px", textTransform: "capitalize" }}
-            >
+              style={{ marginBottom: "4px", textTransform: "capitalize" }}>
               Opening
             </Text>
             <Talk title="Civic Engagement 4.0: Creating an Innovative Platform">
@@ -525,25 +633,23 @@ const SchedulesFull = ({ className, ...restProps }) => {
                   name="Mr. Adamas Belva Syah Devara*"
                   job="CEO and Founder of Ruang Guru" /> */}
               </SubTalk>
+              <ScheduleVenue>Ballroom II</ScheduleVenue>
             </Talk>
             <ToBeConfirmed />
           </ScheduleItem>
           <ScheduleItem
             hour="9:30am"
             tag="Plenary Session"
-            venue="Sebelas Maret University, Solo"
-          >
+            venue="Sebelas Maret University, Solo">
             <Text
               component="h3"
               heading5Alt
-              style={{ marginBottom: "4px", textTransform: "capitalize" }}
-            >
+              style={{ marginBottom: "4px", textTransform: "capitalize" }}>
               Civic Engagement 4.0: Overview
             </Text>
             <Talk
               title="Building on: From Yogya and Bangkok to Solo"
-              facilitators
-            >
+              facilitators>
               <TalkSpeaker
                 name="Dr. Toshiyuki Doi"
                 job="Senior Advisor, Mekong Watch, Japan; Academic Advisor, Institute of Asian Studies, Chulalongkorn University"
@@ -556,6 +662,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Associate Professor Dr. Yeoh Seng Guan"
                 job="School of Arts and Social Sciences, Monash University, Malaysia"
               />
+              <ScheduleVenue>Ballroom II</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="10:00am">
@@ -583,7 +690,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Dr. Vissia Ita Yullianto"
                 job="Center for Southeast Asian Social Studies, Universitas Gadjah Mada"
               />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>Ballroom I</ScheduleVenue>
             </Talk>
 
             <Talk title="Showcasing Innovative Products for Urban Living">
@@ -607,7 +714,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Universitas Kristen Duta Wacana"
               />
               <ShowcasingInnovativeProducts />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>Wiryowidagdo I</ScheduleVenue>
             </Talk>
 
             <Talk title="Education 4.0: Knowledge, Innovation and Civic Engagement toward Global Leadership">
@@ -632,7 +739,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
               <Role label="Discussant" />
               <TalkSpeaker name="Dr. Wasana Wongsutarat" />
               <Education />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>Ballroom II</ScheduleVenue>
             </Talk>
 
             <Talk title="Beyond Waste Management">
@@ -641,9 +748,11 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Dr. Kohei Watanabe"
                 job="Teikyo University, Japan"
               />
+              <TalkSpeaker
+                name="Dr. Eng. Kusumaningdyah Nurul Handayani, S.T., M.T."
+                job="Urban Rural Design and Conservation Laboratory, Department of Architecture, Universitas Sebelas Maret"
+              />
               <Role label="Presenters" />
-              {/* <TalkSpeaker
-                name="Bank Sampah (Waste Bank Women’s Group)" /> */}
               <TalkSpeaker
                 name="Prof. Tomoko Okayama"
                 job="Taisho University, Japan"
@@ -656,7 +765,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Ms. Penchom Saetang"
                 job="Director, Ecological Alert and Recovery, Thailand"
               />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>Wiryowidagdo II</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="00:30pm">
@@ -667,8 +776,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
           <ScheduleItem hour="2:00pm" tag="Parallel Session II">
             <Talk
               workshop
-              title="Memory as Resilience: Inter-spatial and generational Transmission of Disaster Experience to Build a Sustainable Society"
-            >
+              title="Memory as Resilience: Inter-spatial and generational Transmission of Disaster Experience to Build a Sustainable Society">
               <Role label="Conveners/Facilitators" />
               <TalkSpeaker name="Dr. Toshiyuki Doi" job="Mekong Watch" />
               <TalkSpeaker
@@ -696,7 +804,8 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Prof. Michael Northcott"
                 job="University of Edinburgh"
               />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <MemoryResillence />
+              <ScheduleVenue>Wiryowidagdo II</ScheduleVenue>
             </Talk>
 
             <Talk workshop title="Civic Engagement, a Strategic Lens">
@@ -705,19 +814,22 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Ms. Elodie Jacquet"
                 job="Manager of Knowledge and Practice, Dialogue and Civic Engagement Program, Simon Fraser University, Canada"
               />
+              <TalkSpeaker
+                name="Mr. Ahyani, M.A."
+                job="City of Surakarta Regional Secretary"
+              />
               <Role label="Resource Person" />
               <TalkSpeaker
                 name="Dr. Chhaeng Vannarith"
                 job="President, Asian Vision Institute, Cambodia"
               />
               <StrategicLens />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>Ballroom I</ScheduleVenue>
             </Talk>
 
             <Talk
               workshop
-              title="Urban Farming: Steps toward Food Safety, Security and Sovereignty"
-            >
+              title="Urban Farming: Steps toward Food Safety, Security and Sovereignty">
               <Role label="Convener/Facilitator" />
               <TalkSpeaker
                 name="Ms. Supa Yaimuang"
@@ -737,13 +849,12 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Sustainable Agriculture Foundation, Thailand"
               />
               <UrbanFarming />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>Ballroom II</ScheduleVenue>
             </Talk>
 
             <Talk
               workshop
-              title="Listening Partnerships Living Fully and Leading with Integrity in a Time of Crisis"
-            >
+              title="Listening Partnerships Living Fully and Leading with Integrity in a Time of Crisis">
               <Role label="Convenor/Facilitator" />
               <TalkSpeaker
                 name="Mr. Ted Mayer"
@@ -759,19 +870,8 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Muhammadiyah University in Riau"
               />
               <ListeningPartnership />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>Wiryowidagdo II</ScheduleVenue>
             </Talk>
-
-            {/* <Talk title="Pushing the Boundaries: Asian Youth in Trans-Culture 4.0">
-              <Role label="Co-Convener" />
-              <TalkSpeaker
-                name="Dr. Wasana Wongsutarat"
-                job="Chulalongkorn University" />
-              <TalkSpeaker
-                name="Dr. Chhaeng Vannarith"
-                job="President, Asian Vision Institute, Cambodia" />
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
-            </Talk> */}
           </ScheduleItem>
           <ScheduleItem hour="4:00pm">
             <Text component="h3" heading4 style={{ marginBottom: "0px" }}>
@@ -780,7 +880,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
           </ScheduleItem>
           <ScheduleItem hour="4:15pm - 5.15pm" tag="Plenary Session">
             <Talk title="Synthesis Building Linkages with Strategic Partners">
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>Ballroom II</ScheduleVenue>
             </Talk>
           </ScheduleItem>
         </ScheduleSection>
@@ -797,7 +897,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 <TalkSpeaker name="Dr. Siti Syamsiyatun" job="Director, ICRS" />
               </SubTalk>
               <SubTalk title="Award giving ceremony “Sustainable, Just and Smart Urban Living Innovation Award"></SubTalk>
-              <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
+              <ScheduleVenue>Syailendra Ballroom</ScheduleVenue>
             </Talk>
             <Talk title="Roundtable: Mayors’ Innovation Pitch">
               <Country label="Cambodia" />
@@ -863,6 +963,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
             <Text component="h3" heading4 style={{ marginBottom: "0px" }}>
               Coffee Break - Press Conference with City Mayors
             </Text>
+            <ScheduleVenue>Ballroom III</ScheduleVenue>
           </ScheduleItem>
           <ScheduleItem hour="10:45am">
             <Talk title="Mayors’ Interface with Civil Society (Part I)">
@@ -888,8 +989,8 @@ const SchedulesFull = ({ className, ...restProps }) => {
               <SubTalk title="Responses from mayors">
                 <Role label="Moderator" />
                 <TalkSpeaker
-                  name="Dr. Hezri Adnan*"
-                  job="Chief Executive Officer, Langkawi Development Agency (LADA), Malaysia"
+                  name="Dr. Leonard Chrysostomos"
+                  job="Core Doctoral Faculty, ICRS"
                 />
               </SubTalk>
               <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
@@ -920,7 +1021,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 />
                 <TalkSpeaker
                   name="Dr. Ilyas Mohammed"
-                  job="University of Liverpool, Singapore Campus"
+                  job="Lecturer in Criminology and Security, University of Liverpool, Singapore"
                 />
               </SubTalk>
               <SubTalk title="Responses from mayors">
@@ -946,8 +1047,11 @@ const SchedulesFull = ({ className, ...restProps }) => {
             <SubTalk title="Solo Forum Wrap Up">
               <Talk
                 title="Civic Engagement 4.0: A Call for Action"
-                style={{ marginBottom: 0, paddingBottom: 0, paddingTop: 0 }}
-              ></Talk>
+                style={{
+                  marginBottom: 0,
+                  paddingBottom: 0,
+                  paddingTop: 0,
+                }}></Talk>
             </SubTalk>
             <SubTalk title="Closing Ceremony"></SubTalk>
             <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
@@ -961,8 +1065,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
               <Text
                 medium
                 component="li"
-                style={{ paddingLeft: 0, listStyle: "none" }}
-              >
+                style={{ paddingLeft: 0, listStyle: "none" }}>
                 Hosted by the City Government of Solo
               </Text>
             </Talk>

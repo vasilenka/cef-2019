@@ -13,3 +13,7 @@ export { Northcott } from "./Northcott"
 export { Pongsak } from "./Pongsak"
 export { Ratchada } from "./Ratchada"
 export { Risma } from "./Risma"
+
+export { Ted } from "./Ted"
+export { Sachi } from "./Sachi"
+export { Watanabe } from "./Watanabe"
