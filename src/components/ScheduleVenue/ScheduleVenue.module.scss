@@ -1,7 +1,12 @@
-@import 'src/tokens';
+@import "src/tokens";
 
 .root {
   padding: $space-vertical-ml;
+  width: 100%;
+}
+
+.rootAlt {
+  padding: $space-vertical-xs;
   width: 100%;
 }
 
@@ -10,6 +15,14 @@
   width: 100%;
   background-color: $brand-secondary-10;
   border: 1px solid $brand-secondary-60;
+}
+
+.containerAlt {
+  padding: $space-s $space-sm;
+  width: 100%;
+  background-color: $brand-secondary-10;
+  border: 1px solid $brand-secondary-60;
+  border-radius: 4px;
 }
 
 .iconContainer {

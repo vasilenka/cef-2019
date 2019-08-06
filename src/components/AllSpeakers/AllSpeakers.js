@@ -24,6 +24,7 @@ import {
   Ratchada,
   Risma,
   Ted,
+  Toshiyuki,
   Watanabe,
   Sachi,
 } from "./../images/speakers"
@@ -415,7 +416,7 @@ const SessionConveners = props => {
       />
       <SpeakerKeynoteItem
         name="Dr. Toshiyuki Doi"
-        photo={<DefaultPhoto />}
+        photo={<Toshiyuki />}
         description={
           <>
             <Text medium component="p">

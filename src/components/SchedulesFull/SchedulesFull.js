@@ -9,7 +9,7 @@ import ScheduleItem from "../ScheduleItem/ScheduleItem"
 import Day from "../Day/Day"
 import ScheduleSection from "../ScheduleSection/ScheduleSection"
 import Talk from "../Talk/Talk"
-import ScheduleVenue from "../ScheduleVenue/ScheduleVenue"
+import ScheduleVenue, { ScheduleVenueAlt } from "../ScheduleVenue/ScheduleVenue"
 import TalkSpeaker from "../TalkSpeaker/TalkSpeaker"
 import SubTalk from "../SubTalk/SubTalk"
 
@@ -607,6 +607,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
               Opening
             </Text>
             <Talk title="Civic Engagement 4.0: Creating an Innovative Platform">
+              <ScheduleVenueAlt>Ballroom II</ScheduleVenueAlt>
               <Role
                 label="MC: "
                 name="Ms. Michiko Yoshida, Chulalongkorn University"
@@ -633,14 +634,15 @@ const SchedulesFull = ({ className, ...restProps }) => {
                   name="Mr. Adamas Belva Syah Devara*"
                   job="CEO and Founder of Ruang Guru" /> */}
               </SubTalk>
-              <ScheduleVenue>Ballroom II</ScheduleVenue>
+              {/* <ScheduleVenue>The Sunan Hotel</ScheduleVenue> */}
             </Talk>
-            <ToBeConfirmed />
+            {/* <ToBeConfirmed /> */}
           </ScheduleItem>
           <ScheduleItem
             hour="9:30am"
             tag="Plenary Session"
             venue="Sebelas Maret University, Solo">
+            <ScheduleVenueAlt>Ballroom II</ScheduleVenueAlt>
             <Text
               component="h3"
               heading5Alt
@@ -662,7 +664,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Associate Professor Dr. Yeoh Seng Guan"
                 job="School of Arts and Social Sciences, Monash University, Malaysia"
               />
-              <ScheduleVenue>Ballroom II</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="10:00am">
@@ -672,6 +673,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
           </ScheduleItem>
           <ScheduleItem hour="10:30am" tag="Parallel Session I">
             <Talk title="Mobility in the Changing Landscape of Southeast Asia">
+              <ScheduleVenueAlt>Ballroom I</ScheduleVenueAlt>
               <Role label="Convener" />
               <TalkSpeaker
                 name="Dr. Ratchada Jayagupta"
@@ -690,10 +692,10 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Dr. Vissia Ita Yullianto"
                 job="Center for Southeast Asian Social Studies, Universitas Gadjah Mada"
               />
-              <ScheduleVenue>Ballroom I</ScheduleVenue>
             </Talk>
 
             <Talk title="Showcasing Innovative Products for Urban Living">
+              <ScheduleVenueAlt>Wiryowidagdo I</ScheduleVenueAlt>
               <Role label="Convener" />
               <TalkSpeaker name="Dr. Leonard Chrysostomos" job="ICRS" />
               <Role label="Presenters" />
@@ -714,10 +716,10 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Universitas Kristen Duta Wacana"
               />
               <ShowcasingInnovativeProducts />
-              <ScheduleVenue>Wiryowidagdo I</ScheduleVenue>
             </Talk>
 
             <Talk title="Education 4.0: Knowledge, Innovation and Civic Engagement toward Global Leadership">
+              <ScheduleVenueAlt>Ballroom II</ScheduleVenueAlt>
               <Role label="Convener" />
               <TalkSpeaker
                 name="Dr. Sachi Ando"
@@ -739,10 +741,10 @@ const SchedulesFull = ({ className, ...restProps }) => {
               <Role label="Discussant" />
               <TalkSpeaker name="Dr. Wasana Wongsutarat" />
               <Education />
-              <ScheduleVenue>Ballroom II</ScheduleVenue>
             </Talk>
 
             <Talk title="Beyond Waste Management">
+              <ScheduleVenueAlt>Wiryowidagdo II</ScheduleVenueAlt>
               <Role label="Convener" />
               <TalkSpeaker
                 name="Dr. Kohei Watanabe"
@@ -765,7 +767,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Ms. Penchom Saetang"
                 job="Director, Ecological Alert and Recovery, Thailand"
               />
-              <ScheduleVenue>Wiryowidagdo II</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="00:30pm">
@@ -777,6 +778,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
             <Talk
               workshop
               title="Memory as Resilience: Inter-spatial and generational Transmission of Disaster Experience to Build a Sustainable Society">
+              <ScheduleVenueAlt>Wiryowidagdo II</ScheduleVenueAlt>
               <Role label="Conveners/Facilitators" />
               <TalkSpeaker name="Dr. Toshiyuki Doi" job="Mekong Watch" />
               <TalkSpeaker
@@ -805,10 +807,10 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="University of Edinburgh"
               />
               <MemoryResillence />
-              <ScheduleVenue>Wiryowidagdo II</ScheduleVenue>
             </Talk>
 
             <Talk workshop title="Civic Engagement, a Strategic Lens">
+              <ScheduleVenueAlt>Ballroom I</ScheduleVenueAlt>
               <Role label="Convener/Facilitator" />
               <TalkSpeaker
                 name="Ms. Elodie Jacquet"
@@ -824,12 +826,12 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="President, Asian Vision Institute, Cambodia"
               />
               <StrategicLens />
-              <ScheduleVenue>Ballroom I</ScheduleVenue>
             </Talk>
 
             <Talk
               workshop
               title="Urban Farming: Steps toward Food Safety, Security and Sovereignty">
+              <ScheduleVenueAlt>Ballroom II</ScheduleVenueAlt>
               <Role label="Convener/Facilitator" />
               <TalkSpeaker
                 name="Ms. Supa Yaimuang"
@@ -849,12 +851,12 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Sustainable Agriculture Foundation, Thailand"
               />
               <UrbanFarming />
-              <ScheduleVenue>Ballroom II</ScheduleVenue>
             </Talk>
 
             <Talk
               workshop
               title="Listening Partnerships Living Fully and Leading with Integrity in a Time of Crisis">
+              <ScheduleVenueAlt>Wiryowidagdo II</ScheduleVenueAlt>
               <Role label="Convenor/Facilitator" />
               <TalkSpeaker
                 name="Mr. Ted Mayer"
@@ -870,7 +872,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Muhammadiyah University in Riau"
               />
               <ListeningPartnership />
-              <ScheduleVenue>Wiryowidagdo II</ScheduleVenue>
             </Talk>
           </ScheduleItem>
           <ScheduleItem hour="4:00pm">
@@ -893,11 +894,11 @@ const SchedulesFull = ({ className, ...restProps }) => {
           />
           <ScheduleItem hour="8:30am" tag="Plenary Session">
             <Talk title="Opening: Co-Designing Sustainable, Just and Smart Urban Living”">
+              <ScheduleVenueAlt>Syailendra Ballroom</ScheduleVenueAlt>
               <SubTalk title="Welcome Address">
                 <TalkSpeaker name="Dr. Siti Syamsiyatun" job="Director, ICRS" />
               </SubTalk>
               <SubTalk title="Award giving ceremony “Sustainable, Just and Smart Urban Living Innovation Award"></SubTalk>
-              <ScheduleVenue>Syailendra Ballroom</ScheduleVenue>
             </Talk>
             <Talk title="Roundtable: Mayors’ Innovation Pitch">
               <Country label="Cambodia" />
