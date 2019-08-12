@@ -160,15 +160,12 @@
 }
 
 .mobileDescription {
+  padding-top: $space-ml;
   @include screen(phone) {
     display: block;
-    margin-top: -64px;
-    margin-bottom: 24px;
   }
   @include screen(tabPortrait) {
     display: block;
-    margin-top: -88px;
-    margin-bottom: 32px;
   }
   @include screen(tabLandscape) {
     display: none;

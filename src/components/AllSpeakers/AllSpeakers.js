@@ -5,6 +5,7 @@ import cx from "classnames"
 import SpeakerKeynote from "../SpeakerKeynote/SpeakerKeynote"
 import Speaker from "../Speaker/Speaker"
 import SpeakerKeynoteItem from "../SpeakerKeynoteIte/SpeakerKeynoteItem"
+import Keynote from "../Keynote/Keynote"
 import SpeakerNotes from "../SpeakerNotes/SpeakerNotes"
 
 import { Details } from "./../SchedulesFull/SchedulesFull"
@@ -53,12 +54,12 @@ const CountrySection = props => {
 export const KeynoteSpeakers = props => {
   return props.noHeader ? (
     <div className={styles.speakersContainer} style={{ marginBottom: "48px" }}>
-      <SpeakerKeynoteItem
+      <SpeakerKeynote
         number="I"
         name="Prof. Michael Northcott"
         job="Professor of Religion and Ecology"
       />
-      <SpeakerKeynoteItem
+      <SpeakerKeynote
         number="II"
         name="Prof. Melani Budianta"
         job="Professor of Interdisciplinary Humanities"
@@ -75,7 +76,7 @@ export const KeynoteSpeakers = props => {
       }
       <Container narrow>
         <div className={styles.speakersContainer} style={{ marginBottom: 0 }}>
-          <SpeakerKeynoteItem
+          <Keynote
             number="I"
             name="Prof. Michael Northcott"
             job="Professor of Religion and Ecology"
@@ -111,7 +112,7 @@ export const KeynoteSpeakers = props => {
               </>
             }
           />
-          <SpeakerKeynoteItem
+          <Keynote
             number="II"
             name="Prof. Melani Budianta"
             job="Professor of Interdisciplinary Humanities"

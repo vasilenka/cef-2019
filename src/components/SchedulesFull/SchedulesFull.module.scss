@@ -1,4 +1,4 @@
-@import 'src/tokens';
+@import "src/tokens";
 
 .root {
   background-color: $bg-banana-200;
@@ -65,12 +65,26 @@
 }
 
 .detail {
-  padding: $space-inset-l;
   border: 1px solid $brand-secondary-30;
   border-radius: 6px;
   background-color: $brand-secondary-10;
   box-shadow: 0px 16px 24px -12px $dark-alpha-30;
   margin-bottom: $space-ll;
+  @include screen(phone) {
+    padding: $space-inset-m;
+  }
+  @include screen(tabPortrait) {
+    padding: $space-inset-sm;
+  }
+  @include screen(tabLandscape) {
+    padding: $space-inset-l;
+  }
+  @include screen(desktop) {
+    padding: $space-inset-l;
+  }
+  @include screen(desktopWide) {
+    padding: $space-inset-l;
+  }
 }
 
 .detailAction {
@@ -85,11 +99,11 @@
   align-items: center;
   background-color: $brand-primary-10;
   justify-content: center;
-  transition: all .40s;
+  transition: all 0.4s;
 
   &:hover {
     background-color: $brand-primary-20;
-    transition: all .28s;
+    transition: all 0.28s;
   }
 
   &:not(:last-child) {
