@@ -40,7 +40,8 @@ export const Details = props => {
       <button
         type="button"
         className={styles.detailAction}
-        onClick={() => setShow(!show)}>
+        onClick={() => setShow(!show)}
+        {...props}>
         {show ? (
           <>
             {props.close ? props.close + " " : "Hide details "}
@@ -471,6 +472,76 @@ const ShowcasingInnovativeProducts = () => {
   )
 }
 
+const MobilityChangingSEA = props => {
+  return (
+    <Details>
+      <Text heading3Alt component="h3" style={{ marginBottom: "24px" }}>
+        Mobility in the Changing Landscape of Southeast Asia
+      </Text>
+      <Text medium component="p" style={{ marginBottom: "24px" }}>
+        Migration can be defined as the movement of people from one place to
+        another, which can be either assisted or independent, and can be either
+        domestic or international(Jayagupta, R. 2013).Within the globalization
+        and the need for cheap labor for the competitive market, migrant workers
+        are placed in a more precarious situation.Basically, economic disparity
+        is often the motivation factor for migration.Free trade, among others,
+        has been cited as an important contributing factor for migration(Public
+        Citizen, 2013).Our session titled “Mobility in the Changing Landscape of
+        Southeast Asia”, this session will begin by the illustration of an
+        introduction of migration and trend in Cambodia and its effects in
+        economy, social and environment.Followed by the dynamics of inter -
+        region human mobility in secondary cities in Indonesia, focusing on the
+        bi - locality of circular migrants.Globalization issue related to
+        migration will be presented as a driving force for free movement of
+        people.The presentation on labor migration from Southeast Asia to Taiwan
+        on the issues, public responses and future development will be
+        discussed.
+      </Text>
+    </Details>
+  )
+}
+
+const GoodCity = () => {
+  return (
+    <Details style={{ marginTop: 0, marginBottom: 24 }}>
+      <Text heading3Alt component="h3" style={{ marginBottom: "24px" }}>
+        The Good City? From the City as Cradle of Civilisation to the
+        Sustainable Cities of Tomorrow
+      </Text>
+      <Text medium component="p" style={{ marginBottom: "24px" }}>
+        The nation state and business corporations came late to the party in the
+        evolution of civilisations. All the great advances in civilisation until
+        the twentieth century were birthed by civic organisations within cities
+        such as city and craft guilds, religious houses, universities, and
+        democratic assemblies. Cities were also their own financial masters,
+        collecting taxes at city gates and bridges to pay for the city’s
+        infrastructure, governance structures and so on. However the early
+        modern spread of Empire, and of the modern private property regime,
+        eventually gave rise to a new kind of political entity - the nation
+        state which took over many of the ancient rights of cities, and to new
+        powerful economic actors - business corporations - which exercise
+        propertied dominion independent of the city authorities in which they
+        are based. But with the rise of the ecological crisis, and the
+        realisation that the centralised nation state favoured by many European
+        nations and exported as a model to other nations, is often too
+        centralised and remote to ensure the ecological health and economic
+        prosperity of its constituent cities, there is growing recognition of
+        the urgency of reviving the civic polity, and local economy, of the City
+        as means to address the related crises of air and climate pollution,
+        polluted ground water, diseases - including both malnutrition and
+        obesity - caused by the non-availability of local, fresh food and
+        over-reliance on industrially procured food supplies, and rising wealth
+        inequality. In this talk Professor Northcott will show how the great
+        civic advances of the past can inform and resource the urgent
+        contemporary quest for just, participatory and ecologically sustainable
+        urban settlements which also build on the latest Earth System science
+        and engage sustainable and renewable technologies in shaping the future
+        urban habitat.
+      </Text>
+    </Details>
+  )
+}
+
 const ToBeConfirmed = () => (
   <footer
     style={{
@@ -521,10 +592,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
             <Talk title="Thematic Site Visits">
               <SubTalk title="Locating Sustainability in Solo and Its Communities">
                 <TalkSpeaker name="Facilitated by Kota Kita" />
-                {/* <Role label="Navigators"/>
-                <TalkSpeaker name="Ms. Paulista Surjadi" job="Kota Kita" />
-                <TalkSpeaker name="Dr.Kohei Watanabe" job="Teikyo University" />
-                <TalkSpeaker name="Prof. Tomoko Okayama" job="Taisho University" /> */}
               </SubTalk>
               <ScheduleVenue>Solo Vicinity</ScheduleVenue>
             </Talk>
@@ -619,13 +686,16 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 />
               </SubTalk>
               <SubTalk title="Keynote Speech: Youth Leadership toward People-Centered Society">
+                <br />
                 <TalkSpeaker
-                  label="Speaker I"
+                  label="SPEAKER I"
                   name="Prof. Michael Northcott"
                   job="Professor of Religion and Ecology"
                 />
+                <SubTalk title="The Good City? From the City as Cradle of Civilisation to the Sustainable Cities of Tomorrow" />
+                <GoodCity />
                 <TalkSpeaker
-                  label="Speaker II"
+                  label="SPEAKER II"
                   name="Prof. Melani Budianta"
                   job="Professor of Interdisciplinary Humanities"
                 />
@@ -636,7 +706,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
               </SubTalk>
               {/* <ScheduleVenue>The Sunan Hotel</ScheduleVenue> */}
             </Talk>
-            {/* <ToBeConfirmed /> */}
           </ScheduleItem>
           <ScheduleItem
             hour="9:30am"
@@ -689,9 +758,10 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Director, Center for Sustainable Development Studies, Asian Vision Institute, Cambodia"
               />
               <TalkSpeaker
-                name="Dr. Vissia Ita Yullianto"
+                name="Dr. Vissia Ita Yulianto"
                 job="Center for Southeast Asian Social Studies, Universitas Gadjah Mada"
               />
+              <MobilityChangingSEA />
             </Talk>
 
             <Talk title="Showcasing Innovative Products for Urban Living">
@@ -727,7 +797,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
               />
               <Role label="Presenter" />
               <TalkSpeaker
-                name="Dr. Wasana Wongsutarat"
+                name="Dr. Wasana Wongsurawat"
                 job="Deputy Director, IAS, Chulalongkorn University"
               />
               <TalkSpeaker
@@ -739,22 +809,22 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Dept. of Biology, Chulalongkorn University"
               />
               <Role label="Discussant" />
-              <TalkSpeaker name="Dr. Wasana Wongsutarat" />
+              <TalkSpeaker name="Dr. Wasana Wongsurawat" />
               <Education />
             </Talk>
 
-            <Talk title="Beyond Waste Management">
+            <Talk title="Beyond Waste Management - Citizen Participation in the Use of Resources">
               <ScheduleVenueAlt>Wiryowidagdo II</ScheduleVenueAlt>
               <Role label="Convener" />
               <TalkSpeaker
                 name="Dr. Kohei Watanabe"
                 job="Teikyo University, Japan"
               />
+              <Role label="Presenters" />
               <TalkSpeaker
                 name="Dr. Eng. Kusumaningdyah Nurul Handayani, S.T., M.T."
                 job="Urban Rural Design and Conservation Laboratory, Department of Architecture, Universitas Sebelas Maret"
               />
-              <Role label="Presenters" />
               <TalkSpeaker
                 name="Prof. Tomoko Okayama"
                 job="Taisho University, Japan"
@@ -799,13 +869,14 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Former Youth Communicator, “World without Nuclear Weapons”"
               />
               <TalkSpeaker
+                name="Ms. Kuniko Watanabe"
+                job="Board member/staff, ANT-Hiroshima"
+              />
+              <TalkSpeaker
                 name="Mr. Totok Pratopo"
                 job="Pemerti Kali Code (River Forum)"
               />
-              <TalkSpeaker
-                name="Prof. Michael Northcott"
-                job="University of Edinburgh"
-              />
+              <TalkSpeaker name="Komunitas Wayang Sampah, Solo (TBC)" job="" />
               <MemoryResillence />
             </Talk>
 
@@ -816,11 +887,11 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 name="Ms. Elodie Jacquet"
                 job="Manager of Knowledge and Practice, Dialogue and Civic Engagement Program, Simon Fraser University, Canada"
               />
+              <Role label="Resource Person" />
               <TalkSpeaker
-                name="Mr. Ahyani, M.A."
+                name="Mr. Ir. Ahyani, M.A."
                 job="City of Surakarta Regional Secretary"
               />
-              <Role label="Resource Person" />
               <TalkSpeaker
                 name="Dr. Chhaeng Vannarith"
                 job="President, Asian Vision Institute, Cambodia"
@@ -1010,10 +1081,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 <TalkSpeaker
                   name="Dr. Elise Edwards"
                   job="Baylor University, United States"
-                />
-                <TalkSpeaker
-                  name="Dr. Brett Scharffs"
-                  job="Brigham University, United States"
                 />
                 <TalkSpeaker name="Dr. Jeanny Dewayani" job="ICRS" />
                 <TalkSpeaker

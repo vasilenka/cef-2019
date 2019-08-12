@@ -1,4 +1,4 @@
-@import 'src/tokens';
+@import "src/tokens";
 
 .keynote {
   composes: col-12 from global;
@@ -75,10 +75,10 @@
 .container {
   display: flex;
   @include screen(phone) {
-    align-items: center;
+    align-items: flex-start;
   }
   @include screen(tabPortrait) {
-    align-items: center;
+    align-items: flex-start;
   }
   @include screen(tabLandscape) {
     align-items: flex-start;
@@ -94,6 +94,14 @@
 .bio {
   padding-right: $space-ml;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 240px;
+  // max-height: 320px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .name {
@@ -137,12 +145,15 @@
 }
 
 .mobileDescription {
-  padding-top: $space-ml;
   @include screen(phone) {
     display: block;
+    margin-top: -88px;
+    margin-bottom: 64px;
   }
   @include screen(tabPortrait) {
     display: block;
+    margin-top: -88px;
+    margin-bottom: 64px;
   }
   @include screen(tabLandscape) {
     display: none;
