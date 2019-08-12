@@ -11,7 +11,7 @@ export const Vannarith = ({ url, ...restProps }) => {
             relativePath: { eq: "speakers/vannarith.jpg" }
           ) {
             childImageSharp {
-              fluid(maxWidth: 300) {
+              fluid(maxWidth: 400) {
                 ...GatsbyImageSharpFluid
               }
             }

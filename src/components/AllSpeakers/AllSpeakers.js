@@ -471,336 +471,59 @@ const MayorsSymposium = props => {
       id="other-speakers"
       style={{ paddingTop: 48 }}>
       <SpeakerKeynoteItem
-        name="Dr. Keo Piseth"
-        photo={<KeoPiseth />}
-        description={
-          <>
-            <Details open="See more">
-              <Text medium component="p">
-                Dr. Keo Piseth is a researcher and practitioner in the field of
-                development and environmental management. For fifteen years of
-                his professional career, Dr. Keo has been driven by his
-                inspiration and passion to contribute towards Cambodia’s
-                sustainable and inclusive development. Dr. Keo got his doctoral
-                degree from the Joint-Doctoral Programme between National
-                University of Singapore and Harvard-Yenching Institute (Harvard
-                University) in 2018, and his master degree from the Australian
-                National University in 2010.
-              </Text>
-            </Details>
-          </>
-        }
-      />
-      <SpeakerKeynoteItem
-        name="Rizqa Hidayani"
-        photo={<RizqaHidayani />}
-        description={
-          <>
-            <Details open="See more">
-              <Text medium component="p">
-                Rizqa is an urban planner with a focus on building inclusivity
-                and resilience in the development of cities. She believes that
-                everybody in the city has equal rights to have a voice in the
-                development of their cities. Currently, she is a senior program
-                manager at Kota Kita and has been engaged in urban participatory
-                planning activities and research since 2013 - in the fields of
-                climate change adaptation and resilience, community development
-                and informality in 10 different cities in Indonesia. As a
-                facilitator, Rizqa has been working closely with a range of
-                different stakeholders: from city governments to community
-                members including local business associations, women’s groups or
-                youth groups, facilitating planning processes and
-                action-research. Prior to Kota Kita, she worked at Center for
-                Participatory Planning in Semarang that focuses on participatory
-                planning and local economic development. As she grew up in a
-                suburban area, she has a particular concern on urbanization
-                issue, inter-city migration and rural-urban relation in
-                Indonesia and conducted research around the issue for her Master
-                study at Diponegoro University.
-              </Text>
-            </Details>
-          </>
-        }
-      />
-      <SpeakerKeynoteItem
-        name="Sri Yusnita Irda Sari"
-        photo={<SriYusnita />}
-        // description={
-        //   <>
-        //     <Details open="See more">
-        //       <Text medium component="p">
-        //         Dr. Keo Piseth is a researcher and practitioner in the field of
-        //         development and environmental management. For fifteen years of
-        //         his professional career, Dr. Keo has been driven by his
-        //         inspiration and passion to contribute towards Cambodia’s
-        //         sustainable and inclusive development. Dr. Keo got his doctoral
-        //         degree from the Joint-Doctoral Programme between National
-        //         University of Singapore and Harvard-Yenching Institute (Harvard
-        //         University) in 2018, and his master degree from the Australian
-        //         National University in 2010.
-        //       </Text>
-        //     </Details>
-        //   </>
-        // }
-      />
-      <SpeakerKeynoteItem
-        name="Yudhis Thiro Kabul Yunior"
-        photo={<Yudhis />}
-        // description={
-        //   <>
-        //     <Details open="See more">
-        //       <Text medium component="p">
-        //         Dr. Keo Piseth is a researcher and practitioner in the field of
-        //         development and environmental management. For fifteen years of
-        //         his professional career, Dr. Keo has been driven by his
-        //         inspiration and passion to contribute towards Cambodia’s
-        //         sustainable and inclusive development. Dr. Keo got his doctoral
-        //         degree from the Joint-Doctoral Programme between National
-        //         University of Singapore and Harvard-Yenching Institute (Harvard
-        //         University) in 2018, and his master degree from the Australian
-        //         National University in 2010.
-        //       </Text>
-        //     </Details>
-        //   </>
-        // }
-      />
-      <SpeakerKeynoteItem
-        name="Dr. Wasana Wongsurawat"
-        photo={<Wasana />}
-        description={
-          <>
-            <Details open="See more">
-              <Text medium component="p">
-                Wasana Wongsurawat is an associate professor at the Department
-                of History, Faculty of Arts, Chulalongkorn University. She
-                teaches courses related to the modern history of China and the
-                Chinese Diaspora in Southeast Asia. Her main areas of interest
-                in terms of research include the history of nations and
-                nationalism, transnationalism, and global history. Her recent
-                publications include the edited volume, Sites of Modernity:
-                Asian Cities in the Transitory Moments of Trade, Colonialism and
-                Nationalism (Springer 2016) and the monograph, The Crown and the
-                Capitalists: The Ethnic Chinese and the Founding of the Thai
-                Nation (University of Washington Press, 2019).
-              </Text>
-            </Details>
-          </>
-        }
-      />
-      <SpeakerKeynoteItem
-        name="Dr. Chhaeng Vannarith"
-        photo={<Vannarith />}
-        description={
-          <>
-            <Details open="See more">
-              <Text medium component="p">
-                Dr Chheang Vannarith is a public policy analyst and government
-                relations strategist. He has over a decade of experience as a
-                geopolitical and political economic analyst, with a focus on
-                Southeast Asia. He is currently serving as President of the
-                Asian Vision Institute, Chairman of the Advisor Council of the
-                National Assembly of Cambodia, Advisor to the Ministry of
-                Foreign Affairs and International Cooperation, and Adjunct
-                Lecturer at the School of Social Sciences, Nanyang Technological
-                University. He was honored a Young Global Leader by the World
-                Economic Forum in 2013 and Southeast Asia Young Leader by the
-                IISS-Shangri-La Dialogue in 2016.
-              </Text>
-              <Text medium component="p">
-                He previously served as Visiting Fellow at ISEAS-Yusof Ishak
-                Institute (2017- 2018), China Institute of International Studies
-                (2016), Institute of Developing Economies in Japan (2012), and
-                East-West Center in the United States (2010); Southeast Asia
-                Consultant at The Nippon Foundation in Japan (2016-2018);
-                Lecturer of Asia Pacific Studies at the University of Leeds
-                (2013-2016), Executive Director of Cambodian Institute for
-                Cooperation and Peace (2009-2013); Technical Advisor to the
-                Cambodian National Assembly (2011); and Assistant to Cambodia’s
-                Defense Minister (2011-2012). He received his BA in
-                International Relations from the Diplomatic Academy of Vietnam
-                in 2002, MA in International Relations from the International
-                University of Japan in 2006, and PhD in Asia Pacific Studies
-                from the Ritsumeikan Asia Pacific University in 2009.
-              </Text>
-            </Details>
-          </>
-        }
-      />
-      <SpeakerKeynoteItem
-        name="Dr. Chatchawan Chaisuekul"
+        name="Ajarn Heng Monychenda"
         photo={<DefaultPhoto />}
         description={
           <>
             <Details open="See more">
               <Text medium component="p">
-                Chatchawan Chaisuekul is an assistant professor at the
-                department of Biology, Faculty of Science, Chulalongkorn
-                University with his interests in insects, integrated pest
-                management, and sustainable development. He has worked as
-                trainer and co-organizer for several youth and farmer
-                educational programs in Thailand, particularly in Nan and
-                Saraburi Provinces, since 2005 to raise awareness about
-                ecological conservation and alternative sustainable management
-                practice in farming. Currently, he serves as a deputy director
-                of the Center for Learning Network in the Region, Chulalongkorn
-                University (CU-CLNR) with responsibility to engage with the
-                local communities for development in the areas of food safety
-                and food security, ecological restoration, and art and culture
-                preservation in Nan province, Thailand as well as ecological
-                restoration in Saraburi province.
-              </Text>
-            </Details>
-          </>
-        }
-      />
-      <SpeakerKeynoteItem
-        name="Supardi Asmorobangun"
-        photo={<DefaultPhoto />}
-        description={
-          <>
-            <Details open="See more">
-              <Text medium component="p">
-                Supardi Asmorobangun spent his whole career in journalism (print
-                and radio), from 1994 - 2012, before setting his probably final
-                stage in the environmental issue. His current position is the
-                manager of Rumah Kompos Padangtegal (currently it moves to new,
-                nearby massive facility thus known as Padangtegal Recycling
-                Plaza, a 7 billion rupiah facility, built by the Indonesian
-                Ministry of public work, as a reward for being “2017 Bali best
-                village for enviro management”.
+                Heng Monychenda is the founding director and visionary of
+                Buddhism For Development, a Cambodian NGO dedicated to improving
+                the rights and welfare of citizens especially those in rural and
+                remote areas of Cambodia’s north-west and central provinces.
               </Text>
               <Text medium component="p">
-                That career turn in fact comes to no surprise. Ever since being
-                a journalist, editor, managing editor, executive editor, and
-                regional correspondent of an international News Agency, his
-                patient of writing is no less about culture, environment,
-                adventure and education.
+                After living under the Khmer Rouge regime for nearly 4 years,
+                Heng Monychenda moved to the Cambodian-Thai border living with
+                the many Cambodians in the camps. At this time Monychenda became
+                a Buddhist monk a calling which followed for 17 years, from 1980
+                - 1997.
               </Text>
               <Text medium component="p">
-                “Unless you produce a New York Best Selling book of environment,
-                which very unlikely a book on environment protection hits the
-                barrier, then you may be able change the people culture of
-                littering (the planet). Even if you do so, people hardly
-                change,” he says. “People quickly forget an issue”.
+                From 1985-1992 he held the position as Director of Khmer
+                Buddhist Research Center in Site 2 refugee camp, aiming to
+                discover the relationship between Buddhism and Khmer society,
+                and determining the Buddhist way that would prevent tragedy from
+                happening ever again in Cambodia.
               </Text>
               <Text medium component="p">
-                “The best, as far as I am concerned, is plunging yourself in the
-                pool,” he says. With that enigma, Supardi starts making and
-                organizing beach clean up, mountain clean up, underwater clean
-                up, in various places on Bali and Java. Indeed, his concerned on
-                environmental issue did start to flourish way back in 2002 when
-                he passed an open water diver training certification. “What a
-                joy being a diver. But what an eye- opening experience it is,
-                seen in other perspective. The most beautiful parts of the
-                planet is down there below the surface. But the most endangered
-                parts of the planet also lay down there below the surface.
+                Returning to Cambodia in 1992 under the repatriation program of
+                the UN, he located Buddhism for Development at Wat Anlongvil
+                (pagoda) in Battambang province where it still exists today.
+                From its simple beginnings under difficult conditions, BFD now
+                has seven branches located in Battambang, Pailin, Banteay
+                Meanchey, Oddor Meanchey, Siemreap, Kampong Thom, and Preah
+                Vihear.
               </Text>
               <Text medium component="p">
-                “It takes literally multi trillion of dollars to clean up the
-                ocean. So it is definitely much-much more easier to prevent
-                waste from entering the sea, rather than the crazy idea of
-                collecting dirty plastic scattering across the ocean, the
-                shallow and the multi kilometer in depth,” he says.
+                Monychenda received training in management skills at the
+                Klausenhoff Academy, Germany in 1989, and received his Master
+                Degree in Public Administration from John F. Kennedy School of
+                Government, Harvard University in 1998.
               </Text>
               <Text medium component="p">
-                Rumah Kompos Padangtegal in Ubud is indeed the little ship he
-                could direct to materialize the idea. “You dream big, but you
-                must start it with whatever you can in your hand, whether you
-                have big or little access or facility around” he concludes.
-              </Text>
-            </Details>
-          </>
-        }
-      />
-      <SpeakerKeynoteItem
-        name="Hiroko Aihara"
-        photo={<DefaultPhoto />}
-        description={
-          <>
-            <Details open="See more">
-              <Text medium component="p">
-                Hiroko Aihara is a journalist mainly working at Fukushima,
-                Japan. She was born and raised up at Fukushima City, and had
-                worked at a local newspaper staff writer for 20 years.During
-                working for the newspaper company, she covered many stories of
-                medical care, medical ethics, human rights, gender, disaster,
-                politics, criminal cases, and more.
+                Monychenda is a passionate Buddhist scholar writing many books
+                and papers relating to Buddhist values in governing a country
+                for peace and development, in family values, in reconciliation,
+                and in development. He is widely recognized as a leader for the
+                movement of socially-engaged Buddhism in Cambodia and its role
+                in social and community development.
               </Text>
               <Text medium component="p">
-                After March 11, 2011, TEPCO Fukushima Nuclear Power Plant
-                accidents, she has been covering about the nuclear accidents
-                from the viewpoint of a local. She has covered a wide range of
-                topics, including the evacuation of victims, reconstruction of
-                livelihoods, compensation and liability issues, health damage
-                including thyroid cancer by radiation, human rights, and
-                radioactive contamination of the natural environment, and so on.
-              </Text>
-              <Text medium component="p">
-                The main reporting medias are; Nikkei Business Online, “The View
-                Points of Fukushima”(May 2011-January 2013),Fujin-no Tomo”The
-                Current Situation in Fukushima”(January-December 2014), and The
-                Big Issue Japan “The Situation in Disaster Site ” ( May 2011-
-                current). She reported more than 200 articles after March 11,
-                2011.
-              </Text>
-              <Text medium component="p">
-                She is a Fulbright Journalist ( 2005, U of Miami, Miller School
-                of Medicine), Asian Public Intellectual (2008, U of Philippines
-                and Ateneo de Manila University), SSRC Abe Fellowship (2015),
-                Disaster Management and Resiliency in the Asia Pacific
-                Journalism Fellowship Fellow; East-West Center(2012), Pfizer
-                Medical Article Award Japan (2004)“The Problem of Lack of
-                Doctors”, Pharmacia Medical Article Award (2001)“Report of
-                Medical Treatment and Social Welfare, Circle of Life”.
-              </Text>
-            </Details>
-          </>
-        }
-      />
-      <SpeakerKeynoteItem
-        name="Mayu Seto"
-        photo={<DefaultPhoto />}
-        description={
-          <>
-            <Details open="See more">
-              <Text medium component="p">
-                Mayu Seto was born and raised in Hiroshima. She participated
-                &quot;Global Voyage for Nuclear Free World&quot; organized by
-                NGO Peace Boat and traveled with a-bomb survivors from Hiroshima
-                and Nagasaki, as a Youth Communicator for a World without
-                Nuclear Weapons, where she worked to raise awareness of
-                catastrophic humanitarian consequences nuclear weapons cause and
-                to pass on survivors&#39; story to the next generation.
-              </Text>
-              <Text medium component="p">
-                Living in Hiroshima, now she works as a singer-songwriter and
-                wrote a song about her travel with survivors. She also works to
-                plan events and educational programs where people from inside
-                and outside the city can learn what happened in Hiroshima and
-                connect what they learned to what they can do to solve nuclear
-                issues today.
-              </Text>
-            </Details>
-          </>
-        }
-      />
-      <SpeakerKeynoteItem
-        name="Elodie Jacqet"
-        photo={<Elodie />}
-        description={
-          <>
-            <Details open="See more">
-              <Text medium component="p">
-                Elodie has been working with the SFU Morris J. Wosk Centre for
-                Dialogue and other clients on a variety of engagement processes
-                for the past 11 years. She has developed and refined her
-                convening and facilitation skills in a wide variety of
-                dialogues, from Canada’s World, a national citizen engagement
-                initiative on foreign policy to the National Reconciliation
-                Gatherings and the more recent Citizens’ Dialogue on Canada’s
-                Energy Future. She is currently furthering her education with a
-                master’s on Global Climate and Energy Policy at SOAS, University
-                of London.
+                Starting in 2017 Monychenda is co-founding a movement called
+                Lotus aiming to integrating health, capacity, and moral values
+                into the private sectors in Cambodia to increase and improve
+                integrity in the private sectors.
               </Text>
             </Details>
           </>
@@ -909,98 +632,66 @@ const MayorsSymposium = props => {
         }
       />
       <SpeakerKeynoteItem
-        name="Varangkanang Nimhutta"
+        name="Dr. Chatchawan Chaisuekul"
         photo={<DefaultPhoto />}
         description={
           <>
             <Details open="See more">
               <Text medium component="p">
-                Varangkanang Nimhutta, 35 years old, master degree in Natural
-                Resources Management from King Mongkut’s University of
-                Technology Thonburi and bachelor degree in Social Work from
-                Thammasat University.
-              </Text>
-              <Text medium component="p">
-                Since 2010, working with City Farm Project under Sustainable
-                Agriculture Foundation (Thailand). Providing the training,
-                learning space on growing organic vegetables, livestock etc. for
-                the city people. Supporting and coordinating the city people’s
-                groups in Bangkok and suburb to improve their self-reliance
-                skills on food and others. The project build up food security to
-                different groups of peoples and relate urban farming to
-                different dimensions of city development. Disseminating the
-                information and knowledge on city farm, food security etc.
-                through various communication. Policy advocacy and campaign on
-                urban agriculture and livelihood.
-              </Text>
-              <Text medium component="p">
-                With strongly believe that urban agriculture is a key for
-                driving transition of city and people which brings food
-                security, well-being and sustainable cities to the common from
-                learning, practice and people’s participation. The perception on
-                relationship with nature, human being, children learning space,
-                mind therapy through gardening and also creating and improving
-                eco-system for the community in the city will create a
-                transition town and building a livable city for all.
+                Chatchawan Chaisuekul is an assistant professor at the
+                department of Biology, Faculty of Science, Chulalongkorn
+                University with his interests in insects, integrated pest
+                management, and sustainable development. He has worked as
+                trainer and co-organizer for several youth and farmer
+                educational programs in Thailand, particularly in Nan and
+                Saraburi Provinces, since 2005 to raise awareness about
+                ecological conservation and alternative sustainable management
+                practice in farming. Currently, he serves as a deputy director
+                of the Center for Learning Network in the Region, Chulalongkorn
+                University (CU-CLNR) with responsibility to engage with the
+                local communities for development in the areas of food safety
+                and food security, ecological restoration, and art and culture
+                preservation in Nan province, Thailand as well as ecological
+                restoration in Saraburi province.
               </Text>
             </Details>
           </>
         }
       />
       <SpeakerKeynoteItem
-        name="Ajarn Heng Monychenda"
-        photo={<DefaultPhoto />}
+        name="Dr. Chhaeng Vannarith"
+        photo={<Vannarith />}
         description={
           <>
             <Details open="See more">
               <Text medium component="p">
-                Heng Monychenda is the founding director and visionary of
-                Buddhism For Development, a Cambodian NGO dedicated to improving
-                the rights and welfare of citizens especially those in rural and
-                remote areas of Cambodia’s north-west and central provinces.
+                Dr Chheang Vannarith is a public policy analyst and government
+                relations strategist. He has over a decade of experience as a
+                geopolitical and political economic analyst, with a focus on
+                Southeast Asia. He is currently serving as President of the
+                Asian Vision Institute, Chairman of the Advisor Council of the
+                National Assembly of Cambodia, Advisor to the Ministry of
+                Foreign Affairs and International Cooperation, and Adjunct
+                Lecturer at the School of Social Sciences, Nanyang Technological
+                University. He was honored a Young Global Leader by the World
+                Economic Forum in 2013 and Southeast Asia Young Leader by the
+                IISS-Shangri-La Dialogue in 2016.
               </Text>
               <Text medium component="p">
-                After living under the Khmer Rouge regime for nearly 4 years,
-                Heng Monychenda moved to the Cambodian-Thai border living with
-                the many Cambodians in the camps. At this time Monychenda became
-                a Buddhist monk a calling which followed for 17 years, from 1980
-                - 1997.
-              </Text>
-              <Text medium component="p">
-                From 1985-1992 he held the position as Director of Khmer
-                Buddhist Research Center in Site 2 refugee camp, aiming to
-                discover the relationship between Buddhism and Khmer society,
-                and determining the Buddhist way that would prevent tragedy from
-                happening ever again in Cambodia.
-              </Text>
-              <Text medium component="p">
-                Returning to Cambodia in 1992 under the repatriation program of
-                the UN, he located Buddhism for Development at Wat Anlongvil
-                (pagoda) in Battambang province where it still exists today.
-                From its simple beginnings under difficult conditions, BFD now
-                has seven branches located in Battambang, Pailin, Banteay
-                Meanchey, Oddor Meanchey, Siemreap, Kampong Thom, and Preah
-                Vihear.
-              </Text>
-              <Text medium component="p">
-                Monychenda received training in management skills at the
-                Klausenhoff Academy, Germany in 1989, and received his Master
-                Degree in Public Administration from John F. Kennedy School of
-                Government, Harvard University in 1998.
-              </Text>
-              <Text medium component="p">
-                Monychenda is a passionate Buddhist scholar writing many books
-                and papers relating to Buddhist values in governing a country
-                for peace and development, in family values, in reconciliation,
-                and in development. He is widely recognized as a leader for the
-                movement of socially-engaged Buddhism in Cambodia and its role
-                in social and community development.
-              </Text>
-              <Text medium component="p">
-                Starting in 2017 Monychenda is co-founding a movement called
-                Lotus aiming to integrating health, capacity, and moral values
-                into the private sectors in Cambodia to increase and improve
-                integrity in the private sectors.
+                He previously served as Visiting Fellow at ISEAS-Yusof Ishak
+                Institute (2017- 2018), China Institute of International Studies
+                (2016), Institute of Developing Economies in Japan (2012), and
+                East-West Center in the United States (2010); Southeast Asia
+                Consultant at The Nippon Foundation in Japan (2016-2018);
+                Lecturer of Asia Pacific Studies at the University of Leeds
+                (2013-2016), Executive Director of Cambodian Institute for
+                Cooperation and Peace (2009-2013); Technical Advisor to the
+                Cambodian National Assembly (2011); and Assistant to Cambodia’s
+                Defense Minister (2011-2012). He received his BA in
+                International Relations from the Diplomatic Academy of Vietnam
+                in 2002, MA in International Relations from the International
+                University of Japan in 2006, and PhD in Asia Pacific Studies
+                from the Ritsumeikan Asia Pacific University in 2009.
               </Text>
             </Details>
           </>
@@ -1080,6 +771,73 @@ const MayorsSymposium = props => {
         }
       />
       <SpeakerKeynoteItem
+        name="Elodie Jacqet"
+        photo={<Elodie />}
+        description={
+          <>
+            <Details open="See more">
+              <Text medium component="p">
+                Elodie has been working with the SFU Morris J. Wosk Centre for
+                Dialogue and other clients on a variety of engagement processes
+                for the past 11 years. She has developed and refined her
+                convening and facilitation skills in a wide variety of
+                dialogues, from Canada’s World, a national citizen engagement
+                initiative on foreign policy to the National Reconciliation
+                Gatherings and the more recent Citizens’ Dialogue on Canada’s
+                Energy Future. She is currently furthering her education with a
+                master’s on Global Climate and Energy Policy at SOAS, University
+                of London.
+              </Text>
+            </Details>
+          </>
+        }
+      />
+      <SpeakerKeynoteItem
+        name="Hiroko Aihara"
+        photo={<DefaultPhoto />}
+        description={
+          <>
+            <Details open="See more">
+              <Text medium component="p">
+                Hiroko Aihara is a journalist mainly working at Fukushima,
+                Japan. She was born and raised up at Fukushima City, and had
+                worked at a local newspaper staff writer for 20 years.During
+                working for the newspaper company, she covered many stories of
+                medical care, medical ethics, human rights, gender, disaster,
+                politics, criminal cases, and more.
+              </Text>
+              <Text medium component="p">
+                After March 11, 2011, TEPCO Fukushima Nuclear Power Plant
+                accidents, she has been covering about the nuclear accidents
+                from the viewpoint of a local. She has covered a wide range of
+                topics, including the evacuation of victims, reconstruction of
+                livelihoods, compensation and liability issues, health damage
+                including thyroid cancer by radiation, human rights, and
+                radioactive contamination of the natural environment, and so on.
+              </Text>
+              <Text medium component="p">
+                The main reporting medias are; Nikkei Business Online, “The View
+                Points of Fukushima”(May 2011-January 2013),Fujin-no Tomo”The
+                Current Situation in Fukushima”(January-December 2014), and The
+                Big Issue Japan “The Situation in Disaster Site ” ( May 2011-
+                current). She reported more than 200 articles after March 11,
+                2011.
+              </Text>
+              <Text medium component="p">
+                She is a Fulbright Journalist ( 2005, U of Miami, Miller School
+                of Medicine), Asian Public Intellectual (2008, U of Philippines
+                and Ateneo de Manila University), SSRC Abe Fellowship (2015),
+                Disaster Management and Resiliency in the Asia Pacific
+                Journalism Fellowship Fellow; East-West Center(2012), Pfizer
+                Medical Article Award Japan (2004)“The Problem of Lack of
+                Doctors”, Pharmacia Medical Article Award (2001)“Report of
+                Medical Treatment and Social Welfare, Circle of Life”.
+              </Text>
+            </Details>
+          </>
+        }
+      />
+      <SpeakerKeynoteItem
         name="Dr. Ilyas Mohammed"
         photo={<Ilyas />}
         description={
@@ -1098,6 +856,86 @@ const MayorsSymposium = props => {
           </>
         }
       />
+      <SpeakerKeynoteItem
+        name="Dr. Keo Piseth"
+        photo={<KeoPiseth />}
+        description={
+          <>
+            <Details open="See more">
+              <Text medium component="p">
+                Dr. Keo Piseth is a researcher and practitioner in the field of
+                development and environmental management. For fifteen years of
+                his professional career, Dr. Keo has been driven by his
+                inspiration and passion to contribute towards Cambodia’s
+                sustainable and inclusive development. Dr. Keo got his doctoral
+                degree from the Joint-Doctoral Programme between National
+                University of Singapore and Harvard-Yenching Institute (Harvard
+                University) in 2018, and his master degree from the Australian
+                National University in 2010.
+              </Text>
+            </Details>
+          </>
+        }
+      />
+      <SpeakerKeynoteItem
+        name="Mayu Seto"
+        photo={<DefaultPhoto />}
+        description={
+          <>
+            <Details open="See more">
+              <Text medium component="p">
+                Mayu Seto was born and raised in Hiroshima. She participated
+                &quot;Global Voyage for Nuclear Free World&quot; organized by
+                NGO Peace Boat and traveled with a-bomb survivors from Hiroshima
+                and Nagasaki, as a Youth Communicator for a World without
+                Nuclear Weapons, where she worked to raise awareness of
+                catastrophic humanitarian consequences nuclear weapons cause and
+                to pass on survivors&#39; story to the next generation.
+              </Text>
+              <Text medium component="p">
+                Living in Hiroshima, now she works as a singer-songwriter and
+                wrote a song about her travel with survivors. She also works to
+                plan events and educational programs where people from inside
+                and outside the city can learn what happened in Hiroshima and
+                connect what they learned to what they can do to solve nuclear
+                issues today.
+              </Text>
+            </Details>
+          </>
+        }
+      />
+      <SpeakerKeynoteItem
+        name="Rizqa Hidayani"
+        photo={<RizqaHidayani />}
+        description={
+          <>
+            <Details open="See more">
+              <Text medium component="p">
+                Rizqa is an urban planner with a focus on building inclusivity
+                and resilience in the development of cities. She believes that
+                everybody in the city has equal rights to have a voice in the
+                development of their cities. Currently, she is a senior program
+                manager at Kota Kita and has been engaged in urban participatory
+                planning activities and research since 2013 - in the fields of
+                climate change adaptation and resilience, community development
+                and informality in 10 different cities in Indonesia. As a
+                facilitator, Rizqa has been working closely with a range of
+                different stakeholders: from city governments to community
+                members including local business associations, women’s groups or
+                youth groups, facilitating planning processes and
+                action-research. Prior to Kota Kita, she worked at Center for
+                Participatory Planning in Semarang that focuses on participatory
+                planning and local economic development. As she grew up in a
+                suburban area, she has a particular concern on urbanization
+                issue, inter-city migration and rural-urban relation in
+                Indonesia and conducted research around the issue for her Master
+                study at Diponegoro University.
+              </Text>
+            </Details>
+          </>
+        }
+      />
+      <SpeakerKeynoteItem name="Sri Yusnita Irda Sari" photo={<SriYusnita />} />
       <SpeakerKeynoteItem
         name="Dr. Sukanda Lewis"
         photo={<DefaultPhoto />}
@@ -1135,6 +973,128 @@ const MayorsSymposium = props => {
           </>
         }
       />
+      <SpeakerKeynoteItem
+        name="Supardi Asmorobangun"
+        photo={<DefaultPhoto />}
+        description={
+          <>
+            <Details open="See more">
+              <Text medium component="p">
+                Supardi Asmorobangun spent his whole career in journalism (print
+                and radio), from 1994 - 2012, before setting his probably final
+                stage in the environmental issue. His current position is the
+                manager of Rumah Kompos Padangtegal (currently it moves to new,
+                nearby massive facility thus known as Padangtegal Recycling
+                Plaza, a 7 billion rupiah facility, built by the Indonesian
+                Ministry of public work, as a reward for being “2017 Bali best
+                village for enviro management”.
+              </Text>
+              <Text medium component="p">
+                That career turn in fact comes to no surprise. Ever since being
+                a journalist, editor, managing editor, executive editor, and
+                regional correspondent of an international News Agency, his
+                patient of writing is no less about culture, environment,
+                adventure and education.
+              </Text>
+              <Text medium component="p">
+                “Unless you produce a New York Best Selling book of environment,
+                which very unlikely a book on environment protection hits the
+                barrier, then you may be able change the people culture of
+                littering (the planet). Even if you do so, people hardly
+                change,” he says. “People quickly forget an issue”.
+              </Text>
+              <Text medium component="p">
+                “The best, as far as I am concerned, is plunging yourself in the
+                pool,” he says. With that enigma, Supardi starts making and
+                organizing beach clean up, mountain clean up, underwater clean
+                up, in various places on Bali and Java. Indeed, his concerned on
+                environmental issue did start to flourish way back in 2002 when
+                he passed an open water diver training certification. “What a
+                joy being a diver. But what an eye- opening experience it is,
+                seen in other perspective. The most beautiful parts of the
+                planet is down there below the surface. But the most endangered
+                parts of the planet also lay down there below the surface.
+              </Text>
+              <Text medium component="p">
+                “It takes literally multi trillion of dollars to clean up the
+                ocean. So it is definitely much-much more easier to prevent
+                waste from entering the sea, rather than the crazy idea of
+                collecting dirty plastic scattering across the ocean, the
+                shallow and the multi kilometer in depth,” he says.
+              </Text>
+              <Text medium component="p">
+                Rumah Kompos Padangtegal in Ubud is indeed the little ship he
+                could direct to materialize the idea. “You dream big, but you
+                must start it with whatever you can in your hand, whether you
+                have big or little access or facility around” he concludes.
+              </Text>
+            </Details>
+          </>
+        }
+      />
+      <SpeakerKeynoteItem
+        name="Varangkanang Nimhutta"
+        photo={<DefaultPhoto />}
+        description={
+          <>
+            <Details open="See more">
+              <Text medium component="p">
+                Varangkanang Nimhutta, 35 years old, master degree in Natural
+                Resources Management from King Mongkut’s University of
+                Technology Thonburi and bachelor degree in Social Work from
+                Thammasat University.
+              </Text>
+              <Text medium component="p">
+                Since 2010, working with City Farm Project under Sustainable
+                Agriculture Foundation (Thailand). Providing the training,
+                learning space on growing organic vegetables, livestock etc. for
+                the city people. Supporting and coordinating the city people’s
+                groups in Bangkok and suburb to improve their self-reliance
+                skills on food and others. The project build up food security to
+                different groups of peoples and relate urban farming to
+                different dimensions of city development. Disseminating the
+                information and knowledge on city farm, food security etc.
+                through various communication. Policy advocacy and campaign on
+                urban agriculture and livelihood.
+              </Text>
+              <Text medium component="p">
+                With strongly believe that urban agriculture is a key for
+                driving transition of city and people which brings food
+                security, well-being and sustainable cities to the common from
+                learning, practice and people’s participation. The perception on
+                relationship with nature, human being, children learning space,
+                mind therapy through gardening and also creating and improving
+                eco-system for the community in the city will create a
+                transition town and building a livable city for all.
+              </Text>
+            </Details>
+          </>
+        }
+      />
+      <SpeakerKeynoteItem
+        name="Dr. Wasana Wongsurawat"
+        photo={<Wasana />}
+        description={
+          <>
+            <Details open="See more">
+              <Text medium component="p">
+                Wasana Wongsurawat is an associate professor at the Department
+                of History, Faculty of Arts, Chulalongkorn University. She
+                teaches courses related to the modern history of China and the
+                Chinese Diaspora in Southeast Asia. Her main areas of interest
+                in terms of research include the history of nations and
+                nationalism, transnationalism, and global history. Her recent
+                publications include the edited volume, Sites of Modernity:
+                Asian Cities in the Transitory Moments of Trade, Colonialism and
+                Nationalism (Springer 2016) and the monograph, The Crown and the
+                Capitalists: The Ethnic Chinese and the Founding of the Thai
+                Nation (University of Washington Press, 2019).
+              </Text>
+            </Details>
+          </>
+        }
+      />
+      <SpeakerKeynoteItem name="Yudhis Thiro Kabul Yunior" photo={<Yudhis />} />
     </SpeakerKeynote>
   )
 }
