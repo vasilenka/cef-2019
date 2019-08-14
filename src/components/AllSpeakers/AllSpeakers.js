@@ -4,7 +4,8 @@ import cx from "classnames"
 
 import SpeakerKeynote from "../SpeakerKeynote/SpeakerKeynote"
 import Speaker from "../Speaker/Speaker"
-import SpeakerKeynoteItem from "../SpeakerKeynoteIte/SpeakerKeynoteItem"
+import SpeakerAlt from "../SpeakerAlt/SpeakerAlt"
+// import SpeakerKeynoteItem from "../SpeakerKeynoteIte/SpeakerKeynoteItem"
 import Keynote from "../Keynote/Keynote"
 import SpeakerNotes from "../SpeakerNotes/SpeakerNotes"
 
@@ -252,9 +253,38 @@ const SessionConveners = props => {
       sectionTitle="Public Forum‘s Session Conveners"
       id="session-conveners"
       style={{ paddingTop: 48 }}>
-      <SpeakerKeynoteItem
+      <SpeakerAlt
+        name="Ms. Elodie Jacquet"
+        photo={<Elodie />}
+        job="Manager of Knowledge and Practice, Dialogue and Civic Engagement Program, Simon Fraser University, Canada"
+        description={
+          <>
+            <Details open="See more">
+              <Text medium component="p">
+                Elodie Jacquet has been working with the SFU Morris J. Wosk
+                Centre for Dialogue and other clients on dialogue and civic
+                engagement processes for the past 11 years. She has developed
+                and refined her convening and facilitation skills in a wide
+                variety of dialogues, from Canada’s World, a national citizen
+                engagement initiative on foreign policy to the National
+                Reconciliation Gatherings and the more recent Citizens’ Dialogue
+                on Canada’s Energy Future. She was involved in the three phases
+                of community-based research for the National Inquiry into
+                Missing and Murdered Indigenous Women and Girls and was a lead
+                Investigator on the Inclusion in Open Government project. She
+                holds a Master’s on Global Climate and Energy Policy from SOAS,
+                University of London. She is particularly interested in climate
+                change issues, democratic development and their complex
+                narratives.
+              </Text>
+            </Details>
+          </>
+        }
+      />
+      <SpeakerAlt
         name="Dr. Kohei Watanabe"
         photo={<Watanabe />}
+        job="Teikyo University, Japan"
         description={
           <>
             <Details open="See more">
@@ -271,9 +301,10 @@ const SessionConveners = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
-        name="Dr. Ratchada Jayagupta "
+      <SpeakerAlt
+        name="Dr. Ratchada Jayagupta"
         photo={<Ratchada />}
+        job="Asian Research Center for Migration, Inst. of Asian Studies, Chulalongkorn University"
         description={
           <>
             <Details open="See more">
@@ -319,9 +350,10 @@ const SessionConveners = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Dr. Sachi Ando"
         photo={<Sachi />}
+        job="Office of Global Education, Graduate School of Education, Kyoto University"
         description={
           <>
             <Details open="See more">
@@ -349,9 +381,10 @@ const SessionConveners = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Ms. Supa Yaimuang"
         photo={<DefaultPhoto />}
+        job="Sustainable Agriculture Foundation, Thailand"
         description={
           <>
             <Details open="See more">
@@ -387,9 +420,10 @@ const SessionConveners = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Mr. Ted Mayer"
         photo={<Ted />}
+        job="Institute of Transformative Learning (INEB)"
         description={
           <>
             <Details open="See more ">
@@ -427,9 +461,10 @@ const SessionConveners = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Dr. Toshiyuki Doi"
         photo={<Toshiyuki />}
+        job="Mekong Watch"
         description={
           <>
             <Details open="See more">
@@ -470,68 +505,10 @@ const MayorsSymposium = props => {
       sectionTitle="OTHER SPEAKERS"
       id="other-speakers"
       style={{ paddingTop: 48 }}>
-      <SpeakerKeynoteItem
-        name="Ajarn Heng Monychenda"
-        photo={<DefaultPhoto />}
-        description={
-          <>
-            <Details open="See more">
-              <Text medium component="p">
-                Heng Monychenda is the founding director and visionary of
-                Buddhism For Development, a Cambodian NGO dedicated to improving
-                the rights and welfare of citizens especially those in rural and
-                remote areas of Cambodia’s north-west and central provinces.
-              </Text>
-              <Text medium component="p">
-                After living under the Khmer Rouge regime for nearly 4 years,
-                Heng Monychenda moved to the Cambodian-Thai border living with
-                the many Cambodians in the camps. At this time Monychenda became
-                a Buddhist monk a calling which followed for 17 years, from 1980
-                - 1997.
-              </Text>
-              <Text medium component="p">
-                From 1985-1992 he held the position as Director of Khmer
-                Buddhist Research Center in Site 2 refugee camp, aiming to
-                discover the relationship between Buddhism and Khmer society,
-                and determining the Buddhist way that would prevent tragedy from
-                happening ever again in Cambodia.
-              </Text>
-              <Text medium component="p">
-                Returning to Cambodia in 1992 under the repatriation program of
-                the UN, he located Buddhism for Development at Wat Anlongvil
-                (pagoda) in Battambang province where it still exists today.
-                From its simple beginnings under difficult conditions, BFD now
-                has seven branches located in Battambang, Pailin, Banteay
-                Meanchey, Oddor Meanchey, Siemreap, Kampong Thom, and Preah
-                Vihear.
-              </Text>
-              <Text medium component="p">
-                Monychenda received training in management skills at the
-                Klausenhoff Academy, Germany in 1989, and received his Master
-                Degree in Public Administration from John F. Kennedy School of
-                Government, Harvard University in 1998.
-              </Text>
-              <Text medium component="p">
-                Monychenda is a passionate Buddhist scholar writing many books
-                and papers relating to Buddhist values in governing a country
-                for peace and development, in family values, in reconciliation,
-                and in development. He is widely recognized as a leader for the
-                movement of socially-engaged Buddhism in Cambodia and its role
-                in social and community development.
-              </Text>
-              <Text medium component="p">
-                Starting in 2017 Monychenda is co-founding a movement called
-                Lotus aiming to integrating health, capacity, and moral values
-                into the private sectors in Cambodia to increase and improve
-                integrity in the private sectors.
-              </Text>
-            </Details>
-          </>
-        }
-      />
-      <SpeakerKeynoteItem
-        name="Bjorn Low"
+      <SpeakerAlt
+        name="Mr. Bjorn Low"
         photo={<BjornLow />}
+        job="Director, Citizen Farm, Singapore"
         description={
           <>
             <Details open="See more">
@@ -631,9 +608,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Dr. Chatchawan Chaisuekul"
         photo={<DefaultPhoto />}
+        job="Dept. of Biology, Chulalongkorn University"
         description={
           <>
             <Details open="See more">
@@ -658,9 +636,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Dr. Chhaeng Vannarith"
         photo={<Vannarith />}
+        job="President, Asian Vision Institute, Cambodia"
         description={
           <>
             <Details open="See more">
@@ -697,9 +676,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Dr. Dicky Sofjan"
         photo={<DefaultPhoto />}
+        job="Indonesian Consortium for Religious Studies"
         description={
           <>
             <Details open="See more">
@@ -726,9 +706,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Dr. Elise Edwards"
         photo={<EEdwards />}
+        job="Baylor University, United States"
         description={
           <>
             <Details open="See more">
@@ -770,31 +751,70 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
-        name="Elodie Jacqet"
-        photo={<Elodie />}
+      <SpeakerAlt
+        name="Ajarn Heng Monychenda"
+        photo={<DefaultPhoto />}
+        job="Founding Director, Buddhism for Development, Cambodia"
         description={
           <>
             <Details open="See more">
               <Text medium component="p">
-                Elodie has been working with the SFU Morris J. Wosk Centre for
-                Dialogue and other clients on a variety of engagement processes
-                for the past 11 years. She has developed and refined her
-                convening and facilitation skills in a wide variety of
-                dialogues, from Canada’s World, a national citizen engagement
-                initiative on foreign policy to the National Reconciliation
-                Gatherings and the more recent Citizens’ Dialogue on Canada’s
-                Energy Future. She is currently furthering her education with a
-                master’s on Global Climate and Energy Policy at SOAS, University
-                of London.
+                Heng Monychenda is the founding director and visionary of
+                Buddhism For Development, a Cambodian NGO dedicated to improving
+                the rights and welfare of citizens especially those in rural and
+                remote areas of Cambodia’s north-west and central provinces.
+              </Text>
+              <Text medium component="p">
+                After living under the Khmer Rouge regime for nearly 4 years,
+                Heng Monychenda moved to the Cambodian-Thai border living with
+                the many Cambodians in the camps. At this time Monychenda became
+                a Buddhist monk a calling which followed for 17 years, from 1980
+                - 1997.
+              </Text>
+              <Text medium component="p">
+                From 1985-1992 he held the position as Director of Khmer
+                Buddhist Research Center in Site 2 refugee camp, aiming to
+                discover the relationship between Buddhism and Khmer society,
+                and determining the Buddhist way that would prevent tragedy from
+                happening ever again in Cambodia.
+              </Text>
+              <Text medium component="p">
+                Returning to Cambodia in 1992 under the repatriation program of
+                the UN, he located Buddhism for Development at Wat Anlongvil
+                (pagoda) in Battambang province where it still exists today.
+                From its simple beginnings under difficult conditions, BFD now
+                has seven branches located in Battambang, Pailin, Banteay
+                Meanchey, Oddor Meanchey, Siemreap, Kampong Thom, and Preah
+                Vihear.
+              </Text>
+              <Text medium component="p">
+                Monychenda received training in management skills at the
+                Klausenhoff Academy, Germany in 1989, and received his Master
+                Degree in Public Administration from John F. Kennedy School of
+                Government, Harvard University in 1998.
+              </Text>
+              <Text medium component="p">
+                Monychenda is a passionate Buddhist scholar writing many books
+                and papers relating to Buddhist values in governing a country
+                for peace and development, in family values, in reconciliation,
+                and in development. He is widely recognized as a leader for the
+                movement of socially-engaged Buddhism in Cambodia and its role
+                in social and community development.
+              </Text>
+              <Text medium component="p">
+                Starting in 2017 Monychenda is co-founding a movement called
+                Lotus aiming to integrating health, capacity, and moral values
+                into the private sectors in Cambodia to increase and improve
+                integrity in the private sectors.
               </Text>
             </Details>
           </>
         }
       />
-      <SpeakerKeynoteItem
-        name="Hiroko Aihara"
+      <SpeakerAlt
+        name="Ms. Hiroko Aihara"
         photo={<DefaultPhoto />}
+        job="Japan Perspective News Inc."
         description={
           <>
             <Details open="See more">
@@ -837,9 +857,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Dr. Ilyas Mohammed"
         photo={<Ilyas />}
+        job="Lecturer in Criminology and Security, University of Liverpool, Singapore"
         description={
           <>
             <Details open="See more">
@@ -856,9 +877,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Dr. Keo Piseth"
         photo={<KeoPiseth />}
+        job="Director, Center for Sustainable Development Studies, Asian Vision Institute, Cambodia"
         description={
           <>
             <Details open="See more">
@@ -877,9 +899,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
-        name="Mayu Seto"
+      <SpeakerAlt
+        name="Ms. Mayu Seto"
         photo={<DefaultPhoto />}
+        job="Former Youth Communicator, “World without Nuclear Weapons”"
         description={
           <>
             <Details open="See more">
@@ -904,9 +927,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
-        name="Rizqa Hidayani"
+      <SpeakerAlt
+        name="Ms. Rizqa Hidayani"
         photo={<RizqaHidayani />}
+        job="Urban Planner, Kota Kita Foundation"
         description={
           <>
             <Details open="See more">
@@ -935,10 +959,15 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem name="Sri Yusnita Irda Sari" photo={<SriYusnita />} />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
+        name="Ms. Sri Yusnita Irda Sari"
+        job="Awardees of “Sustainable, Just, Smart Urban Living Innovation Award”"
+        photo={<SriYusnita />}
+      />
+      <SpeakerAlt
         name="Dr. Sukanda Lewis"
         photo={<DefaultPhoto />}
+        job="Project Director, Development of Creative Tourism, Chulalongkorn University"
         description={
           <>
             <Details open="See more">
@@ -973,9 +1002,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
-        name="Supardi Asmorobangun"
+      <SpeakerAlt
+        name="Mr. Supardi Asmorobangun"
         photo={<DefaultPhoto />}
+        job="Manager of Rumah Kompos Padangtegal, Bali"
         description={
           <>
             <Details open="See more">
@@ -1032,9 +1062,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
-        name="Varangkanang Nimhutta"
+      <SpeakerAlt
+        name="Ms. Varangkanang Nimhutta"
         photo={<DefaultPhoto />}
+        job="Sustainable Agriculture Foundation, Thailand"
         description={
           <>
             <Details open="See more">
@@ -1071,9 +1102,10 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem
+      <SpeakerAlt
         name="Dr. Wasana Wongsurawat"
         photo={<Wasana />}
+        job="Deputy Director, IAS, Chulalongkorn University"
         description={
           <>
             <Details open="See more">
@@ -1094,7 +1126,11 @@ const MayorsSymposium = props => {
           </>
         }
       />
-      <SpeakerKeynoteItem name="Yudhis Thiro Kabul Yunior" photo={<Yudhis />} />
+      <SpeakerAlt
+        name="Mr. Yudhis Thiro Kabul Yunior"
+        job="Awardees of “Sustainable, Just, Smart Urban Living Innovation Award”"
+        photo={<Yudhis />}
+      />
     </SpeakerKeynote>
   )
 }

@@ -1042,8 +1042,8 @@ const SchedulesFull = ({ className, ...restProps }) => {
               <SubTalk title="Inclusive and Sustainable City">
                 <Role label="Speakers" />
                 <TalkSpeaker
-                  name="Ms. Endah Setyowati"
-                  job="Executive Director, Ohana Indonesia"
+                  name="Ms. Risnawati Utami"
+                  job="Founder OHANA Indonesia and The UN CRPD Committee 2019-2022"
                 />
                 <TalkSpeaker
                   name="Dr. Bernadia Irawati Tjandradewi*"
@@ -1056,6 +1056,10 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 <TalkSpeaker
                   name="Dr. Sukanda Luangon Lewis"
                   job="Project Director, Development of Creative Tourism, Chulalongkorn University"
+                />
+                <TalkSpeaker
+                  name="Dr. Arif Maftuhin"
+                  job="Lecturer, Ketua Pusat Layanan  Disabilitas (Head of Center for Disability Service), UIN Sunan Kalijaga, Yogyakarta"
                 />
               </SubTalk>
               <SubTalk title="Responses from mayors">

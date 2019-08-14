@@ -1,0 +1,143 @@
+@import "src/tokens";
+
+.parent {
+  padding-bottom: 0;
+
+  @include screen(phone) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  @include screen(tabPortrait) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include screen(tabLandscape) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include screen(desktop) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include screen(desktopWide) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.root {
+  composes: col-sm-6 col-12 from global;
+  composes: parent;
+  transition: all 0.4s;
+  &:first-child:last-child {
+    width: 100% !important;
+    max-width: 100%;
+    flex: 100%;
+  }
+
+  &:hover {
+    transition: all 0.28s;
+  }
+}
+
+.container {
+  height: 100%;
+  padding: $space-vertical-l;
+  border-bottom: 1px solid $dark-alpha-30;
+}
+
+.bio {
+  flex: 1;
+  &:not(:last-child) {
+    padding-right: $space-ml;
+  }
+}
+
+.photo {
+  width: 240px;
+  margin-bottom: $space-ml;
+
+  @include screen(phone) {
+    min-width: 160px;
+    max-width: 192px;
+    height: 240px;
+  }
+  @include screen(tabPortrait) {
+    min-width: 240px;
+    height: 320px;
+  }
+  @include screen(tabLandscape) {
+    min-width: 240px;
+    height: 320px;
+  }
+  @include screen(desktop) {
+    min-width: 240px;
+    height: 320px;
+  }
+  @include screen(desktopWide) {
+    min-width: 240px;
+    height: 320px;
+  }
+
+  > div > div {
+    border-radius: 4px;
+    @include screen(phone) {
+      padding-bottom: 240px !important;
+    }
+    @include screen(tabPortrait) {
+      padding-bottom: 320px !important;
+    }
+    @include screen(tabLandscape) {
+      padding-bottom: 320px !important;
+    }
+    @include screen(desktop) {
+      padding-bottom: 320px !important;
+    }
+    @include screen(desktopWide) {
+      padding-bottom: 320px !important;
+    }
+  }
+
+  img {
+    object-fit: cover !important;
+    border-radius: 4px;
+  }
+}
+
+.photoContainer {
+  margin-right: $space-ml;
+  width: 128px;
+  height: 144px;
+  border-radius: 16px;
+  background-color: $bg-banana-100;
+  transition: all 0.4s;
+  box-shadow: 0px 24px 20px -8px $brand-secondary-50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userAvatar {
+  width: 96px;
+  height: 96px;
+  color: $dark-alpha-20;
+}
+
+.identityBreakout {
+  padding: $space-vertical-m;
+  background-color: transparent;
+  border-bottom: 1px solid $dark-alpha-30;
+}
+
+.name {
+  margin: $space-stack-xs;
+  color: $dark-hex-90;
+  @include screen(phone) {
+    font-size: 16px;
+  }
+}
+
+.title {
+  letter-spacing: normal;
+  color: $dark-hex-70;
+}
