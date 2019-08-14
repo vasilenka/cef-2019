@@ -5,7 +5,7 @@ import cx from "classnames"
 import SpeakerKeynote from "../SpeakerKeynote/SpeakerKeynote"
 import Speaker from "../Speaker/Speaker"
 import SpeakerAlt from "../SpeakerAlt/SpeakerAlt"
-// import SpeakerKeynoteItem from "../SpeakerKeynoteIte/SpeakerKeynoteItem"
+import SpeakerKeynoteItem from "../SpeakerKeynoteIte/SpeakerKeynoteItem"
 import Keynote from "../Keynote/Keynote"
 import SpeakerNotes from "../SpeakerNotes/SpeakerNotes"
 
@@ -55,12 +55,12 @@ const CountrySection = props => {
 export const KeynoteSpeakers = props => {
   return props.noHeader ? (
     <div className={styles.speakersContainer} style={{ marginBottom: "48px" }}>
-      <SpeakerKeynote
+      <SpeakerKeynoteItem
         number="I"
         name="Prof. Michael Northcott"
         job="Professor of Religion and Ecology"
       />
-      <SpeakerKeynote
+      <SpeakerKeynoteItem
         number="II"
         name="Prof. Melani Budianta"
         job="Professor of Interdisciplinary Humanities"
