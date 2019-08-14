@@ -1,10 +1,10 @@
-@import 'src/tokens';
+@import "src/tokens";
 
 .root {
   padding-left: 0;
   color: $dark-alpha-60;
   list-style: none;
-  font-size: 15px;
+  font-size: 16px;
   padding-top: $space-xs;
   &:not(:last-child) {
     padding-bottom: $space-xs;

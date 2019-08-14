@@ -685,6 +685,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                   job="Director, Institute of Asian Studies, Chulalongkorn University"
                 />
               </SubTalk>
+              <hr />
               <SubTalk title="Keynote Speech: Youth Leadership toward People-Centered Society">
                 <br />
                 <TalkSpeaker
@@ -692,19 +693,19 @@ const SchedulesFull = ({ className, ...restProps }) => {
                   name="Prof. Michael Northcott"
                   job="Professor of Religion and Ecology"
                 />
-                <SubTalk title="The Good City? From the City as Cradle of Civilisation to the Sustainable Cities of Tomorrow" />
+                <Text medium component="p">
+                  The Good City? From the City as Cradle of Civilisation to the
+                  Sustainable Cities of Tomorrow
+                </Text>
                 <GoodCity />
+                <hr />
                 <TalkSpeaker
                   label="SPEAKER II"
                   name="Prof. Melani Budianta"
                   job="Professor of Interdisciplinary Humanities"
                 />
-                {/* <TalkSpeaker
-                  label="Speaker III"
-                  name="Mr. Adamas Belva Syah Devara*"
-                  job="CEO and Founder of Ruang Guru" /> */}
+                <hr />
               </SubTalk>
-              {/* <ScheduleVenue>The Sunan Hotel</ScheduleVenue> */}
             </Talk>
           </ScheduleItem>
           <ScheduleItem
