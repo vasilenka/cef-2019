@@ -111,7 +111,7 @@
     margin-bottom: 8px;
   }
   @include screen(phone) {
-    font-size: $heading-5;
+    font-size: $heading-3;
   }
   @include screen(tabPortrait) {
     font-size: $heading-3;
@@ -237,5 +237,25 @@
   img {
     object-fit: cover !important;
     border-radius: 4px;
+  }
+}
+
+.speechTitle {
+  margin-bottom: $space-ml;
+  font-family: $font-secondary;
+  @include screen(phone) {
+    font-size: 16px;
+  }
+  @include screen(tabPortrait) {
+    font-size: 16px;
+  }
+  @include screen(tabLandscape) {
+    font-size: 20px;
+  }
+  @include screen(desktop) {
+    font-size: 20px;
+  }
+  @include screen(desktopWide) {
+    font-size: 20px;
   }
 }

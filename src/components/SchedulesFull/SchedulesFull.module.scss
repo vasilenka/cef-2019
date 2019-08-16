@@ -110,3 +110,16 @@
     margin-bottom: $space-sm;
   }
 }
+
+.speechTitle {
+  position: relative;
+  // &::after {
+  //   content: url("/quote.inline.svg");
+  //   color: $dark-alpha-60;
+  //   position: absolute;
+  //   left: -16px;
+  //   top: -4px;
+  //   width: 16px;
+  //   height: 16px;
+  // }
+}

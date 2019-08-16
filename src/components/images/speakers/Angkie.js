@@ -2,14 +2,14 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export const Elodie = ({ url, ...restProps }) => {
+export const Angkie = ({ url, ...restProps }) => {
   return (
     <StaticQuery
       query={graphql`
         query {
-          placeholderImage: file(relativePath: { eq: "speakers/elodie.jpg" }) {
+          placeholderImage: file(relativePath: { eq: "speakers/angkie.jpeg" }) {
             childImageSharp {
-              fluid(maxWidth: 900) {
+              fluid(maxWidth: 300) {
                 ...GatsbyImageSharpFluid
               }
             }

@@ -5,6 +5,7 @@ import Text from "../../primitives/Text/Text"
 
 const Keynote = ({
   className,
+  speech,
   name,
   number,
   description,
@@ -28,6 +29,11 @@ const Keynote = ({
             {job && (
               <Text heading5 component="p" className={styles.job}>
                 {job}
+              </Text>
+            )}
+            {speech && (
+              <Text heading4 component="h3" className={styles.speechTitle}>
+                {speech}
               </Text>
             )}
             {description && (

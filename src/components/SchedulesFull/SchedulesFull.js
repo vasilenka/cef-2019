@@ -693,7 +693,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                   name="Prof. Michael Northcott"
                   job="Professor of Religion and Ecology"
                 />
-                <Text medium component="p">
+                <Text medium component="p" className={styles.speechTitle}>
                   The Good City? From the City as Cradle of Civilisation to the
                   Sustainable Cities of Tomorrow
                 </Text>
@@ -704,6 +704,16 @@ const SchedulesFull = ({ className, ...restProps }) => {
                   name="Prof. Melani Budianta"
                   job="Professor of Interdisciplinary Humanities"
                 />
+                <hr />
+                <TalkSpeaker
+                  label="SPEAKER III"
+                  name="Ms. Angkie Yustisia"
+                  job="Chief Executive Officer of Thisable Enterprise"
+                />
+                <Text medium component="p" className={styles.speechTitle}>
+                  The Role of Technology in Empowering Persons with Disabilities
+                  in The Formal and Informal Sectors
+                </Text>
                 <hr />
               </SubTalk>
             </Talk>
@@ -861,6 +871,10 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Hiroshima University"
               />
               <Role label="Resource Person" />
+              <TalkSpeaker
+                name="Ajarn Heng Monychenda"
+                job="Founding Director, Buddhism for Development, Cambodia"
+              />
               <TalkSpeaker
                 name="Ms. Keiko Takahashi"
                 job="Hutaba Info., Fukushima, Japan"

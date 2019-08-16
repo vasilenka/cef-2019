@@ -12,6 +12,7 @@ import SpeakerNotes from "../SpeakerNotes/SpeakerNotes"
 import { Details } from "./../SchedulesFull/SchedulesFull"
 
 import {
+  Angkie,
   Ahyar,
   Badingah,
   BjornLow,
@@ -82,6 +83,7 @@ export const KeynoteSpeakers = props => {
             name="Prof. Michael Northcott"
             job="Professor of Religion and Ecology"
             photo={<Northcott />}
+            speech="The Good City? From the City as Cradle of Civilisation to the Sustainable Cities of Tomorrow"
             description={
               <>
                 <Text medium component="p">
@@ -174,6 +176,54 @@ export const KeynoteSpeakers = props => {
                   Farid and Abidin Kusno, she edited a special issue of
                   Inter-Asia Cultural Studies, Vol 12, 4 December (2011) on
                   Runaway City/Leftover Spaces.
+                </Text>
+              </>
+            }
+          />
+          <Keynote
+            number="III"
+            name="Ms. Angkie Yustisia"
+            job="Chief Executive Officer of Thisable Enterprise"
+            photo={<Angkie />}
+            speech="The Role of Technology in Empowering Persons with Disabilities in The Formal and Informal Sectors"
+            description={
+              <>
+                <Text medium component="p">
+                  Angkie Yudistia is a social entrepreneur and author. She is
+                  the Chief Executive Office (CEO) of Thisable Enterprise, a
+                  technology platform that connects job-seeking, persons with
+                  disabilities to formal and informal job opportunities.
+                </Text>
+                <Text medium component="p">
+                  When Angkie was a child, she got sick and the illness
+                  eventually led her to become permanently deaf. This chapter of
+                  her life changed her and made her resilient.
+                </Text>
+                <Text medium component="p">
+                  Angkie’s chapter as a social entrepreneur began in 2009 when
+                  she decided to do something concrete for the community of
+                  persons with disabilities. The community that have made her
+                  feel less alone. Angkie’s enterprise began with humble
+                  beginnings. It started with only 15 staff members and a goal
+                  to provide free training to persons with disabilities. Now, a
+                  decade later, Thisable has its own three-story office in
+                  Jakarta and more than 5,000 members in Jakarta, while its
+                  databases in other cities, such as Yogyakarta and Bandung, are
+                  still growing.
+                </Text>
+                <Text medium component="p">
+                  Angkie has written and published three books – Perempuan Tuna
+                  Rungu Menembus Batas (A Deaf Woman Without Limits) in 2011,
+                  Setinggi Langit (As High As The Sky) in 2013, and Become Rich
+                  as a Sociopreneur in 2019.
+                </Text>
+                <Text medium component="p">
+                  She won several awards including Inspiring Woman in ICT,
+                  Kartini Next Generation Award, Ministry of Communication and
+                  Information Technology Indonesia, 2013, Ernst and Young Social
+                  Enterpreneur Of The Year, Community Development, 2014, and
+                  Social Literacy and Communication Icon, Ministry of
+                  Communication and Information Technology, Indonesia, 2018.
                 </Text>
               </>
             }

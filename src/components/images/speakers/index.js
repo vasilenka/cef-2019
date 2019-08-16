@@ -27,3 +27,5 @@ export { SriYusnita } from "./SriYusnita"
 export { Vannarith } from "./Vannarith"
 export { Wasana } from "./Wasana"
 export { Yudhis } from "./Yudhis"
+
+export { Angkie } from "./Angkie"
