@@ -1,16 +1,16 @@
-import styles from './Navbar.module.scss'
-import React from 'react'
-import cx from 'classnames'
-import {Link} from 'gatsby'
+import styles from "./Navbar.module.scss"
+import React from "react"
+import cx from "classnames"
+// import { Link } from "gatsby"
 
-import NavbarBrand from '../NavbarBrand/NavbarBrand'
-import NavbarSecondary from '../NavbarSecondary/NavbarSecondary'
-import NavbarPrimary from '../NavbarPrimary/NavbarPrimary'
-import NavbarMenu from '../NavbarMenu/NavbarMenu'
-import Button from '../../primitives/Button/Button'
-import Container from '../../layouts/Container/Container'
-import Popout from '../../primitives/Popout/Popout';
-import Text from '../../primitives/Text/Text';
+import NavbarBrand from "../NavbarBrand/NavbarBrand"
+import NavbarSecondary from "../NavbarSecondary/NavbarSecondary"
+import NavbarPrimary from "../NavbarPrimary/NavbarPrimary"
+import NavbarMenu from "../NavbarMenu/NavbarMenu"
+import Button from "../../primitives/Button/Button"
+import Container from "../../layouts/Container/Container"
+import Popout from "../../primitives/Popout/Popout"
+import Text from "../../primitives/Text/Text"
 
 const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
   return (
@@ -27,63 +27,100 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
           className={cx({
             [styles.container]: true,
             [className]: className,
-          })}
-          >
+          })}>
           <NavbarPrimary>
-            <NavbarBrand/>
-            <NavbarMenu containerClassName={styles.primaryMenu} to="/">Home</NavbarMenu>
-            <NavbarMenu containerClassName={styles.primaryMenu} to="/about/">About</NavbarMenu>
+            <NavbarBrand />
+            <NavbarMenu containerClassName={styles.primaryMenu} to="/">
+              Home
+            </NavbarMenu>
+            <NavbarMenu containerClassName={styles.primaryMenu} to="/about/">
+              About
+            </NavbarMenu>
             <Popout
               bottom
-              content={() =>
+              content={() => (
                 <>
-                  <NavbarMenu containerClassName={styles.dropdown} to="/venue#about-the-sunan-hotel">About The Sunan Hotel</NavbarMenu>
-                  <NavbarMenu containerClassName={styles.dropdown} to="/venue#solo-at-a-glance">Solo at A Glance</NavbarMenu>
-                  <NavbarMenu containerClassName={styles.dropdown} to="/venue#pratical-information">Practical Information</NavbarMenu>
+                  <NavbarMenu
+                    containerClassName={styles.dropdown}
+                    to="/venue#about-the-sunan-hotel">
+                    About The Sunan Hotel
+                  </NavbarMenu>
+                  <NavbarMenu
+                    containerClassName={styles.dropdown}
+                    to="/venue#solo-at-a-glance">
+                    Solo at A Glance
+                  </NavbarMenu>
+                  <NavbarMenu
+                    containerClassName={styles.dropdown}
+                    to="/venue#pratical-information">
+                    Practical Information
+                  </NavbarMenu>
                 </>
-              }>
-              {(
-                setVisible,
-                visible,
-              ) =>
-                <button type='button' className={styles.dropdownTrigger} onClick={() => setVisible(!visible)}>
-                  <Text heading5Alt className={styles.item} style={{fontWeight: '700'}}>
+              )}>
+              {(setVisible, visible) => (
+                <button
+                  type="button"
+                  className={styles.dropdownTrigger}
+                  onClick={() => setVisible(!visible)}>
+                  <Text
+                    heading5Alt
+                    className={styles.item}
+                    style={{ fontWeight: "700" }}>
                     Venue
                   </Text>
                 </button>
-              }
+              )}
             </Popout>
             <Popout
               bottom
-              content={() =>
+              content={() => (
                 <>
-                  <NavbarMenu containerClassName={styles.dropdown} to="/organizers">Organizers</NavbarMenu>
-                  <NavbarMenu containerClassName={styles.dropdown} to="/organizers#funding-partners">Funding Partners</NavbarMenu>
+                  <NavbarMenu
+                    containerClassName={styles.dropdown}
+                    to="/organizers">
+                    Organizers
+                  </NavbarMenu>
+                  <NavbarMenu
+                    containerClassName={styles.dropdown}
+                    to="/organizers#funding-partners">
+                    Funding Partners
+                  </NavbarMenu>
                 </>
-              }>
-              {(
-                setVisible,
-                visible,
-              ) =>
-                <button type='button' className={styles.dropdownTrigger} onClick={() => setVisible(!visible)}>
-                  <Text heading5Alt className={styles.item} style={{fontWeight: '700'}}>
+              )}>
+              {(setVisible, visible) => (
+                <button
+                  type="button"
+                  className={styles.dropdownTrigger}
+                  onClick={() => setVisible(!visible)}>
+                  <Text
+                    heading5Alt
+                    className={styles.item}
+                    style={{ fontWeight: "700" }}>
                     Organizers
                   </Text>
                 </button>
-              }
+              )}
             </Popout>
-            <NavbarMenu containerClassName={styles.primaryMenu} to="/programs/">Programs</NavbarMenu>
-            <NavbarMenu containerClassName={styles.primaryMenu} to="/speakers/">Speakers</NavbarMenu>
-            <NavbarMenu containerClassName={styles.primaryMenu} to="/faqs/">FAQs</NavbarMenu>
+            <NavbarMenu containerClassName={styles.primaryMenu} to="/programs/">
+              Programs
+            </NavbarMenu>
+            <NavbarMenu containerClassName={styles.primaryMenu} to="/speakers/">
+              Speakers
+            </NavbarMenu>
+            <NavbarMenu containerClassName={styles.primaryMenu} to="/faqs/">
+              FAQs
+            </NavbarMenu>
           </NavbarPrimary>
           <NavbarSecondary
             className={cx({
               [styles.secondaryMenu]: true,
             })}
-            style={{paddingRight: '24px'}}>
-            <Link to="/join-participant">
-              <Button primary>JOIN AS A PARTICIPANT</Button>
-            </Link>
+            style={{ paddingRight: "24px" }}>
+            {/* <Link to="/join-participant"> */}
+            <Button disabled primary>
+              JOIN AS A PARTICIPANT
+            </Button>
+            {/* </Link> */}
           </NavbarSecondary>
         </Container>
       </nav>

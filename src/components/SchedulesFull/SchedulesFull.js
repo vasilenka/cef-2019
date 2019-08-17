@@ -707,7 +707,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 <hr />
                 <TalkSpeaker
                   label="SPEAKER III"
-                  name="Ms. Angkie Yustisia"
+                  name="Ms. Angkie Yudistia"
                   job="Chief Executive Officer of Thisable Enterprise"
                 />
                 <Text medium component="p" className={styles.speechTitle}>

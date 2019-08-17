@@ -1,4 +1,4 @@
-@import 'src/tokens';
+@import "src/tokens";
 
 .root {
   cursor: pointer;
@@ -129,8 +129,12 @@
   }
 
   &.disabled {
+    opacity: 0.33;
     color: rgba(255, 255, 255, 0.6);
     user-select: none;
+    &:hover {
+      background-color: $dark-hex-80;
+    }
   }
 }
 

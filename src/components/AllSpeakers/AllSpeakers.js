@@ -182,7 +182,7 @@ export const KeynoteSpeakers = props => {
           />
           <Keynote
             number="III"
-            name="Ms. Angkie Yustisia"
+            name="Ms. Angkie Yudistia"
             job="Chief Executive Officer of Thisable Enterprise"
             photo={<Angkie />}
             speech="The Role of Technology in Empowering Persons with Disabilities in The Formal and Informal Sectors"
