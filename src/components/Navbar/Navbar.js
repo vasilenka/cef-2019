@@ -11,8 +11,10 @@ import Button from "../../primitives/Button/Button"
 import Container from "../../layouts/Container/Container"
 import Popout from "../../primitives/Popout/Popout"
 import Text from "../../primitives/Text/Text"
+import RegistrationEnd from "../RegistrationEnd/RegistrationEnd"
 
 const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
+  const [showRegistration, setShowRegistration] = React.useState(false)
   return (
     <>
       <nav
@@ -117,10 +119,13 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             })}
             style={{ paddingRight: "24px" }}>
             {/* <Link to="/join-participant"> */}
-            <Button disabled primary>
+            <Button primary onClick={() => setShowRegistration(true)}>
               JOIN AS A PARTICIPANT
             </Button>
             {/* </Link> */}
+            {showRegistration && (
+              <RegistrationEnd setShowPrograms={setShowRegistration} />
+            )}
           </NavbarSecondary>
         </Container>
       </nav>

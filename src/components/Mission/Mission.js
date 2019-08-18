@@ -4,7 +4,7 @@ import cx from "classnames"
 import Box from "../Box/Box"
 import Text from "../../primitives/Text/Text"
 import Container from "../../layouts/Container/Container"
-import Join from "../Join/Join"
+// import Join from "../Join/Join"
 
 // import IconOne from '../images/icon1';
 // import IconTwo from '../images/icon2';
@@ -15,6 +15,7 @@ import Join from "../Join/Join"
 import Cloud1 from "./../images/cloud1--alt"
 import Cloud2 from "./../images/cloud2--alt"
 import Cloud3 from "./../images/cloud3--alt"
+import Announcement from "../Announcement/Announcement"
 // import Ornament from '../Ornament/Ornament';
 
 // import Pattern from './../images/pattern0'
@@ -125,7 +126,7 @@ const Mission = ({ className, ...restProps }) => {
             </section>
           </div>
         </main>
-        <Join />
+        <Announcement />
       </Container>
     </Box>
   )

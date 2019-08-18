@@ -66,6 +66,11 @@ export const KeynoteSpeakers = props => {
         name="Prof. Melani Budianta"
         job="Professor of Interdisciplinary Humanities"
       />
+      <SpeakerKeynoteItem
+        number="III"
+        name="Ms. Angkie Yudistia"
+        job="Chief Executive Officer of Thisable Enterprise"
+      />
     </div>
   ) : (
     <>

@@ -1,6 +1,6 @@
-import styles from './Dialog.module.scss';
-import React from 'react';
-import cx from 'classnames';
+import styles from "./Dialog.module.scss"
+import React from "react"
+import cx from "classnames"
 
 const Dialog = ({
   children,
@@ -11,12 +11,11 @@ const Dialog = ({
   className,
   ...restProps
 }) => {
-
   React.useEffect(() => {
-    const originalStyle = window.getComputedStyle(document.body).overflow;
-    document.body.style.overflow = 'hidden';
-    return () => document.body.style.overflow = originalStyle;
-    }, []);
+    const originalStyle = window.getComputedStyle(document.body).overflow
+    document.body.style.overflow = "hidden"
+    return () => (document.body.style.overflow = originalStyle)
+  }, [])
 
   return (
     <div
@@ -25,13 +24,12 @@ const Dialog = ({
         [styles.light]: light || !dark,
         [styles.hidden]: hidden,
         [styles.scroll]: scroll || !hidden,
-        [styles.dark]: dark
+        [styles.dark]: dark,
       })}
-      {...restProps}
-    >
+      {...restProps}>
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default Dialog;
+export default Dialog

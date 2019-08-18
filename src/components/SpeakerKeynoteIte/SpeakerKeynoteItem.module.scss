@@ -27,7 +27,7 @@
 }
 
 .keynoteAlt {
-  composes: col-12 col-sm-12 col-md-6 col-lg-6 from global;
+  composes: col-12 col-sm-12 col-md-6 col-lg-4 from global;
   padding-bottom: 0;
   margin-bottom: $space-ml;
   @include screen(phone) {
@@ -45,6 +45,7 @@
   @include screen(desktop) {
     padding-left: 24px;
     padding-right: 24px;
+    min-height: 200px;
   }
   @include screen(desktopWide) {
     padding-left: 24px;
@@ -65,10 +66,10 @@
     min-height: 124px;
   }
   @include screen(desktop) {
-    min-height: 124px;
+    min-height: 196px;
   }
   @include screen(desktopWide) {
-    min-height: 124px;
+    min-height: 196px;
   }
 }
 

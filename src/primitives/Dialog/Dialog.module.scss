@@ -1,4 +1,4 @@
-@import 'src/tokens';
+@import "src/tokens";
 
 .root {
   z-index: $layer-extra;
@@ -20,7 +20,7 @@
 }
 
 .dark {
-  background: $dark-hex-90;
+  background: $dark-alpha-70;
   color: $light-alpha-100;
 }
 
