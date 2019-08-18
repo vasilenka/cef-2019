@@ -7,7 +7,7 @@ import Dialog from "../../primitives/Dialog/Dialog"
 import Arrow from "./../icons/close.inline.svg"
 import Box from "../Box/Box"
 
-const FullPrograms = ({ className, setShowPrograms, ...restProps }) => {
+const Booklet = ({ className, setShowPrograms, ...restProps }) => {
   return (
     <Dialog>
       <header
@@ -35,13 +35,13 @@ const FullPrograms = ({ className, setShowPrograms, ...restProps }) => {
               heading3
               component="h1"
               style={{ flex: "auto", textAlign: "center" }}>
-              Full Programs
+              Art Exhibition
             </Text>
             <a
-              href="https://drive.google.com/uc?authuser=0&id=1KM3z0L7RLkZ720eYryBL_0oeQ5ck08_5&export=download"
+              href="https://drive.google.com/uc?authuser=0&id=1hepAdIMBl5wcFIuvD2elSRpXnlN-1Cya&export=download"
               rel="noopener noreferrer"
               target="_blank">
-              <Button primary>Download Programs as PDF</Button>
+              <Button primary>Download booklet as PDF</Button>
             </a>
           </Box>
         </Container>
@@ -50,7 +50,7 @@ const FullPrograms = ({ className, setShowPrograms, ...restProps }) => {
         <Container bleed>
           <iframe
             title="Full programs pdf"
-            src="https://drive.google.com/file/d/1KM3z0L7RLkZ720eYryBL_0oeQ5ck08_5/preview"
+            src="https://drive.google.com/file/d/1hepAdIMBl5wcFIuvD2elSRpXnlN-1Cya/preview"
             width="100%"
             style={{ height: "calc(100vh - 72px)" }}>
             <Text>Oops, your browser doesn't support PDF preview</Text>
@@ -61,4 +61,4 @@ const FullPrograms = ({ className, setShowPrograms, ...restProps }) => {
   )
 }
 
-export default FullPrograms
+export default Booklet

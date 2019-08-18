@@ -14,6 +14,7 @@ import TalkSpeaker from "../TalkSpeaker/TalkSpeaker"
 import SubTalk from "../SubTalk/SubTalk"
 
 import Arrow from "./../icons/arrow.inline.svg"
+import Booklet from "../Booklet/Booklet"
 
 const Role = props => (
   <Text
@@ -557,6 +558,7 @@ const ToBeConfirmed = () => (
 )
 
 const SchedulesFull = ({ className, ...restProps }) => {
+  const [showBooklet, setShowBooklet] = React.useState(false)
   return (
     <Box className={cx(styles.root)} {...restProps}>
       <Container narrow className={cx(styles.container)}>
@@ -589,7 +591,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
             theme="Thematic Field Visit"
           />
           <ScheduleItem hour="8:00am - 1:00pm" tag="Field Experience">
-            <Talk title="Thematic Site Visits">
+            <Talk title="Thematic Site Visits (by invitation only)">
               <SubTalk title="Locating Sustainability in Solo and Its Communities">
                 <TalkSpeaker name="Facilitated by Kota Kita" />
               </SubTalk>
@@ -622,17 +624,13 @@ const SchedulesFull = ({ className, ...restProps }) => {
               <Talk title="Urban Landscape, Our Communities"></Talk>
             </SubTalk>
             <Text component="p" medium>
-              Opening address by Director of Exhibition,{" "}
-              <strong>Dr. Mohamad</strong>, Graduate School Universitas Gadjah
-              Mada (UGM)
+              Opening address by <strong>Dr. Dicky Sofjan</strong>, Core
+              Doctoral Faculty, ICRS
             </Text>
-            {/* <Role label="Navigators" />
-            <TalkSpeaker
-              name="Associate Professor Dr. Yeoh Seng Guan"
-              job="School of Arts and Social Sciences, Monash University, Malaysia" />
-            <TalkSpeaker
-              name="Dr. Dicky Sofjan"
-              job="ICRS" /> */}
+            <Text link heading5 onClick={() => setShowBooklet(true)}>
+              View Booklet
+            </Text>
+            {showBooklet && <Booklet setShowPrograms={setShowBooklet} />}
             <ScheduleVenue>The Sunan Hotel</ScheduleVenue>
           </ScheduleItem>
           <ScheduleItem hour="7:00pm - 8:30pm">
@@ -647,8 +645,8 @@ const SchedulesFull = ({ className, ...restProps }) => {
                   job="Executive Director, Kota Kita Foundation"
                 />
                 <TalkSpeaker
-                  name="Prof. Dr. Pirongrong Ramasoota"
-                  job="Vice President for Social Outreach and Global Engagement, Chulalongkorn University"
+                  name="Dr. Nualnoi Treerat"
+                  job="Director, Institute of Asian Studies (IAS), Chulalongkorn University"
                 />
               </SubTalk>
               <SubTalk title="Reception and Cultural Performance">
@@ -681,8 +679,8 @@ const SchedulesFull = ({ className, ...restProps }) => {
               />
               <SubTalk title="Welcome Address">
                 <TalkSpeaker
-                  name="Dr. Nualnoi Treerat"
-                  job="Director, Institute of Asian Studies, Chulalongkorn University"
+                  name="Prof. Surichai Wun’Gaeo"
+                  job="Professor Emeritus; Director, Peace and Conflict Studies Center, CU"
                 />
               </SubTalk>
               <hr />
@@ -833,8 +831,8 @@ const SchedulesFull = ({ className, ...restProps }) => {
               />
               <Role label="Presenters" />
               <TalkSpeaker
-                name="Dr. Eng. Kusumaningdyah Nurul Handayani, S.T., M.T."
-                job="Urban Rural Design and Conservation Laboratory, Department of Architecture, Universitas Sebelas Maret"
+                name="Dr. Kusumaningdyah Nurul Handayani"
+                job="Urban Rural Design and Conservation Laboratory, Department of Architecture, Sebelas Maret University"
               />
               <TalkSpeaker
                 name="Prof. Tomoko Okayama"
@@ -872,10 +870,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
               />
               <Role label="Resource Person" />
               <TalkSpeaker
-                name="Ajarn Heng Monychenda"
-                job="Founding Director, Buddhism for Development, Cambodia"
-              />
-              <TalkSpeaker
                 name="Ms. Keiko Takahashi"
                 job="Hutaba Info., Fukushima, Japan"
               />
@@ -904,7 +898,7 @@ const SchedulesFull = ({ className, ...restProps }) => {
               />
               <Role label="Resource Person" />
               <TalkSpeaker
-                name="Mr. Ir. Ahyani, M.A."
+                name="Mr. Ahyani"
                 job="City of Surakarta Regional Secretary"
               />
               <TalkSpeaker
@@ -987,13 +981,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
               <SubTalk title="Award giving ceremony “Sustainable, Just and Smart Urban Living Innovation Award"></SubTalk>
             </Talk>
             <Talk title="Roundtable: Mayors’ Innovation Pitch">
-              <Country label="Cambodia" />
-              <TalkSpeaker
-                name="H. E. Prak Sovann"
-                job="Governor of Preah Vihear Province"
-                style={{ marginBottom: "24px" }}
-              />
-
               <Country label="Indonesia" />
               <TalkSpeaker
                 name="Mr. H. Ahyar Abduh"
@@ -1020,15 +1007,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 job="Mayor of Surabaya (East Java)"
                 style={{ marginBottom: "24px" }}
               />
-
-              {/* <Country label="Philippines" />
-              <TalkSpeaker
-                name="Mr. James B. Pooten, Jr."
-                job="Mayor of Municipality of Sagada" style={{marginBottom: '24px'}}/> */}
-
-              {/* <Country label="South Korea" />
-              <TalkSpeaker
-                name={<em>To be confirmed</em>} style={{marginBottom: '24px'}}/> */}
 
               <Country label="Thailand" />
               <TalkSpeaker
@@ -1063,10 +1041,6 @@ const SchedulesFull = ({ className, ...restProps }) => {
                 <TalkSpeaker
                   name="Dr. Bernadia Irawati Tjandradewi*"
                   job="Secretary General, United Cities and Local Governance Asia Pacific"
-                />
-                <TalkSpeaker
-                  name="Ajarn Heng Monychenda"
-                  job="Founding Director, Buddhism for Development, Cambodia"
                 />
                 <TalkSpeaker
                   name="Dr. Sukanda Luangon Lewis"
