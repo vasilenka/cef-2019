@@ -42,12 +42,19 @@ const SpeakersHighlight = ({ className, ...restProps }) => {
             Mayors
           </Text>
 
-          {/* <Text heading5 component="h3" className={styles.mayorsTitle}>Cambodia</Text>
+          <Text heading5 component="h3" className={styles.mayorsTitle}>
+            Cambodia
+          </Text>
           <Link to="/speakers#cambodia">
-            <div className={styles.speakerContainer} style={{marginBottom: '48px'}}>
-              <Speaker name="H. E. Prak Sovann" job="Governor of Preah Vihear Province" />
+            <div
+              className={styles.speakerContainer}
+              style={{ marginBottom: "48px" }}>
+              <Speaker
+                name="H. E. Prak Sovann"
+                job="Governor of Preah Vihear Province"
+              />
             </div>
-          </Link> */}
+          </Link>
 
           <Text heading5 component="h3" className={styles.mayorsTitle}>
             Indonesia
