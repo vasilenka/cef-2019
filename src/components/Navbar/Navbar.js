@@ -12,9 +12,11 @@ import Container from "../../layouts/Container/Container"
 import Popout from "../../primitives/Popout/Popout"
 import Text from "../../primitives/Text/Text"
 import RegistrationEnd from "../RegistrationEnd/RegistrationEnd"
+import GenerateCertificate from "../GenerateCertificate/GenerateCertificate"
 
 const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
   const [showRegistration, setShowRegistration] = React.useState(false)
+  const [showGenerator, setShowGenerator] = React.useState(false)
   return (
     <>
       <nav
@@ -118,13 +120,23 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
               [styles.secondaryMenu]: true,
             })}
             style={{ paddingRight: "24px" }}>
-            {/* <Link to="/join-participant"> */}
-            <Button primary onClick={() => setShowRegistration(true)}>
-              JOIN AS A PARTICIPANT
+            <Button
+              primary
+              onClick={() => setShowRegistration(true)}
+              style={{ marginRight: 12, textTransform: "uppercase" }}>
+              Join as a Participant
             </Button>
-            {/* </Link> */}
+            <Button
+              primary
+              onClick={() => setShowGenerator(true)}
+              style={{ textTransform: "uppercase" }}>
+              Get Certificate
+            </Button>
             {showRegistration && (
               <RegistrationEnd setShowPrograms={setShowRegistration} />
+            )}
+            {showGenerator && (
+              <GenerateCertificate setShowPrograms={setShowGenerator} />
             )}
           </NavbarSecondary>
         </Container>

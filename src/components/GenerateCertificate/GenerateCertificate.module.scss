@@ -1,0 +1,40 @@
+@import "src/tokens";
+
+.root {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-height: 100vh;
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main {
+  background-color: $brand-secondary-100;
+  max-width: 560px;
+  color: $dark-hex-80;
+  border-radius: 8px;
+  box-shadow: 0px 24px 40px -12px rgba(0, 0, 0, 0.4);
+  @include screen(phone) {
+    padding: $space-l;
+  }
+  @include screen(tabPortrait) {
+    padding: $space-l;
+  }
+  @include screen(tabLandscape) {
+    padding: $space-ll;
+  }
+  @include screen(desktop) {
+    padding: $space-ll;
+  }
+  @include screen(desktopWide) {
+    padding: $space-ll;
+  }
+}
+
+.brand {
+  width: 64px;
+}

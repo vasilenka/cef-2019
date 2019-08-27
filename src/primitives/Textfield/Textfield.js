@@ -1,10 +1,10 @@
-import styles from './Textfield.module.scss';
-import React, { useState } from 'react';
-import classnames from 'classnames';
+import styles from "./Textfield.module.scss"
+import React, { useState } from "react"
+import classnames from "classnames"
 
-import FieldLabel from './../FieldLabel/FieldLabel';
-import FieldInput from './../FieldInput/FieldInput';
-import FieldHint from './../FieldHint/FieldHint';
+import FieldLabel from "./../FieldLabel/FieldLabel"
+import FieldInput from "./../FieldInput/FieldInput"
+import FieldHint from "./../FieldHint/FieldHint"
 
 const Textfield = ({
   id,
@@ -30,26 +30,25 @@ const Textfield = ({
   onClick,
   ...restProps
 }) => {
-  const [toneHook, setToneHook] = useState(tone || '');
-  const [messageHook, setMessageHook] = useState(message || '');
-  const [valueHook, setValueHook] = useState(value || '');
+  const [toneHook, setToneHook] = useState(tone || "")
+  const [messageHook, setMessageHook] = useState(message || "")
+  const [valueHook, setValueHook] = useState(value || "")
 
   const handleChange = (e, value) => {
-    setValueHook(value);
-    onChange(e, value, type);
-  };
+    setValueHook(value)
+    onChange(e, value, type)
+  }
 
-  const setMessage = message => setMessageHook(message);
-  const setTone = tone => setToneHook(tone);
+  const setMessage = message => setMessageHook(message)
+  const setTone = tone => setToneHook(tone)
 
   return (
     <div
       {...restProps}
       className={classnames({
         [styles.root]: true,
-        [className]: className
-      })}
-    >
+        [className]: className,
+      })}>
       <FieldLabel
         id={id}
         label={label}
@@ -79,7 +78,7 @@ const Textfield = ({
         <FieldHint tone={toneHook}>{messageHook}</FieldHint>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Textfield;
+export default Textfield
