@@ -15,7 +15,7 @@ import RegistrationEnd from "../RegistrationEnd/RegistrationEnd"
 import GenerateCertificate from "../GenerateCertificate/GenerateCertificate"
 
 const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
-  const [showRegistration, setShowRegistration] = React.useState(false)
+  // const [showRegistration, setShowRegistration] = React.useState(false)
   const [showGenerator, setShowGenerator] = React.useState(false)
   return (
     <>
@@ -120,21 +120,21 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
               [styles.secondaryMenu]: true,
             })}
             style={{ paddingRight: "24px" }}>
-            <Button
+            {/* <Button
               primary
               onClick={() => setShowRegistration(true)}
               style={{ marginRight: 12, textTransform: "uppercase" }}>
               Join as a Participant
-            </Button>
+            </Button> */}
             <Button
               primary
               onClick={() => setShowGenerator(true)}
               style={{ textTransform: "uppercase" }}>
               Get Certificate
             </Button>
-            {showRegistration && (
+            {/* {showRegistration && (
               <RegistrationEnd setShowPrograms={setShowRegistration} />
-            )}
+            )} */}
             {showGenerator && (
               <GenerateCertificate setShowPrograms={setShowGenerator} />
             )}
