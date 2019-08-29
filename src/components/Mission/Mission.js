@@ -126,7 +126,7 @@ const Mission = ({ className, ...restProps }) => {
             </section>
           </div>
         </main>
-        <Announcement />
+        {/* <Announcement /> */}
       </Container>
     </Box>
   )
