@@ -17,6 +17,7 @@ const GenerateCertificate = ({ className, setShowPrograms, ...restProps }) => {
   const [email, setEmail] = React.useState("")
   const [name, setName] = React.useState("")
   const [file, setFile] = React.useState("")
+  const [isGenerating, setIsGenerating] = React.useState(false)
 
   const handleClick = e => {
     if (e.target === container.current) {
@@ -26,6 +27,7 @@ const GenerateCertificate = ({ className, setShowPrograms, ...restProps }) => {
 
   const getCertificate = async (email, name) => {
     if (email && name) {
+      setIsGenerating(true)
       let response = await axios.get(
         `http://ongkiherlambang.id:5678/pdf?name=${name}&email=${email}`
       )
@@ -43,6 +45,8 @@ const GenerateCertificate = ({ className, setShowPrograms, ...restProps }) => {
       link.href = linkSource
       link.download = fileName
       link.click()
+
+      setIsGenerating(false)
     }
   }, [file])
 
@@ -109,9 +113,10 @@ const GenerateCertificate = ({ className, setShowPrograms, ...restProps }) => {
           <Button
             primary
             stretch
+            disabled={isGenerating}
             style={{ textTransform: "uppercase" }}
             onClick={() => getCertificate(email, name)}>
-            Get Certificate
+            {isGenerating ? "Please wait..." : "Get Certificate"}
           </Button>
         </main>
       </Box>
