@@ -29,7 +29,7 @@ const GenerateCertificate = ({ className, setShowPrograms, ...restProps }) => {
     if (email && name) {
       setIsGenerating(true)
       let response = await axios.get(
-        `http://ongkiherlambang.id:5678/pdf?name=${name}&email=${email}`
+        `https://ongkiherlambang.id:5678/pdf?name=${name}&email=${email}`
       )
       response && response.data && setFile(response.data)
     }
