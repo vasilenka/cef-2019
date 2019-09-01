@@ -1,22 +1,50 @@
 import styles from "./GenerateCertificate.module.scss"
 import React from "react"
+import axios from "axios"
+
 import Text from "../../primitives/Text/Text"
 import Button from "../../primitives/Button/Button"
 import Dialog from "../../primitives/Dialog/Dialog"
+import Textfield from "../../primitives/Textfield/Textfield"
+import Box from "../Box/Box"
 
 import Arrow from "./../icons/close.inline.svg"
-import Box from "../Box/Box"
 import Logo from "./../../assets/images/logo.png"
-import Textfield from "../../primitives/Textfield/Textfield"
 
 const GenerateCertificate = ({ className, setShowPrograms, ...restProps }) => {
   let container = React.createRef()
+
+  const [email, setEmail] = React.useState("")
+  const [name, setName] = React.useState("")
+  const [file, setFile] = React.useState("")
 
   const handleClick = e => {
     if (e.target === container.current) {
       setShowPrograms(false)
     }
   }
+
+  const getCertificate = async (email, name) => {
+    if (email && name) {
+      let response = await axios.get(
+        `http://ongkiherlambang.id:5678/pdf?name=${name}&email=${email}`
+      )
+      response && response.data && setFile(response.data)
+    }
+  }
+
+  React.useEffect(() => {
+    if (file && name) {
+      const linkSource = `data:application/pdf;base64,${file}`
+      const link = document.createElement("a")
+      const fileName = `${name}.pdf`
+
+      link.target = "_self"
+      link.href = linkSource
+      link.download = fileName
+      link.click()
+    }
+  }, [file])
 
   return (
     <Dialog dark>
@@ -66,6 +94,8 @@ const GenerateCertificate = ({ className, setShowPrograms, ...restProps }) => {
             name="name"
             label="Full Name"
             style={{ marginBottom: 12 }}
+            value={name}
+            onChange={e => setName(e.target.value)}
           />
           <Textfield
             type="email"
@@ -73,8 +103,14 @@ const GenerateCertificate = ({ className, setShowPrograms, ...restProps }) => {
             name="email"
             label="Email"
             style={{ marginBottom: 24 }}
+            value={email}
+            onChange={e => setEmail(e.target.value)}
           />
-          <Button primary stretch style={{ textTransform: "uppercase" }}>
+          <Button
+            primary
+            stretch
+            style={{ textTransform: "uppercase" }}
+            onClick={() => getCertificate(email, name)}>
             Get Certificate
           </Button>
         </main>
