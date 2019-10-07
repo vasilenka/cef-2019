@@ -1,6 +1,6 @@
-import styles from './Container.module.scss';
-import React from 'react';
-import classnames from 'classnames';
+import styles from "./Container.module.scss"
+import React from "react"
+import classnames from "classnames"
 
 const Container = ({
   children,
@@ -11,7 +11,7 @@ const Container = ({
   fixRight,
   ...restProps
 }) => {
-  let defaultStyle = !narrow && !bleed && !fixLeft && !fixRight;
+  let defaultStyle = !narrow && !bleed && !fixLeft && !fixRight
   return (
     <div
       {...restProps}
@@ -22,12 +22,11 @@ const Container = ({
         [styles.bleed]: bleed,
         [styles.fixLeft]: fixLeft,
         [styles.fixRight]: fixRight,
-        [className]: className
-      })}
-    >
+        [className]: className,
+      })}>
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default Container;
+export default Container

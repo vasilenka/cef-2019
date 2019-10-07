@@ -1,7 +1,7 @@
-import styles from './OverlappingItem.module.scss';
-import React, { useContext } from 'react';
-import cx from 'classnames';
-import { OverlappingContext } from './../context/context';
+import styles from "./OverlappingItem.module.scss"
+import React, { useContext } from "react"
+import cx from "classnames"
+import { OverlappingContext } from "./../Overlapping/Overlapping"
 
 const OverlappingItem = ({
   index,
@@ -15,8 +15,8 @@ const OverlappingItem = ({
     activeIndex,
     translateIndex,
     fromLeft,
-    fromRight
-  } = useContext(OverlappingContext);
+    fromRight,
+  } = useContext(OverlappingContext)
 
   return (
     <div
@@ -30,13 +30,12 @@ const OverlappingItem = ({
         [styles.next]: translateIndex === index,
         [styles.translateLeft]: activeIndex === index && fromLeft,
         [styles.translateRight]: activeIndex === index && fromRight,
-        [className]: className
+        [className]: className,
       })}
-      {...restProps}
-    >
+      {...restProps}>
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default OverlappingItem;
+export default OverlappingItem

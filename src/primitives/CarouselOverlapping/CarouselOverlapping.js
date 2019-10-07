@@ -1,22 +1,21 @@
-import styles from './CarouselOverlapping.module.scss';
-import React, { useContext } from 'react';
-import cx from 'classnames';
-import { OverlappingContext } from './../context/context';
+import styles from "./CarouselOverlapping.module.scss"
+import React, { useContext } from "react"
+import cx from "classnames"
+import { OverlappingContext } from "./../Overlapping/Overlapping"
 
 const CarouselOverlapping = ({ children, className, ...restProps }) => {
-  let { data } = useContext(OverlappingContext);
+  let { data } = useContext(OverlappingContext)
 
   return (
     <div
       className={cx({
         [styles.root]: true,
-        [className]: className
+        [className]: className,
       })}
-      {...restProps}
-    >
+      {...restProps}>
       {children(data)}
     </div>
-  );
-};
+  )
+}
 
-export default CarouselOverlapping;
+export default CarouselOverlapping

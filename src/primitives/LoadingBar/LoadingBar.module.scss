@@ -1,4 +1,4 @@
-@import 'invoker-tokens/index.scss';
+@import "invoker-tokens/index.scss";
 
 .root {
   position: relative;
@@ -14,7 +14,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  animation: loading 0.8s infinite linear;
+  animation: loading 3.2s infinite linear;
 }
 
 @keyframes loading {

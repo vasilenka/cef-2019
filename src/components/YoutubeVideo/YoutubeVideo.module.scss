@@ -1,0 +1,32 @@
+@import "src/tokens";
+
+.root {
+  background-color: #000000;
+  position: fixed;
+  z-index: 999999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: $space-ml;
+}
+
+.container {
+  padding-top: $space-l;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video {
+  width: 100%;
+  height: calc(100vh - 192px);
+}

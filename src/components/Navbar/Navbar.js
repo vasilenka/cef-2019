@@ -49,9 +49,7 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
                     to="/venue#about-the-sunan-hotel">
                     About The Sunan Hotel
                   </NavbarMenu>
-                  <NavbarMenu
-                    containerClassName={styles.dropdown}
-                    to="/venue#solo-at-a-glance">
+                  <NavbarMenu containerClassName={styles.dropdown} to="/venue#solo-at-a-glance">
                     Solo at A Glance
                   </NavbarMenu>
                   <NavbarMenu
@@ -66,10 +64,7 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
                   type="button"
                   className={styles.dropdownTrigger}
                   onClick={() => setVisible(!visible)}>
-                  <Text
-                    heading5Alt
-                    className={styles.item}
-                    style={{ fontWeight: "700" }}>
+                  <Text heading5Alt className={styles.item} style={{ fontWeight: "700" }}>
                     Venue
                   </Text>
                 </button>
@@ -79,9 +74,7 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
               bottom
               content={() => (
                 <>
-                  <NavbarMenu
-                    containerClassName={styles.dropdown}
-                    to="/organizers">
+                  <NavbarMenu containerClassName={styles.dropdown} to="/organizers">
                     Organizers
                   </NavbarMenu>
                   <NavbarMenu
@@ -96,10 +89,7 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
                   type="button"
                   className={styles.dropdownTrigger}
                   onClick={() => setVisible(!visible)}>
-                  <Text
-                    heading5Alt
-                    className={styles.item}
-                    style={{ fontWeight: "700" }}>
+                  <Text heading5Alt className={styles.item} style={{ fontWeight: "700" }}>
                     Organizers
                   </Text>
                 </button>
@@ -116,9 +106,7 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             </NavbarMenu>
           </NavbarPrimary>
           <NavbarSecondary
-            className={cx({
-              [styles.secondaryMenu]: true,
-            })}
+            className={cx({ [styles.secondaryMenu]: true })}
             style={{ paddingRight: "24px" }}>
             {/* <Button
               primary
@@ -126,18 +114,6 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
               style={{ marginRight: 12, textTransform: "uppercase" }}>
               Join as a Participant
             </Button> */}
-            <Button
-              primary
-              onClick={() => setShowGenerator(true)}
-              style={{ textTransform: "uppercase" }}>
-              Get Certificate
-            </Button>
-            {/* {showRegistration && (
-              <RegistrationEnd setShowPrograms={setShowRegistration} />
-            )} */}
-            {showGenerator && (
-              <GenerateCertificate setShowPrograms={setShowGenerator} />
-            )}
           </NavbarSecondary>
         </Container>
       </nav>
