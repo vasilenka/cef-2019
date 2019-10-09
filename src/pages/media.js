@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Cover from "../components/Cover/Cover"
 import ImageSlider from "../components/ImageSlider/ImageSlider"
 import VideoSection from "../components/VideoSection/VideoSection"
+import Footer from "../components/Footer/Footer"
 
 const Media = ({
   data: {
@@ -18,6 +19,7 @@ const Media = ({
       <Cover title="Event Video and Photos" />
       <VideoSection />
       <ImageSlider eventPhotos={eventPhotos} />
+      <Footer />
     </Default>
   )
 }
