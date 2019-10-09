@@ -1,4 +1,64 @@
 @import "src/tokens";
 
 .root {
+  background-color: $bg-banana-200;
+  @include screen(phone) {
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+  }
+  @include screen(tabPortrait) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(tabLandscape) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+  }
+}
+
+.segment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: $space-ll;
+}
+
+.segmentName {
+  width: 40%;
+  padding-right: $space-ll;
+}
+
+.segmentFiles {
+  width: 60%;
+  flex: 1;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: $space-m 0;
+  border-bottom: 1px solid $dark-alpha-30;
+}
+
+.download {
+  margin: 0 $space-s;
+}
+
+.downloadAlt {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: $space-m;
+  }
 }
