@@ -1,0 +1,25 @@
+@import "src/tokens";
+
+.root {
+  background-color: $bg-banana-200;
+  @include screen(phone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabLandscape) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-ll;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-ll;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xxl;
+    padding-bottom: $space-ll;
+  }
+}

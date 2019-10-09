@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Navbar bleed/>
+        <Navbar bleed />
         {children}
         <MobileNav />
       </>

@@ -11,7 +11,7 @@
 
 .overlay {
   width: 100vw;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.54);
 }
 
 .container {
@@ -117,6 +117,7 @@
 }
 
 .video {
+  filter: grayscale(92%);
   position: absolute;
   // margin-top: -20vh;
   // margin-bottom: -20vh;

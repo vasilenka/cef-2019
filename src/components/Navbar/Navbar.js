@@ -104,6 +104,29 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
             <NavbarMenu containerClassName={styles.primaryMenu} to="/faqs/">
               FAQs
             </NavbarMenu>
+            <Popout
+              bottom
+              content={() => (
+                <>
+                  <NavbarMenu containerClassName={styles.dropdown} to="/presentation-materials">
+                    Presentation Materials
+                  </NavbarMenu>
+                  <NavbarMenu containerClassName={styles.dropdown} to="/media">
+                    Event Video &amp; Photos
+                  </NavbarMenu>
+                </>
+              )}>
+              {(setVisible, visible) => (
+                <button
+                  type="button"
+                  className={styles.dropdownTrigger}
+                  onClick={() => setVisible(!visible)}>
+                  <Text heading5Alt className={styles.item} style={{ fontWeight: "700" }}>
+                    Archives
+                  </Text>
+                </button>
+              )}
+            </Popout>
           </NavbarPrimary>
           <NavbarSecondary
             className={cx({ [styles.secondaryMenu]: true })}
