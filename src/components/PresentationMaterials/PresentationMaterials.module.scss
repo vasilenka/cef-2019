@@ -24,21 +24,86 @@
   }
 }
 
+.sectionTitle {
+  font-family: $font-primary !important;
+  margin-bottom: $space-xl;
+}
+
 .segment {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   margin-bottom: $space-ll;
+  @include screen(phone) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  @include screen(tabPortrait) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  @include screen(tabLandscape) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  @include screen(desktop) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  @include screen(desktopWide) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .segmentName {
-  width: 40%;
-  padding-right: $space-ll;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $font-secondary;
+  font-weight: 700;
+
+  @include screen(phone) {
+    padding-right: 0;
+    width: 100%;
+  }
+  @include screen(tabPortrait) {
+    width: 100%;
+    padding-right: 0;
+  }
+  @include screen(tabLandscape) {
+    width: 40%;
+    padding-right: $space-ll;
+  }
+  @include screen(desktop) {
+    width: 40%;
+    padding-right: $space-ll;
+  }
+  @include screen(desktopWide) {
+    width: 40%;
+    padding-right: $space-ll;
+  }
 }
 
 .segmentFiles {
-  width: 60%;
   flex: 1;
+  @include screen(phone) {
+    width: 100%;
+  }
+  @include screen(tabPortrait) {
+    width: 100%;
+  }
+  @include screen(tabLandscape) {
+    width: 60%;
+  }
+  @include screen(desktop) {
+    width: 60%;
+  }
+  @include screen(desktopWide) {
+    width: 60%;
+  }
 }
 
 .item {

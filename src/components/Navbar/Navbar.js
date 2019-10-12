@@ -128,16 +128,16 @@ const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
               )}
             </Popout>
           </NavbarPrimary>
-          <NavbarSecondary
+          {/* <NavbarSecondary
             className={cx({ [styles.secondaryMenu]: true })}
-            style={{ paddingRight: "24px" }}>
-            {/* <Button
+            style={{ paddingRight: "24px" }}> */}
+          {/* <Button
               primary
               onClick={() => setShowRegistration(true)}
               style={{ marginRight: 12, textTransform: "uppercase" }}>
               Join as a Participant
             </Button> */}
-          </NavbarSecondary>
+          {/* </NavbarSecondary> */}
         </Container>
       </nav>
     </>

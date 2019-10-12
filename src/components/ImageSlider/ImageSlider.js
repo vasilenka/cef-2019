@@ -32,19 +32,10 @@ const SliderCounter = ({ total }) => {
 }
 
 const ImageSlider = ({ eventPhotos, children, className, ...restProps }) => {
-  let photos = eventPhotos.map(
-    (
-      {
-        node: {
-          childImageSharp: { fluid },
-        },
-      },
-      index
-    ) => ({
-      fluid,
-      id: `${index + 1}`,
-    })
-  )
+  let photos = eventPhotos.map(({ node: { childImageSharp: { fluid } } }, index) => ({
+    fluid,
+    id: `${index + 1}`,
+  }))
 
   return (
     <section className={styles.root}>
@@ -61,16 +52,16 @@ const ImageSlider = ({ eventPhotos, children, className, ...restProps }) => {
           </CarouselOverlapping>
           <footer className={styles.footer}>
             <SliderCounter total={photos.length} />
-            <div
+            {/* <div
               style={{
                 padding: "0px 12px",
                 width: "60%",
                 height: "2px",
                 maxWidth: "60%",
                 marginBottom: "12px",
-              }}>
-              {/* <LoadingBar /> */}
-            </div>
+              }}> */}
+            {/* <LoadingBar /> */}
+            {/* </div> */}
             <div>
               <CarouselControl>
                 {({ data, isTransitioning, prev }) => (
@@ -79,9 +70,7 @@ const ImageSlider = ({ eventPhotos, children, className, ...restProps }) => {
                     className={styles.controlLeft}
                     disabled={isTransitioning}
                     onClick={() => prev(data.length - 1)}>
-                    <ArrowLeft
-                      style={{ display: "block", transform: "rotate(180deg)" }}
-                    />
+                    <ArrowLeft style={{ display: "block", transform: "rotate(180deg)" }} />
                   </button>
                 )}
               </CarouselControl>

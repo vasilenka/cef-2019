@@ -1,25 +1,30 @@
-@import 'invoker-tokens/index.scss';
+@import "invoker-tokens/index.scss";
 
 .root {
   display: inline-flex;
   align-items: center;
   @include screen(phone) {
+    width: 100%;
     justify-content: center;
     justify-self: center;
   }
   @include screen(tabPortrait) {
+    width: fit-content;
     justify-content: flex-start;
     justify-self: flex-start;
   }
   @include screen(tabLandscape) {
+    width: fit-content;
     justify-content: flex-start;
     justify-self: flex-start;
   }
   @include screen(desktop) {
+    width: fit-content;
     justify-content: flex-start;
     justify-self: flex-start;
   }
   @include screen(desktopWide) {
+    width: fit-content;
     justify-content: flex-start;
     justify-self: flex-start;
   }

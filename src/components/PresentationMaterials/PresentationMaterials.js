@@ -45,14 +45,14 @@ const PresentationMaterials = ({ children, className, ...restProps }) => {
     <section className={cx(styles.root)} {...restProps}>
       <Container narrow>
         <main style={{ marginBottom: 96 }}>
-          <Text heading2 component="h2" style={{ marginBottom: 48 }}>
-            Mayors Symposium
+          <Text heading2 component="h2" className={styles.sectionTitle}>
+            Mayors' Symposium
           </Text>
           {MayorsSymposium.map(
             (item, itemIndex) =>
               item.docs.length > 0 && (
                 <section className={styles.segment} key={`item-${itemIndex}`}>
-                  <Text heading3 component="p" className={styles.segmentName}>
+                  <Text component="p" className={styles.segmentName}>
                     {item.name}
                   </Text>
                   <ul className={styles.segmentFiles}>
@@ -65,14 +65,14 @@ const PresentationMaterials = ({ children, className, ...restProps }) => {
           )}
         </main>
         <main>
-          <Text heading2 component="h2" style={{ marginBottom: 48 }}>
+          <Text heading2 component="h2" className={styles.sectionTitle}>
             Public Forums
           </Text>
           {PublicForum.map(
             (item, itemIndex) =>
               item.docs.length > 0 && (
                 <section className={styles.segment} key={`item-${itemIndex}`}>
-                  <Text heading3 component="p" className={styles.segmentName}>
+                  <Text component="p" className={styles.segmentName}>
                     {item.name}
                   </Text>
                   <ul className={styles.segmentFiles}>
