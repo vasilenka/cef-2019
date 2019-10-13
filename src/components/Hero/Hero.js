@@ -27,7 +27,7 @@ const Hero = ({ className, setShowVideo, ...restProps }) => {
         <Cloud3 />
       </div> */}
       <video
-        src="/video/ce-highlight.mp4"
+        src="https://drive.google.com/uc?export=download&confirm=s7-e&id=1KVkwcttee1ayBoq6e5-QERKlT3rp_QWN"
         className={styles.video}
         autoPlay={true}
         loop={true}
