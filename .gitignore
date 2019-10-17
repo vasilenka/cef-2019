@@ -10,8 +10,8 @@ yarn-error.log*
 .env.development
 
 static/video
-# static/event-photo
-# event-photo
+static/event-photo
+event-photo
 
 # Server
 .htaccess
