@@ -40,6 +40,11 @@ const ImageSlider = ({ eventPhotos, children, className, ...restProps }) => {
   return (
     <section className={styles.root}>
       <Container narrow>
+        <header style={{ paddingBottom: "48px" }}>
+          <Text heading2 component="h1">
+            Event Photos
+          </Text>
+        </header>
         <Overlapping autoplay data={photos} className={styles.iseng}>
           <CarouselOverlapping style={{ width: "100%", paddingBottom: `60%` }}>
             {data =>
