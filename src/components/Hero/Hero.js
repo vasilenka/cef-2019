@@ -27,7 +27,7 @@ const Hero = ({ className, setShowVideo, ...restProps }) => {
         <Cloud3 />
       </div> */}
       <video
-        src="/video/ce-highlight.mp4"
+        src="https://www.civicengagementforum.net/solo/video/ce-highlight.mp4"
         className={styles.video}
         autoPlay={true}
         loop={true}
