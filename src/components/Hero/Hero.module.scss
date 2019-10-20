@@ -1,7 +1,7 @@
 @import "src/tokens";
 
 .root {
-  min-height: 64vh;
+  min-height: 60vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -19,29 +19,29 @@
   z-index: 9;
 
   @include screen(phone) {
-    padding-top: $space-xl;
-    padding-bottom: $space-xl;
+    padding-top: $space-huge;
+    padding-bottom: $space-huge;
     height: unset;
   }
   @include screen(tabPortrait) {
-    padding-top: $space-xxl;
-    padding-bottom: $space-xxl;
+    padding-top: $space-huge;
+    padding-bottom: $space-huge;
     height: unset;
   }
   @include screen(tabLandscape) {
-    padding-top: $space-xxl;
-    padding-bottom: $space-xxl;
-    height: calc(100vh - 120px);
+    padding-top: $space-huge;
+    padding-bottom: $space-huge;
+    height: calc(100vh - 144px);
   }
   @include screen(desktop) {
-    padding-top: $space-xxl;
-    padding-bottom: $space-xxl;
-    height: calc(100vh - 120px);
+    padding-top: $space-huge;
+    padding-bottom: $space-huge;
+    height: calc(100vh - 144px);
   }
   @include screen(desktopWide) {
-    padding-top: $space-xxl;
-    padding-bottom: $space-xxl;
-    height: calc(100vh - 120px);
+    padding-top: $space-huge;
+    padding-bottom: $space-huge;
+    height: calc(100vh - 240px);
   }
 }
 
@@ -115,6 +115,37 @@
   width: 292px;
   right: -60px;
   top: 20%;
+}
+
+.beforeLoad {
+  display: block;
+  filter: grayscale(80%);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.imageCover {
+  opacity: 0.88;
+  @include screen(phone) {
+    height: 64vh;
+  }
+  @include screen(tabPortrait) {
+    height: 64vh;
+  }
+  @include screen(tabLandscape) {
+    height: calc(100vh - 144px);
+  }
+  @include screen(desktop) {
+    height: calc(100vh - 144px);
+  }
+  @include screen(desktopWide) {
+    height: calc(100vh - 240px);
+  }
 }
 
 .video {

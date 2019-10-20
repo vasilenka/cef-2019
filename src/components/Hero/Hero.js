@@ -1,7 +1,8 @@
 import styles from "./Hero.module.scss"
-import React from "react"
+import React, { useRef, useEffect, useState } from "react"
 import cx from "classnames"
 import { Link } from "gatsby"
+import Image from "gatsby-image"
 
 import Text from "../../primitives/Text/Text"
 import Box from "../Box/Box"
@@ -14,7 +15,47 @@ import Play from "./../icons/play.inline.svg"
 // import Cloud2 from "./../images/cloud2--alt"
 // import Cloud3 from "./../images/cloud3--alt"
 
-const Hero = ({ className, setShowVideo, ...restProps }) => {
+const VideoBackground = ({ cover }) => {
+  let [loaded, setLoaded] = useState(false)
+
+  let videoRef = useRef(null)
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.addEventListener(
+        "loadeddata",
+        function() {
+          setLoaded(true)
+        },
+        false
+      )
+      console.log(videoRef.current)
+    }
+  }, [videoRef.current])
+
+  useEffect(() => {
+    console.log("LOADED: ", loaded)
+  }, [loaded])
+
+  return (
+    <>
+      <video
+        ref={videoRef}
+        src="https://www.civicengagementforum.net/solo/video/ce-highlight.mp4"
+        className={styles.video}
+        autoPlay={true}
+        loop={true}
+        muted></video>
+      {/* {loaded ? null : ( */}
+      <div className={styles.beforeLoad}>
+        <Image className={styles.imageCover} fluid={cover} />
+      </div>
+      {/* )} */}
+    </>
+  )
+}
+
+const Hero = ({ cover, className, setShowVideo, ...restProps }) => {
   return (
     <div className={cx(styles.root)}>
       {/* <div className={styles.cloud1}>
@@ -26,13 +67,7 @@ const Hero = ({ className, setShowVideo, ...restProps }) => {
       <div className={styles.cloud3}>
         <Cloud3 />
       </div> */}
-      <video
-        src="https://www.civicengagementforum.net/solo/video/ce-highlight.mp4"
-        className={styles.video}
-        autoPlay={true}
-        loop={true}
-        muted
-      />
+      <VideoBackground cover={cover} />
       <section className={styles.overlay}>
         <Container narrow className={cx(styles.container)}>
           <Box style={{ height: "100%" }} alignCenter justifyStart>

@@ -24,6 +24,9 @@ import YoutubeVideo from "../components/YoutubeVideo/YoutubeVideo"
 const IndexPage = ({
   data: {
     allFile: { edges: eventPhotos },
+    file: {
+      childImageSharp: { fluid: coverPhoto },
+    },
   },
 }) => {
   const [ref, inView] = useInView({
@@ -52,7 +55,7 @@ const IndexPage = ({
           `sustainability`,
         ]}
       />
-      <Hero setShowVideo={setShowVideo} />
+      <Hero setShowVideo={setShowVideo} cover={coverPhoto} />
       {showVideo && <YoutubeVideo setShowVideo={setShowVideo} />}
       <Organizers />
       <ImageSlider eventPhotos={eventPhotos} />
@@ -81,6 +84,13 @@ export const pageQuery = graphql`
             }
           }
           relativeDirectory
+        }
+      }
+    }
+    file(name: { eq: "event-001" }) {
+      childImageSharp {
+        fluid(maxWidth: 1440, quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
