@@ -46,11 +46,11 @@ const VideoBackground = ({ cover }) => {
         autoPlay={true}
         loop={true}
         muted></video>
-      {/* {loaded ? null : ( */}
-      <div className={styles.beforeLoad}>
-        <Image className={styles.imageCover} fluid={cover} />
-      </div>
-      {/* )} */}
+      {loaded ? null : (
+        <div className={styles.beforeLoad}>
+          <Image className={styles.imageCover} fluid={cover} />
+        </div>
+      )}
     </>
   )
 }
