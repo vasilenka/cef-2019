@@ -29,13 +29,8 @@ const VideoBackground = ({ cover }) => {
         },
         false
       )
-      console.log(videoRef.current)
     }
   }, [videoRef.current])
-
-  useEffect(() => {
-    console.log("LOADED: ", loaded)
-  }, [loaded])
 
   return (
     <>
