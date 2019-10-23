@@ -7,6 +7,8 @@ import Text from "../../primitives/Text/Text"
 import { Chulalongkorn, Ford, AsiaCenter, Solo, Ayus } from "./../images/fundings"
 import { GraduateWordmark } from "./../images/collaborators"
 import Container from "../../layouts/Container/Container"
+import ScrollHack from "../ScrollHack/ScrollHack"
+import Hack from "../Hack/Hack"
 
 const PartnerContainer = ({ to, chula, name, children, className, ...restProps }) => {
   return to ? (
@@ -36,7 +38,7 @@ const FundingPartners = ({ className, ...restProps }) => {
   return (
     <>
       <section className={cx(styles.root)}>
-        <div id="funding-partners" className={styles.hack}></div>
+        <Hack id="funding-partners" />
         <Container narrow>
           <Box column className={styles.mainPartner}>
             <Text heading1 component="h2" className={styles.title}>
