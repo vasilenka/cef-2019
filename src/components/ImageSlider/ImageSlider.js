@@ -17,6 +17,7 @@ import Pause from "./../icons/pause.inline.svg"
 
 import { OverlappingContext } from "./../../primitives/Overlapping/Overlapping"
 import Text from "../../primitives/Text/Text"
+import ScrollHack from "../ScrollHack/ScrollHack"
 // import LoadingBar from "../../primitives/LoadingBar/LoadingBar"
 
 const SliderCounter = ({ total }) => {
@@ -39,6 +40,7 @@ const ImageSlider = ({ eventPhotos, children, className, ...restProps }) => {
 
   return (
     <section className={styles.root}>
+      <ScrollHack id="image-slider" />
       <Container narrow>
         <header style={{ paddingBottom: "48px" }}>
           <Text heading2 component="h1">

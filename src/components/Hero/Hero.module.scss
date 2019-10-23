@@ -1,7 +1,7 @@
 @import "src/tokens";
 
 .root {
-  min-height: 60vh;
+  min-height: 56vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -11,6 +11,15 @@
 
 .overlay {
   width: 100vw;
+}
+
+.overlayColor {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
   background: rgba(0, 0, 0, 0.54);
 }
 
@@ -19,8 +28,8 @@
   z-index: 9;
 
   @include screen(phone) {
-    padding-top: $space-huge;
-    padding-bottom: $space-huge;
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
     height: unset;
   }
   @include screen(tabPortrait) {
@@ -31,7 +40,7 @@
   @include screen(tabLandscape) {
     padding-top: $space-huge;
     padding-bottom: $space-huge;
-    height: calc(100vh - 144px);
+    height: unset;
   }
   @include screen(desktop) {
     padding-top: $space-huge;
@@ -157,4 +166,39 @@
   z-index: -1;
   opacity: 0.88;
   background-color: rgba(232, 194, 61, 1);
+}
+
+.cta {
+  @include screen(phone) {
+    width: 100%;
+    margin-bottom: $space-m;
+  }
+  @include screen(tabPortrait) {
+    width: fit-content;
+    margin-bottom: unset;
+    &:first-child {
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+  }
+  @include screen(tabLandscape) {
+    width: fit-content;
+    margin-bottom: unset;
+    &:first-child {
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+  }
+  @include screen(desktop) {
+    width: fit-content;
+    margin-bottom: unset;
+    &:first-child {
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+  }
+  @include screen(desktopWide) {
+    width: fit-content;
+    margin-bottom: unset;
+    &:first-child {
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+  }
 }

@@ -1,6 +1,7 @@
 @import "src/tokens";
 
 .root {
+  position: relative;
   background-color: $bg-banana-200;
   @include screen(phone) {
     padding-top: $space-ll;
@@ -58,7 +59,9 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  max-width: 480px;
   padding: $space-ml $space-ll;
   align-items: center;
+  margin: 0 auto;
 }

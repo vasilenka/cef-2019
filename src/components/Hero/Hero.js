@@ -64,6 +64,7 @@ const Hero = ({ cover, className, setShowVideo, ...restProps }) => {
       </div> */}
       <VideoBackground cover={cover} />
       <section className={styles.overlay}>
+        <div className={styles.overlayColor} />
         <Container narrow className={cx(styles.container)}>
           <Box style={{ height: "100%" }} alignCenter justifyStart>
             <Box column alignStart>
@@ -82,14 +83,13 @@ const Hero = ({ cover, className, setShowVideo, ...restProps }) => {
                 <Link to="/about">Read more...</Link>
               </div>
               <footer style={{ padding: "12px 0px" }}>
-                <Button
-                  primary
-                  style={{ borderRight: "1px solid rgb(0,0,0)" }}
-                  onClick={() => setShowVideo(true)}>
-                  <Play style={{ display: "block", marginRight: 8 }} /> View 2019 Forum Video
+                <Button primary className={styles.cta} onClick={() => setShowVideo(true)}>
+                  View 2019 Forum Video
                 </Button>
-                <Link to="/presentation-materials">
-                  <Button primary>View 2019 Forum Photos</Button>
+                <Link to="/#image-slider">
+                  <Button primary className={styles.cta}>
+                    View 2019 Forum Photos
+                  </Button>
                 </Link>
               </footer>
             </Box>
