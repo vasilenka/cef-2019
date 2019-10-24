@@ -75,7 +75,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query EventImageQuery {
-    allFile(filter: { relativeDirectory: { eq: "event-photo" } }) {
+    allFile(filter: { relativeDirectory: { eq: "event-photo" } }, sort: { fields: name }) {
       edges {
         node {
           childImageSharp {
@@ -87,9 +87,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    file(name: { eq: "event-001" }) {
+    file(name: { eq: "event-01" }) {
       childImageSharp {
-        fluid(maxWidth: 1440, quality: 100) {
+        fluid(maxWidth: 720, quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }

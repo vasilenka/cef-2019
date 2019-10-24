@@ -12,6 +12,7 @@ yarn-error.log*
 static/video
 static/event-photo
 event-photo
+src/assets/images/event-photo
 
 # Server
 .htaccess
