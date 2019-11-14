@@ -7,7 +7,6 @@ import Text from "../../primitives/Text/Text"
 import { Chulalongkorn, Ford, AsiaCenter, Solo, Ayus } from "./../images/fundings"
 import { GraduateWordmark } from "./../images/collaborators"
 import Container from "../../layouts/Container/Container"
-import ScrollHack from "../ScrollHack/ScrollHack"
 import Hack from "../Hack/Hack"
 
 const PartnerContainer = ({ to, chula, name, children, className, ...restProps }) => {

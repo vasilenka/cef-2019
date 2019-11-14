@@ -35,6 +35,12 @@ const IndexPage = ({
     triggerOnce: true,
   })
 
+  const [heroRef, heroInView] = useInView({
+    rootMargin: "0px 0px 0px 0px",
+    threshold: 0,
+    triggerOnce: true,
+  })
+
   let [showVideo, setShowVideo] = React.useState(false)
 
   return (
@@ -55,10 +61,11 @@ const IndexPage = ({
           `sustainability`,
         ]}
       />
+      <span ref={heroRef} />
       <Hero setShowVideo={setShowVideo} cover={coverPhoto} />
       {showVideo && <YoutubeVideo setShowVideo={setShowVideo} />}
       <Organizers />
-      <ImageSlider eventPhotos={eventPhotos} />
+      {heroInView ? <ImageSlider eventPhotos={eventPhotos} /> : null}
       <Mission />
       <span ref={ref} />
       <SpeakersHighlight />
@@ -80,7 +87,7 @@ export const pageQuery = graphql`
         node {
           childImageSharp {
             fluid(maxWidth: 1440, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
           relativeDirectory
@@ -90,7 +97,7 @@ export const pageQuery = graphql`
     file(name: { eq: "event-01" }) {
       childImageSharp {
         fluid(maxWidth: 720, quality: 80) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
