@@ -4,19 +4,15 @@ import cx from "classnames"
 // import { Link } from "gatsby"
 
 import NavbarBrand from "../NavbarBrand/NavbarBrand"
-import NavbarSecondary from "../NavbarSecondary/NavbarSecondary"
 import NavbarPrimary from "../NavbarPrimary/NavbarPrimary"
 import NavbarMenu from "../NavbarMenu/NavbarMenu"
-import Button from "../../primitives/Button/Button"
 import Container from "../../layouts/Container/Container"
 import Popout from "../../primitives/Popout/Popout"
 import Text from "../../primitives/Text/Text"
-import RegistrationEnd from "../RegistrationEnd/RegistrationEnd"
-import GenerateCertificate from "../GenerateCertificate/GenerateCertificate"
 
 const Navbar = ({ children, narrow, bleed, className, ...restProps }) => {
   // const [showRegistration, setShowRegistration] = React.useState(false)
-  const [showGenerator, setShowGenerator] = React.useState(false)
+  // const [showGenerator, setShowGenerator] = React.useState(false)
   return (
     <>
       <nav

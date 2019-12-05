@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
 
 import Default from "./../layouts/Default"

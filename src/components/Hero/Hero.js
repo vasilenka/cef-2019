@@ -9,7 +9,7 @@ import Box from "../Box/Box"
 import Container from "../../layouts/Container/Container"
 import Button from "../../primitives/Button/Button"
 
-import Play from "./../icons/play.inline.svg"
+// import Play from "./../icons/play.inline.svg"
 
 // import Cloud1 from "./../images/cloud1--alt"
 // import Cloud2 from "./../images/cloud2--alt"
@@ -21,16 +21,14 @@ const VideoBackground = ({ cover }) => {
   let videoRef = useRef(null)
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.addEventListener(
-        "loadeddata",
-        function() {
-          setLoaded(true)
-        },
-        false
-      )
-    }
-  }, [videoRef.current])
+    videoRef.current.addEventListener(
+      "loadeddata",
+      function() {
+        setLoaded(true)
+      },
+      false
+    )
+  }, [])
 
   return (
     <>
@@ -53,15 +51,6 @@ const VideoBackground = ({ cover }) => {
 const Hero = ({ cover, className, setShowVideo, ...restProps }) => {
   return (
     <div className={cx(styles.root)}>
-      {/* <div className={styles.cloud1}>
-        <Cloud1 />
-      </div>
-      <div className={styles.cloud2}>
-        <Cloud2 />
-      </div>
-      <div className={styles.cloud3}>
-        <Cloud3 />
-      </div> */}
       <VideoBackground cover={cover} />
       <section className={styles.overlay}>
         <div className={styles.overlayColor} />

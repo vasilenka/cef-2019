@@ -47,12 +47,12 @@
 }
 
 @keyframes clippingReverse {
-  // 0% {
-  //   clip-path: inset(0 0 0 0);
-  // }
-  // 100% {
-  //   clip-path: inset(0 100% 0 0);
-  // }
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
 }
 
 @keyframes translating {
@@ -69,16 +69,16 @@
 }
 
 @keyframes translatingReverse {
-  // 0% {
-  //   transform: translateX(10%);
-  // }
-  // 99% {
-  //   z-index: 0;
-  // }
-  // 100% {
-  //   z-index: 99;
-  //   transform: translateX(0%);
-  // }
+  0% {
+    transform: translateX(10%);
+  }
+  99% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 99;
+    transform: translateX(0%);
+  }
 }
 
 .next {

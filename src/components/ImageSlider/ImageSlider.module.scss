@@ -59,9 +59,72 @@
 
 .footer {
   display: flex;
-  justify-content: space-around;
-  max-width: 480px;
-  padding: $space-ml $space-ll;
+  padding: $space-ml;
   align-items: center;
   margin: 0 auto;
+  @include screen(phone) {
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @include screen(tabPortrait) {
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @include screen(tabLandscape) {
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @include screen(desktop) {
+    justify-content: space-around;
+    max-width: 92%;
+    flex-direction: row;
+  }
+  @include screen(desktopWide) {
+    justify-content: space-around;
+    max-width: 92%;
+    flex-direction: row;
+  }
+}
+
+.captionContainer {
+  flex: 1;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @include screen(phone) {
+    margin-bottom: $space-ml;
+    width: 100%;
+  }
+  @include screen(tabPortrait) {
+    margin-bottom: $space-ml;
+    width: 100%;
+  }
+  @include screen(tabLandscape) {
+    margin-bottom: $space-ml;
+    width: 100%;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+  }
+}
+
+.caption {
+  padding: 0 24px;
+  flex: 1;
+  max-width: 100%;
+}
+
+.counter {
+  min-width: 48px;
+}
+
+.controlContainer {
+  min-width: 200px;
 }

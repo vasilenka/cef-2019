@@ -28,7 +28,7 @@ export default Media
 
 export const pageQuery = graphql`
   query EventImageMediaQuery {
-    allFile(filter: { relativeDirectory: { eq: "event-photo" } }) {
+    allFile(filter: { relativeDirectory: { eq: "event-photo" } }, sort: { fields: name }) {
       edges {
         node {
           childImageSharp {

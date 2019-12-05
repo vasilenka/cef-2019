@@ -1,7 +1,8 @@
 import styles from "./ImageSlider.module.scss"
-import React, { useContext } from "react"
-import cx from "classnames"
+import React, { useContext, useEffect } from "react"
+// import cx from "classnames"
 import Image from "gatsby-image"
+import { Captions } from "./caption"
 
 import Container from "../../layouts/Container/Container"
 
@@ -17,16 +18,14 @@ import Pause from "./../icons/pause.inline.svg"
 
 import { OverlappingContext } from "./../../primitives/Overlapping/Overlapping"
 import Text from "../../primitives/Text/Text"
-import ScrollHack from "../ScrollHack/ScrollHack"
 import Hack from "../Hack/Hack"
-// import LoadingBar from "../../primitives/LoadingBar/LoadingBar"
 
 const SliderCounter = ({ total }) => {
   let { activeIndex } = useContext(OverlappingContext)
 
   return (
     <div className={styles.counter}>
-      <Text heading4>
+      <Text medium style={{ fontWeight: 600 }}>
         {activeIndex + 1} <span style={{ opacity: 0.44 }}> / {total}</span>
       </Text>
     </div>
@@ -59,18 +58,19 @@ const ImageSlider = ({ eventPhotos, children, className, ...restProps }) => {
             }
           </CarouselOverlapping>
           <footer className={styles.footer}>
-            <SliderCounter total={photos.length} />
-            {/* <div
-              style={{
-                padding: "0px 12px",
-                width: "60%",
-                height: "2px",
-                maxWidth: "60%",
-                marginBottom: "12px",
-              }}> */}
-            {/* <LoadingBar /> */}
-            {/* </div> */}
-            <div>
+            <div className={styles.captionContainer}>
+              <SliderCounter total={photos.length} />
+              <div className={styles.caption}>
+                <CarouselControl>
+                  {({ activeIndex }) => (
+                    <Text medium as="p">
+                      {Captions[activeIndex]}
+                    </Text>
+                  )}
+                </CarouselControl>
+              </div>
+            </div>
+            <div className={styles.controlContainer}>
               <CarouselControl>
                 {({ data, isTransitioning, prev }) => (
                   <button

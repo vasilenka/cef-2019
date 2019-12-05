@@ -1,5 +1,4 @@
 import React from "react"
-import cx from "classnames"
 
 import Default from "./../layouts/Default"
 import SEO from "../components/seo"
