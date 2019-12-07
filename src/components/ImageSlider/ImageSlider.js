@@ -1,6 +1,5 @@
 import styles from "./ImageSlider.module.scss"
 import React, { useContext, useEffect } from "react"
-// import cx from "classnames"
 import Image from "gatsby-image"
 import { Captions } from "./caption"
 
@@ -52,7 +51,7 @@ const ImageSlider = ({ eventPhotos, children, className, ...restProps }) => {
             {data =>
               data.map((image, index) => (
                 <OverlappingItem key={image.id} index={index} item={image}>
-                  <Image fluid={image.fluid} />
+                  <Image fluid={image.fluid} alt={Captions[index]} />
                 </OverlappingItem>
               ))
             }
