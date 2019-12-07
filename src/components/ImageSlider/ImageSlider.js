@@ -1,5 +1,5 @@
 import styles from "./ImageSlider.module.scss"
-import React, { useContext, useEffect } from "react"
+import React, { useContext } from "react"
 import Image from "gatsby-image"
 import { Captions } from "./caption"
 
