@@ -55,7 +55,7 @@
     "react-intersection-observer": "^8.22.6",
     "react-progressive-loader": "^0.3.1",
     "recompose": "^0.30.0",
-    "yarn": "^1.15.2",
+    "yarn": "^1.22.0",
     "yup": "^0.27.0"
   },
   "devDependencies": {
