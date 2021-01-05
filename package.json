@@ -22,7 +22,7 @@
     "@loadable/component": "^5.9.0",
     "@reach/window-size": "^0.1.4",
     "add": "^2.0.6",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
     "gatsby": "^2.15.1",
